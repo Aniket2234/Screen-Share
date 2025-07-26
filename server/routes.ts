@@ -187,7 +187,7 @@ export async function registerRoutes(app: Express): Promise<Server> {
 
         // Send system message
         const stopMessage = {
-          id: Date.now().toString(),
+          id: `${Date.now()}-system-${Math.random().toString(36).substr(2, 9)}`,
           userId: 'system',
           userName: 'System',
           text: `${userName} stopped screen sharing`,

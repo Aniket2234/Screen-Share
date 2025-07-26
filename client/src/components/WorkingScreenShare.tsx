@@ -213,7 +213,15 @@ export default function WorkingScreenShare({ onBackToModeSelector }: WorkingScre
 
   // Initialize Socket.IO - only when entering room
   useEffect(() => {
-    if (isInRoom && !socketRef.current) {
+    if (isInRoom) {
+      // Always clean up existing socket first
+      if (socketRef.current) {
+        console.log('🔌 Cleaning up existing Socket.io connection');
+        socketRef.current.off();
+        socketRef.current.disconnect();
+        socketRef.current = null;
+      }
+
       console.log('🔌 Creating new Socket.io connection');
       const socket = io();
       socketRef.current = socket;
@@ -289,20 +297,13 @@ export default function WorkingScreenShare({ onBackToModeSelector }: WorkingScre
       console.log('🔌 Cleaning up Socket.io connection');
       if (socketRef.current) {
         // Remove all event listeners to prevent duplicates
-        socketRef.current.off('participants-updated');
-        socketRef.current.off('new-message');
-        socketRef.current.off('presenter-started');
-        socketRef.current.off('presenter-stopped');
-        socketRef.current.off('webrtc-offer');
-        socketRef.current.off('webrtc-answer');
-        socketRef.current.off('webrtc-ice-candidate');
-        
+        socketRef.current.off();
         socketRef.current.emit('leave-room', { roomId, userName });
         socketRef.current.disconnect();
         socketRef.current = null;
       }
     };
-  }, [isInRoom]); // Only depend on isInRoom, not roomId or userName
+  }, [isInRoom, roomId, userName]); // Include all dependencies to ensure proper cleanup on changes
 
   // Auto-scroll chat messages
   useEffect(() => {
