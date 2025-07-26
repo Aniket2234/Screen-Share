@@ -719,6 +719,16 @@ export default function WorkingScreenShare({ onBackToModeSelector }: WorkingScre
             if (participant.id !== socketRef.current?.id && socketRef.current) {
               console.log('🔗 Presenter creating connection to viewer:', participant.name, participant.id, crossNetworkMode ? '(cross-network mode)' : '');
               
+              // Clean up any existing connection first to ensure fresh start
+              const existingConnection = peerConnectionsRef.current.get(participant.id);
+              if (existingConnection) {
+                console.log(`🔧 Cleaning up existing connection for ${participant.id}, state: ${existingConnection.connectionState}`);
+                existingConnection.close();
+                peerConnectionsRef.current.delete(participant.id);
+                // Small delay to ensure cleanup completes
+                await new Promise(resolve => setTimeout(resolve, 100));
+              }
+              
               // Create new peer connection with hybrid configuration
               const pc = await createPeerConnection(participant.id, false); // Use hybrid STUN/TURN configuration
               if (!pc) continue;
@@ -795,16 +805,11 @@ export default function WorkingScreenShare({ onBackToModeSelector }: WorkingScre
                 });
                 
                 // Create enhanced offer with cross-network optimizations
-                const offer = await pc.createOffer({
-                  offerToReceiveAudio: true,
-                  offerToReceiveVideo: true,
-                  iceRestart: crossNetworkMode,
-                  // VoiceActivityDetection is deprecated
-                });
+                const offer = await pc.createOffer();
 
                 // Apply maximum bandwidth SDP modifications
                 const enhancedOffer = await enhanceSDPForMaxBandwidth(offer, quality);
-                await pc.setLocalDescription(enhancedOffer);
+                await pc.setLocalDescription(new RTCSessionDescription(enhancedOffer));
                 
                 console.log('📤 Sending optimized offer to viewer:', participant.id);
                 socketRef.current.emit('webrtc-offer', {
@@ -1349,8 +1354,7 @@ export default function WorkingScreenShare({ onBackToModeSelector }: WorkingScre
     setStreamError(null);
     
     // Clean up peer connections
-    peerConnectionsRef.current.forEach(pc => pc.close());
-    peerConnectionsRef.current.clear();
+    closeAllPeerConnections();
     
     if (socketRef.current) {
       socketRef.current.emit('stop-presenting', { roomId, userName });
@@ -1388,8 +1392,7 @@ export default function WorkingScreenShare({ onBackToModeSelector }: WorkingScre
     setBandwidthMonitor({ actualBitrate: 0, targetBitrate: 0, fpsStability: 100 });
     
     // Clean up peer connections and notify other participants
-    peerConnectionsRef.current.forEach(pc => pc.close());
-    peerConnectionsRef.current.clear();
+    closeAllPeerConnections();
     
     if (socketRef.current) {
       socketRef.current.emit('stop-presenting', { roomId, userName });
@@ -1607,17 +1610,14 @@ export default function WorkingScreenShare({ onBackToModeSelector }: WorkingScre
           console.log('✅ Remote description set successfully');
           
           console.log('📝 Creating answer...');
-          const answer = await peerConnection.createAnswer({
-            offerToReceiveAudio: true,
-            offerToReceiveVideo: true
-          });
+          const answer = await peerConnection.createAnswer();
           console.log('✅ Answer created');
 
           // Apply maximum bandwidth SDP modifications to answer
           const enhancedAnswer = await enhanceSDPForMaxBandwidth(answer, quality);
           
           console.log('📥 Setting local description (answer)');
-          await peerConnection.setLocalDescription(enhancedAnswer);
+          await peerConnection.setLocalDescription(new RTCSessionDescription(enhancedAnswer));
           console.log('✅ Local description set successfully');
 
           console.log('📤 Sending answer to:', senderId);
@@ -1646,9 +1646,9 @@ export default function WorkingScreenShare({ onBackToModeSelector }: WorkingScre
     } catch (error) {
       console.error('❌ Error handling WebRTC offer:', error);
       console.error('🔍 Error details:', {
-        name: error.name,
-        message: error.message,
-        stack: error.stack?.substring(0, 500)
+        name: (error as Error).name,
+        message: (error as Error).message,
+        stack: (error as Error).stack?.substring(0, 500)
       });
       
       // Attempt recovery
@@ -1757,9 +1757,20 @@ export default function WorkingScreenShare({ onBackToModeSelector }: WorkingScre
   const closePeerConnection = (peerId: string) => {
     const peerConnection = peerConnectionsRef.current.get(peerId);
     if (peerConnection) {
+      console.log(`🔌 Closing peer connection for ${peerId}, state: ${peerConnection.connectionState}`);
       peerConnection.close();
       peerConnectionsRef.current.delete(peerId);
     }
+  };
+
+  const closeAllPeerConnections = () => {
+    console.log('🔌 Closing all peer connections');
+    peerConnectionsRef.current.forEach((pc, peerId) => {
+      console.log(`🔌 Closing connection to ${peerId}, state: ${pc.connectionState}`);
+      pc.close();
+    });
+    peerConnectionsRef.current.clear();
+    setRemoteStreams(new Map());
   };
 
   const debugStream = () => {
