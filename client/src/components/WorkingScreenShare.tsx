@@ -229,28 +229,25 @@ export default function WorkingScreenShare({ onBackToModeSelector }: WorkingScre
       // Join room
       socket.emit('join-room', { roomId, userName });
 
-      // Create message handler to prevent duplicate registrations
-      const handleNewMessage = (messageData: Message) => {
-        console.log('📨 Received message event:', messageData.id);
+      // Simple message handler now that server-side duplicates are fixed
+      socket.on('new-message', (messageData: Message) => {
+        console.log('📨 Received message:', messageData.id);
         setMessages(prev => {
-          // Prevent duplicate messages by checking ID
+          // Still check for duplicates as safety measure
           const exists = prev.some(msg => msg.id === messageData.id);
           if (exists) {
             console.log('🚫 Duplicate message ID detected, skipping:', messageData.id);
             return prev;
           }
-          console.log('✅ Adding new message:', messageData.id);
+          console.log('✅ Adding message:', messageData.id);
           return [...prev, messageData];
         });
-      };
+      });
 
       // Listen for participants updates
       socket.on('participants-updated', (participantsList: Participant[]) => {
         setParticipants(participantsList);
       });
-
-      // Listen for new messages with single handler
-      socket.on('new-message', handleNewMessage);
 
       // WebRTC signaling listeners
       socket.on('presenter-started', async ({ presenterId, presenterName }) => {

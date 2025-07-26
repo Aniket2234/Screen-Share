@@ -201,24 +201,7 @@ export async function registerRoutes(app: Express): Promise<Server> {
       }
     });
 
-    socket.on('send-message', (data: { roomId: string; message: string; userName: string; userId: string }) => {
-      const { roomId, message, userName, userId } = data;
-      const room = rooms.get(roomId);
-      
-      if (room) {
-        const chatMessage = {
-          id: Date.now().toString(),
-          userId: userId,
-          userName: userName,
-          text: message,
-          timestamp: Date.now()
-        };
-        
-        room.messages.push(chatMessage);
-        // Send to all other users in the room, not the sender
-        socket.to(roomId).emit('new-message', chatMessage);
-      }
-    });
+    // REMOVED: Old duplicate send-message handler to prevent dual messaging system
 
     socket.on('leave-room', (data: { roomId: string; userName: string }) => {
       const { roomId, userName } = data;
