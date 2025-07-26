@@ -425,16 +425,13 @@ export default function StreamScreenShare({ onBackToModeSelector }: StreamScreen
 
         // Listen for messages from server (Socket.io only, no duplicates)
         socket.on('new-message', (message: Message) => {
-          // Only add messages from other users to prevent duplicates
-          if (message.userId !== userId) {
-            setMessages(prev => {
-              const exists = prev.some(msg => msg.id === message.id);
-              if (!exists) {
-                return [...prev, message];
-              }
-              return prev;
-            });
-          }
+          setMessages(prev => {
+            const exists = prev.some(msg => msg.id === message.id);
+            if (!exists) {
+              return [...prev, message];
+            }
+            return prev;
+          });
         });
       }
 
@@ -572,30 +569,20 @@ export default function StreamScreenShare({ onBackToModeSelector }: StreamScreen
       return;
     }
 
-    const message: Message = {
-      id: uuidv4(),
-      userId,
-      userName,
-      text: messageInput.trim(),
-      timestamp: Date.now()
-    };
+    console.log('📩 Sending message:', messageInput.trim());
 
-    console.log('📩 Sending message:', message);
-
-    // Add message locally for immediate right-side appearance
-    setMessages(prev => [...prev, message]);
-    setMessageInput('');
-
-    // Send message through Socket.io 
+    // Only send to server - don't add locally to avoid duplicates
     if (socketRef.current) {
       socketRef.current.emit('send-message', {
         roomId,
-        message: message.text,
+        message: messageInput.trim(),
         userName,
         userId
       });
       console.log('📨 Message sent through Socket.io');
     }
+    
+    setMessageInput('');
   };
 
   // Toggle microphone function

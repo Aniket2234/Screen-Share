@@ -225,12 +225,9 @@ export default function WorkingScreenShare({ onBackToModeSelector }: WorkingScre
         setParticipants(participantsList);
       });
 
-      // Listen for new messages (only from other users)
+      // Listen for new messages (from all users including self)
       socket.on('new-message', (messageData: Message) => {
-        // Only add messages from other users to avoid duplicates
-        if (messageData.userId !== userId) {
-          setMessages(prev => [...prev, messageData]);
-        }
+        setMessages(prev => [...prev, messageData]);
       });
 
       // WebRTC signaling listeners
@@ -1357,18 +1354,7 @@ export default function WorkingScreenShare({ onBackToModeSelector }: WorkingScre
   const sendMessage = () => {
     if (!messageInput.trim() || !socketRef.current) return;
 
-    const newMessage: Message = {
-      id: uuidv4(),
-      userId: userId,
-      userName: userName,
-      text: messageInput.trim(),
-      timestamp: Date.now()
-    };
-
-    // Add message to local state first (sender's screen)
-    setMessages(prev => [...prev, newMessage]);
-
-    // Then emit to other participants
+    // Only send to server - don't add locally to avoid duplicates
     socketRef.current.emit('send-message', {
       roomId,
       message: messageInput.trim(),
