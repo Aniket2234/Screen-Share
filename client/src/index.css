@@ -1,0 +1,138 @@
+/* Stream.io Video React SDK Styles */
+@import "@stream-io/video-react-sdk/dist/css/styles.css";
+
+/* Clean approach: No custom layout overrides - let Stream.io handle everything naturally */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Hide Stream.io recording button completely */
+.stream-controls-no-record [data-testid="recording-button"],
+.stream-controls-no-record button[aria-label*="recording"],
+.stream-controls-no-record button[aria-label*="Record"],
+.stream-controls-no-record button[title*="recording"],
+.stream-controls-no-record button[title*="Record"],
+.stream-controls-no-record button[data-testid*="record"],
+.stream-controls-no-record button:has(svg[data-testid*="record"]),
+.stream-controls-no-record button:has(.record),
+.stream-controls-no-record button:has([class*="record"]),
+.stream-controls-no-record button:has([data-testid*="record"]) {
+  display: none !important;
+}
+
+/* Hide any circular recording buttons in Stream.io CallControls */
+.str-video__call-controls button[data-testid*="record"],
+.str-video__call-controls button:has(svg[data-testid*="record"]),
+.str-video__call-controls button:has(.record),
+.str-video__call-controls [data-testid="recording-button"],
+.str-video__call-controls button[aria-label*="Record"],
+.str-video__call-controls button[title*="Record"],
+.str-video__call-controls button[class*="record"] {
+  display: none !important;
+}
+
+/* Only hide Stream.io recording buttons, not custom ones */
+.str-video__call-controls button[data-testid="recording-button"],
+.str-video__call-controls button[aria-label*="Record"],
+.str-video__call-controls button[title*="Record"],
+.str-video__call-controls [data-testid*="record-button"],
+.str-video__call-controls [class*="record-button"],
+.str-video__call-controls [class*="recording-button"],
+.str-video__call-controls button:has([data-testid*="record"]),
+.str-video__call-controls button:has(svg[aria-label*="record"]) {
+  display: none !important;
+}
+
+/* Ensure custom recording button is always visible */
+.custom-recording-button {
+  display: flex !important;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* Theme variables */
+:root {
+  --background: 0 0% 100%;
+  --foreground: 240 10% 3.9%;
+  --card: 0 0% 100%;
+  --card-foreground: 240 10% 3.9%;
+  --popover: 0 0% 100%;
+  --popover-foreground: 240 10% 3.9%;
+  --primary: 240 9% 9%;
+  --primary-foreground: 0 0% 98%;
+  --secondary: 240 4.8% 95.9%;
+  --secondary-foreground: 240 5.9% 10%;
+  --muted: 240 4.8% 95.9%;
+  --muted-foreground: 240 3.8% 46.1%;
+  --accent: 240 4.8% 95.9%;
+  --accent-foreground: 240 5.9% 10%;
+  --destructive: 0 84.2% 60.2%;
+  --destructive-foreground: 0 0% 98%;
+  --border: 240 5.9% 90%;
+  --input: 240 5.9% 90%;
+  --ring: 240 5.9% 10%;
+  --radius: 0.5rem;
+}
+
+.dark {
+  --background: 240 10% 3.9%;
+  --foreground: 0 0% 98%;
+  --card: 240 10% 3.9%;
+  --card-foreground: 0 0% 98%;
+  --popover: 240 10% 3.9%;
+  --popover-foreground: 0 0% 98%;
+  --primary: 0 0% 98%;
+  --primary-foreground: 240 5.9% 10%;
+  --secondary: 240 3.7% 15.9%;
+  --secondary-foreground: 0 0% 98%;
+  --muted: 240 3.7% 15.9%;
+  --muted-foreground: 240 5% 64.9%;
+  --accent: 240 3.7% 15.9%;
+  --accent-foreground: 0 0% 98%;
+  --destructive: 0 62.8% 30.6%;
+  --destructive-foreground: 0 0% 98%;
+  --border: 240 3.7% 15.9%;
+  --input: 240 3.7% 15.9%;
+  --ring: 240 4.9% 83.9%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Notification animations */
+@keyframes slide-in {
+  from {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.animate-slide-in {
+  animation: slide-in 0.3s ease-out;
+}

@@ -1,0 +1,372 @@
+Download the React DevTools for a better development experience: https://reactjs.org/link/react-devtools
+ 🔍 Testing TURN server connectivity...
+ 🔍 Testing TURN server connectivity...
+ 🧊 ICE gathering state: gathering
+ 🧊 ICE gathering state: gathering
+ 🧊 Test ICE candidate: candidate:2452579928 1 udp 2113937151 2826a264-735e-489d-a548-c6b46bf34a0e.local 52484 typ host generation 0 ufrag lYXr network-cost 999
+ 🧊 Test ICE candidate: candidate:3231794691 1 udp 2113937151 2826a264-735e-489d-a548-c6b46bf34a0e.local 64520 typ host generation 0 ufrag cQAL network-cost 999
+ 🧊 Test ICE candidate: candidate:2098472022 1 udp 1677729535 115.98.233.56 52484 typ srflx raddr 0.0.0.0 rport 0 generation 0 ufrag lYXr network-cost 999
+ 🧊 Test ICE candidate: candidate:787702336 1 udp 1677729535 115.98.233.56 64520 typ srflx raddr 0.0.0.0 rport 0 generation 0 ufrag cQAL network-cost 999
+ 🎬 Starting screen share...
+ 🎯 Screen share constraints: {
+  "video": {
+    "frameRate": {
+      "ideal": 30,
+      "max": 30
+    },
+    "width": {
+      "ideal": 1920
+    },
+    "height": {
+      "ideal": 1080
+    },
+    "cursor": "always",
+    "displaySurface": "monitor",
+    "logicalSurface": true
+  },
+  "audio": true
+}
+ 🏠 Using standard mode - will escalate to cross-network if needed
+ ⚠ Limited server response - using fallback TURN configuration
+ 🏠 Using standard mode - will escalate to cross-network if needed
+ ⚠ Limited server response - using fallback TURN configuration
+ ❌ Failed to start screen share: 
+startScreenShare @ WorkingScreenShare.tsx:573
+ 👥 Presenter started: User a4zx ID: pstIHwawcbcCamxuAAAB
+ 📺 Viewer ready to receive stream from presenter
+ 📞 Received WebRTC offer from: pstIHwawcbcCamxuAAAB
+ 📞 Handling WebRTC offer from: pstIHwawcbcCamxuAAAB as presenter: false
+ 📋 Offer details: Object
+ 🆕 Creating new peer connection for: pstIHwawcbcCamxuAAAB
+ 🏠 Using hybrid STUN/TURN configuration with comprehensive server pool
+ 🔍 Current signaling state: stable
+ 📥 Setting remote description (offer)
+ 🧊 Received ICE candidate from: pstIHwawcbcCamxuAAAB
+ ⚠ Queuing ICE candidate from pstIHwawcbcCamxuAAAB - no remote description yet
+ 🧊 Received ICE candidate from: pstIHwawcbcCamxuAAAB
+ ⚠ Queuing ICE candidate from pstIHwawcbcCamxuAAAB - no remote description yet
+ 🧊 Received ICE candidate from: pstIHwawcbcCamxuAAAB
+ ⚠ Queuing ICE candidate from pstIHwawcbcCamxuAAAB - no remote description yet
+ 🧊 Received ICE candidate from: pstIHwawcbcCamxuAAAB
+ ⚠ Queuing ICE candidate from pstIHwawcbcCamxuAAAB - no remote description yet
+ 🎥 ========== ONTRACK EVENT START ==========
+ 🎥 Received remote stream from: pstIHwawcbcCamxuAAAB
+ 🔍 Event details: Object
+ 🔍 Stream details: Object
+ 🎵 Track 0: Object
+ 🎵 Track 1: Object
+ 🔒 Preventing track audio from being muted/ended
+ 🔒 Preventing track video from being muted/ended
+ 🎥 ========== ONTRACK EVENT END ==========
+ 🎥 ========== ONTRACK EVENT START ==========
+ 🎥 Received remote stream from: pstIHwawcbcCamxuAAAB
+ 🔍 Event details: Object
+ 🔍 Stream details: Object
+ 🎵 Track 0: Object
+ 🎵 Track 1: Object
+ 🔒 Preventing track audio from being muted/ended
+ 🔒 Preventing track video from being muted/ended
+ 🎥 ========== ONTRACK EVENT END ==========
+ 🔊 Track 0 unmuted: audio
+ 🔊 Track 1 unmuted: video
+ ✅ Remote description set successfully
+ 📝 Creating answer...
+ ✅ Answer created
+ 📥 Setting local description (answer)
+ ✅ Local description set successfully
+ 📤 Sending answer to: pstIHwawcbcCamxuAAAB
+ ✅ WebRTC offer handling completed successfully
+ 📡 ICE gathering state for pstIHwawcbcCamxuAAAB: gathering
+ 🧊 Sending ICE candidate for pstIHwawcbcCamxuAAAB: candidate:3644436706 1 udp 2113937151 2826a264-735e-489d-a548-c6b46bf34a0e.local 58709 typ host generation 0 ufrag 2yPt network-cost 999
+ 📞 Received WebRTC offer from: pstIHwawcbcCamxuAAAB
+ 📞 Handling WebRTC offer from: pstIHwawcbcCamxuAAAB as presenter: false
+ 📋 Offer details: Object
+ 🔍 Current signaling state: stable
+ 📥 Setting remote description (offer)
+ ✅ Remote description set successfully
+ 📝 Creating answer...
+ 🧊 Received ICE candidate from: pstIHwawcbcCamxuAAAB
+ 🧊 Adding ICE candidate from pstIHwawcbcCamxuAAAB: candidate:669862148 1 udp 1677729535 103.121.75.70 34765 typ srflx raddr 0.0.0.0 rport 0 generation 0 ufrag zRYL network-cost 999
+ ✅ Answer created
+ 📥 Setting local description (answer)
+ 🧊 ICE connection state for pstIHwawcbcCamxuAAAB: checking
+ 🧊 Received ICE candidate from: pstIHwawcbcCamxuAAAB
+ 🧊 Adding ICE candidate from pstIHwawcbcCamxuAAAB: candidate:669862148 1 udp 1677729535 103.121.75.70 48269 typ srflx raddr 0.0.0.0 rport 0 generation 0 ufrag zRYL network-cost 999
+ 🧊 Received ICE candidate from: pstIHwawcbcCamxuAAAB
+ 🧊 Adding ICE candidate from pstIHwawcbcCamxuAAAB: candidate:669862148 1 udp 1677729535 103.121.75.70 48268 typ srflx raddr 0.0.0.0 rport 0 generation 0 ufrag zRYL network-cost 999
+ 🧊 Received ICE candidate from: pstIHwawcbcCamxuAAAB
+ 🧊 Adding ICE candidate from pstIHwawcbcCamxuAAAB: candidate:669862148 1 udp 1677729535 103.121.75.70 34765 typ srflx raddr 0.0.0.0 rport 0 generation 0 ufrag zRYL network-cost 999
+ 🧊 Received ICE candidate from: pstIHwawcbcCamxuAAAB
+ 🧊 Adding ICE candidate from pstIHwawcbcCamxuAAAB: candidate:669862148 1 udp 1677729535 103.121.75.70 48269 typ srflx raddr 0.0.0.0 rport 0 generation 0 ufrag zRYL network-cost 999
+ 🧊 Received ICE candidate from: pstIHwawcbcCamxuAAAB
+ 🧊 Adding ICE candidate from pstIHwawcbcCamxuAAAB: candidate:669862148 1 udp 1677729535 103.121.75.70 48268 typ srflx raddr 0.0.0.0 rport 0 generation 0 ufrag zRYL network-cost 999
+ 📞 Received WebRTC offer from: pstIHwawcbcCamxuAAAB
+ 📞 Handling WebRTC offer from: pstIHwawcbcCamxuAAAB as presenter: false
+ 📋 Offer details: Object
+ 🔍 Current signaling state: have-remote-offer
+ ⚠ Invalid signaling state for offer: have-remote-offer
+handleWebRTCOffer @ WorkingScreenShare.tsx:1364
+ 🔄 Restarting connection due to invalid state
+ 🔚 Track 0 ended: audio - PREVENTING TRACK END
+ 🔚 Track 1 ended: video - PREVENTING TRACK END
+ 🏠 Using hybrid STUN/TURN configuration with comprehensive server pool
+ 📞 Handling WebRTC offer from: pstIHwawcbcCamxuAAAB as presenter: false
+ 📋 Offer details: Object
+ 🔍 Current signaling state: stable
+ 📥 Setting remote description (offer)
+ 🎥 ========== ONTRACK EVENT START ==========
+ 🎥 Received remote stream from: pstIHwawcbcCamxuAAAB
+ 🔍 Event details: Object
+ 🔍 Stream details: Object
+ 🎵 Track 0: Object
+ 🎵 Track 1: Object
+ 🔒 Preventing track audio from being muted/ended
+ 🔒 Preventing track video from being muted/ended
+ 🎯 VIEWER: Creating bulletproof video display for remote stream
+ 📺 Video element added to container
+ 🎥 ========== ONTRACK EVENT END ==========
+ 🎥 ========== ONTRACK EVENT START ==========
+ 🎥 Received remote stream from: pstIHwawcbcCamxuAAAB
+ 🔍 Event details: Object
+ 🔍 Stream details: Object
+ 🎵 Track 0: Object
+ 🎵 Track 1: Object
+ 🔒 Preventing track audio from being muted/ended
+ 🔒 Preventing track video from being muted/ended
+ 🎯 VIEWER: Creating bulletproof video display for remote stream
+ 📺 Video element added to container
+ 🎥 ========== ONTRACK EVENT END ==========
+ 🔊 Track 0 unmuted: audio
+ 🔊 Track 1 unmuted: video
+ ✅ Remote description set successfully
+ 📝 Creating answer...
+ ✅ Answer created
+ 📥 Setting local description (answer)
+ ❌ VIEWER: Video play failed: 
+(anonymous) @ WorkingScreenShare.tsx:1321
+ ✅ Local description set successfully
+ 📤 Sending answer to: pstIHwawcbcCamxuAAAB
+ ✅ WebRTC offer handling completed successfully
+ 📡 ICE gathering state for pstIHwawcbcCamxuAAAB: gathering
+ 🧊 Sending ICE candidate for pstIHwawcbcCamxuAAAB: candidate:3985143403 1 udp 2113937151 2826a264-735e-489d-a548-c6b46bf34a0e.local 58187 typ host generation 0 ufrag 3o8D network-cost 999
+ 🧊 Adding ICE candidate from pstIHwawcbcCamxuAAAB: candidate:1205452088 0 udp 2113937152 e6cae317-e2b0-4970-9ec8-3b793e55f875.local 56498 typ host generation 0 ufrag EX3J network-cost 999
+ 🧊 Adding ICE candidate from pstIHwawcbcCamxuAAAB: candidate:669862148 1 udp 1677729535 103.121.75.70 34765 typ srflx raddr 0.0.0.0 rport 0 generation 0 ufrag zRYL network-cost 999
+ 🧊 Adding ICE candidate from pstIHwawcbcCamxuAAAB: candidate:669862148 1 udp 1677729535 103.121.75.70 48269 typ srflx raddr 0.0.0.0 rport 0 generation 0 ufrag zRYL network-cost 999
+ 🧊 Adding ICE candidate from pstIHwawcbcCamxuAAAB: candidate:669862148 1 udp 1677729535 103.121.75.70 48268 typ srflx raddr 0.0.0.0 rport 0 generation 0 ufrag zRYL network-cost 999
+ 🧊 ICE connection state for pstIHwawcbcCamxuAAAB: checking
+ 🔗 Connection state for pstIHwawcbcCamxuAAAB: connecting
+ 📊 Stream status: Object
+ 📊 Stream status: Object
+ 🔇 Track 1 muted: video - PREVENTING TRACK MUTE
+ 🧊 Sending ICE candidate for pstIHwawcbcCamxuAAAB: candidate:182411310 1 udp 1677729535 115.98.233.56 58187 typ srflx raddr 0.0.0.0 rport 0 generation 0 ufrag 3o8D network-cost 999
+ 📊 Stream status: Object
+ 📊 Stream status: Object
+ 📊 Stream status: Object
+ 📊 Stream status: Object
+ 📊 Stream status: Object
+ 📊 Stream status: Object
+ ⏰ ICE checking timeout for pstIHwawcbcCamxuAAAB - forcing immediate TURN-only retry
+ 🌐 Using TURN-only configuration with multiple servers for maximum cross-network reliability
+ 🔚 Track 0 ended: audio - PREVENTING TRACK END
+ 🔚 Track 1 ended: video - PREVENTING TRACK END
+ 📊 Video metadata loaded: Object
+ ✅ Video can play
+ 📊 Video metadata loaded: Object
+ ✅ Video can play
+ 🎬 Video started playing
+ ✅ VIEWER: Video playing successfully
+ 📊 Stream status: Object
+ 🔧 Auto-fixing video track issues
+ 📊 Stream status: Object
+ 🔧 Auto-fixing video track issues
+ 📊 Stream status: Object
+ 🔧 Auto-fixing video track issues
+ 📊 Stream status: Object
+ 🔧 Auto-fixing video track issues
+ 📊 Stream status: Object
+ 🔧 Auto-fixing video track issues
+ 📊 Stream status: Object
+ 🔧 Auto-fixing video track issues
+ 📊 Stream status: Object
+ 🔧 Auto-fixing video track issues
+ 🔧 Manual video fix triggered
+ Debug info: Object
+ 📺 Creating video element with stream: Object
+ Video track 0: Object
+ ⏳ Video waiting
+ 📹 Video loadstart
+ 📹 Video metadata loaded
+ 📹 Video can play
+ ✅ Video is playing
+ ✅ Video playing immediately after creation
+ ✅ Viewer remote video fix successful
+ ✅ Video playing immediately after creation
+ 📊 Stream status: Object
+ 🔧 Auto-fixing video track issues
+ 📊 Stream status: Object
+ 🔧 Auto-fixing video track issues
+ 📊 Stream status: Object
+ 🔧 Auto-fixing video track issues
+ 📊 Stream status: Object
+ 🔧 Auto-fixing video track issues
+ 👥 Presenter stopped
+ 📊 Stream status: Object
+ 🔧 Auto-fixing video track issues
+ 📊 Stream status: Object
+ 🔧 Auto-fixing video track issues
+ 📊 Stream status: Object
+ 🔧 Auto-fixing video track issues
+ 📊 Stream status: Object
+ 🔧 Auto-fixing video track issues
+ 📊 Stream status: Object
+ 🔧 Auto-fixing video track issues
+ 📊 Stream status: Object
+ 🔧 Auto-fixing video track issues
+ 📊 Stream status: Object
+WorkingScreenShare.tsx:1647 🔧 Auto-fixing video track issues
+WorkingScreenShare.tsx:1634 📊 Stream status: Object
+WorkingScreenShare.tsx:1647 🔧 Auto-fixing video track issues
+WorkingScreenShare.tsx:483 🎬 Starting screen share...
+WorkingScreenShare.tsx:511 🎯 Screen share constraints: {
+  "video": {
+    "frameRate": {
+      "ideal": 30,
+      "max": 30
+    },
+    "width": {
+      "ideal": 1920
+    },
+    "height": {
+      "ideal": 1080
+    },
+    "cursor": "always",
+    "displaySurface": "monitor",
+    "logicalSurface": true
+  },
+  "audio": true
+}
+WorkingScreenShare.tsx:1634 📊 Stream status: Object
+WorkingScreenShare.tsx:1647 🔧 Auto-fixing video track issues
+WorkingScreenShare.tsx:517 ✅ Got screen share stream: Object
+WorkingScreenShare.tsx:536 ✅ Applied constraints to force exact settings
+WorkingScreenShare.tsx:540 🎯 Final stream settings: Object
+WorkingScreenShare.tsx:556 🔒 Protecting screen share video track from issues
+WorkingScreenShare.tsx:625 🔗 Presenter creating connection to viewer: User a4zx pstIHwawcbcCamxuAAAB 
+WorkingScreenShare.tsx:1333 🏠 Using hybrid STUN/TURN configuration with comprehensive server pool
+WorkingScreenShare.tsx:650 ➕ Adding track to peer connection: video 40dbffae-56ca-4c60-8165-4cbf2f427f89
+WorkingScreenShare.tsx:663 📤 Sending offer to viewer: pstIHwawcbcCamxuAAAB
+WorkingScreenShare.tsx:1464 🧊 Sending ICE candidate for pstIHwawcbcCamxuAAAB: candidate:3891919403 1 udp 2113937152 2826a264-735e-489d-a548-c6b46bf34a0e.local 54608 typ host generation 0 ufrag yeOj network-cost 999
+WorkingScreenShare.tsx:1456 📡 ICE gathering state for pstIHwawcbcCamxuAAAB: gathering
+WorkingScreenShare.tsx:1464 🧊 Sending ICE candidate for pstIHwawcbcCamxuAAAB: candidate:11463790 1 udp 1677729535 115.98.233.56 18978 typ srflx raddr 0.0.0.0 rport 0 generation 0 ufrag yeOj network-cost 999
+WorkingScreenShare.tsx:1464 🧊 Sending ICE candidate for pstIHwawcbcCamxuAAAB: candidate:11463790 1 udp 1677729535 115.98.233.56 54608 typ srflx raddr 0.0.0.0 rport 0 generation 0 ufrag yeOj network-cost 999
+WorkingScreenShare.tsx:332 📞 Received WebRTC answer from: pstIHwawcbcCamxuAAAB
+WorkingScreenShare.tsx:1801 📞 Setting remote answer from: pstIHwawcbcCamxuAAAB
+WorkingScreenShare.tsx:337 🧊 Received ICE candidate from: pstIHwawcbcCamxuAAAB
+WorkingScreenShare.tsx:1818 ⚠ Queuing ICE candidate from pstIHwawcbcCamxuAAAB - no remote description yet
+WorkingScreenShare.tsx:337 🧊 Received ICE candidate from: pstIHwawcbcCamxuAAAB
+WorkingScreenShare.tsx:1815 🧊 Adding ICE candidate from pstIHwawcbcCamxuAAAB: candidate:1298380496 1 udp 1677729535 103.121.75.70 48349 typ srflx raddr 0.0.0.0 rport 0 generation 0 ufrag LUhG network-cost 999
+WorkingScreenShare.tsx:337 🧊 Received ICE candidate from: pstIHwawcbcCamxuAAAB
+WorkingScreenShare.tsx:1815 🧊 Adding ICE candidate from pstIHwawcbcCamxuAAAB: candidate:1298380496 1 udp 1677729535 103.121.75.70 48350 typ srflx raddr 0.0.0.0 rport 0 generation 0 ufrag LUhG network-cost 999
+WorkingScreenShare.tsx:337 🧊 Received ICE candidate from: pstIHwawcbcCamxuAAAB
+WorkingScreenShare.tsx:1815 🧊 Adding ICE candidate from pstIHwawcbcCamxuAAAB: candidate:1298380496 1 udp 1677729535 103.121.75.70 48355 typ srflx raddr 0.0.0.0 rport 0 generation 0 ufrag LUhG network-cost 999
+WorkingScreenShare.tsx:1407 🧊 ICE connection state for pstIHwawcbcCamxuAAAB: checking
+WorkingScreenShare.tsx:634 🔗 Screen share connection state for User a4zx: connecting
+WorkingScreenShare.tsx:337 🧊 Received ICE candidate from: pstIHwawcbcCamxuAAAB
+WorkingScreenShare.tsx:1815 🧊 Adding ICE candidate from pstIHwawcbcCamxuAAAB: candidate:1298380496 1 udp 1677729535 103.121.75.70 48349 typ srflx raddr 0.0.0.0 rport 0 generation 0 ufrag LUhG network-cost 999
+WorkingScreenShare.tsx:337 🧊 Received ICE candidate from: pstIHwawcbcCamxuAAAB
+WorkingScreenShare.tsx:1815 🧊 Adding ICE candidate from pstIHwawcbcCamxuAAAB: candidate:1298380496 1 udp 1677729535 103.121.75.70 48350 typ srflx raddr 0.0.0.0 rport 0 generation 0 ufrag LUhG network-cost 999
+WorkingScreenShare.tsx:337 🧊 Received ICE candidate from: pstIHwawcbcCamxuAAAB
+WorkingScreenShare.tsx:1815 🧊 Adding ICE candidate from pstIHwawcbcCamxuAAAB: candidate:1298380496 1 udp 1677729535 103.121.75.70 48355 typ srflx raddr 0.0.0.0 rport 0 generation 0 ufrag LUhG network-cost 999
+WorkingScreenShare.tsx:337 🧊 Received ICE candidate from: pstIHwawcbcCamxuAAAB
+WorkingScreenShare.tsx:1815 🧊 Adding ICE candidate from pstIHwawcbcCamxuAAAB: candidate:1298380496 1 udp 1677729535 103.121.75.70 48349 typ srflx raddr 0.0.0.0 rport 0 generation 0 ufrag LUhG network-cost 999
+WorkingScreenShare.tsx:337 🧊 Received ICE candidate from: pstIHwawcbcCamxuAAAB
+WorkingScreenShare.tsx:1815 🧊 Adding ICE candidate from pstIHwawcbcCamxuAAAB: candidate:1298380496 1 udp 1677729535 103.121.75.70 48350 typ srflx raddr 0.0.0.0 rport 0 generation 0 ufrag LUhG network-cost 999
+WorkingScreenShare.tsx:337 🧊 Received ICE candidate from: pstIHwawcbcCamxuAAAB
+WorkingScreenShare.tsx:1815 🧊 Adding ICE candidate from pstIHwawcbcCamxuAAAB: candidate:1298380496 1 udp 1677729535 103.121.75.70 48355 typ srflx raddr 0.0.0.0 rport 0 generation 0 ufrag LUhG network-cost 999
+WorkingScreenShare.tsx:332 📞 Received WebRTC answer from: pstIHwawcbcCamxuAAAB
+WorkingScreenShare.tsx:1804 ⚠ Ignoring answer due to wrong signaling state: stable
+handleWebRTCAnswer @ WorkingScreenShare.tsx:1804
+WorkingScreenShare.tsx:332 📞 Received WebRTC answer from: pstIHwawcbcCamxuAAAB
+WorkingScreenShare.tsx:1804 ⚠ Ignoring answer due to wrong signaling state: stable
+handleWebRTCAnswer @ WorkingScreenShare.tsx:1804
+WorkingScreenShare.tsx:1634 📊 Stream status: Object
+WorkingScreenShare.tsx:1647 🔧 Auto-fixing video track issues
+WorkingScreenShare.tsx:1815 🧊 Adding ICE candidate from pstIHwawcbcCamxuAAAB: candidate:760693484 1 udp 2113937151 e6cae317-e2b0-4970-9ec8-3b793e55f875.local 60281 typ host generation 0 ufrag LUhG network-cost 999
+WorkingScreenShare.tsx:1634 📊 Stream status: Object
+WorkingScreenShare.tsx:1647 🔧 Auto-fixing video track issues
+WorkingScreenShare.tsx:1634 📊 Stream status: Object
+WorkingScreenShare.tsx:1647 🔧 Auto-fixing video track issues
+WorkingScreenShare.tsx:1634 📊 Stream status: Object
+WorkingScreenShare.tsx:1647 🔧 Auto-fixing video track issues
+WorkingScreenShare.tsx:1426 ⏰ ICE checking timeout for pstIHwawcbcCamxuAAAB - forcing immediate TURN-only retry
+WorkingScreenShare.tsx:1331 🌐 Using TURN-only configuration with multiple servers for maximum cross-network reliability
+WorkingScreenShare.tsx:1634 📊 Stream status: Object
+WorkingScreenShare.tsx:1647 🔧 Auto-fixing video track issues
+WorkingScreenShare.tsx:1634 📊 Stream status: Object
+WorkingScreenShare.tsx:1647 🔧 Auto-fixing video track issues
+WorkingScreenShare.tsx:1634 📊 Stream status: Object
+WorkingScreenShare.tsx:1647 🔧 Auto-fixing video track issues
+WorkingScreenShare.tsx:688 ⚠ Connection timeout for User a4zx - will be handled by state monitoring
+WorkingScreenShare.tsx:1634 📊 Stream status: Object
+WorkingScreenShare.tsx:1647 🔧 Auto-fixing video track issues
+WorkingScreenShare.tsx:574 🔇 Screen share video track muted - fixing
+WorkingScreenShare.tsx:1634 📊 Stream status: Object
+WorkingScreenShare.tsx:1647 🔧 Auto-fixing video track issues
+WorkingScreenShare.tsx:1634 📊 Stream status: Object
+WorkingScreenShare.tsx:1647 🔧 Auto-fixing video track issues
+WorkingScreenShare.tsx:1898 🔧 Manual video fix triggered
+WorkingScreenShare.tsx:1899 Debug info: Object
+WorkingScreenShare.tsx:430 📺 Creating video element with stream: Object
+WorkingScreenShare.tsx:440 Video track 0: Object
+WorkingScreenShare.tsx:459 ⏳ Video waiting
+WorkingScreenShare.tsx:453 📹 Video loadstart
+WorkingScreenShare.tsx:454 📹 Video metadata loaded
+WorkingScreenShare.tsx:455 📹 Video can play
+WorkingScreenShare.tsx:456 ✅ Video is playing
+WorkingScreenShare.tsx:465 ✅ Video playing immediately after creation
+WorkingScreenShare.tsx:1926 ✅ Presenter video fix successful
+WorkingScreenShare.tsx:465 ✅ Video playing immediately after creation
+WorkingScreenShare.tsx:1634 📊 Stream status: Object
+WorkingScreenShare.tsx:1647 🔧 Auto-fixing video track issues
+WorkingScreenShare.tsx:1634 📊 Stream status: Object
+WorkingScreenShare.tsx:1647 🔧 Auto-fixing video track issues
+WorkingScreenShare.tsx:1634 📊 Stream status: Object
+WorkingScreenShare.tsx:1647 🔧 Auto-fixing video track issues
+WorkingScreenShare.tsx:1634 📊 Stream status: Object
+WorkingScreenShare.tsx:1647 🔧 Auto-fixing video track issues
+WorkingScreenShare.tsx:1634 📊 Stream status: Object
+WorkingScreenShare.tsx:1647 🔧 Auto-fixing video track issues
+WorkingScreenShare.tsx:1634 📊 Stream status: Object
+WorkingScreenShare.tsx:1647 🔧 Auto-fixing video track issues
+WorkingScreenShare.tsx:1634 📊 Stream status: {streamActive: false, streamId: 'adfccb0d-3940-44a8-b2c1-0c7d354b0e32', videoTracks: 1, audioTracks: 1, videoEnabled: true, …}
+WorkingScreenShare.tsx:1647 🔧 Auto-fixing video track issues
+WorkingScreenShare.tsx:1634 📊 Stream status: {streamActive: false, streamId: 'adfccb0d-3940-44a8-b2c1-0c7d354b0e32', videoTracks: 1, audioTracks: 1, videoEnabled: true, …}
+WorkingScreenShare.tsx:1647 🔧 Auto-fixing video track issues
+WorkingScreenShare.tsx:1634 📊 Stream status: {streamActive: false, streamId: 'adfccb0d-3940-44a8-b2c1-0c7d354b0e32', videoTracks: 1, audioTracks: 1, videoEnabled: true, …}
+WorkingScreenShare.tsx:1647 🔧 Auto-fixing video track issues
+WorkingScreenShare.tsx:1634 📊 Stream status: {streamActive: false, streamId: 'adfccb0d-3940-44a8-b2c1-0c7d354b0e32', videoTracks: 1, audioTracks: 1, videoEnabled: true, …}
+WorkingScreenShare.tsx:1647 🔧 Auto-fixing video track issues
+WorkingScreenShare.tsx:1634 📊 Stream status: {streamActive: false, streamId: 'adfccb0d-3940-44a8-b2c1-0c7d354b0e32', videoTracks: 1, audioTracks: 1, videoEnabled: true, …}
+WorkingScreenShare.tsx:1647 🔧 Auto-fixing video track issues
+WorkingScreenShare.tsx:1634 📊 Stream status: {streamActive: false, streamId: 'adfccb0d-3940-44a8-b2c1-0c7d354b0e32', videoTracks: 1, audioTracks: 1, videoEnabled: true, …}
+WorkingScreenShare.tsx:1647 🔧 Auto-fixing video track issues
+WorkingScreenShare.tsx:1634 📊 Stream status: {streamActive: false, streamId: 'adfccb0d-3940-44a8-b2c1-0c7d354b0e32', videoTracks: 1, audioTracks: 1, videoEnabled: true, …}
+WorkingScreenShare.tsx:1647 🔧 Auto-fixing video track issues
+WorkingScreenShare.tsx:1634 📊 Stream status: {streamActive: false, streamId: 'adfccb0d-3940-44a8-b2c1-0c7d354b0e32', videoTracks: 1, audioTracks: 1, videoEnabled: true, …}
+WorkingScreenShare.tsx:1647 🔧 Auto-fixing video track issues
+WorkingScreenShare.tsx:1634 📊 Stream status: {streamActive: false, streamId: 'adfccb0d-3940-44a8-b2c1-0c7d354b0e32', videoTracks: 1, audioTracks: 1, videoEnabled: true, …}
+WorkingScreenShare.tsx:1647 🔧 Auto-fixing video track issues
+WorkingScreenShare.tsx:1634 📊 Stream status: {streamActive: false, streamId: 'adfccb0d-3940-44a8-b2c1-0c7d354b0e32', videoTracks: 1, audioTracks: 1, videoEnabled: true, …}
+WorkingScreenShare.tsx:1647 🔧 Auto-fixing video track issues
+WorkingScreenShare.tsx:1634 📊 Stream status: {streamActive: false, streamId: 'adfccb0d-3940-44a8-b2c1-0c7d354b0e32', videoTracks: 1, audioTracks: 1, videoEnabled: true, …}
+WorkingScreenShare.tsx:1647 🔧 Auto-fixing video track issues
+WorkingScreenShare.tsx:1634 📊 Stream status: {streamActive: false, streamId: 'adfccb0d-3940-44a8-b2c1-0c7d354b0e32', videoTracks: 1, audioTracks: 1, videoEnabled: true, …}
+WorkingScreenShare.tsx:1647 🔧 Auto-fixing video track issues
+WorkingScreenShare.tsx:1634 📊 Stream status: {streamActive: false, streamId: 'adfccb0d-3940-44a8-b2c1-0c7d354b0e32', videoTracks: 1, audioTracks: 1, videoEnabled: true, …}
+WorkingScreenShare.tsx:1647 🔧 Auto-fixing video track issues
+WorkingScreenShare.tsx:1634 📊 Stream status: {streamActive: false, streamId: 'adfccb0d-3940-44a8-b2c1-0c7d354b0e32', videoTracks: 1, audioTracks: 1, videoEnabled: true, …}
+WorkingScreenShare.tsx:1647 🔧 Auto-fixing video track issues
+WorkingScreenShare.tsx:1634 📊 Stream status: {streamActive: false, streamId: 'adfccb0d-3940-44a8-b2c1-0c7d354b0e32', videoTracks: 1, audioTracks: 1, videoEnabled: true, …}
+WorkingScreenShare.tsx:1647 🔧 Auto-fixing video track issues
+WorkingScreenShare.tsx:1634 📊 Stream status: {streamActive: false, streamId: 'adfccb0d-3940-44a8-b2c1-0c7d354b0e32', videoTracks: 1, audioTracks: 1, videoEnabled: true, …}
+WorkingScreenShare.tsx:1647 🔧 Auto-fixing video track issues

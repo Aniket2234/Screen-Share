@@ -1,0 +1,50 @@
+chunk-RPCDYKBN.js?v=a90b58fb:21551 Download the React DevTools for a better development experience: https://reactjs.org/link/react-devtools
+StreamScreenShare.tsx:353 Microphone disabled on join
+StreamScreenShare.tsx:362 Joined Stream.io call successfully
+StreamScreenShare.tsx:847 Uncaught ReferenceError: startRecording is not defined
+    at StreamScreenShare (StreamScreenShare.tsx:847:21)
+    at renderWithHooks (chunk-RPCDYKBN.js?v=a90b58fb:11548:26)
+    at updateFunctionComponent (chunk-RPCDYKBN.js?v=a90b58fb:14582:28)
+    at beginWork (chunk-RPCDYKBN.js?v=a90b58fb:15924:22)
+    at HTMLUnknownElement.callCallback2 (chunk-RPCDYKBN.js?v=a90b58fb:3674:22)
+    at Object.invokeGuardedCallbackDev (chunk-RPCDYKBN.js?v=a90b58fb:3699:24)
+    at invokeGuardedCallback (chunk-RPCDYKBN.js?v=a90b58fb:3733:39)
+    at beginWork$1 (chunk-RPCDYKBN.js?v=a90b58fb:19765:15)
+    at performUnitOfWork (chunk-RPCDYKBN.js?v=a90b58fb:19198:20)
+    at workLoopSync (chunk-RPCDYKBN.js?v=a90b58fb:19137:13)
+StreamScreenShare.tsx:847 Uncaught ReferenceError: startRecording is not defined
+    at StreamScreenShare (StreamScreenShare.tsx:847:21)
+    at renderWithHooks (chunk-RPCDYKBN.js?v=a90b58fb:11548:26)
+    at updateFunctionComponent (chunk-RPCDYKBN.js?v=a90b58fb:14582:28)
+    at beginWork (chunk-RPCDYKBN.js?v=a90b58fb:15924:22)
+    at HTMLUnknownElement.callCallback2 (chunk-RPCDYKBN.js?v=a90b58fb:3674:22)
+    at Object.invokeGuardedCallbackDev (chunk-RPCDYKBN.js?v=a90b58fb:3699:24)
+    at invokeGuardedCallback (chunk-RPCDYKBN.js?v=a90b58fb:3733:39)
+    at beginWork$1 (chunk-RPCDYKBN.js?v=a90b58fb:19765:15)
+    at performUnitOfWork (chunk-RPCDYKBN.js?v=a90b58fb:19198:20)
+    at workLoopSync (chunk-RPCDYKBN.js?v=a90b58fb:19137:13)
+chunk-RPCDYKBN.js?v=a90b58fb:14032 The above error occurred in the <StreamScreenShare> component:
+
+    at StreamScreenShare (https://738999ca-449f-46b8-b697-a45642b0d097-00-wlx1em4ifvr0.picard.replit.dev/src/components/StreamScreenShare.tsx:53:45)
+    at HybridScreenShare (https://738999ca-449f-46b8-b697-a45642b0d097-00-wlx1em4ifvr0.picard.replit.dev/src/components/HybridScreenShare.tsx:25:34)
+    at div
+    at ThemeProvider (https://738999ca-449f-46b8-b697-a45642b0d097-00-wlx1em4ifvr0.picard.replit.dev/src/contexts/ThemeContext.tsx:20:33)
+    at QueryClientProvider (https://738999ca-449f-46b8-b697-a45642b0d097-00-wlx1em4ifvr0.picard.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/@tanstack_react-query.js?v=a90b58fb:2805:3)
+    at App
+
+Consider adding an error boundary to your tree to customize error handling behavior.
+Visit https://reactjs.org/link/error-boundaries to learn more about error boundaries.
+logCapturedError @ chunk-RPCDYKBN.js?v=a90b58fb:14032
+chunk-RPCDYKBN.js?v=a90b58fb:19413 Uncaught ReferenceError: startRecording is not defined
+    at StreamScreenShare (StreamScreenShare.tsx:847:21)
+    at renderWithHooks (chunk-RPCDYKBN.js?v=a90b58fb:11548:26)
+    at updateFunctionComponent (chunk-RPCDYKBN.js?v=a90b58fb:14582:28)
+    at beginWork (chunk-RPCDYKBN.js?v=a90b58fb:15924:22)
+    at beginWork$1 (chunk-RPCDYKBN.js?v=a90b58fb:19753:22)
+    at performUnitOfWork (chunk-RPCDYKBN.js?v=a90b58fb:19198:20)
+    at workLoopSync (chunk-RPCDYKBN.js?v=a90b58fb:19137:13)
+    at renderRootSync (chunk-RPCDYKBN.js?v=a90b58fb:19116:15)
+    at recoverFromConcurrentError (chunk-RPCDYKBN.js?v=a90b58fb:18736:28)
+    at performConcurrentWorkOnRoot (chunk-RPCDYKBN.js?v=a90b58fb:18684:30)
+StreamScreenShare.tsx:443 Participant joined: Object
+StreamScreenShare.tsx:454 Adding new participant: Object

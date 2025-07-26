@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Simple Screen Share Test</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      background: #1a1a1a;
+      color: white;
+    }
+    
+    video {
+      width: 100%;
+      max-width: 800px;
+      height: auto;
+      border: 2px solid #333;
+      background: #000;
+    }
+    
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      background: #007bff;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      margin: 10px;
+    }
+    
+    button:hover {
+      background: #0056b3;
+    }
+    
+    .status {
+      margin: 10px 0;
+      padding: 10px;
+      background: #333;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Simple Screen Share Test</h1>
+  
+  <button onclick="startScreenShare()">Start Screen Share</button>
+  <button onclick="stopScreenShare()">Stop Screen Share</button>
+  
+  <div class="status" id="status">Ready</div>
+  
+  <div>
+    <video id="screenVideo" autoplay muted playsinline controls></video>
+  </div>
+  
+  <div id="log"></div>
+  
+  <script>
+    let stream = null;
+    const video = document.getElementById('screenVideo');
+    const log = document.getElementById('log');
+    const status = document.getElementById('status');
+    
+    function logMessage(message) {
+      console.log(message);
+      log.innerHTML += '<p>' + message + '</p>';
+      status.textContent = message;
+    }
+    
+    async function startScreenShare() {
+      try {
+        logMessage('🎬 Starting screen share...');
+        
+        // Request screen share with specific constraints
+        stream = await navigator.mediaDevices.getDisplayMedia({
+          video: {
+            mediaSource: 'screen',
+            width: { ideal: 1920 },
+            height: { ideal: 1080 },
+            frameRate: { ideal: 30 },
+            cursor: 'always',
+            displaySurface: 'monitor'
+          },
+          audio: false
+        });
+        
+        logMessage('✅ Got screen share stream: ' + stream.id);
+        
+        // Log stream details
+        const tracks = stream.getTracks();
+        logMessage('📹 Stream tracks: ' + tracks.length);
+        tracks.forEach((track, i) => {
+          logMessage(`Track ${i}: ${track.kind} - ${track.label} - ${track.readyState}`);
+        });
+        
+        // Set video source
+        video.srcObject = stream;
+        
+        // Wait for video to load
+        video.onloadedmetadata = () => {
+          logMessage('🎥 Video metadata loaded: ' + video.videoWidth + 'x' + video.videoHeight);
+        };
+        
+        video.onplay = () => {
+          logMessage('▶️ Video started playing');
+        };
+        
+        video.onplaying = () => {
+          logMessage('▶️ Video is playing');
+        };
+        
+        video.onerror = (e) => {
+          logMessage('❌ Video error: ' + (e.message || 'Unknown error'));
+        };
+        
+        // Try to play
+        const playPromise = video.play();
+        if (playPromise !== undefined) {
+          await playPromise;
+          logMessage('✅ Video play promise resolved');
+        }
+        
+        // Check video status after delays
+        setTimeout(() => {
+          logMessage('🔍 1s check: paused=' + video.paused + ', readyState=' + video.readyState + ', time=' + video.currentTime);
+        }, 1000);
+        
+        setTimeout(() => {
+          logMessage('🔍 3s check: paused=' + video.paused + ', readyState=' + video.readyState + ', time=' + video.currentTime);
+          if (video.videoWidth > 0 && video.videoHeight > 0) {
+            logMessage('✅ Video has dimensions and should be visible');
+          } else {
+            logMessage('❌ Video has no dimensions - may not be working');
+          }
+        }, 3000);
+        
+        // Handle stream ended
+        stream.getTracks().forEach(track => {
+          track.addEventListener('ended', () => {
+            logMessage('🔚 Stream track ended');
+            stopScreenShare();
+          });
+        });
+        
+      } catch (error) {
+        logMessage('❌ Error: ' + error.message);
+      }
+    }
+    
+    function stopScreenShare() {
+      if (stream) {
+        stream.getTracks().forEach(track => track.stop());
+        video.srcObject = null;
+        logMessage('🛑 Screen share stopped');
+      }
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,63 @@
+chunk-RPCDYKBN.js?v=a90b58fb:21551 Download the React DevTools for a better development experience: https://reactjs.org/link/react-devtools
+WorkingScreenShare.tsx:177 ✅ TURN servers configured and ready
+WorkingScreenShare.tsx:177 ✅ TURN servers configured and ready
+WorkingScreenShare.tsx:543 🎬 Starting screen share...
+WorkingScreenShare.tsx:590 🎯 Screen share constraints: {
+  "video": {
+    "frameRate": {
+      "exact": 30,
+      "ideal": 30,
+      "min": 30
+    },
+    "width": {
+      "exact": 1920,
+      "ideal": 1920
+    },
+    "height": {
+      "exact": 1080,
+      "ideal": 1080
+    },
+    "cursor": "always",
+    "displaySurface": "monitor",
+    "logicalSurface": true,
+    "aspectRatio": {
+      "exact": 1.7777777777777777
+    },
+    "resizeMode": "none",
+    "latency": {
+      "ideal": 0.01
+    }
+  },
+  "audio": {
+    "echoCancellation": false,
+    "noiseSuppression": false,
+    "autoGainControl": false,
+    "sampleRate": {
+      "exact": 48000,
+      "ideal": 48000
+    },
+    "channelCount": {
+      "exact": 2,
+      "ideal": 2
+    },
+    "suppressLocalAudioPlayback": false,
+    "latency": {
+      "ideal": 0.01
+    },
+    "sampleSize": {
+      "ideal": 16
+    }
+  }
+}
+WorkingScreenShare.tsx:807 ❌ Failed to start screen share: TypeError: Failed to execute 'getDisplayMedia' on 'MediaDevices': min constraints are not supported
+    at startScreenShare (WorkingScreenShare.tsx:591:51)
+    at HTMLUnknownElement.callCallback2 (chunk-RPCDYKBN.js?v=a90b58fb:3674:22)
+    at Object.invokeGuardedCallbackDev (chunk-RPCDYKBN.js?v=a90b58fb:3699:24)
+    at invokeGuardedCallback (chunk-RPCDYKBN.js?v=a90b58fb:3733:39)
+    at invokeGuardedCallbackAndCatchFirstError (chunk-RPCDYKBN.js?v=a90b58fb:3736:33)
+    at executeDispatch (chunk-RPCDYKBN.js?v=a90b58fb:7014:11)
+    at processDispatchQueueItemsInOrder (chunk-RPCDYKBN.js?v=a90b58fb:7034:15)
+    at processDispatchQueue (chunk-RPCDYKBN.js?v=a90b58fb:7043:13)
+    at dispatchEventsForPlugins (chunk-RPCDYKBN.js?v=a90b58fb:7051:11)
+    at chunk-RPCDYKBN.js?v=a90b58fb:7174:20
+startScreenShare @ WorkingScreenShare.tsx:807

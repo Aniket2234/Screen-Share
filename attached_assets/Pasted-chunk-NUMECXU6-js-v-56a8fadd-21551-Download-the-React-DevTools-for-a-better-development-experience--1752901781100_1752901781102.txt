@@ -1,0 +1,65 @@
+chunk-NUMECXU6.js?v=56a8fadd:21551 Download the React DevTools for a better development experience: https://reactjs.org/link/react-devtools
+@stream-io_video-react-sdk.js?v=d7ae5b36:17155 [client]: Failed to connect a user (0) Error: userToken does not have a user_id or is not matching with user.id
+    at TokenManager.validateToken (@stream-io_video-react-sdk.js?v=d7ae5b36:24802:17)
+    at TokenManager.setTokenOrProvider (@stream-io_video-react-sdk.js?v=d7ae5b36:24770:12)
+    at StreamClient.connectUser (@stream-io_video-react-sdk.js?v=d7ae5b36:24916:31)
+    at @stream-io_video-react-sdk.js?v=d7ae5b36:25384:95
+    at wrapped (@stream-io_video-react-sdk.js?v=d7ae5b36:17333:25)
+    at run (@stream-io_video-react-sdk.js?v=d7ae5b36:17326:72)
+    at _StreamVideoClient.connectUser (@stream-io_video-react-sdk.js?v=d7ae5b36:25375:41)
+    at new _StreamVideoClient (@stream-io_video-react-sdk.js?v=d7ae5b36:25529:12)
+    at initializeStream (StreamScreenShare.tsx:128:27)
+    at async joinRoom (StreamScreenShare.tsx:156:5)
+logToConsole @ @stream-io_video-react-sdk.js?v=d7ae5b36:17155
+@stream-io_video-react-sdk.js?v=d7ae5b36:17155 [Call]: Failed to join call (0) default:1
+logToConsole @ @stream-io_video-react-sdk.js?v=d7ae5b36:17155
+@stream-io_video-react-sdk.js?v=d7ae5b36:17155 [client]: Failed to connect a user (1) Error: userToken does not have a user_id or is not matching with user.id
+    at TokenManager.validateToken (@stream-io_video-react-sdk.js?v=d7ae5b36:24802:17)
+    at TokenManager.setTokenOrProvider (@stream-io_video-react-sdk.js?v=d7ae5b36:24770:12)
+    at StreamClient.connectUser (@stream-io_video-react-sdk.js?v=d7ae5b36:24916:31)
+    at @stream-io_video-react-sdk.js?v=d7ae5b36:25384:95
+    at async _StreamVideoClient.connectUser (@stream-io_video-react-sdk.js?v=d7ae5b36:25375:35)
+logToConsole @ @stream-io_video-react-sdk.js?v=d7ae5b36:17155
+@stream-io_video-react-sdk.js?v=d7ae5b36:17155 [Call]: Failed to join call (1) default:1
+logToConsole @ @stream-io_video-react-sdk.js?v=d7ae5b36:17155
+@stream-io_video-react-sdk.js?v=d7ae5b36:17155 [client]: Failed to connect a user (2) Error: userToken does not have a user_id or is not matching with user.id
+    at TokenManager.validateToken (@stream-io_video-react-sdk.js?v=d7ae5b36:24802:17)
+    at TokenManager.setTokenOrProvider (@stream-io_video-react-sdk.js?v=d7ae5b36:24770:12)
+    at StreamClient.connectUser (@stream-io_video-react-sdk.js?v=d7ae5b36:24916:31)
+    at @stream-io_video-react-sdk.js?v=d7ae5b36:25384:95
+    at async _StreamVideoClient.connectUser (@stream-io_video-react-sdk.js?v=d7ae5b36:25375:35)
+logToConsole @ @stream-io_video-react-sdk.js?v=d7ae5b36:17155
+@stream-io_video-react-sdk.js?v=d7ae5b36:17155 [Call]: Failed to join call (2) default:1
+logToConsole @ @stream-io_video-react-sdk.js?v=d7ae5b36:17155
+StreamScreenShare.tsx:147 Error joining Stream.io call: Error: User token is not set. Either client.connectUser wasn't called or client.disconnect was called
+    at TokenManager.getToken (@stream-io_video-react-sdk.js?v=d7ae5b36:24834:13)
+    at StreamClient._getToken (@stream-io_video-react-sdk.js?v=d7ae5b36:25201:32)
+    at StreamClient._enrichAxiosOptions (@stream-io_video-react-sdk.js?v=d7ae5b36:25173:75)
+    at StreamClient.doAxiosRequest (@stream-io_video-react-sdk.js?v=d7ae5b36:25048:34)
+    at async Call.doJoinRequest (@stream-io_video-react-sdk.js?v=d7ae5b36:23551:28)
+    at async Call.doJoin (@stream-io_video-react-sdk.js?v=d7ae5b36:23315:32)
+    at async Call.join (@stream-io_video-react-sdk.js?v=d7ae5b36:23283:11)
+    at async initializeStream (StreamScreenShare.tsx:138:7)
+    at async joinRoom (StreamScreenShare.tsx:156:5)
+initializeStream @ StreamScreenShare.tsx:147
+@stream-io_video-react-sdk.js?v=d7ae5b36:17155 [client]: Failed to connect a user (3) Error: userToken does not have a user_id or is not matching with user.id
+    at TokenManager.validateToken (@stream-io_video-react-sdk.js?v=d7ae5b36:24802:17)
+    at TokenManager.setTokenOrProvider (@stream-io_video-react-sdk.js?v=d7ae5b36:24770:12)
+    at StreamClient.connectUser (@stream-io_video-react-sdk.js?v=d7ae5b36:24916:31)
+    at @stream-io_video-react-sdk.js?v=d7ae5b36:25384:95
+    at async _StreamVideoClient.connectUser (@stream-io_video-react-sdk.js?v=d7ae5b36:25375:35)
+logToConsole @ @stream-io_video-react-sdk.js?v=d7ae5b36:17155
+@stream-io_video-react-sdk.js?v=d7ae5b36:17155 [client]: Failed to connect a user (4) Error: userToken does not have a user_id or is not matching with user.id
+    at TokenManager.validateToken (@stream-io_video-react-sdk.js?v=d7ae5b36:24802:17)
+    at TokenManager.setTokenOrProvider (@stream-io_video-react-sdk.js?v=d7ae5b36:24770:12)
+    at StreamClient.connectUser (@stream-io_video-react-sdk.js?v=d7ae5b36:24916:31)
+    at @stream-io_video-react-sdk.js?v=d7ae5b36:25384:95
+    at async _StreamVideoClient.connectUser (@stream-io_video-react-sdk.js?v=d7ae5b36:25375:35)
+logToConsole @ @stream-io_video-react-sdk.js?v=d7ae5b36:17155
+@stream-io_video-react-sdk.js?v=d7ae5b36:17155 [client]: Failed to connect Error: userToken does not have a user_id or is not matching with user.id
+    at TokenManager.validateToken (@stream-io_video-react-sdk.js?v=d7ae5b36:24802:17)
+    at TokenManager.setTokenOrProvider (@stream-io_video-react-sdk.js?v=d7ae5b36:24770:12)
+    at StreamClient.connectUser (@stream-io_video-react-sdk.js?v=d7ae5b36:24916:31)
+    at @stream-io_video-react-sdk.js?v=d7ae5b36:25384:95
+    at async _StreamVideoClient.connectUser (@stream-io_video-react-sdk.js?v=d7ae5b36:25375:35)
+logToConsole @ @stream-io_video-react-sdk.js?v=d7ae5b36:17155

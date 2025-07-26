@@ -1,0 +1,92 @@
+chunk-PJEEZAML.js?v=c04d9f90:21551 Download the React DevTools for a better development experience: https://reactjs.org/link/react-devtools
+WorkingScreenShare.tsx:203 🔍 Testing TURN server connectivity...
+WorkingScreenShare.tsx:203 🔍 Testing TURN server connectivity...
+WorkingScreenShare.tsx:226 🧊 ICE gathering state: gathering
+WorkingScreenShare.tsx:226 🧊 ICE gathering state: gathering
+WorkingScreenShare.tsx:212 🧊 Test ICE candidate: candidate:2288517108 1 udp 2113937151 8fbbf67b-022a-402c-9e05-88a8455dc39e.local 61192 typ host generation 0 ufrag rQqp network-cost 999
+WorkingScreenShare.tsx:212 🧊 Test ICE candidate: candidate:634975093 1 udp 2113937151 8fbbf67b-022a-402c-9e05-88a8455dc39e.local 61292 typ host generation 0 ufrag 1JZs network-cost 999
+WorkingScreenShare.tsx:212 🧊 Test ICE candidate: candidate:3897756616 1 udp 1677729535 103.121.75.70 36384 typ srflx raddr 0.0.0.0 rport 0 generation 0 ufrag rQqp network-cost 999
+WorkingScreenShare.tsx:212 🧊 Test ICE candidate: candidate:3897756616 1 udp 1677729535 103.121.75.70 36381 typ srflx raddr 0.0.0.0 rport 0 generation 0 ufrag rQqp network-cost 999
+WorkingScreenShare.tsx:212 🧊 Test ICE candidate: candidate:3897756616 1 udp 1677729535 103.121.75.70 36382 typ srflx raddr 0.0.0.0 rport 0 generation 0 ufrag rQqp network-cost 999
+WorkingScreenShare.tsx:212 🧊 Test ICE candidate: candidate:3897756616 1 udp 1677729535 103.121.75.70 36386 typ srflx raddr 0.0.0.0 rport 0 generation 0 ufrag rQqp network-cost 999
+WorkingScreenShare.tsx:212 🧊 Test ICE candidate: candidate:3897756616 1 udp 1677729535 103.121.75.70 36383 typ srflx raddr 0.0.0.0 rport 0 generation 0 ufrag rQqp network-cost 999
+WorkingScreenShare.tsx:233 🌐 TURN servers responsive - enabling cross-network compatibility mode
+WorkingScreenShare.tsx:244 🔄 TURN servers responding - proceeding with cross-network optimization
+WorkingScreenShare.tsx:237 🏠 Using standard mode - will escalate to cross-network if needed
+WorkingScreenShare.tsx:246 ⚠️ Limited server response - using fallback TURN configuration
+WorkingScreenShare.tsx:409 🎬 Starting screen share...
+WorkingScreenShare.tsx:433 🎯 Screen share constraints: {
+  "video": {
+    "frameRate": {
+      "ideal": 30,
+      "max": 30
+    },
+    "width": {
+      "ideal": 1920
+    },
+    "height": {
+      "ideal": 1080
+    },
+    "cursor": "always",
+    "displaySurface": "monitor",
+    "logicalSurface": true
+  },
+  "audio": true
+}
+WorkingScreenShare.tsx:437 ✅ Got screen share stream: Object
+WorkingScreenShare.tsx:453 ✅ Applied constraints to force exact settings
+WorkingScreenShare.tsx:455 🎯 Final stream settings: Object
+WorkingScreenShare.tsx:497 🔗 Presenter creating connection to viewer: User hesz l7tUzlYCGKe9Zrw9AAAD 
+WorkingScreenShare.tsx:983 🏠 Using hybrid STUN/TURN configuration for optimal same-network performance
+WorkingScreenShare.tsx:541 ➕ Adding track to peer connection: audio 215cb6ba-4209-412d-8511-079941236bde
+WorkingScreenShare.tsx:541 ➕ Adding track to peer connection: video 60e22b20-e0d6-4893-a8a8-d35f7921d137
+WorkingScreenShare.tsx:552 📤 Sending optimized offer to viewer: l7tUzlYCGKe9Zrw9AAAD
+WorkingScreenShare.tsx:1100 📡 ICE gathering state for l7tUzlYCGKe9Zrw9AAAD: gathering
+WorkingScreenShare.tsx:1107 🧊 Sending ICE candidate for l7tUzlYCGKe9Zrw9AAAD: candidate:3645698873 0 udp 2113937152 8fbbf67b-022a-402c-9e05-88a8455dc39e.local 50776 typ host generation 0 ufrag pa96 network-cost 999
+WorkingScreenShare.tsx:1107 🧊 Sending ICE candidate for l7tUzlYCGKe9Zrw9AAAD: candidate:4131633994 1 udp 1677729535 103.121.75.70 34748 typ srflx raddr 0.0.0.0 rport 0 generation 0 ufrag 6CzX network-cost 999
+WorkingScreenShare.tsx:1107 🧊 Sending ICE candidate for l7tUzlYCGKe9Zrw9AAAD: candidate:4131633994 1 udp 1677729535 103.121.75.70 34757 typ srflx raddr 0.0.0.0 rport 0 generation 0 ufrag 6CzX network-cost 999
+WorkingScreenShare.tsx:1107 🧊 Sending ICE candidate for l7tUzlYCGKe9Zrw9AAAD: candidate:4131633994 1 udp 1677729535 103.121.75.70 34755 typ srflx raddr 0.0.0.0 rport 0 generation 0 ufrag 6CzX network-cost 999
+WorkingScreenShare.tsx:1107 🧊 Sending ICE candidate for l7tUzlYCGKe9Zrw9AAAD: candidate:4131633994 1 udp 1677729535 103.121.75.70 34758 typ srflx raddr 0.0.0.0 rport 0 generation 0 ufrag 6CzX network-cost 999
+WorkingScreenShare.tsx:1107 🧊 Sending ICE candidate for l7tUzlYCGKe9Zrw9AAAD: candidate:4131633994 1 udp 1677729535 103.121.75.70 34756 typ srflx raddr 0.0.0.0 rport 0 generation 0 ufrag 6CzX network-cost 999
+WorkingScreenShare.tsx:296 📞 Received WebRTC answer from: l7tUzlYCGKe9Zrw9AAAD
+WorkingScreenShare.tsx:1412 📞 Setting remote answer from: l7tUzlYCGKe9Zrw9AAAD
+WorkingScreenShare.tsx:300 🧊 Received ICE candidate from: l7tUzlYCGKe9Zrw9AAAD
+WorkingScreenShare.tsx:1086 🧊 ICE connection state for l7tUzlYCGKe9Zrw9AAAD: checking
+WorkingScreenShare.tsx:502 🔗 Screen share connection state for User hesz: connecting
+WorkingScreenShare.tsx:300 🧊 Received ICE candidate from: l7tUzlYCGKe9Zrw9AAAD
+WorkingScreenShare.tsx:1482 🔧 Manual video fix triggered
+WorkingScreenShare.tsx:1483 Debug info: Object
+WorkingScreenShare.tsx:370 📺 Creating video element with stream: Object
+WorkingScreenShare.tsx:378 Video track 0: Object
+WorkingScreenShare.tsx:393 ⏳ Video waiting
+WorkingScreenShare.tsx:387 📹 Video loadstart
+WorkingScreenShare.tsx:388 📹 Video metadata loaded
+WorkingScreenShare.tsx:389 📹 Video can play
+WorkingScreenShare.tsx:390 ✅ Video is playing
+WorkingScreenShare.tsx:396 ✅ Video playing immediately after creation
+WorkingScreenShare.tsx:1504 ✅ Presenter video fix successful
+WorkingScreenShare.tsx:396 ✅ Video playing immediately after creation
+WorkingScreenShare.tsx:300 🧊 Received ICE candidate from: l7tUzlYCGKe9Zrw9AAAD
+WorkingScreenShare.tsx:300 🧊 Received ICE candidate from: l7tUzlYCGKe9Zrw9AAAD
+WorkingScreenShare.tsx:300 🧊 Received ICE candidate from: l7tUzlYCGKe9Zrw9AAAD
+WorkingScreenShare.tsx:300 🧊 Received ICE candidate from: l7tUzlYCGKe9Zrw9AAAD
+WorkingScreenShare.tsx:300 🧊 Received ICE candidate from: l7tUzlYCGKe9Zrw9AAAD
+WorkingScreenShare.tsx:1086 🧊 ICE connection state for l7tUzlYCGKe9Zrw9AAAD: disconnected
+WorkingScreenShare.tsx:502 🔗 Screen share connection state for User hesz: failed
+WorkingScreenShare.tsx:507 ❌ Screen share connection failed to User hesz, attempting TURN-only retry
+WorkingScreenShare.tsx:515 🔄 Retrying connection to User hesz with TURN-only
+WorkingScreenShare.tsx:981 🌐 Using TURN-only configuration for cross-network connectivity
+WorkingScreenShare.tsx:1100 📡 ICE gathering state for l7tUzlYCGKe9Zrw9AAAD: gathering
+WorkingScreenShare.tsx:296 📞 Received WebRTC answer from: l7tUzlYCGKe9Zrw9AAAD
+WorkingScreenShare.tsx:1412 📞 Setting remote answer from: l7tUzlYCGKe9Zrw9AAAD
+WorkingScreenShare.tsx:930 🛑 Stopping screen share...
+WorkingScreenShare.tsx:204 🔍 Testing TURN server connectivity...
+WorkingScreenShare.tsx:237 🧊 ICE gathering state: gathering
+WorkingScreenShare.tsx:216 🧊 Test ICE candidate: candidate:801270462 0 udp 2113937152 8fbbf67b-022a-402c-9e05-88a8455dc39e.local 53737 typ host generation 0 ufrag 6mhs network-cost 999
+WorkingScreenShare.tsx:216 🧊 Test ICE candidate: candidate:1341562498 1 udp 1677729535 103.121.75.70 36423 typ srflx raddr 0.0.0.0 rport 0 generation 0 ufrag DJXy network-cost 999
+WorkingScreenShare.tsx:216 🧊 Test ICE candidate: candidate:1341562498 1 udp 1677729535 103.121.75.70 36547 typ srflx raddr 0.0.0.0 rport 0 generation 0 ufrag DJXy network-cost 999
+WorkingScreenShare.tsx:216 🧊 Test ICE candidate: candidate:1341562498 1 udp 1677729535 103.121.75.70 36421 typ srflx raddr 0.0.0.0 rport 0 generation 0 ufrag DJXy network-cost 999
+WorkingScreenShare.tsx:216 🧊 Test ICE candidate: candidate:1341562498 1 udp 1677729535 103.121.75.70 36424 typ srflx raddr 0.0.0.0 rport 0 generation 0 ufrag DJXy network-cost 999
+WorkingScreenShare.tsx:216 🧊 Test ICE candidate: candidate:1341562498 1 udp 1677729535 103.121.75.70 36422 typ srflx raddr 0.0.0.0 rport 0 generation 0 ufrag DJXy network-cost 999
+WorkingScreenShare.tsx:249 🌐 TURN servers responsive - enabling cross-network compatibility mode
+WorkingScreenShare.tsx:261 🔄 TURN servers responding - proceeding with cross-network optimization

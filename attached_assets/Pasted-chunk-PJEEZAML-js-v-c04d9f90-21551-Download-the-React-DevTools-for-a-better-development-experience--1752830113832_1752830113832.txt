@@ -1,0 +1,48 @@
+chunk-PJEEZAML.js?v=c04d9f90:21551 Download the React DevTools for a better development experience: https://reactjs.org/link/react-devtools
+WorkingScreenShare.tsx:302 🎬 Starting screen share...
+WorkingScreenShare.tsx:330 🎯 Screen share constraints: {
+  "video": {
+    "frameRate": {
+      "ideal": 30,
+      "max": 30
+    },
+    "width": {
+      "ideal": 1920
+    },
+    "height": {
+      "ideal": 1080
+    },
+    "cursor": "always",
+    "displaySurface": "monitor",
+    "logicalSurface": true
+  },
+  "audio": true
+}
+WorkingScreenShare.tsx:336 ✅ Got screen share stream: Object
+WorkingScreenShare.tsx:355 ✅ Applied constraints to force exact settings
+WorkingScreenShare.tsx:359 🎯 Final stream settings: Object
+WorkingScreenShare.tsx:415 🔗 Presenter creating connection to viewer: User 7xxh -gP8BKxJZ94XElEBAAAD
+WorkingScreenShare.tsx:441 ➕ Adding track to peer connection: video 9fdef5c3-a09d-403e-9f3a-a303b3e83918
+WorkingScreenShare.tsx:449 📤 Sending offer to viewer: -gP8BKxJZ94XElEBAAAD
+WorkingScreenShare.tsx:429 🧊 Sending screen share ICE candidate to User 7xxh: candidate:1799103103 1 udp 2122260224 192.168.1.25 50659 typ host generation 0 ufrag MbF+ network-id 1 network-cost 10
+WorkingScreenShare.tsx:429 🧊 Sending screen share ICE candidate to User 7xxh: candidate:3296117569 1 udp 1686052607 115.98.233.56 50659 typ srflx raddr 192.168.1.25 rport 50659 generation 0 ufrag MbF+ network-id 1 network-cost 10
+WorkingScreenShare.tsx:429 🧊 Sending screen share ICE candidate to User 7xxh: candidate:2509698795 1 tcp 1518280447 192.168.1.25 9 typ host tcptype active generation 0 ufrag MbF+ network-id 1 network-cost 10
+WorkingScreenShare.tsx:151 📞 Received WebRTC answer from: -gP8BKxJZ94XElEBAAAD
+WorkingScreenShare.tsx:1158 📞 Setting remote answer from: -gP8BKxJZ94XElEBAAAD
+WorkingScreenShare.tsx:156 🧊 Received ICE candidate from: -gP8BKxJZ94XElEBAAAD
+WorkingScreenShare.tsx:156 🧊 Received ICE candidate from: -gP8BKxJZ94XElEBAAAD
+WorkingScreenShare.tsx:424 🔗 Screen share connection state for User 7xxh: connecting
+WorkingScreenShare.tsx:156 🧊 Received ICE candidate from: -gP8BKxJZ94XElEBAAAD
+WorkingScreenShare.tsx:1188 🔧 Manual video fix triggered
+WorkingScreenShare.tsx:1189 Debug info: Object
+WorkingScreenShare.tsx:249 📺 Creating video element with stream: Object
+WorkingScreenShare.tsx:259 Video track 0: Object
+WorkingScreenShare.tsx:278 ⏳ Video waiting
+WorkingScreenShare.tsx:272 📹 Video loadstart
+WorkingScreenShare.tsx:273 📹 Video metadata loaded
+WorkingScreenShare.tsx:274 📹 Video can play
+WorkingScreenShare.tsx:275 ✅ Video is playing
+WorkingScreenShare.tsx:284 ✅ Video playing immediately after creation
+WorkingScreenShare.tsx:1216 ✅ Presenter video fix successful
+WorkingScreenShare.tsx:284 ✅ Video playing immediately after creation
+WorkingScreenShare.tsx:424 🔗 Screen share connection state for User 7xxh: failed

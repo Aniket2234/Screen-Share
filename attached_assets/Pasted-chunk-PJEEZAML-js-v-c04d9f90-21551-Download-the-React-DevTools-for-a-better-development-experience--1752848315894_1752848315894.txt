@@ -1,0 +1,79 @@
+chunk-PJEEZAML.js?v=c04d9f90:21551 Download the React DevTools for a better development experience: https://reactjs.org/link/react-devtools
+WorkingScreenShare.tsx:169 ✅ TURN servers configured and ready
+WorkingScreenShare.tsx:169 ✅ TURN servers configured and ready
+WorkingScreenShare.tsx:388 🎬 Starting screen share...
+WorkingScreenShare.tsx:416 🎯 Screen share constraints: {
+  "video": {
+    "frameRate": {
+      "ideal": 30,
+      "max": 30
+    },
+    "width": {
+      "ideal": 1920
+    },
+    "height": {
+      "ideal": 1080
+    },
+    "cursor": "always",
+    "displaySurface": "monitor",
+    "logicalSurface": true
+  },
+  "audio": true
+}
+WorkingScreenShare.tsx:422 ✅ Got screen share stream: Object
+WorkingScreenShare.tsx:441 ✅ Applied constraints to force exact settings
+WorkingScreenShare.tsx:445 🎯 Final stream settings: Object
+WorkingScreenShare.tsx:510 🔗 Presenter creating connection to viewer: User 25ny Q43N41WGhvkxWX8WAAAD 
+WorkingScreenShare.tsx:1124 🔄 Creating simplified connection for Q43N41WGhvkxWX8WAAAD
+WorkingScreenShare.tsx:545 ➕ Adding track to peer connection: video 96da9fae-99da-4c83-983d-8a53f66a950e
+WorkingScreenShare.tsx:558 📤 Sending optimized offer to viewer: Q43N41WGhvkxWX8WAAAD
+WorkingScreenShare.tsx:235 📞 Received WebRTC answer from: Q43N41WGhvkxWX8WAAAD
+WorkingScreenShare.tsx:1345 📞 Setting remote answer from: Q43N41WGhvkxWX8WAAAD
+WorkingScreenShare.tsx:240 🧊 Received ICE candidate from: Q43N41WGhvkxWX8WAAAD
+WorkingScreenShare.tsx:240 🧊 Received ICE candidate from: Q43N41WGhvkxWX8WAAAD
+WorkingScreenShare.tsx:569 ⚠️ Offer to User 25ny may have failed, will retry automatically
+WorkingScreenShare.tsx:1433 🔧 Manual video fix triggered
+WorkingScreenShare.tsx:1434 Debug info: Object
+WorkingScreenShare.tsx:335 📺 Creating video element with stream: Object
+WorkingScreenShare.tsx:345 Video track 0: Object
+WorkingScreenShare.tsx:364 ⏳ Video waiting
+WorkingScreenShare.tsx:358 📹 Video loadstart
+WorkingScreenShare.tsx:359 📹 Video metadata loaded
+WorkingScreenShare.tsx:360 📹 Video can play
+WorkingScreenShare.tsx:361 ✅ Video is playing
+WorkingScreenShare.tsx:370 ✅ Video playing immediately after creation
+WorkingScreenShare.tsx:1461 ✅ Presenter video fix successful
+WorkingScreenShare.tsx:370 ✅ Video playing immediately after creation
+WorkingScreenShare.tsx:1038 🛑 Stopping screen share...
+WorkingScreenShare.tsx:388 🎬 Starting screen share...
+WorkingScreenShare.tsx:416 🎯 Screen share constraints: {
+  "video": {
+    "frameRate": {
+      "ideal": 30,
+      "max": 30
+    },
+    "width": {
+      "ideal": 1920
+    },
+    "height": {
+      "ideal": 1080
+    },
+    "cursor": "always",
+    "displaySurface": "monitor",
+    "logicalSurface": true
+  },
+  "audio": true
+}
+WorkingScreenShare.tsx:422 ✅ Got screen share stream: Object
+WorkingScreenShare.tsx:441 ✅ Applied constraints to force exact settings
+WorkingScreenShare.tsx:445 🎯 Final stream settings: Object
+WorkingScreenShare.tsx:510 🔗 Presenter creating connection to viewer: User 25ny Q43N41WGhvkxWX8WAAAD 
+WorkingScreenShare.tsx:1124 🔄 Creating simplified connection for Q43N41WGhvkxWX8WAAAD
+WorkingScreenShare.tsx:545 ➕ Adding track to peer connection: audio 56079a3f-e391-4ee5-8517-f54119c06265
+WorkingScreenShare.tsx:545 ➕ Adding track to peer connection: video 4a2edfbe-00f9-48e8-908f-86cb201bbba3
+WorkingScreenShare.tsx:558 📤 Sending optimized offer to viewer: Q43N41WGhvkxWX8WAAAD
+WorkingScreenShare.tsx:235 📞 Received WebRTC answer from: Q43N41WGhvkxWX8WAAAD
+WorkingScreenShare.tsx:1345 📞 Setting remote answer from: Q43N41WGhvkxWX8WAAAD
+WorkingScreenShare.tsx:240 🧊 Received ICE candidate from: Q43N41WGhvkxWX8WAAAD
+WorkingScreenShare.tsx:240 🧊 Received ICE candidate from: Q43N41WGhvkxWX8WAAAD
+WorkingScreenShare.tsx:569 ⚠️ Offer to User 25ny may have failed, will retry automatically

@@ -1,0 +1,461 @@
+ Download the React DevTools for a better development experience: https://reactjs.org/link/react-devtools
+ 🔍 Testing TURN server connectivity...
+ 🔍 Testing TURN server connectivity...
+ 🧊 ICE gathering state: gathering
+ 🧊 ICE gathering state: gathering
+ 🧊 Test ICE candidate: candidate:2826104712 1 udp 2113937151 4f3dbf8b-4e3a-405e-a5e4-f4dec93048f2.local 58871 typ host generation 0 ufrag tL/N network-cost 999
+ 🧊 Test ICE candidate: candidate:3031525887 1 udp 2113937151 4f3dbf8b-4e3a-405e-a5e4-f4dec93048f2.local 58911 typ host generation 0 ufrag Rlp3 network-cost 999
+ 🧊 Test ICE candidate: candidate:3360037812 1 udp 1677729535 103.121.75.70 38263 typ srflx raddr 0.0.0.0 rport 0 generation 0 ufrag tL/N network-cost 999
+ 🧊 Test ICE candidate: candidate:3360037812 1 udp 1677729535 103.121.75.70 38275 typ srflx raddr 0.0.0.0 rport 0 generation 0 ufrag tL/N network-cost 999
+ 🧊 Test ICE candidate: candidate:3565526467 1 udp 1677729535 103.121.75.70 51029 typ srflx raddr 0.0.0.0 rport 0 generation 0 ufrag Rlp3 network-cost 999
+ 🧊 Test ICE candidate: candidate:3565526467 1 udp 1677729535 103.121.75.70 51023 typ srflx raddr 0.0.0.0 rport 0 generation 0 ufrag Rlp3 network-cost 999
+ 🧊 Test ICE candidate: candidate:3360037812 1 udp 1677729535 103.121.75.70 38268 typ srflx raddr 0.0.0.0 rport 0 generation 0 ufrag tL/N network-cost 999
+ 🧊 Test ICE candidate: candidate:3360037812 1 udp 1677729535 103.121.75.70 38273 typ srflx raddr 0.0.0.0 rport 0 generation 0 ufrag tL/N network-cost 999
+ 🧊 Test ICE candidate: candidate:3565526467 1 udp 1677729535 103.121.75.70 51027 typ srflx raddr 0.0.0.0 rport 0 generation 0 ufrag Rlp3 network-cost 999
+ 🧊 Test ICE candidate: candidate:3360037812 1 udp 1677729535 103.121.75.70 38265 typ srflx raddr 0.0.0.0 rport 0 generation 0 ufrag tL/N network-cost 999
+ 🧊 Test ICE candidate: candidate:3565526467 1 udp 1677729535 103.121.75.70 51030 typ srflx raddr 0.0.0.0 rport 0 generation 0 ufrag Rlp3 network-cost 999
+ 🧊 Test ICE candidate: candidate:3565526467 1 udp 1677729535 103.121.75.70 51028 typ srflx raddr 0.0.0.0 rport 0 generation 0 ufrag Rlp3 network-cost 999
+ ⚠️ TURN relay not detected, but servers responding - should work for most networks
+ ⚠️ TURN relay not detected, but servers responding - should work for most networks
+ 🎬 Starting screen share...
+ 🎯 Screen share constraints: {
+  "video": {
+    "frameRate": {
+      "ideal": 30,
+      "max": 30
+    },
+    "width": {
+      "ideal": 1920
+    },
+    "height": {
+      "ideal": 1080
+    },
+    "cursor": "always",
+    "displaySurface": "monitor",
+    "logicalSurface": true
+  },
+  "audio": true
+}
+ ✅ Got screen share stream: Object
+ ✅ Applied constraints to force exact settings
+ 🎯 Final stream settings: Object
+ 🔗 Presenter creating connection to viewer: User ee6h SJSDUFjc64ztNZjYAAAD
+ ➕ Adding track to peer connection: audio a9a33f97-0b19-41e2-b505-66bbc0339d89
+ ➕ Adding track to peer connection: video e774611e-dc77-4572-97af-1d707c5da69e
+ 📤 Sending offer to viewer: SJSDUFjc64ztNZjYAAAD
+ 🧊 Sending screen share ICE candidate to User ee6h: candidate:3009649486 0 udp 2113937152 4f3dbf8b-4e3a-405e-a5e4-f4dec93048f2.local 54062 typ host generation 0 ufrag Ssp1 network-cost 999
+ 🧊 Sending screen share ICE candidate to User ee6h: candidate:3545722738 1 udp 1677729535 103.121.75.70 6757 typ srflx raddr 0.0.0.0 rport 0 generation 0 ufrag Nndg network-cost 999
+ 🧊 Sending screen share ICE candidate to User ee6h: candidate:3545722738 1 udp 1677729535 103.121.75.70 8466 typ srflx raddr 0.0.0.0 rport 0 generation 0 ufrag Nndg network-cost 999
+ 🧊 Sending screen share ICE candidate to User ee6h: candidate:3545722738 1 udp 1677729535 103.121.75.70 6754 typ srflx raddr 0.0.0.0 rport 0 generation 0 ufrag Nndg network-cost 999
+ 🧊 Sending screen share ICE candidate to User ee6h: candidate:3545722738 1 udp 1677729535 103.121.75.70 6752 typ srflx raddr 0.0.0.0 rport 0 generation 0 ufrag Nndg network-cost 999
+ 🧊 Sending screen share ICE candidate to User ee6h: candidate:3545722738 1 udp 1677729535 103.121.75.70 6751 typ srflx raddr 0.0.0.0 rport 0 generation 0 ufrag Nndg network-cost 999
+ 📞 Received WebRTC answer from: SJSDUFjc64ztNZjYAAAD
+ 📞 Setting remote answer from: SJSDUFjc64ztNZjYAAAD
+ 🧊 Received ICE candidate from: SJSDUFjc64ztNZjYAAAD
+ 🧊 Received ICE candidate from: SJSDUFjc64ztNZjYAAAD
+ 🧊 Received ICE candidate from: SJSDUFjc64ztNZjYAAAD
+ 🔗 Screen share connection state for User ee6h: connecting
+ 🧊 Received ICE candidate from: SJSDUFjc64ztNZjYAAAD
+ 🧊 Received ICE candidate from: SJSDUFjc64ztNZjYAAAD
+ 🧊 Received ICE candidate from: SJSDUFjc64ztNZjYAAAD
+ 🔧 Manual video fix triggered
+ Debug info: Object
+ 📺 Creating video element with stream: Object
+ Video track 0: Object
+ ⏳ Video waiting
+ 📹 Video loadstart
+ 📹 Video metadata loaded
+ 📹 Video can play
+ ✅ Video is playing
+ ✅ Video playing immediately after creation
+ ✅ Presenter video fix successful
+ ✅ Video playing immediately after creation
+ 🛑 Stopping screen share...
+ 🎬 Starting screen share...
+ 🎯 Screen share constraints: {
+  "video": {
+    "frameRate": {
+      "ideal": 30,
+      "max": 30
+    },
+    "width": {
+      "ideal": 1920
+    },
+    "height": {
+      "ideal": 1080
+    },
+    "cursor": "always",
+    "displaySurface": "monitor",
+    "logicalSurface": true
+  },
+  "audio": true
+}
+ ✅ Got screen share stream: Object
+ ✅ Applied constraints to force exact settings
+ 🎯 Final stream settings: Object
+ 🔗 Presenter creating connection to viewer: User ee6h SJSDUFjc64ztNZjYAAAD
+ ➕ Adding track to peer connection: audio 56ffc18c-1095-4c57-b72d-522df840e777
+ ➕ Adding track to peer connection: video 961325c4-a97a-4b4a-8cfb-7af0a3e0446d
+ 📤 Sending offer to viewer: SJSDUFjc64ztNZjYAAAD
+ 🧊 Sending screen share ICE candidate to User ee6h: candidate:2985212780 0 udp 2113937152 4f3dbf8b-4e3a-405e-a5e4-f4dec93048f2.local 53692 typ host generation 0 ufrag tFhf network-cost 999
+ 🧊 Sending screen share ICE candidate to User ee6h: candidate:3520745296 1 udp 1677729535 103.121.75.70 34565 typ srflx raddr 0.0.0.0 rport 0 generation 0 ufrag MjPZ network-cost 999
+ 🧊 Sending screen share ICE candidate to User ee6h: candidate:3520745296 1 udp 1677729535 103.121.75.70 34571 typ srflx raddr 0.0.0.0 rport 0 generation 0 ufrag MjPZ network-cost 999
+ 🧊 Sending screen share ICE candidate to User ee6h: candidate:3520745296 1 udp 1677729535 103.121.75.70 34569 typ srflx raddr 0.0.0.0 rport 0 generation 0 ufrag MjPZ network-cost 999
+ 🧊 Sending screen share ICE candidate to User ee6h: candidate:3520745296 1 udp 1677729535 103.121.75.70 34572 typ srflx raddr 0.0.0.0 rport 0 generation 0 ufrag MjPZ network-cost 999
+ 🧊 Sending screen share ICE candidate to User ee6h: candidate:3520745296 1 udp 1677729535 103.121.75.70 34570 typ srflx raddr 0.0.0.0 rport 0 generation 0 ufrag MjPZ network-cost 999
+ 📞 Received WebRTC answer from: SJSDUFjc64ztNZjYAAAD
+ 📞 Setting remote answer from: SJSDUFjc64ztNZjYAAAD
+ 🧊 Received ICE candidate from: SJSDUFjc64ztNZjYAAAD
+ 🧊 Received ICE candidate from: SJSDUFjc64ztNZjYAAAD
+ 🧊 Received ICE candidate from: SJSDUFjc64ztNZjYAAAD
+ 🔗 Screen share connection state for User ee6h: connecting
+ 🧊 Received ICE candidate from: SJSDUFjc64ztNZjYAAAD
+ 🧊 Received ICE candidate from: SJSDUFjc64ztNZjYAAAD
+ 🧊 Received ICE candidate from: SJSDUFjc64ztNZjYAAAD
+ 🔧 Manual video fix triggered
+ Debug info: Object
+ 📺 Creating video element with stream: Object
+ Video track 0: Object
+ ⏳ Video waiting
+ 📹 Video loadstart
+ 📹 Video metadata loaded
+ 📹 Video can play
+ ✅ Video is playing
+ ✅ Video playing immediately after creation
+ ✅ Presenter video fix successful
+ ✅ Video playing immediately after creation
+ 🛑 Stopping screen share...
+ 👥 Presenter started: User ee6h ID: SJSDUFjc64ztNZjYAAAD
+ 📺 Viewer ready to receive stream from presenter
+ 👥 Presenter started: User ee6h ID: SJSDUFjc64ztNZjYAAAD
+ 📺 Viewer ready to receive stream from presenter
+ 👥 Presenter started: User ee6h ID: SJSDUFjc64ztNZjYAAAD
+ 📺 Viewer ready to receive stream from presenter
+ Warning: Encountered two children with the same key, `1752831754434`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version.
+    at div
+    at div
+    at div
+    at div
+    at div
+    at WorkingScreenShare (https://d53f99b3-0c03-4482-8970-6ab89772ff58-00-25vzolk1n58io.picard.replit.dev/src/components/WorkingScreenShare.tsx:41:20)
+    at App
+printWarning @ chunk-PJEEZAML.js?v=c04d9f90:521
+ 📞 Received WebRTC offer from: SJSDUFjc64ztNZjYAAAD
+ 📞 Handling WebRTC offer from: SJSDUFjc64ztNZjYAAAD as presenter: false
+ 🎥 Received remote stream from: SJSDUFjc64ztNZjYAAAD
+ 🔍 Stream details: Object
+ 🎥 Received remote stream from: SJSDUFjc64ztNZjYAAAD
+ 🔍 Stream details: Object
+ Warning: Encountered two children with the same key, `1752831754434`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version.
+    at div
+    at div
+    at div
+    at div
+    at div
+    at WorkingScreenShare (https://d53f99b3-0c03-4482-8970-6ab89772ff58-00-25vzolk1n58io.picard.replit.dev/src/components/WorkingScreenShare.tsx:41:20)
+    at App
+printWarning @ chunk-PJEEZAML.js?v=c04d9f90:521
+ 📤 Sending answer to: SJSDUFjc64ztNZjYAAAD
+ 📡 ICE gathering state for SJSDUFjc64ztNZjYAAAD: gathering
+ 🧊 Sending ICE candidate for SJSDUFjc64ztNZjYAAAD: candidate:2375725023 1 udp 2113937151 4f3dbf8b-4e3a-405e-a5e4-f4dec93048f2.local 52578 typ host generation 0 ufrag SDxu network-cost 999
+ 🧊 Sending ICE candidate for SJSDUFjc64ztNZjYAAAD: candidate:2727733164 1 udp 1677729535 103.121.75.70 38188 typ srflx raddr 0.0.0.0 rport 0 generation 0 ufrag SDxu network-cost 999
+ 🧊 Received ICE candidate from: SJSDUFjc64ztNZjYAAAD
+ 🧊 Sending ICE candidate for SJSDUFjc64ztNZjYAAAD: candidate:2727733164 1 udp 1677729535 103.121.75.70 38196 typ srflx raddr 0.0.0.0 rport 0 generation 0 ufrag SDxu network-cost 999
+ 📞 Received WebRTC offer from: SJSDUFjc64ztNZjYAAAD
+ 📞 Handling WebRTC offer from: SJSDUFjc64ztNZjYAAAD as presenter: false
+ 📞 Received WebRTC offer from: SJSDUFjc64ztNZjYAAAD
+ 📞 Handling WebRTC offer from: SJSDUFjc64ztNZjYAAAD as presenter: false
+ 🧊 Received ICE candidate from: SJSDUFjc64ztNZjYAAAD
+ 🧊 Received ICE candidate from: SJSDUFjc64ztNZjYAAAD
+ 📤 Sending answer to: SJSDUFjc64ztNZjYAAAD
+ ❌ Error handling WebRTC offer: 
+handleWebRTCOffer @ WorkingScreenShare.tsx:1123
+ 🧊 Sending ICE candidate for SJSDUFjc64ztNZjYAAAD: candidate:2375725023 1 udp 2113937151 4f3dbf8b-4e3a-405e-a5e4-f4dec93048f2.local 62178 typ host generation 1 ufrag RKL6 network-cost 999
+ 🧊 Sending ICE candidate for SJSDUFjc64ztNZjYAAAD: candidate:2727733164 1 udp 1677729535 103.121.75.70 6665 typ srflx raddr 0.0.0.0 rport 0 generation 1 ufrag RKL6 network-cost 999
+ 🧊 Sending ICE candidate for SJSDUFjc64ztNZjYAAAD: candidate:2727733164 1 udp 1677729535 103.121.75.70 6672 typ srflx raddr 0.0.0.0 rport 0 generation 1 ufrag RKL6 network-cost 999
+ 🧊 Sending ICE candidate for SJSDUFjc64ztNZjYAAAD: candidate:2727733164 1 udp 1677729535 103.121.75.70 6669 typ srflx raddr 0.0.0.0 rport 0 generation 1 ufrag RKL6 network-cost 999
+ 🧊 Sending ICE candidate for SJSDUFjc64ztNZjYAAAD: candidate:2727733164 1 udp 1677729535 103.121.75.70 6673 typ srflx raddr 0.0.0.0 rport 0 generation 1 ufrag RKL6 network-cost 999
+ 🧊 Sending ICE candidate for SJSDUFjc64ztNZjYAAAD: candidate:2727733164 1 udp 1677729535 103.121.75.70 6670 typ srflx raddr 0.0.0.0 rport 0 generation 1 ufrag RKL6 network-cost 999
+ 🧊 Received ICE candidate from: SJSDUFjc64ztNZjYAAAD
+ 🧊 Received ICE candidate from: SJSDUFjc64ztNZjYAAAD
+ 🧊 Received ICE candidate from: SJSDUFjc64ztNZjYAAAD
+ 🧊 Received ICE candidate from: SJSDUFjc64ztNZjYAAAD
+ 🧊 Received ICE candidate from: SJSDUFjc64ztNZjYAAAD
+ 🧊 ICE connection state for SJSDUFjc64ztNZjYAAAD: checking
+ 🔗 Connection state changed for SJSDUFjc64ztNZjYAAAD: connecting
+ 🧊 Received ICE candidate from: SJSDUFjc64ztNZjYAAAD
+ 🧊 Received ICE candidate from: SJSDUFjc64ztNZjYAAAD
+ 🧊 Received ICE candidate from: SJSDUFjc64ztNZjYAAAD
+ 🧊 Received ICE candidate from: SJSDUFjc64ztNZjYAAAD
+ 🧊 Received ICE candidate from: SJSDUFjc64ztNZjYAAAD
+ 🧊 Received ICE candidate from: SJSDUFjc64ztNZjYAAAD
+ 🧊 Received ICE candidate from: SJSDUFjc64ztNZjYAAAD
+ 🧊 Received ICE candidate from: SJSDUFjc64ztNZjYAAAD
+ 🧊 Received ICE candidate from: SJSDUFjc64ztNZjYAAAD
+ 🧊 Received ICE candidate from: SJSDUFjc64ztNZjYAAAD
+ 🔧 Manual video fix triggered
+ Debug info: Object
+ 📺 Creating video element with stream: Object
+ Video track 0: Object
+ ⏳ Video waiting
+ 📹 Video loadstart
+ Warning: Encountered two children with the same key, `1752831754434`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version.
+    at div
+    at div
+    at div
+    at div
+    at div
+    at WorkingScreenShare (https://d53f99b3-0c03-4482-8970-6ab89772ff58-00-25vzolk1n58io.picard.replit.dev/src/components/WorkingScreenShare.tsx:41:20)
+    at App
+printWarning @ chunk-PJEEZAML.js?v=c04d9f90:521
+ 👥 Presenter stopped
+ Warning: Encountered two children with the same key, `1752831754434`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version.
+    at div
+    at div
+    at div
+    at div
+    at div
+    at WorkingScreenShare (https://d53f99b3-0c03-4482-8970-6ab89772ff58-00-25vzolk1n58io.picard.replit.dev/src/components/WorkingScreenShare.tsx:41:20)
+    at App
+printWarning @ chunk-PJEEZAML.js?v=c04d9f90:521
+ ℹ️ Video autoplay blocked, will require user interaction: AbortError
+ ❌ Viewer remote video fix failed: 
+(anonymous) @ WorkingScreenShare.tsx:1211
+ ℹ️ Video autoplay blocked, will require user interaction: AbortError
+ Warning: Encountered two children with the same key, `1752831754434`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version.
+    at div
+    at div
+    at div
+    at div
+    at div
+    at WorkingScreenShare (https://d53f99b3-0c03-4482-8970-6ab89772ff58-00-25vzolk1n58io.picard.replit.dev/src/components/WorkingScreenShare.tsx:41:20)
+    at App
+printWarning @ chunk-PJEEZAML.js?v=c04d9f90:521
+ 📹 Video metadata loaded
+ 📹 Video can play
+ Warning: Encountered two children with the same key, `1752831754434`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version.
+    at div
+    at div
+    at div
+    at div
+    at div
+    at WorkingScreenShare (https://d53f99b3-0c03-4482-8970-6ab89772ff58-00-25vzolk1n58io.picard.replit.dev/src/components/WorkingScreenShare.tsx:41:20)
+    at App
+printWarning @ chunk-PJEEZAML.js?v=c04d9f90:521
+ 👥 Presenter started: User ee6h ID: SJSDUFjc64ztNZjYAAAD
+ 📺 Viewer ready to receive stream from presenter
+ Warning: Encountered two children with the same key, `1752831754434`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version.
+    at div
+    at div
+    at div
+    at div
+    at div
+    at WorkingScreenShare (https://d53f99b3-0c03-4482-8970-6ab89772ff58-00-25vzolk1n58io.picard.replit.dev/src/components/WorkingScreenShare.tsx:41:20)
+    at App
+printWarning @ chunk-PJEEZAML.js?v=c04d9f90:521
+ 📞 Received WebRTC offer from: SJSDUFjc64ztNZjYAAAD
+ 📞 Handling WebRTC offer from: SJSDUFjc64ztNZjYAAAD as presenter: false
+ 🧊 Received ICE candidate from: SJSDUFjc64ztNZjYAAAD
+ 🎥 Received remote stream from: SJSDUFjc64ztNZjYAAAD
+ 🔍 Stream details: Object
+ Warning: Encountered two children with the same key, `1752831754434`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version.
+    at div
+    at div
+    at div
+    at div
+    at div
+    at WorkingScreenShare (https://d53f99b3-0c03-4482-8970-6ab89772ff58-00-25vzolk1n58io.picard.replit.dev/src/components/WorkingScreenShare.tsx:41:20)
+    at App
+printWarning @ chunk-PJEEZAML.js?v=c04d9f90:521
+ 📤 Sending answer to: SJSDUFjc64ztNZjYAAAD
+ 📡 ICE gathering state for SJSDUFjc64ztNZjYAAAD: gathering
+ 🧊 ICE connection state for SJSDUFjc64ztNZjYAAAD: checking
+ 🧊 Sending ICE candidate for SJSDUFjc64ztNZjYAAAD: candidate:4163588827 1 udp 2113937151 4f3dbf8b-4e3a-405e-a5e4-f4dec93048f2.local 52187 typ host generation 0 ufrag Ik71 network-cost 999
+ 🔗 Connection state changed for SJSDUFjc64ztNZjYAAAD: connecting
+ 🧊 Sending ICE candidate for SJSDUFjc64ztNZjYAAAD: candidate:3609467560 1 udp 1677729535 103.121.75.70 63598 typ srflx raddr 0.0.0.0 rport 0 generation 0 ufrag Ik71 network-cost 999
+ 🧊 Sending ICE candidate for SJSDUFjc64ztNZjYAAAD: candidate:3609467560 1 udp 1677729535 103.121.75.70 63603 typ srflx raddr 0.0.0.0 rport 0 generation 0 ufrag Ik71 network-cost 999
+ 🧊 Received ICE candidate from: SJSDUFjc64ztNZjYAAAD
+ 🧊 Received ICE candidate from: SJSDUFjc64ztNZjYAAAD
+ 🧊 Received ICE candidate from: SJSDUFjc64ztNZjYAAAD
+ 🧊 Sending ICE candidate for SJSDUFjc64ztNZjYAAAD: candidate:3609467560 1 udp 1677729535 103.121.75.70 63602 typ srflx raddr 0.0.0.0 rport 0 generation 0 ufrag Ik71 network-cost 999
+ 🧊 Sending ICE candidate for SJSDUFjc64ztNZjYAAAD: candidate:3609467560 1 udp 1677729535 103.121.75.70 63605 typ srflx raddr 0.0.0.0 rport 0 generation 0 ufrag Ik71 network-cost 999
+ 🧊 Sending ICE candidate for SJSDUFjc64ztNZjYAAAD: candidate:3609467560 1 udp 1677729535 103.121.75.70 63604 typ srflx raddr 0.0.0.0 rport 0 generation 0 ufrag Ik71 network-cost 999
+ 🧊 Received ICE candidate from: SJSDUFjc64ztNZjYAAAD
+ 🧊 Received ICE candidate from: SJSDUFjc64ztNZjYAAAD
+ 🧊 Received ICE candidate from: SJSDUFjc64ztNZjYAAAD
+ 📡 ICE gathering state for SJSDUFjc64ztNZjYAAAD: complete
+ ✅ ICE gathering completed for SJSDUFjc64ztNZjYAAAD
+ 🧊 ICE gathering complete for SJSDUFjc64ztNZjYAAAD
+ 🧊 ICE connection state for SJSDUFjc64ztNZjYAAAD: connected
+ ✅ ICE connection established for SJSDUFjc64ztNZjYAAAD
+ Warning: Encountered two children with the same key, `1752831754434`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version.
+    at div
+    at div
+    at div
+    at div
+    at div
+    at WorkingScreenShare (https://d53f99b3-0c03-4482-8970-6ab89772ff58-00-25vzolk1n58io.picard.replit.dev/src/components/WorkingScreenShare.tsx:41:20)
+    at App
+printWarning @ chunk-PJEEZAML.js?v=c04d9f90:521
+ 🔗 Connection state changed for SJSDUFjc64ztNZjYAAAD: connected
+ ✅ Connection established successfully for SJSDUFjc64ztNZjYAAAD
+ 🔧 Manual video fix triggered
+ Debug info: Object
+ 📺 Creating video element with stream: Object
+ Video track 0: Object
+ ⏳ Video waiting
+ 📹 Video loadstart
+ 📹 Video metadata loaded
+ 📹 Video can play
+ ✅ Video is playing
+ ✅ Video playing immediately after creation
+ ✅ Viewer remote video fix successful
+ Warning: Encountered two children with the same key, `1752831754434`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version.
+    at div
+    at div
+    at div
+    at div
+    at div
+    at WorkingScreenShare (https://d53f99b3-0c03-4482-8970-6ab89772ff58-00-25vzolk1n58io.picard.replit.dev/src/components/WorkingScreenShare.tsx:41:20)
+    at App
+printWarning @ chunk-PJEEZAML.js?v=c04d9f90:521
+ ✅ Video playing immediately after creation
+ 👥 Presenter started: User 7es1 ID: SUwyrr_wZszPL7BpAAAH
+ 📺 Viewer ready to receive stream from presenter
+ 📞 Received WebRTC offer from: SUwyrr_wZszPL7BpAAAH
+ 📞 Handling WebRTC offer from: SUwyrr_wZszPL7BpAAAH as presenter: false
+ 🧊 Received ICE candidate from: SUwyrr_wZszPL7BpAAAH
+ 🎥 Received remote stream from: SUwyrr_wZszPL7BpAAAH
+ 🔍 Stream details: Object
+ 📤 Sending answer to: SUwyrr_wZszPL7BpAAAH
+ 📡 ICE gathering state for SUwyrr_wZszPL7BpAAAH: gathering
+ 🧊 ICE connection state for SUwyrr_wZszPL7BpAAAH: checking
+ 🧊 Sending ICE candidate for SUwyrr_wZszPL7BpAAAH: candidate:226776719 1 udp 2113937151 4f3dbf8b-4e3a-405e-a5e4-f4dec93048f2.local 49443 typ host generation 0 ufrag Ujk8 network-cost 999
+ 🔗 Connection state changed for SUwyrr_wZszPL7BpAAAH: connecting
+ 🧊 Sending ICE candidate for SUwyrr_wZszPL7BpAAAH: candidate:579542780 1 udp 1677729535 103.121.75.70 63701 typ srflx raddr 0.0.0.0 rport 0 generation 0 ufrag Ujk8 network-cost 999
+ 🧊 Sending ICE candidate for SUwyrr_wZszPL7BpAAAH: candidate:579542780 1 udp 1677729535 103.121.75.70 63706 typ srflx raddr 0.0.0.0 rport 0 generation 0 ufrag Ujk8 network-cost 999
+ 🧊 Received ICE candidate from: SUwyrr_wZszPL7BpAAAH
+ 🧊 Received ICE candidate from: SUwyrr_wZszPL7BpAAAH
+ 🧊 Sending ICE candidate for SUwyrr_wZszPL7BpAAAH: candidate:579542780 1 udp 1677729535 103.121.75.70 63699 typ srflx raddr 0.0.0.0 rport 0 generation 0 ufrag Ujk8 network-cost 999
+ 🧊 Sending ICE candidate for SUwyrr_wZszPL7BpAAAH: candidate:579542780 1 udp 1677729535 103.121.75.70 63702 typ srflx raddr 0.0.0.0 rport 0 generation 0 ufrag Ujk8 network-cost 999
+ 🧊 Sending ICE candidate for SUwyrr_wZszPL7BpAAAH: candidate:579542780 1 udp 1677729535 103.121.75.70 63700 typ srflx raddr 0.0.0.0 rport 0 generation 0 ufrag Ujk8 network-cost 999
+ 🔧 Manual video fix triggered
+ Debug info: Object
+ 📺 Creating video element with stream: Object
+ Video track 0: Object
+ ⏳ Video waiting
+ 📹 Video loadstart
+ 🔧 Manual video fix triggered
+ Debug info: Object
+ ℹ️ Video autoplay blocked, will require user interaction: AbortError
+WorkingScreenShare.tsx:1516 ❌ Viewer remote video fix failed: AbortError: The play() request was interrupted by a new load request. https://goo.gl/LdLk22
+(anonymous) @ WorkingScreenShare.tsx:1516
+WorkingScreenShare.tsx:433 ℹ️ Video autoplay blocked, will require user interaction: AbortError
+WorkingScreenShare.tsx:423 ⏳ Video waiting
+WorkingScreenShare.tsx:417 📹 Video loadstart
+WorkingScreenShare.tsx:1446 🔧 Manual video fix triggered
+WorkingScreenShare.tsx:1447 Debug info: Object
+WorkingScreenShare.tsx:1516 ❌ Viewer remote video fix failed: AbortError: The play() request was interrupted by a new load request. https://goo.gl/LdLk22
+(anonymous) @ WorkingScreenShare.tsx:1516
+WorkingScreenShare.tsx:423 ⏳ Video waiting
+WorkingScreenShare.tsx:417 📹 Video loadstart
+WorkingScreenShare.tsx:1446 🔧 Manual video fix triggered
+WorkingScreenShare.tsx:1447 Debug info: Object
+WorkingScreenShare.tsx:1516 ❌ Viewer remote video fix failed: AbortError: The play() request was interrupted by a new load request. https://goo.gl/LdLk22
+(anonymous) @ WorkingScreenShare.tsx:1516
+WorkingScreenShare.tsx:423 ⏳ Video waiting
+WorkingScreenShare.tsx:417 📹 Video loadstart
+WorkingScreenShare.tsx:1446 🔧 Manual video fix triggered
+WorkingScreenShare.tsx:1447 Debug info: Object
+WorkingScreenShare.tsx:1516 ❌ Viewer remote video fix failed: AbortError: The play() request was interrupted by a new load request. https://goo.gl/LdLk22
+(anonymous) @ WorkingScreenShare.tsx:1516
+WorkingScreenShare.tsx:423 ⏳ Video waiting
+WorkingScreenShare.tsx:417 📹 Video loadstart
+WorkingScreenShare.tsx:1446 🔧 Manual video fix triggered
+WorkingScreenShare.tsx:1447 Debug info: Object
+WorkingScreenShare.tsx:1516 ❌ Viewer remote video fix failed: AbortError: The play() request was interrupted by a new load request. https://goo.gl/LdLk22
+(anonymous) @ WorkingScreenShare.tsx:1516
+WorkingScreenShare.tsx:423 ⏳ Video waiting
+WorkingScreenShare.tsx:417 📹 Video loadstart
+WorkingScreenShare.tsx:1446 🔧 Manual video fix triggered
+WorkingScreenShare.tsx:1447 Debug info: Object
+WorkingScreenShare.tsx:1516 ❌ Viewer remote video fix failed: AbortError: The play() request was interrupted by a new load request. https://goo.gl/LdLk22
+(anonymous) @ WorkingScreenShare.tsx:1516
+WorkingScreenShare.tsx:423 ⏳ Video waiting
+WorkingScreenShare.tsx:417 📹 Video loadstart
+WorkingScreenShare.tsx:1446 🔧 Manual video fix triggered
+WorkingScreenShare.tsx:1447 Debug info: Object
+WorkingScreenShare.tsx:1516 ❌ Viewer remote video fix failed: AbortError: The play() request was interrupted by a new load request. https://goo.gl/LdLk22
+(anonymous) @ WorkingScreenShare.tsx:1516
+WorkingScreenShare.tsx:423 ⏳ Video waiting
+WorkingScreenShare.tsx:417 📹 Video loadstart
+WorkingScreenShare.tsx:1446 🔧 Manual video fix triggered
+WorkingScreenShare.tsx:1447 Debug info: Object
+WorkingScreenShare.tsx:1516 ❌ Viewer remote video fix failed: AbortError: The play() request was interrupted by a new load request. https://goo.gl/LdLk22
+(anonymous) @ WorkingScreenShare.tsx:1516
+WorkingScreenShare.tsx:423 ⏳ Video waiting
+WorkingScreenShare.tsx:417 📹 Video loadstart
+WorkingScreenShare.tsx:1236 🧊 ICE connection state for SUwyrr_wZszPL7BpAAAH: disconnected
+WorkingScreenShare.tsx:1126 🔗 Connection state changed for SUwyrr_wZszPL7BpAAAH: failed
+WorkingScreenShare.tsx:1134 ❌ Connection failed for SUwyrr_wZszPL7BpAAAH, attempting comprehensive restart...
+WorkingScreenShare.tsx:447 🎬 Starting screen share...
+WorkingScreenShare.tsx:475 🎯 Screen share constraints: {
+  "video": {
+    "frameRate": {
+      "ideal": 30,
+      "max": 30
+    },
+    "width": {
+      "ideal": 1920
+    },
+    "height": {
+      "ideal": 1080
+    },
+    "cursor": "always",
+    "displaySurface": "monitor",
+    "logicalSurface": true
+  },
+  "audio": true
+}
+WorkingScreenShare.tsx:281 👥 Presenter stopped
+WorkingScreenShare.tsx:1516 ❌ Viewer remote video fix failed: AbortError: The play() request was interrupted because the media was removed from the document. https://goo.gl/LdLk22
+(anonymous) @ WorkingScreenShare.tsx:1516
+WorkingScreenShare.tsx:418 📹 Video metadata loaded
+WorkingScreenShare.tsx:419 📹 Video can play
+WorkingScreenShare.tsx:1140 🔄 Strategy 1: ICE restart for SUwyrr_wZszPL7BpAAAH
+WorkingScreenShare.tsx:614 ❌ Failed to start screen share: NotAllowedError: Permission denied
+startScreenShare @ WorkingScreenShare.tsx:614
+WorkingScreenShare.tsx:1151 🔄 Strategy 2: Creating fresh connection for SUwyrr_wZszPL7BpAAAH
+WorkingScreenShare.tsx:273 👥 Presenter started: User 7es1 ID: SUwyrr_wZszPL7BpAAAH
+WorkingScreenShare.tsx:276 📺 Viewer ready to receive stream from presenter
+WorkingScreenShare.tsx:291 📞 Received WebRTC offer from: SUwyrr_wZszPL7BpAAAH
+WorkingScreenShare.tsx:1382 📞 Handling WebRTC offer from: SUwyrr_wZszPL7BpAAAH as presenter: false
+WorkingScreenShare.tsx:301 🧊 Received ICE candidate from: SUwyrr_wZszPL7BpAAAH
+WorkingScreenShare.tsx:1271 🎥 Received remote stream from: SUwyrr_wZszPL7BpAAAH
+WorkingScreenShare.tsx:1277 🔍 Stream details: Object
+WorkingScreenShare.tsx:1397 📤 Sending answer to: SUwyrr_wZszPL7BpAAAH
+WorkingScreenShare.tsx:1251 📡 ICE gathering state for SUwyrr_wZszPL7BpAAAH: gathering
+WorkingScreenShare.tsx:1236 🧊 ICE connection state for SUwyrr_wZszPL7BpAAAH: checking
+WorkingScreenShare.tsx:1259 🧊 Sending ICE candidate for SUwyrr_wZszPL7BpAAAH: candidate:2743688692 1 udp 2113937151 4f3dbf8b-4e3a-405e-a5e4-f4dec93048f2.local 63131 typ host generation 0 ufrag e21y network-cost 999
+WorkingScreenShare.tsx:1126 🔗 Connection state changed for SUwyrr_wZszPL7BpAAAH: connecting
+WorkingScreenShare.tsx:1259 🧊 Sending ICE candidate for SUwyrr_wZszPL7BpAAAH: candidate:2357597575 1 udp 1677729535 103.121.75.70 61720 typ srflx raddr 0.0.0.0 rport 0 generation 0 ufrag e21y network-cost 999
+WorkingScreenShare.tsx:1259 🧊 Sending ICE candidate for SUwyrr_wZszPL7BpAAAH: candidate:2357597575 1 udp 1677729535 103.121.75.70 61726 typ srflx raddr 0.0.0.0 rport 0 generation 0 ufrag e21y network-cost 999
+WorkingScreenShare.tsx:301 🧊 Received ICE candidate from: SUwyrr_wZszPL7BpAAAH
+WorkingScreenShare.tsx:301 🧊 Received ICE candidate from: SUwyrr_wZszPL7BpAAAH
+WorkingScreenShare.tsx:1259 🧊 Sending ICE candidate for SUwyrr_wZszPL7BpAAAH: candidate:2357597575 1 udp 1677729535 103.121.75.70 61724 typ srflx raddr 0.0.0.0 rport 0 generation 0 ufrag e21y network-cost 999
+WorkingScreenShare.tsx:1259 🧊 Sending ICE candidate for SUwyrr_wZszPL7BpAAAH: candidate:2357597575 1 udp 1677729535 103.121.75.70 61727 typ srflx raddr 0.0.0.0 rport 0 generation 0 ufrag e21y network-cost 999
+WorkingScreenShare.tsx:1259 🧊 Sending ICE candidate for SUwyrr_wZszPL7BpAAAH: candidate:2357597575 1 udp 1677729535 103.121.75.70 61725 typ srflx raddr 0.0.0.0 rport 0 generation 0 ufrag e21y network-cost 999
+WorkingScreenShare.tsx:1161 🔄 Strategy 3: TURN-only fallback for SUwyrr_wZszPL7BpAAAH
+WorkingScreenShare.tsx:1230 🔄 TURN-only connection created for SUwyrr_wZszPL7BpAAAH
+WorkingScreenShare.tsx:1446 🔧 Manual video fix triggered
+WorkingScreenShare.tsx:1447 Debug info: Object
+WorkingScreenShare.tsx:394 📺 Creating video element with stream: Object
+WorkingScreenShare.tsx:404 Video track 0: Object
+WorkingScreenShare.tsx:423 ⏳ Video waiting
+WorkingScreenShare.tsx:417 📹 Video loadstart
+WorkingScreenShare.tsx:418 📹 Video metadata loaded
+WorkingScreenShare.tsx:419 📹 Video can play
+WorkingScreenShare.tsx:420 ✅ Video is playing
+WorkingScreenShare.tsx:429 ✅ Video playing immediately after creation
+WorkingScreenShare.tsx:1513 ✅ Viewer remote video fix successful
+WorkingScreenShare.tsx:429 ✅ Video playing immediately after creation

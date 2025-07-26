@@ -1,0 +1,63 @@
+WorkingScreenShare.tsx:304 👥 Presenter started: User tfk8 ID: 8s8Y_wclv1FEXfQEAAAH
+WorkingScreenShare.tsx:307 📺 Viewer ready to receive stream from presenter
+WorkingScreenShare.tsx:322 📞 Received WebRTC offer from: 8s8Y_wclv1FEXfQEAAAH
+WorkingScreenShare.tsx:1613 📞 Handling WebRTC offer from: 8s8Y_wclv1FEXfQEAAAH as presenter: false
+WorkingScreenShare.tsx:1614 📋 Offer details: Object
+WorkingScreenShare.tsx:1618 🆕 Creating new peer connection for: 8s8Y_wclv1FEXfQEAAAH
+WorkingScreenShare.tsx:1211 🌐 Using TURN-only configuration for cross-network connectivity
+WorkingScreenShare.tsx:1623 🔍 Current signaling state: stable
+WorkingScreenShare.tsx:1635 📥 Setting remote description (offer)
+WorkingScreenShare.tsx:1377 🎥 Received remote stream from: 8s8Y_wclv1FEXfQEAAAH
+WorkingScreenShare.tsx:1378 🔍 Event details: Object
+WorkingScreenShare.tsx:1395 🔍 Stream details: Object
+WorkingScreenShare.tsx:1408 🎵 Track 0: Object
+WorkingScreenShare.tsx:1637 ✅ Remote description set successfully
+WorkingScreenShare.tsx:1639 📝 Creating answer...
+WorkingScreenShare.tsx:1644 ✅ Answer created
+WorkingScreenShare.tsx:1646 📥 Setting local description (answer)
+WorkingScreenShare.tsx:1648 ✅ Local description set successfully
+WorkingScreenShare.tsx:1650 📤 Sending answer to: 8s8Y_wclv1FEXfQEAAAH
+WorkingScreenShare.tsx:1657 ✅ WebRTC offer handling completed successfully
+WorkingScreenShare.tsx:1357 📡 ICE gathering state for 8s8Y_wclv1FEXfQEAAAH: gathering
+WorkingScreenShare.tsx:332 🧊 Received ICE candidate from: 8s8Y_wclv1FEXfQEAAAH
+WorkingScreenShare.tsx:332 🧊 Received ICE candidate from: 8s8Y_wclv1FEXfQEAAAH
+WorkingScreenShare.tsx:332 🧊 Received ICE candidate from: 8s8Y_wclv1FEXfQEAAAH
+WorkingScreenShare.tsx:312 👥 Presenter stopped
+WorkingScreenShare.tsx:304 👥 Presenter started: User tfk8 ID: 8s8Y_wclv1FEXfQEAAAH
+WorkingScreenShare.tsx:307 📺 Viewer ready to receive stream from presenter
+WorkingScreenShare.tsx:322 📞 Received WebRTC offer from: 8s8Y_wclv1FEXfQEAAAH
+WorkingScreenShare.tsx:1613 📞 Handling WebRTC offer from: 8s8Y_wclv1FEXfQEAAAH as presenter: false
+WorkingScreenShare.tsx:1614 📋 Offer details: Object
+WorkingScreenShare.tsx:1618 🆕 Creating new peer connection for: 8s8Y_wclv1FEXfQEAAAH
+WorkingScreenShare.tsx:1211 🌐 Using TURN-only configuration for cross-network connectivity
+WorkingScreenShare.tsx:1623 🔍 Current signaling state: stable
+WorkingScreenShare.tsx:1635 📥 Setting remote description (offer)
+WorkingScreenShare.tsx:1377 🎥 Received remote stream from: 8s8Y_wclv1FEXfQEAAAH
+WorkingScreenShare.tsx:1378 🔍 Event details: Object
+WorkingScreenShare.tsx:1395 🔍 Stream details: Object
+WorkingScreenShare.tsx:1408 🎵 Track 0: Object
+WorkingScreenShare.tsx:1637 ✅ Remote description set successfully
+WorkingScreenShare.tsx:1639 📝 Creating answer...
+WorkingScreenShare.tsx:1644 ✅ Answer created
+WorkingScreenShare.tsx:1646 📥 Setting local description (answer)
+WorkingScreenShare.tsx:1648 ✅ Local description set successfully
+WorkingScreenShare.tsx:1650 📤 Sending answer to: 8s8Y_wclv1FEXfQEAAAH
+WorkingScreenShare.tsx:1657 ✅ WebRTC offer handling completed successfully
+WorkingScreenShare.tsx:1357 📡 ICE gathering state for 8s8Y_wclv1FEXfQEAAAH: gathering
+WorkingScreenShare.tsx:1793 🔧 Manual video fix triggered
+WorkingScreenShare.tsx:1794 Debug info: Object
+WorkingScreenShare.tsx:425 📺 Creating video element with stream: Object
+WorkingScreenShare.tsx:435 Video track 0: Object
+WorkingScreenShare.tsx:454 ⏳ Video waiting
+WorkingScreenShare.tsx:448 📹 Video loadstart
+WorkingScreenShare.tsx:1793 🔧 Manual video fix triggered
+WorkingScreenShare.tsx:1794 Debug info: Object
+WorkingScreenShare.tsx:464 ℹ️ Video autoplay blocked, will require user interaction: AbortError
+WorkingScreenShare.tsx:1863 ❌ Viewer remote video fix failed: AbortError: The play() request was interrupted by a new load request. https://goo.gl/LdLk22
+(anonymous) @ WorkingScreenShare.tsx:1863
+WorkingScreenShare.tsx:464 ℹ️ Video autoplay blocked, will require user interaction: AbortError
+WorkingScreenShare.tsx:454 ⏳ Video waiting
+WorkingScreenShare.tsx:448 📹 Video loadstart
+WorkingScreenShare.tsx:1357 📡 ICE gathering state for 8s8Y_wclv1FEXfQEAAAH: complete
+WorkingScreenShare.tsx:1359 ✅ ICE gathering completed for 8s8Y_wclv1FEXfQEAAAH
+WorkingScreenShare.tsx:1372 🧊 ICE gathering complete for 8s8Y_wclv1FEXfQEAAAH

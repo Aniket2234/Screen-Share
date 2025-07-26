@@ -1,0 +1,33 @@
+WorkingScreenShare.tsx:304 👥 Presenter started: Aniket ID: pC2Nx6wSyPG1lOCwAAAB
+WorkingScreenShare.tsx:307 📺 Viewer ready to receive stream from presenter
+WorkingScreenShare.tsx:322 📞 Received WebRTC offer from: pC2Nx6wSyPG1lOCwAAAB
+WorkingScreenShare.tsx:1633 📞 Handling WebRTC offer from: pC2Nx6wSyPG1lOCwAAAB as presenter: false
+WorkingScreenShare.tsx:1634 📋 Offer details: {type: 'offer', sdp: 'v=0\r\no=- 4402542988926729441 2 IN IP4 127.0.0.1\r\ns…d99c9b\r\nm=audio 9 UDP/TLS/RTP/SAVPF 111 63 9 0...'}
+WorkingScreenShare.tsx:1638 🆕 Creating new peer connection for: pC2Nx6wSyPG1lOCwAAAB
+WorkingScreenShare.tsx:1231 🌐 Using TURN-only configuration for cross-network connectivity
+WorkingScreenShare.tsx:1643 🔍 Current signaling state: stable
+WorkingScreenShare.tsx:1655 📥 Setting remote description (offer)
+WorkingScreenShare.tsx:1397 🎥 Received remote stream from: pC2Nx6wSyPG1lOCwAAAB
+WorkingScreenShare.tsx:1398 🔍 Event details: {streams: 1, track: 'audio', trackId: '150cc96b-e2fe-4971-89ef-87c72679b876', trackEnabled: true, trackReadyState: 'live'}
+WorkingScreenShare.tsx:1415 🔍 Stream details: {streamId: 'c7bd4b38-bc01-4670-aa88-84e7acd99c9b', active: true, videoTracks: 1, audioTracks: 1, videoTrackEnabled: true, …}
+WorkingScreenShare.tsx:1428 🎵 Track 0: {kind: 'audio', enabled: true, readyState: 'live', muted: true, id: '150cc96b-e2fe-4971-89ef-87c72679b876', …}
+WorkingScreenShare.tsx:1428 🎵 Track 1: {kind: 'video', enabled: true, readyState: 'live', muted: true, id: '962ac184-b12b-4bfd-ae72-693345675c58', …}
+WorkingScreenShare.tsx:1397 🎥 Received remote stream from: pC2Nx6wSyPG1lOCwAAAB
+WorkingScreenShare.tsx:1398 🔍 Event details: {streams: 1, track: 'video', trackId: '962ac184-b12b-4bfd-ae72-693345675c58', trackEnabled: true, trackReadyState: 'live'}
+WorkingScreenShare.tsx:1415 🔍 Stream details: {streamId: 'c7bd4b38-bc01-4670-aa88-84e7acd99c9b', active: true, videoTracks: 1, audioTracks: 1, videoTrackEnabled: true, …}
+WorkingScreenShare.tsx:1428 🎵 Track 0: {kind: 'audio', enabled: true, readyState: 'live', muted: true, id: '150cc96b-e2fe-4971-89ef-87c72679b876', …}
+WorkingScreenShare.tsx:1428 🎵 Track 1: {kind: 'video', enabled: true, readyState: 'live', muted: true, id: '962ac184-b12b-4bfd-ae72-693345675c58', …}
+WorkingScreenShare.tsx:1657 ✅ Remote description set successfully
+WorkingScreenShare.tsx:1659 📝 Creating answer...
+WorkingScreenShare.tsx:1664 ✅ Answer created
+WorkingScreenShare.tsx:1666 📥 Setting local description (answer)
+WorkingScreenShare.tsx:1668 ✅ Local description set successfully
+WorkingScreenShare.tsx:1670 📤 Sending answer to: pC2Nx6wSyPG1lOCwAAAB
+WorkingScreenShare.tsx:1677 ✅ WebRTC offer handling completed successfully
+WorkingScreenShare.tsx:1377 📡 ICE gathering state for pC2Nx6wSyPG1lOCwAAAB: gathering
+WorkingScreenShare.tsx:1815 🔧 Manual video fix triggered
+WorkingScreenShare.tsx:1816 Debug info: {isPresenting: false, hasCurrentStream: false, remoteStreamsCount: 1, participants: Array(2)}
+WorkingScreenShare.tsx:425 📺 Creating video element with stream: {streamId: 'c7bd4b38-bc01-4670-aa88-84e7acd99c9b', active: true, tracks: 2, videoTracks: 1, audioTracks: 1}
+WorkingScreenShare.tsx:435 Video track 0: {id: '962ac184-b12b-4bfd-ae72-693345675c58', kind: 'video', enabled: true, readyState: 'live', label: '962ac184-b12b-4bfd-ae72-693345675c58'}
+WorkingScreenShare.tsx:454 ⏳ Video waiting
+WorkingScreenShare.tsx:448 📹 Video loadstart

@@ -1,0 +1,74 @@
+WorkingScreenShare.tsx:309 👥 Presenter started: User kyzw ID: G-uvJ0u63NCeZ7uVAAAB
+WorkingScreenShare.tsx:312 📺 Viewer ready to receive stream from presenter
+WorkingScreenShare.tsx:327 📞 Received WebRTC offer from: G-uvJ0u63NCeZ7uVAAAB
+WorkingScreenShare.tsx:1499 📞 Handling WebRTC offer from: G-uvJ0u63NCeZ7uVAAAB as presenter: false
+WorkingScreenShare.tsx:1500 📋 Offer details: Object
+WorkingScreenShare.tsx:1504 🆕 Creating new peer connection for: G-uvJ0u63NCeZ7uVAAAB
+WorkingScreenShare.tsx:1261 🏠 Using hybrid STUN/TURN configuration with comprehensive server pool
+WorkingScreenShare.tsx:1509 🔍 Current signaling state: stable
+WorkingScreenShare.tsx:1513 📥 Setting remote description (offer)
+WorkingScreenShare.tsx:1367 🎥 ========== ONTRACK EVENT START ==========
+WorkingScreenShare.tsx:1368 🎥 Received remote stream from: G-uvJ0u63NCeZ7uVAAAB
+WorkingScreenShare.tsx:1369 🔍 Event details: Object
+WorkingScreenShare.tsx:1387 🔍 Stream details: Object
+WorkingScreenShare.tsx:1402 🎵 Track 0: Object
+WorkingScreenShare.tsx:1402 🎵 Track 1: Object
+WorkingScreenShare.tsx:1486 🎥 ========== ONTRACK EVENT END ==========
+WorkingScreenShare.tsx:1367 🎥 ========== ONTRACK EVENT START ==========
+WorkingScreenShare.tsx:1368 🎥 Received remote stream from: G-uvJ0u63NCeZ7uVAAAB
+WorkingScreenShare.tsx:1369 🔍 Event details: Object
+WorkingScreenShare.tsx:1387 🔍 Stream details: Object
+WorkingScreenShare.tsx:1402 🎵 Track 0: Object
+WorkingScreenShare.tsx:1402 🎵 Track 1: Object
+WorkingScreenShare.tsx:1486 🎥 ========== ONTRACK EVENT END ==========
+WorkingScreenShare.tsx:1421 🔊 Track 0 unmuted: audio
+WorkingScreenShare.tsx:1421 🔊 Track 0 unmuted: audio
+WorkingScreenShare.tsx:1421 🔊 Track 1 unmuted: video
+WorkingScreenShare.tsx:1421 🔊 Track 1 unmuted: video
+WorkingScreenShare.tsx:1515 ✅ Remote description set successfully
+WorkingScreenShare.tsx:1517 📝 Creating answer...
+WorkingScreenShare.tsx:1522 ✅ Answer created
+WorkingScreenShare.tsx:1524 📥 Setting local description (answer)
+WorkingScreenShare.tsx:1526 ✅ Local description set successfully
+WorkingScreenShare.tsx:1528 📤 Sending answer to: G-uvJ0u63NCeZ7uVAAAB
+WorkingScreenShare.tsx:1535 ✅ WebRTC offer handling completed successfully
+WorkingScreenShare.tsx:1341 📡 ICE gathering state for G-uvJ0u63NCeZ7uVAAAB: gathering
+WorkingScreenShare.tsx:1349 🧊 Sending ICE candidate for G-uvJ0u63NCeZ7uVAAAB: candidate:3472353963 1 udp 2113937151 ecd39897-3fbc-4ad8-9615-204a398d6144.local 58022 typ host generation 0 ufrag a+rD network-cost 999
+WorkingScreenShare.tsx:1349 🧊 Sending ICE candidate for G-uvJ0u63NCeZ7uVAAAB: candidate:2932022935 1 udp 1677729535 103.121.75.70 62161 typ srflx raddr 0.0.0.0 rport 0 generation 0 ufrag a+rD network-cost 999
+WorkingScreenShare.tsx:1349 🧊 Sending ICE candidate for G-uvJ0u63NCeZ7uVAAAB: candidate:2932022935 1 udp 1677729535 103.121.75.70 62160 typ srflx raddr 0.0.0.0 rport 0 generation 0 ufrag a+rD network-cost 999
+WorkingScreenShare.tsx:1349 🧊 Sending ICE candidate for G-uvJ0u63NCeZ7uVAAAB: candidate:2932022935 1 udp 1677729535 103.121.75.70 62166 typ srflx raddr 0.0.0.0 rport 0 generation 0 ufrag a+rD network-cost 999
+WorkingScreenShare.tsx:337 🧊 Received ICE candidate from: G-uvJ0u63NCeZ7uVAAAB
+WorkingScreenShare.tsx:1600 🧊 Adding ICE candidate from G-uvJ0u63NCeZ7uVAAAB: candidate:3867653621 0 udp 2113937152 8204982c-5fea-46ee-9247-a820c9adbbac.local 62431 typ host generation 0 ufrag 9MQJ network-cost 999
+WorkingScreenShare.tsx:337 🧊 Received ICE candidate from: G-uvJ0u63NCeZ7uVAAAB
+WorkingScreenShare.tsx:1600 🧊 Adding ICE candidate from G-uvJ0u63NCeZ7uVAAAB: candidate:2259894729 1 udp 1677729535 103.121.75.70 51258 typ srflx raddr 0.0.0.0 rport 0 generation 0 ufrag rMLt network-cost 999
+WorkingScreenShare.tsx:337 🧊 Received ICE candidate from: G-uvJ0u63NCeZ7uVAAAB
+WorkingScreenShare.tsx:1600 🧊 Adding ICE candidate from G-uvJ0u63NCeZ7uVAAAB: candidate:2259894729 1 udp 1677729535 103.121.75.70 51259 typ srflx raddr 0.0.0.0 rport 0 generation 0 ufrag rMLt network-cost 999
+WorkingScreenShare.tsx:1326 🧊 ICE connection state for G-uvJ0u63NCeZ7uVAAAB: checking
+WorkingScreenShare.tsx:337 🧊 Received ICE candidate from: G-uvJ0u63NCeZ7uVAAAB
+WorkingScreenShare.tsx:1600 🧊 Adding ICE candidate from G-uvJ0u63NCeZ7uVAAAB: candidate:2259894729 1 udp 1677729535 103.121.75.70 51265 typ srflx raddr 0.0.0.0 rport 0 generation 0 ufrag rMLt network-cost 999
+WorkingScreenShare.tsx:1269 🔗 Connection state for G-uvJ0u63NCeZ7uVAAAB: connecting
+WorkingScreenShare.tsx:1417 🔇 Track 1 muted: video
+WorkingScreenShare.tsx:1417 🔇 Track 1 muted: video
+WorkingScreenShare.tsx:1683 🔧 Manual video fix triggered
+WorkingScreenShare.tsx:1684 Debug info: Object
+WorkingScreenShare.tsx:430 📺 Creating video element with stream: Object
+WorkingScreenShare.tsx:440 Video track 0: Object
+WorkingScreenShare.tsx:459 ⏳ Video waiting
+WorkingScreenShare.tsx:453 📹 Video loadstart
+WorkingScreenShare.tsx:1326 🧊 ICE connection state for G-uvJ0u63NCeZ7uVAAAB: disconnected
+WorkingScreenShare.tsx:1269 🔗 Connection state for G-uvJ0u63NCeZ7uVAAAB: failed
+WorkingScreenShare.tsx:1278 ❌ Connection failed for G-uvJ0u63NCeZ7uVAAAB - will retry with TURN-only
+WorkingScreenShare.tsx:1326 🧊 ICE connection state for G-uvJ0u63NCeZ7uVAAAB: checking
+WorkingScreenShare.tsx:1269 🔗 Connection state for G-uvJ0u63NCeZ7uVAAAB: connecting
+WorkingScreenShare.tsx:1288 🔄 Retry 1: Creating new TURN-only connection for G-uvJ0u63NCeZ7uVAAAB
+WorkingScreenShare.tsx:1259 🌐 Using TURN-only configuration with multiple servers for maximum cross-network reliability
+WorkingScreenShare.tsx:1413 🔚 Track 0 ended: audio
+WorkingScreenShare.tsx:1413 🔚 Track 0 ended: audio
+WorkingScreenShare.tsx:1413 🔚 Track 1 ended: video
+WorkingScreenShare.tsx:1413 🔚 Track 1 ended: video
+WorkingScreenShare.tsx:454 📹 Video metadata loaded
+WorkingScreenShare.tsx:455 📹 Video can play
+WorkingScreenShare.tsx:456 ✅ Video is playing
+WorkingScreenShare.tsx:465 ✅ Video playing immediately after creation
+WorkingScreenShare.tsx:1750 ✅ Viewer remote video fix successful
+WorkingScreenShare.tsx:465 ✅ Video playing immediately after creation

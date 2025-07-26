@@ -1,0 +1,80 @@
+chunk-PJEEZAML.js?v=c04d9f90:21551 Download the React DevTools for a better development experience: https://reactjs.org/link/react-devtools
+WorkingScreenShare.tsx:204 🔍 Testing TURN server connectivity...
+WorkingScreenShare.tsx:204 🔍 Testing TURN server connectivity...
+WorkingScreenShare.tsx:237 🧊 ICE gathering state: gathering
+WorkingScreenShare.tsx:237 🧊 ICE gathering state: gathering
+WorkingScreenShare.tsx:216 🧊 Test ICE candidate: candidate:484761191 1 udp 2113937151 206e2ced-7d0f-460e-9101-2ceed3e95306.local 54464 typ host generation 0 ufrag OltM network-cost 999
+WorkingScreenShare.tsx:216 🧊 Test ICE candidate: candidate:3677887041 1 udp 2113937151 206e2ced-7d0f-460e-9101-2ceed3e95306.local 54564 typ host generation 0 ufrag SQpX network-cost 999
+WorkingScreenShare.tsx:253 🏠 Using standard mode - will escalate to cross-network if needed
+WorkingScreenShare.tsx:263 ⚠️ Limited server response - using fallback TURN configuration
+WorkingScreenShare.tsx:253 🏠 Using standard mode - will escalate to cross-network if needed
+WorkingScreenShare.tsx:263 ⚠️ Limited server response - using fallback TURN configuration
+WorkingScreenShare.tsx:309 👥 Presenter started: User pkwu ID: nj2I98fj2BxEkp7cAAAB
+WorkingScreenShare.tsx:312 📺 Viewer ready to receive stream from presenter
+WorkingScreenShare.tsx:327 📞 Received WebRTC offer from: nj2I98fj2BxEkp7cAAAB
+WorkingScreenShare.tsx:1611 📞 Handling WebRTC offer from: nj2I98fj2BxEkp7cAAAB as presenter: false
+WorkingScreenShare.tsx:1612 📋 Offer details: Object
+WorkingScreenShare.tsx:1616 🆕 Creating new peer connection for: nj2I98fj2BxEkp7cAAAB
+WorkingScreenShare.tsx:1309 🏠 Using hybrid STUN/TURN configuration with comprehensive server pool
+WorkingScreenShare.tsx:1621 🔍 Current signaling state: stable
+WorkingScreenShare.tsx:1625 📥 Setting remote description (offer)
+WorkingScreenShare.tsx:1415 🎥 ========== ONTRACK EVENT START ==========
+WorkingScreenShare.tsx:1416 🎥 Received remote stream from: nj2I98fj2BxEkp7cAAAB
+WorkingScreenShare.tsx:1417 🔍 Event details: Object
+WorkingScreenShare.tsx:1435 🔍 Stream details: Object
+WorkingScreenShare.tsx:1450 🎵 Track 0: Object
+WorkingScreenShare.tsx:1450 🎵 Track 1: Object
+WorkingScreenShare.tsx:1483 🔒 Preventing track audio from being muted/ended
+WorkingScreenShare.tsx:1483 🔒 Preventing track video from being muted/ended
+WorkingScreenShare.tsx:1598 🎥 ========== ONTRACK EVENT END ==========
+WorkingScreenShare.tsx:1415 🎥 ========== ONTRACK EVENT START ==========
+WorkingScreenShare.tsx:1416 🎥 Received remote stream from: nj2I98fj2BxEkp7cAAAB
+WorkingScreenShare.tsx:1417 🔍 Event details: Object
+WorkingScreenShare.tsx:1435 🔍 Stream details: Object
+WorkingScreenShare.tsx:1450 🎵 Track 0: Object
+WorkingScreenShare.tsx:1450 🎵 Track 1: Object
+WorkingScreenShare.tsx:1483 🔒 Preventing track audio from being muted/ended
+WorkingScreenShare.tsx:1487 Uncaught TypeError: Cannot redefine property: muted
+    at Object.defineProperty (<anonymous>)
+    at WorkingScreenShare.tsx:1487:18
+    at Array.forEach (<anonymous>)
+    at peerConnection.ontrack (WorkingScreenShare.tsx:1482:34)
+WorkingScreenShare.tsx:1473 🔊 Track 0 unmuted: audio
+WorkingScreenShare.tsx:1473 🔊 Track 0 unmuted: audio
+WorkingScreenShare.tsx:1473 🔊 Track 1 unmuted: video
+WorkingScreenShare.tsx:1473 🔊 Track 1 unmuted: video
+WorkingScreenShare.tsx:1627 ✅ Remote description set successfully
+WorkingScreenShare.tsx:1629 📝 Creating answer...
+WorkingScreenShare.tsx:1634 ✅ Answer created
+WorkingScreenShare.tsx:1636 📥 Setting local description (answer)
+WorkingScreenShare.tsx:1638 ✅ Local description set successfully
+WorkingScreenShare.tsx:1640 📤 Sending answer to: nj2I98fj2BxEkp7cAAAB
+WorkingScreenShare.tsx:1647 ✅ WebRTC offer handling completed successfully
+WorkingScreenShare.tsx:1389 📡 ICE gathering state for nj2I98fj2BxEkp7cAAAB: gathering
+WorkingScreenShare.tsx:1397 🧊 Sending ICE candidate for nj2I98fj2BxEkp7cAAAB: candidate:28505062 1 udp 2113937151 206e2ced-7d0f-460e-9101-2ceed3e95306.local 62741 typ host generation 0 ufrag l3Hc network-cost 999
+WorkingScreenShare.tsx:1397 🧊 Sending ICE candidate for nj2I98fj2BxEkp7cAAAB: candidate:784186261 1 udp 1677729535 103.121.75.70 48953 typ srflx raddr 0.0.0.0 rport 0 generation 0 ufrag l3Hc network-cost 999
+WorkingScreenShare.tsx:1397 🧊 Sending ICE candidate for nj2I98fj2BxEkp7cAAAB: candidate:784186261 1 udp 1677729535 103.121.75.70 48959 typ srflx raddr 0.0.0.0 rport 0 generation 0 ufrag l3Hc network-cost 999
+WorkingScreenShare.tsx:1397 🧊 Sending ICE candidate for nj2I98fj2BxEkp7cAAAB: candidate:784186261 1 udp 1677729535 103.121.75.70 48967 typ srflx raddr 0.0.0.0 rport 0 generation 0 ufrag l3Hc network-cost 999
+WorkingScreenShare.tsx:337 🧊 Received ICE candidate from: nj2I98fj2BxEkp7cAAAB
+WorkingScreenShare.tsx:1712 🧊 Adding ICE candidate from nj2I98fj2BxEkp7cAAAB: candidate:4049204555 0 udp 2113937152 66d4edbc-889b-4ed3-8c4c-2580ab567992.local 56860 typ host generation 0 ufrag Uquy network-cost 999
+WorkingScreenShare.tsx:337 🧊 Received ICE candidate from: nj2I98fj2BxEkp7cAAAB
+WorkingScreenShare.tsx:1712 🧊 Adding ICE candidate from nj2I98fj2BxEkp7cAAAB: candidate:2439840119 1 udp 1677729535 103.121.75.70 55447 typ srflx raddr 0.0.0.0 rport 0 generation 0 ufrag zv+5 network-cost 999
+WorkingScreenShare.tsx:1374 🧊 ICE connection state for nj2I98fj2BxEkp7cAAAB: checking
+WorkingScreenShare.tsx:1317 🔗 Connection state for nj2I98fj2BxEkp7cAAAB: connecting
+WorkingScreenShare.tsx:337 🧊 Received ICE candidate from: nj2I98fj2BxEkp7cAAAB
+WorkingScreenShare.tsx:1712 🧊 Adding ICE candidate from nj2I98fj2BxEkp7cAAAB: candidate:2439840119 1 udp 1677729535 103.121.75.70 55309 typ srflx raddr 0.0.0.0 rport 0 generation 0 ufrag zv+5 network-cost 999
+WorkingScreenShare.tsx:337 🧊 Received ICE candidate from: nj2I98fj2BxEkp7cAAAB
+WorkingScreenShare.tsx:1712 🧊 Adding ICE candidate from nj2I98fj2BxEkp7cAAAB: candidate:2439840119 1 udp 1677729535 103.121.75.70 55310 typ srflx raddr 0.0.0.0 rport 0 generation 0 ufrag zv+5 network-cost 999
+WorkingScreenShare.tsx:1467 🔇 Track 1 muted: video - PREVENTING TRACK MUTE
+WorkingScreenShare.tsx:1467 🔇 Track 1 muted: video - PREVENTING TRACK MUTE
+WorkingScreenShare.tsx:1374 🧊 ICE connection state for nj2I98fj2BxEkp7cAAAB: disconnected
+WorkingScreenShare.tsx:1317 🔗 Connection state for nj2I98fj2BxEkp7cAAAB: failed
+WorkingScreenShare.tsx:1326 ❌ Connection failed for nj2I98fj2BxEkp7cAAAB - will retry with TURN-only
+WorkingScreenShare.tsx:1374 🧊 ICE connection state for nj2I98fj2BxEkp7cAAAB: checking
+WorkingScreenShare.tsx:1317 🔗 Connection state for nj2I98fj2BxEkp7cAAAB: connecting
+WorkingScreenShare.tsx:1336 🔄 Retry 1: Creating new TURN-only connection for nj2I98fj2BxEkp7cAAAB
+WorkingScreenShare.tsx:1307 🌐 Using TURN-only configuration with multiple servers for maximum cross-network reliability
+WorkingScreenShare.tsx:1461 🔚 Track 0 ended: audio - PREVENTING TRACK END
+WorkingScreenShare.tsx:1461 🔚 Track 0 ended: audio - PREVENTING TRACK END
+WorkingScreenShare.tsx:1461 🔚 Track 1 ended: video - PREVENTING TRACK END
+WorkingScreenShare.tsx:1461 🔚 Track 1 ended: video - PREVENTING TRACK END
