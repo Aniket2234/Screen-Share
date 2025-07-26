@@ -131,7 +131,7 @@ export async function registerRoutes(app: Express): Promise<Server> {
 
       // Send system message
       const joinMessage = {
-        id: Date.now().toString(),
+        id: `${Date.now()}-system-${Math.random().toString(36).substr(2, 9)}`,
         userId: 'system',
         userName: 'System',
         text: `${userName} joined the room`,
@@ -158,7 +158,7 @@ export async function registerRoutes(app: Express): Promise<Server> {
 
         // Send system message
         const presentMessage = {
-          id: Date.now().toString(),
+          id: `${Date.now()}-system-${Math.random().toString(36).substr(2, 9)}`,
           userId: 'system',
           userName: 'System',
           text: `${userName} started screen sharing`,
@@ -234,7 +234,7 @@ export async function registerRoutes(app: Express): Promise<Server> {
 
         // Send system message
         const leaveMessage = {
-          id: Date.now().toString(),
+          id: `${Date.now()}-system-${Math.random().toString(36).substr(2, 9)}`,
           userId: 'system',
           userName: 'System',
           text: `${userName} left the room`,
@@ -257,7 +257,7 @@ export async function registerRoutes(app: Express): Promise<Server> {
       
       if (room) {
         const newMessage = {
-          id: Date.now().toString(),
+          id: `${Date.now()}-${socket.id}-${Math.random().toString(36).substr(2, 9)}`,
           userId: messageUserId || socket.id,
           userName: userName,
           text: message,
@@ -345,7 +345,7 @@ export async function registerRoutes(app: Express): Promise<Server> {
 
           // Send system message
           const disconnectMessage = {
-            id: Date.now().toString(),
+            id: `${Date.now()}-system-${Math.random().toString(36).substr(2, 9)}`,
             userId: 'system',
             userName: 'System',
             text: `${participant.name} disconnected`,
