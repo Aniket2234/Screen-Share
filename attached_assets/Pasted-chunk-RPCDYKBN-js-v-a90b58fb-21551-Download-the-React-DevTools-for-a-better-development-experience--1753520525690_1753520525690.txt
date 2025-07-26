@@ -1,0 +1,73 @@
+chunk-RPCDYKBN.js?v=a90b58fb:21551 Download the React DevTools for a better development experience: https://reactjs.org/link/react-devtools
+WorkingScreenShare.tsx:190 ✅ TURN servers configured and ready
+WorkingScreenShare.tsx:291 🔌 Cleaning up singleton socket handlers
+chunk-RPCDYKBN.js?v=a90b58fb:16670 Uncaught ReferenceError: messageHandler is not defined
+    at WorkingScreenShare.tsx:295:7
+    at safelyCallDestroy (chunk-RPCDYKBN.js?v=a90b58fb:16748:13)
+    at commitHookEffectListUnmount (chunk-RPCDYKBN.js?v=a90b58fb:16875:19)
+    at invokePassiveEffectUnmountInDEV (chunk-RPCDYKBN.js?v=a90b58fb:18363:19)
+    at invokeEffectsInDev (chunk-RPCDYKBN.js?v=a90b58fb:19701:19)
+    at commitDoubleInvokeEffectsInDEV (chunk-RPCDYKBN.js?v=a90b58fb:19682:15)
+    at flushPassiveEffectsImpl (chunk-RPCDYKBN.js?v=a90b58fb:19503:13)
+    at flushPassiveEffects (chunk-RPCDYKBN.js?v=a90b58fb:19447:22)
+    at commitRootImpl (chunk-RPCDYKBN.js?v=a90b58fb:19416:13)
+    at commitRoot (chunk-RPCDYKBN.js?v=a90b58fb:19277:13)
+WorkingScreenShare.tsx:190 ✅ TURN servers configured and ready
+chunk-RPCDYKBN.js?v=a90b58fb:14032 The above error occurred in the <WorkingScreenShare> component:
+
+    at WorkingScreenShare (https://3097d9d6-fdd6-41fb-ac1b-e52e25a8ca20-00-2qdxrknjvqo2p.picard.replit.dev/src/components/WorkingScreenShare.tsx:36:46)
+    at HybridScreenShare (https://3097d9d6-fdd6-41fb-ac1b-e52e25a8ca20-00-2qdxrknjvqo2p.picard.replit.dev/src/components/HybridScreenShare.tsx:25:34)
+    at div
+    at ThemeProvider (https://3097d9d6-fdd6-41fb-ac1b-e52e25a8ca20-00-2qdxrknjvqo2p.picard.replit.dev/src/contexts/ThemeContext.tsx:20:33)
+    at QueryClientProvider (https://3097d9d6-fdd6-41fb-ac1b-e52e25a8ca20-00-2qdxrknjvqo2p.picard.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/@tanstack_react-query.js?v=a90b58fb:2805:3)
+    at App
+
+Consider adding an error boundary to your tree to customize error handling behavior.
+Visit https://reactjs.org/link/error-boundaries to learn more about error boundaries.
+logCapturedError @ chunk-RPCDYKBN.js?v=a90b58fb:14032
+chunk-RPCDYKBN.js?v=a90b58fb:9129 Uncaught ReferenceError: messageHandler is not defined
+    at WorkingScreenShare.tsx:295:7
+    at safelyCallDestroy (chunk-RPCDYKBN.js?v=a90b58fb:16748:13)
+    at commitHookEffectListUnmount (chunk-RPCDYKBN.js?v=a90b58fb:16875:19)
+    at invokePassiveEffectUnmountInDEV (chunk-RPCDYKBN.js?v=a90b58fb:18363:19)
+    at invokeEffectsInDev (chunk-RPCDYKBN.js?v=a90b58fb:19701:19)
+    at commitDoubleInvokeEffectsInDEV (chunk-RPCDYKBN.js?v=a90b58fb:19682:15)
+    at flushPassiveEffectsImpl (chunk-RPCDYKBN.js?v=a90b58fb:19503:13)
+    at flushPassiveEffects (chunk-RPCDYKBN.js?v=a90b58fb:19447:22)
+    at commitRootImpl (chunk-RPCDYKBN.js?v=a90b58fb:19416:13)
+    at commitRoot (chunk-RPCDYKBN.js?v=a90b58fb:19277:13)
+WorkingScreenShare.tsx:291 🔌 Cleaning up singleton socket handlers
+chunk-RPCDYKBN.js?v=a90b58fb:16670 Uncaught ReferenceError: messageHandler is not defined
+    at WorkingScreenShare.tsx:295:7
+    at safelyCallDestroy (chunk-RPCDYKBN.js?v=a90b58fb:16748:13)
+    at commitHookEffectListUnmount (chunk-RPCDYKBN.js?v=a90b58fb:16875:19)
+    at commitPassiveUnmountInsideDeletedTreeOnFiber (chunk-RPCDYKBN.js?v=a90b58fb:18283:17)
+    at commitPassiveUnmountEffectsInsideOfDeletedTree_begin (chunk-RPCDYKBN.js?v=a90b58fb:18245:13)
+    at commitPassiveUnmountEffects_begin (chunk-RPCDYKBN.js?v=a90b58fb:18181:19)
+    at commitPassiveUnmountEffects (chunk-RPCDYKBN.js?v=a90b58fb:18169:11)
+    at flushPassiveEffectsImpl (chunk-RPCDYKBN.js?v=a90b58fb:19489:11)
+    at flushPassiveEffects (chunk-RPCDYKBN.js?v=a90b58fb:19447:22)
+    at chunk-RPCDYKBN.js?v=a90b58fb:19328:17
+chunk-RPCDYKBN.js?v=a90b58fb:14032 The above error occurred in the <WorkingScreenShare> component:
+
+    at WorkingScreenShare (https://3097d9d6-fdd6-41fb-ac1b-e52e25a8ca20-00-2qdxrknjvqo2p.picard.replit.dev/src/components/WorkingScreenShare.tsx:36:46)
+    at HybridScreenShare (https://3097d9d6-fdd6-41fb-ac1b-e52e25a8ca20-00-2qdxrknjvqo2p.picard.replit.dev/src/components/HybridScreenShare.tsx:25:34)
+    at div
+    at ThemeProvider (https://3097d9d6-fdd6-41fb-ac1b-e52e25a8ca20-00-2qdxrknjvqo2p.picard.replit.dev/src/contexts/ThemeContext.tsx:20:33)
+    at QueryClientProvider (https://3097d9d6-fdd6-41fb-ac1b-e52e25a8ca20-00-2qdxrknjvqo2p.picard.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/@tanstack_react-query.js?v=a90b58fb:2805:3)
+    at App
+
+Consider adding an error boundary to your tree to customize error handling behavior.
+Visit https://reactjs.org/link/error-boundaries to learn more about error boundaries.
+logCapturedError @ chunk-RPCDYKBN.js?v=a90b58fb:14032
+chunk-RPCDYKBN.js?v=a90b58fb:9129 Uncaught ReferenceError: messageHandler is not defined
+    at WorkingScreenShare.tsx:295:7
+    at safelyCallDestroy (chunk-RPCDYKBN.js?v=a90b58fb:16748:13)
+    at commitHookEffectListUnmount (chunk-RPCDYKBN.js?v=a90b58fb:16875:19)
+    at commitPassiveUnmountInsideDeletedTreeOnFiber (chunk-RPCDYKBN.js?v=a90b58fb:18283:17)
+    at commitPassiveUnmountEffectsInsideOfDeletedTree_begin (chunk-RPCDYKBN.js?v=a90b58fb:18245:13)
+    at commitPassiveUnmountEffects_begin (chunk-RPCDYKBN.js?v=a90b58fb:18181:19)
+    at commitPassiveUnmountEffects (chunk-RPCDYKBN.js?v=a90b58fb:18169:11)
+    at flushPassiveEffectsImpl (chunk-RPCDYKBN.js?v=a90b58fb:19489:11)
+    at flushPassiveEffects (chunk-RPCDYKBN.js?v=a90b58fb:19447:22)
+    at chunk-RPCDYKBN.js?v=a90b58fb:19328:17

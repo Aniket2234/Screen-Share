@@ -206,6 +206,8 @@ export default function WorkingScreenShare({ onBackToModeSelector }: WorkingScre
   }>({ actualBitrate: 0, targetBitrate: 0, fpsStability: 100 });
   
   const bandwidthMonitorRef = useRef<NodeJS.Timeout | null>(null);
+  const messageHandlerRef = useRef<((messageData: Message) => void) | null>(null);
+  const participantHandlerRef = useRef<((participantsList: Participant[]) => void) | null>(null);
 
   // Initialize TURN server testing
   useEffect(() => {
@@ -241,6 +243,10 @@ export default function WorkingScreenShare({ onBackToModeSelector }: WorkingScre
       const participantHandler = (participantsList: Participant[]) => {
         setParticipants(participantsList);
       };
+
+      // Store handlers in refs for cleanup
+      messageHandlerRef.current = messageHandler;
+      participantHandlerRef.current = participantHandler;
 
       // Register handlers with singleton manager
       socketManager.addMessageHandler(messageHandler);
@@ -292,11 +298,11 @@ export default function WorkingScreenShare({ onBackToModeSelector }: WorkingScre
       const socketManager = SocketManager.getInstance();
       
       // Remove handlers from singleton manager
-      if (messageHandler) {
-        socketManager.removeMessageHandler(messageHandler);
+      if (messageHandlerRef.current) {
+        socketManager.removeMessageHandler(messageHandlerRef.current);
       }
-      if (participantHandler) {
-        socketManager.removeParticipantHandler(participantHandler);
+      if (participantHandlerRef.current) {
+        socketManager.removeParticipantHandler(participantHandlerRef.current);
       }
       
       // Emit leave room event
@@ -797,7 +803,7 @@ export default function WorkingScreenShare({ onBackToModeSelector }: WorkingScre
                 });
 
                 // Apply maximum bandwidth SDP modifications
-                const enhancedOffer = enhanceSDPForMaxBandwidth(offer, quality);
+                const enhancedOffer = await enhanceSDPForMaxBandwidth(offer, quality);
                 await pc.setLocalDescription(enhancedOffer);
                 
                 console.log('📤 Sending optimized offer to viewer:', participant.id);
@@ -898,11 +904,22 @@ export default function WorkingScreenShare({ onBackToModeSelector }: WorkingScre
         const videoTrack = mediaRecorder.stream.getVideoTracks()[0];
         
         // Apply aggressive constraints to demand maximum bandwidth
+        const getQualityDimensions = (quality: string) => {
+          switch (quality) {
+            case '4K': return { width: 3840, height: 2160 };
+            case '1440p': return { width: 2560, height: 1440 };
+            case '1080p': return { width: 1920, height: 1080 };
+            case '720p': return { width: 1280, height: 720 };
+            case '480p': return { width: 854, height: 480 };
+            default: return { width: 1920, height: 1080 };
+          }
+        };
+        const dimensions = getQualityDimensions(quality);
         const aggressiveConstraints = {
           frameRate: { exact: fps, ideal: fps, min: fps }, // Force exact FPS
-          width: { exact: getQualityConstraints(quality).width.ideal },
-          height: { exact: getQualityConstraints(quality).height.ideal },
-          aspectRatio: { exact: getQualityConstraints(quality).width.ideal / getQualityConstraints(quality).height.ideal }
+          width: { exact: dimensions.width },
+          height: { exact: dimensions.height },
+          aspectRatio: { exact: dimensions.width / dimensions.height }
         };
         
         videoTrack.applyConstraints(aggressiveConstraints).then(() => {
@@ -1597,7 +1614,7 @@ export default function WorkingScreenShare({ onBackToModeSelector }: WorkingScre
           console.log('✅ Answer created');
 
           // Apply maximum bandwidth SDP modifications to answer
-          const enhancedAnswer = enhanceSDPForMaxBandwidth(answer, quality);
+          const enhancedAnswer = await enhanceSDPForMaxBandwidth(answer, quality);
           
           console.log('📥 Setting local description (answer)');
           await peerConnection.setLocalDescription(enhancedAnswer);
