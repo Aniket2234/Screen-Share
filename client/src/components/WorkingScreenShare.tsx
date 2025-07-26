@@ -1,5 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { io, Socket } from 'socket.io-client';
+import SocketManager from '../lib/socketManager';
 import { 
   Monitor, 
   Square, 
@@ -214,40 +215,36 @@ export default function WorkingScreenShare({ onBackToModeSelector }: WorkingScre
   // Initialize Socket.IO - only when entering room
   useEffect(() => {
     if (isInRoom) {
-      // Always clean up existing socket first
-      if (socketRef.current) {
-        console.log('🔌 Cleaning up existing Socket.io connection');
-        socketRef.current.off();
-        socketRef.current.disconnect();
-        socketRef.current = null;
-      }
-
-      console.log('🔌 Creating new Socket.io connection');
-      const socket = io();
+      console.log('🔌 Connecting to room using singleton socket manager');
+      const socketManager = SocketManager.getInstance();
+      const socket = socketManager.connect();
       socketRef.current = socket;
 
       // Join room
       socket.emit('join-room', { roomId, userName });
 
-      // Simple message handler now that server-side duplicates are fixed
-      socket.on('new-message', (messageData: Message) => {
-        console.log('📨 Received message:', messageData.id);
+      // Create message handler
+      const messageHandler = (messageData: Message) => {
+        console.log('📨 Received message via singleton:', messageData.id);
         setMessages(prev => {
-          // Still check for duplicates as safety measure
           const exists = prev.some(msg => msg.id === messageData.id);
           if (exists) {
             console.log('🚫 Duplicate message ID detected, skipping:', messageData.id);
             return prev;
           }
-          console.log('✅ Adding message:', messageData.id);
+          console.log('✅ Adding unique message:', messageData.id);
           return [...prev, messageData];
         });
-      });
+      };
 
-      // Listen for participants updates
-      socket.on('participants-updated', (participantsList: Participant[]) => {
+      // Create participant handler
+      const participantHandler = (participantsList: Participant[]) => {
         setParticipants(participantsList);
-      });
+      };
+
+      // Register handlers with singleton manager
+      socketManager.addMessageHandler(messageHandler);
+      socketManager.addParticipantHandler(participantHandler);
 
       // WebRTC signaling listeners
       socket.on('presenter-started', async ({ presenterId, presenterName }) => {
@@ -291,13 +288,20 @@ export default function WorkingScreenShare({ onBackToModeSelector }: WorkingScre
 
     // Cleanup function for component unmount
     return () => {
-      console.log('🔌 Cleaning up Socket.io connection');
+      console.log('🔌 Cleaning up singleton socket handlers');
+      const socketManager = SocketManager.getInstance();
+      
+      // Remove handlers from singleton manager
+      if (messageHandler) {
+        socketManager.removeMessageHandler(messageHandler);
+      }
+      if (participantHandler) {
+        socketManager.removeParticipantHandler(participantHandler);
+      }
+      
+      // Emit leave room event
       if (socketRef.current) {
-        // Remove all event listeners to prevent duplicates
-        socketRef.current.off();
         socketRef.current.emit('leave-room', { roomId, userName });
-        socketRef.current.disconnect();
-        socketRef.current = null;
       }
     };
   }, [isInRoom, roomId, userName]); // Include all dependencies to ensure proper cleanup on changes
@@ -1376,10 +1380,11 @@ export default function WorkingScreenShare({ onBackToModeSelector }: WorkingScre
   };
 
   const sendMessage = () => {
-    if (!messageInput.trim() || !socketRef.current) return;
+    if (!messageInput.trim()) return;
 
-    // Only send to server - don't add locally to avoid duplicates
-    socketRef.current.emit('send-message', {
+    // Use singleton socket manager to send message
+    const socketManager = SocketManager.getInstance();
+    socketManager.emit('send-message', {
       roomId,
       message: messageInput.trim(),
       userName,
