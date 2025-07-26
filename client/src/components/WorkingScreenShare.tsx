@@ -715,6 +715,11 @@ export default function WorkingScreenShare({ onBackToModeSelector }: WorkingScre
         // Send stream to all existing participants as presenter with cross-network optimization
         setTimeout(async () => {
           setConnectionStatus('connecting');
+          
+          // Clear any lingering peer connections before starting fresh
+          closeAllPeerConnections();
+          await new Promise(resolve => setTimeout(resolve, 200));
+          
           for (const participant of participants) {
             if (participant.id !== socketRef.current?.id && socketRef.current) {
               console.log('🔗 Presenter creating connection to viewer:', participant.name, participant.id, crossNetworkMode ? '(cross-network mode)' : '');
@@ -723,10 +728,19 @@ export default function WorkingScreenShare({ onBackToModeSelector }: WorkingScre
               const existingConnection = peerConnectionsRef.current.get(participant.id);
               if (existingConnection) {
                 console.log(`🔧 Cleaning up existing connection for ${participant.id}, state: ${existingConnection.connectionState}`);
+                // Properly clean up event listeners
+                existingConnection.onicecandidate = null;
+                existingConnection.ontrack = null;
+                existingConnection.onconnectionstatechange = null;
+                existingConnection.ondatachannel = null;
+                existingConnection.oniceconnectionstatechange = null;
+                existingConnection.onicegatheringstatechange = null;
+                existingConnection.onsignalingstatechange = null;
+                
                 existingConnection.close();
                 peerConnectionsRef.current.delete(participant.id);
-                // Small delay to ensure cleanup completes
-                await new Promise(resolve => setTimeout(resolve, 100));
+                // Longer delay to ensure cleanup completes
+                await new Promise(resolve => setTimeout(resolve, 500));
               }
               
               // Create new peer connection with hybrid configuration
@@ -819,12 +833,41 @@ export default function WorkingScreenShare({ onBackToModeSelector }: WorkingScre
                   crossNetworkMode: crossNetworkMode
                 });
                 
-                // Monitor connection success with proper timing
+                // Monitor connection success with proper timing and retry on failure
                 setTimeout(() => {
                   if (pc.connectionState === 'connected') {
                     console.log(`✅ Connection successful to ${participant.name}`);
-                  } else if (pc.connectionState === 'failed') {
+                  } else if (pc.connectionState === 'failed' || pc.connectionState === 'closed') {
                     console.log(`❌ Connection failed to ${participant.name} - state: ${pc.connectionState}`);
+                    console.log('🔄 Attempting reconnection...');
+                    // Clean up failed connection and retry
+                    pc.close();
+                    peerConnectionsRef.current.delete(participant.id);
+                    
+                    // Retry after a brief delay
+                    setTimeout(async () => {
+                      if (currentStreamRef.current && socketRef.current) {
+                        console.log(`🔄 Retrying connection to ${participant.name}`);
+                        const newPc = await createPeerConnection(participant.id, false);
+                        if (newPc && currentStreamRef.current) {
+                          // Add tracks and create offer again
+                          currentStreamRef.current.getTracks().forEach(track => {
+                            newPc.addTrack(track, currentStreamRef.current!);
+                          });
+                          
+                          const retryOffer = await newPc.createOffer();
+                          const enhancedRetryOffer = await enhanceSDPForMaxBandwidth(retryOffer, quality);
+                          await newPc.setLocalDescription(new RTCSessionDescription(enhancedRetryOffer));
+                          
+                          socketRef.current.emit('webrtc-offer', {
+                            roomId,
+                            offer: retryOffer,
+                            targetId: participant.id,
+                            crossNetworkMode: crossNetworkMode
+                          });
+                        }
+                      }
+                    }, 2000);
                   } else {
                     console.log(`🔄 Connection still in progress to ${participant.name} - state: ${pc.connectionState}`);
                   }
@@ -1353,8 +1396,16 @@ export default function WorkingScreenShare({ onBackToModeSelector }: WorkingScre
     setIsPresenting(false);
     setStreamError(null);
     
+    // Clear the video container immediately
+    if (videoContainerRef.current) {
+      videoContainerRef.current.innerHTML = '';
+    }
+    
     // Clean up peer connections
     closeAllPeerConnections();
+    
+    // Reset connection status
+    setConnectionStatus('disconnected');
     
     if (socketRef.current) {
       socketRef.current.emit('stop-presenting', { roomId, userName });
@@ -1767,10 +1818,26 @@ export default function WorkingScreenShare({ onBackToModeSelector }: WorkingScre
     console.log('🔌 Closing all peer connections');
     peerConnectionsRef.current.forEach((pc, peerId) => {
       console.log(`🔌 Closing connection to ${peerId}, state: ${pc.connectionState}`);
+      // Remove all event listeners to prevent conflicts
+      pc.onicecandidate = null;
+      pc.ontrack = null;
+      pc.onconnectionstatechange = null;
+      pc.ondatachannel = null;
+      pc.oniceconnectionstatechange = null;
+      pc.onicegatheringstatechange = null;
+      pc.onsignalingstatechange = null;
+      
+      // Close the connection
       pc.close();
     });
     peerConnectionsRef.current.clear();
     setRemoteStreams(new Map());
+    
+    // Clear bandwidth monitoring
+    if (bandwidthMonitorRef.current) {
+      clearInterval(bandwidthMonitorRef.current);
+      bandwidthMonitorRef.current = null;
+    }
   };
 
   const debugStream = () => {
