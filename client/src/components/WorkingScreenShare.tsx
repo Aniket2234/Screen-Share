@@ -226,17 +226,10 @@ export default function WorkingScreenShare({ onBackToModeSelector }: WorkingScre
       });
 
       // Listen for new messages (only from other users)
-      socket.on('new-message', (messageData: { roomId: string, message: string, userName: string, userId: string }) => {
+      socket.on('new-message', (messageData: Message) => {
         // Only add messages from other users to avoid duplicates
         if (messageData.userId !== userId) {
-          const newMessage: Message = {
-            id: uuidv4(),
-            userId: messageData.userId,
-            userName: messageData.userName,
-            text: messageData.message,
-            timestamp: Date.now()
-          };
-          setMessages(prev => [...prev, newMessage]);
+          setMessages(prev => [...prev, messageData]);
         }
       });
 

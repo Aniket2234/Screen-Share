@@ -591,7 +591,8 @@ export default function StreamScreenShare({ onBackToModeSelector }: StreamScreen
       socketRef.current.emit('send-message', {
         roomId,
         message: message.text,
-        userName
+        userName,
+        userId
       });
       console.log('📨 Message sent through Socket.io');
     }

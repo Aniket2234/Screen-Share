@@ -19,7 +19,11 @@ Successfully migrated Screen Share Pro application from Bolt to Replit environme
 - Settings for FPS and audio
 
 ## Recent Changes
-- **2025-01-26**: **✅ REPLIT MIGRATION COMPLETED**: Successfully migrated from Replit Agent to standard Replit environment
+- **2025-01-26**: **✅ REPLIT MIGRATION & COMMUNICATION FIXES COMPLETED**: Successfully migrated from Replit Agent to standard Replit environment
+  - **Participant Status Fixed**: Resolved issue where all participants showed as "offline" - now correctly shows "connected" status
+  - **Chat Messaging Fixed**: Fixed message sending/receiving functionality - messages now properly transmit between users
+  - **Server-Client Communication**: Added missing `send-message` handler on server and aligned message formats between client and server
+  - **Real-time Updates**: Both participant status and chat messaging now work in real-time across all connected users
   - **Fixed TypeScript Errors**: Resolved WebRTC API compatibility issues and deprecated property usage
   - **Connection Stability**: Fixed WebRTC connection failures with improved TURN server configuration
   - **Migration Checklist**: Completed all migration steps including package installation, workflow restart, and project verification

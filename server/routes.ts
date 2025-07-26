@@ -119,7 +119,7 @@ export async function registerRoutes(app: Express): Promise<Server> {
         name: userName,
         isPresenting: false,
         joinedAt: Date.now(),
-        connectionStatus: 'offline'
+        connectionStatus: 'connected'
       };
       
       room.participants.set(socket.id, participant);
@@ -247,6 +247,28 @@ export async function registerRoutes(app: Express): Promise<Server> {
         if (room.participants.size === 0) {
           rooms.delete(roomId);
         }
+      }
+    });
+
+    // Handle sending messages
+    socket.on('send-message', (data: { roomId: string; message: string; userName: string; userId?: string }) => {
+      const { roomId, message, userName, userId: messageUserId } = data;
+      const room = rooms.get(roomId);
+      
+      if (room) {
+        const newMessage = {
+          id: Date.now().toString(),
+          userId: messageUserId || socket.id,
+          userName: userName,
+          text: message,
+          timestamp: Date.now()
+        };
+        
+        room.messages.push(newMessage);
+        // Send to all participants in the room
+        io.to(roomId).emit('new-message', newMessage);
+        
+        console.log(`Message from ${userName} in room ${roomId}: ${message}`);
       }
     });
 
