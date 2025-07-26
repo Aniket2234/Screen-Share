@@ -1069,11 +1069,9 @@ export default function StreamScreenShare({ onBackToModeSelector }: StreamScreen
                       )}
                     </div>
                     <div className="flex items-center space-x-2">
-                      <div className={`w-3 h-3 rounded-full ${
-                        participant.connectionStatus === 'connected' ? 'bg-green-500' : 'bg-gray-500'
-                      }`} />
-                      <span className="text-xs text-gray-400">
-                        {participant.connectionStatus === 'connected' ? 'Online' : 'Offline'}
+                      <div className="w-3 h-3 rounded-full bg-green-500" />
+                      <span className="text-xs text-green-400">
+                        Online
                       </span>
                     </div>
                   </div>

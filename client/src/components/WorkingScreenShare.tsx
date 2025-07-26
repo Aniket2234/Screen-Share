@@ -2343,13 +2343,8 @@ export default function WorkingScreenShare({ onBackToModeSelector }: WorkingScre
                             Presenting
                           </span>
                         )}
-                        <span className={`inline-flex items-center px-2 py-0.5 rounded text-xs font-medium ${
-                          participant.connectionStatus === 'connected' ? 'bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-200' :
-                          participant.connectionStatus === 'connecting' ? 'bg-yellow-100 text-yellow-800 dark:bg-yellow-900 dark:text-yellow-200' :
-                          participant.connectionStatus === 'failed' ? 'bg-red-100 text-red-800 dark:bg-red-900 dark:text-red-200' :
-                          'bg-gray-100 text-gray-800 dark:bg-gray-900 dark:text-gray-200'
-                        }`}>
-                          {participant.connectionStatus || 'offline'}
+                        <span className="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-200">
+                          Online
                         </span>
                       </div>
                     </div>
