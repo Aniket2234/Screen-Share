@@ -211,9 +211,10 @@ export default function WorkingScreenShare({ onBackToModeSelector }: WorkingScre
     testTurnServers();
   }, []);
 
-  // Initialize Socket.IO
+  // Initialize Socket.IO - only when entering room
   useEffect(() => {
     if (isInRoom && !socketRef.current) {
+      console.log('🔌 Creating new Socket.io connection');
       const socket = io();
       socketRef.current = socket;
 
@@ -227,13 +228,16 @@ export default function WorkingScreenShare({ onBackToModeSelector }: WorkingScre
 
       // Listen for new messages (from all users including self)
       socket.on('new-message', (messageData: Message) => {
+        console.log('📨 Received message:', messageData);
         setMessages(prev => {
           // Prevent duplicate messages by checking ID
           const exists = prev.some(msg => msg.id === messageData.id);
-          if (!exists) {
-            return [...prev, messageData];
+          if (exists) {
+            console.log('🚫 Duplicate message detected, skipping:', messageData.id);
+            return prev;
           }
-          return prev;
+          console.log('✅ Adding new message:', messageData.id);
+          return [...prev, messageData];
         });
       });
 
@@ -275,15 +279,18 @@ export default function WorkingScreenShare({ onBackToModeSelector }: WorkingScre
         await handleICECandidate(candidate, senderId);
       });
 
-      return () => {
-        if (socketRef.current) {
-          socketRef.current.emit('leave-room', { roomId, userName });
-          socketRef.current.disconnect();
-          socketRef.current = null;
-        }
-      };
     }
-  }, [isInRoom, roomId, userName]);
+
+    // Cleanup function for component unmount
+    return () => {
+      console.log('🔌 Cleaning up Socket.io connection');
+      if (socketRef.current) {
+        socketRef.current.emit('leave-room', { roomId, userName });
+        socketRef.current.disconnect();
+        socketRef.current = null;
+      }
+    };
+  }, [isInRoom]); // Only depend on isInRoom, not roomId or userName
 
   // Auto-scroll chat messages
   useEffect(() => {
