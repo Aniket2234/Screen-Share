@@ -435,47 +435,14 @@ export default function StreamScreenShare({ onBackToModeSelector }: StreamScreen
         });
       }
 
-      // Listen for chat messages - simplified approach for custom events
+      // DISABLED: Stream.io custom events for messaging - using Socket.io only
+      // This was causing duplicate messages as both systems were sending the same message
+      /*
       callInstance.on('custom', (event) => {
         console.log('Received custom event:', event);
-        console.log('Full event object structure:', JSON.stringify(event, null, 2));
-        
-        // Stream.io puts custom data in event.custom object!
-        if (event.custom && event.custom.messageId && event.custom.messageText && event.custom.messageUserName) {
-          console.log('Found message fields in event.custom - processing as chat message');
-          
-          const messageData = {
-            id: event.custom.messageId,
-            userId: event.custom.messageUserId,
-            userName: event.custom.messageUserName,
-            text: event.custom.messageText,
-            timestamp: event.custom.messageTimestamp
-          };
-          
-          console.log('Extracted message data from event.custom:', messageData);
-          
-          // Only add messages from other users to prevent duplicates
-          if (event.user?.id !== userId) {
-            console.log('Adding message from other user:', messageData);
-            setMessages(prev => {
-              // Prevent duplicate messages
-              const exists = prev.some(msg => 
-                msg.id === messageData.id || 
-                (msg.text === messageData.text && Math.abs(msg.timestamp - messageData.timestamp) < 1000)
-              );
-              if (!exists) {
-                return [...prev, messageData];
-              }
-              console.log('Duplicate message detected, skipping');
-              return prev;
-            });
-          } else {
-            console.log('Ignoring own message to prevent duplicate');
-          }
-        } else {
-          console.log('Custom event does not contain message fields in event.custom, ignoring');
-        }
+        // ... Stream.io messaging code disabled to prevent duplicates
       });
+      */
 
       // Also listen for other Stream.io events
       callInstance.on('call.session_participant_joined', (event) => {
