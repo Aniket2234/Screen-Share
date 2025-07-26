@@ -221,25 +221,28 @@ export default function WorkingScreenShare({ onBackToModeSelector }: WorkingScre
       // Join room
       socket.emit('join-room', { roomId, userName });
 
-      // Listen for participants updates
-      socket.on('participants-updated', (participantsList: Participant[]) => {
-        setParticipants(participantsList);
-      });
-
-      // Listen for new messages (from all users including self)
-      socket.on('new-message', (messageData: Message) => {
-        console.log('📨 Received message:', messageData);
+      // Create message handler to prevent duplicate registrations
+      const handleNewMessage = (messageData: Message) => {
+        console.log('📨 Received message event:', messageData.id);
         setMessages(prev => {
           // Prevent duplicate messages by checking ID
           const exists = prev.some(msg => msg.id === messageData.id);
           if (exists) {
-            console.log('🚫 Duplicate message detected, skipping:', messageData.id);
+            console.log('🚫 Duplicate message ID detected, skipping:', messageData.id);
             return prev;
           }
           console.log('✅ Adding new message:', messageData.id);
           return [...prev, messageData];
         });
+      };
+
+      // Listen for participants updates
+      socket.on('participants-updated', (participantsList: Participant[]) => {
+        setParticipants(participantsList);
       });
+
+      // Listen for new messages with single handler
+      socket.on('new-message', handleNewMessage);
 
       // WebRTC signaling listeners
       socket.on('presenter-started', async ({ presenterId, presenterName }) => {
@@ -285,6 +288,15 @@ export default function WorkingScreenShare({ onBackToModeSelector }: WorkingScre
     return () => {
       console.log('🔌 Cleaning up Socket.io connection');
       if (socketRef.current) {
+        // Remove all event listeners to prevent duplicates
+        socketRef.current.off('participants-updated');
+        socketRef.current.off('new-message');
+        socketRef.current.off('presenter-started');
+        socketRef.current.off('presenter-stopped');
+        socketRef.current.off('webrtc-offer');
+        socketRef.current.off('webrtc-answer');
+        socketRef.current.off('webrtc-ice-candidate');
+        
         socketRef.current.emit('leave-room', { roomId, userName });
         socketRef.current.disconnect();
         socketRef.current = null;
