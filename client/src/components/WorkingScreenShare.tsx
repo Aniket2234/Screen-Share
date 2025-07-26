@@ -227,7 +227,14 @@ export default function WorkingScreenShare({ onBackToModeSelector }: WorkingScre
 
       // Listen for new messages (from all users including self)
       socket.on('new-message', (messageData: Message) => {
-        setMessages(prev => [...prev, messageData]);
+        setMessages(prev => {
+          // Prevent duplicate messages by checking ID
+          const exists = prev.some(msg => msg.id === messageData.id);
+          if (!exists) {
+            return [...prev, messageData];
+          }
+          return prev;
+        });
       });
 
       // WebRTC signaling listeners
