@@ -1,0 +1,60 @@
+chunk-RPCDYKBN.js?v=a90b58fb:21551 Download the React DevTools for a better development experience: https://reactjs.org/link/react-devtools
+WorkingScreenShare.tsx:189 ✅ TURN servers configured and ready
+WorkingScreenShare.tsx:189 ✅ TURN servers configured and ready
+WorkingScreenShare.tsx:565 🎬 Starting screen share...
+WorkingScreenShare.tsx:604 🎯 Screen share constraints: {
+  "video": {
+    "frameRate": {
+      "ideal": 30,
+      "max": 30
+    },
+    "width": {
+      "ideal": 1920
+    },
+    "height": {
+      "ideal": 1080
+    },
+    "cursor": "always",
+    "displaySurface": "monitor"
+  },
+  "audio": {
+    "echoCancellation": false,
+    "noiseSuppression": false,
+    "autoGainControl": false,
+    "sampleRate": {
+      "ideal": 48000
+    },
+    "channelCount": {
+      "ideal": 2
+    }
+  }
+}
+WorkingScreenShare.tsx:610 ✅ Got screen share stream: Object
+WorkingScreenShare.tsx:631 ✅ Applied constraints to force exact settings
+WorkingScreenShare.tsx:635 🎯 Final stream settings: Object
+WorkingScreenShare.tsx:701 🔗 Presenter creating connection to viewer: User 6222 XbJ_hdcE_9QKUR_UAAAB 
+WorkingScreenShare.tsx:1441 🔄 Creating simplified connection for XbJ_hdcE_9QKUR_UAAAB
+WorkingScreenShare.tsx:726 ➕ Adding track to peer connection: audio 9827f85f-bcad-43d7-88aa-999bd5ef6f5d
+WorkingScreenShare.tsx:448 📊 Started bandwidth monitoring for 1080p (target: 0.2 Mbps)
+WorkingScreenShare.tsx:772 🔧 Configured audio transceiver for 1080p: Object
+WorkingScreenShare.tsx:726 ➕ Adding track to peer connection: video cb166c54-c909-440f-8a90-9bcd4795665e
+WorkingScreenShare.tsx:448 📊 Started bandwidth monitoring for 1080p (target: 10.0 Mbps)
+WorkingScreenShare.tsx:772 🔧 Configured video transceiver for 1080p: Object
+WorkingScreenShare.tsx:354 🚀 Enhanced SDP for 1080p: Object
+WorkingScreenShare.tsx:793 📤 Sending optimized offer to viewer: XbJ_hdcE_9QKUR_UAAAB
+WorkingScreenShare.tsx:1481 🧊 Sending ICE candidate for XbJ_hdcE_9QKUR_UAAAB
+WorkingScreenShare.tsx:1481 🧊 Sending ICE candidate for XbJ_hdcE_9QKUR_UAAAB
+WorkingScreenShare.tsx:272 📞 Received WebRTC answer from: XbJ_hdcE_9QKUR_UAAAB
+WorkingScreenShare.tsx:1661 📞 Setting remote answer from: XbJ_hdcE_9QKUR_UAAAB
+WorkingScreenShare.tsx:277 🧊 Received ICE candidate from: XbJ_hdcE_9QKUR_UAAAB
+WorkingScreenShare.tsx:277 🧊 Received ICE candidate from: XbJ_hdcE_9QKUR_UAAAB
+WorkingScreenShare.tsx:710 🔗 Screen share connection state for User 6222: connecting
+WorkingScreenShare.tsx:413 📊 FPS instability detected (0.0%), demanding more bandwidth
+WorkingScreenShare.tsx:427 🚀 Increased bandwidth demand: Object
+WorkingScreenShare.tsx:413 📊 FPS instability detected (0.0%), demanding more bandwidth
+WorkingScreenShare.tsx:427 🚀 Increased bandwidth demand: Object
+WorkingScreenShare.tsx:808 🔄 Connection still in progress to User 6222 - state: connecting
+WorkingScreenShare.tsx:413 📊 FPS instability detected (0.0%), demanding more bandwidth
+WorkingScreenShare.tsx:427 🚀 Increased bandwidth demand: {newMaxBitrate: '20.0 Mbps', newMinBitrate: '9.0 Mbps', reason: 'FPS stability below 80%'}
+WorkingScreenShare.tsx:413 📊 FPS instability detected (0.0%), demanding more bandwidth
+WorkingScreenShare.tsx:427 🚀 Increased bandwidth demand: {newMaxBitrate: '20.0 Mbps', newMinBitrate: '9.0 Mbps', reason: 'FPS stability below 80%'}

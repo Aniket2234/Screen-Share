@@ -180,7 +180,7 @@ export default function WorkingScreenShare({ onBackToModeSelector }: WorkingScre
       bundlePolicy: 'max-bundle' as RTCBundlePolicy,
       rtcpMuxPolicy: 'require' as RTCRtcpMuxPolicy,
       // Maximum bandwidth configuration
-      sdpSemantics: 'unified-plan' as RTCSdpSemantics
+
     };
   };
 
@@ -417,16 +417,12 @@ export default function WorkingScreenShare({ onBackToModeSelector }: WorkingScre
             if (params.encodings && params.encodings[0]) {
               const currentMax = params.encodings[0].maxBitrate || targetBitrate;
               const newMaxBitrate = Math.min(currentMax * 1.5, targetBitrate * 2); // Up to 2x target
-              const newMinBitrate = Math.max(params.encodings[0].minBitrate || 0, targetBitrate * 0.9); // At least 90% of target
-
               params.encodings[0].maxBitrate = newMaxBitrate;
-              params.encodings[0].minBitrate = newMinBitrate;
               
               await transceiver.sender.setParameters(params);
               
               console.log(`🚀 Increased bandwidth demand:`, {
                 newMaxBitrate: `${(newMaxBitrate / 1000000).toFixed(1)} Mbps`,
-                newMinBitrate: `${(newMinBitrate / 1000000).toFixed(1)} Mbps`,
                 reason: 'FPS stability below 80%'
               });
             }
@@ -589,8 +585,7 @@ export default function WorkingScreenShare({ onBackToModeSelector }: WorkingScre
           frameRate: { ideal: fps, max: fps },
           width: { ideal: qualityConstraints.width.ideal },
           height: { ideal: qualityConstraints.height.ideal },
-          cursor: showCursor ? 'always' : 'never' as any,
-          displaySurface: 'monitor' as any
+          // Note: cursor and displaySurface are browser-specific constraints
         },
         audio: audioEnabled || microphoneEnabled ? {
           echoCancellation: false,
@@ -754,12 +749,10 @@ export default function WorkingScreenShare({ onBackToModeSelector }: WorkingScre
                       params.encodings[0].maxFramerate = fps;
                       params.encodings[0].active = true;
                       // Aggressive video settings for consistent FPS
-                      params.encodings[0].degradationPreference = 'maintain-framerate' as any; // Prioritize FPS over resolution
-                      params.encodings[0].minBitrate = Math.floor(maxBitrate * 0.8); // Minimum bandwidth demand
+                      params.encodings[0].priority = 'high' as any; // Prioritize FPS over resolution
                     } else if (track.kind === 'audio') {
-                      // Force maximum audio quality
-                      params.encodings[0].minBitrate = Math.floor(maxBitrate * 0.9); // High minimum for audio
-                      params.encodings[0].dtx = false; // Disable discontinuous transmission for consistent quality
+                      // Force maximum audio quality - use priority instead of deprecated fields
+                      params.encodings[0].priority = 'high' as any;
                     }
                     
                     transceiver.sender.setParameters(params).catch(err => 
@@ -771,9 +764,8 @@ export default function WorkingScreenShare({ onBackToModeSelector }: WorkingScre
                     
                     console.log(`🔧 Configured ${track.kind} transceiver for ${quality}:`, {
                       maxBitrate: `${(maxBitrate / 1000000).toFixed(1)} Mbps`,
-                      minBitrate: `${(Math.floor(maxBitrate * 0.8) / 1000000).toFixed(1)} Mbps`,
                       maxFramerate: track.kind === 'video' ? fps : 'N/A',
-                      networkPriority: 'high'
+                      priority: 'high'
                     });
                   }
                 });
@@ -783,11 +775,11 @@ export default function WorkingScreenShare({ onBackToModeSelector }: WorkingScre
                   offerToReceiveAudio: true,
                   offerToReceiveVideo: true,
                   iceRestart: crossNetworkMode,
-                  voiceActivityDetection: false // Better for cross-network
+                  // VoiceActivityDetection is deprecated
                 });
 
                 // Apply maximum bandwidth SDP modifications
-                const enhancedOffer = await enhanceSDPForMaxBandwidth(offer, quality);
+                const enhancedOffer = enhanceSDPForMaxBandwidth(offer, quality);
                 await pc.setLocalDescription(enhancedOffer);
                 
                 console.log('📤 Sending optimized offer to viewer:', participant.id);
@@ -1597,7 +1589,7 @@ export default function WorkingScreenShare({ onBackToModeSelector }: WorkingScre
           console.log('✅ Answer created');
 
           // Apply maximum bandwidth SDP modifications to answer
-          const enhancedAnswer = await enhanceSDPForMaxBandwidth(answer, quality);
+          const enhancedAnswer = enhanceSDPForMaxBandwidth(answer, quality);
           
           console.log('📥 Setting local description (answer)');
           await peerConnection.setLocalDescription(enhancedAnswer);
@@ -1606,7 +1598,7 @@ export default function WorkingScreenShare({ onBackToModeSelector }: WorkingScre
           console.log('📤 Sending answer to:', senderId);
           socketRef.current.emit('webrtc-answer', {
             roomId,
-            answer,
+            answer: enhancedAnswer,
             targetId: senderId
           });
           
@@ -1718,7 +1710,7 @@ export default function WorkingScreenShare({ onBackToModeSelector }: WorkingScre
         offerToReceiveAudio: true,
         offerToReceiveVideo: true,
         iceRestart: true,
-        voiceActivityDetection: false
+        // VoiceActivityDetection removed as deprecated
       });
       
       await pc.setLocalDescription(offer);
