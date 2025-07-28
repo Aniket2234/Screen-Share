@@ -1,0 +1,61 @@
+chunk-RPCDYKBN.js?v=d77f2535:21551 Download the React DevTools for a better development experience: https://reactjs.org/link/react-devtools
+WorkingScreenShare.tsx:151 ✅ TURN servers configured and ready
+WorkingScreenShare.tsx:258 🔌 Cleaning up singleton socket handlers
+WorkingScreenShare.tsx:151 ✅ TURN servers configured and ready
+WorkingScreenShare.tsx:258 🔌 Cleaning up singleton socket handlers
+WorkingScreenShare.tsx:258 🔌 Cleaning up singleton socket handlers
+WorkingScreenShare.tsx:181 🔌 Connecting to room using singleton socket manager
+socketManager.ts:32 🔌 Creating new singleton Socket.io connection
+socketManager.ts:53 ✅ Singleton socket connected
+socketManager.ts:48 👥 Singleton received participants update
+socketManager.ts:43 📨 Singleton received message: 1753680287180-system-yv9tzbq1e
+WorkingScreenShare.tsx:191 📨 Received message via singleton: 1753680287180-system-yv9tzbq1e
+WorkingScreenShare.tsx:198 ✅ Adding unique message: 1753680287180-system-yv9tzbq1e
+WorkingScreenShare.tsx:198 ✅ Adding unique message: 1753680287180-system-yv9tzbq1e
+socketManager.ts:48 👥 Singleton received participants update
+socketManager.ts:48 👥 Singleton received participants update
+socketManager.ts:43 📨 Singleton received message: 1753680293057-system-kyt5khoe1
+WorkingScreenShare.tsx:191 📨 Received message via singleton: 1753680293057-system-kyt5khoe1
+WorkingScreenShare.tsx:218 👥 Presenter started: User xqch ID: 8rAXnOH4PJsishFiAAAB
+WorkingScreenShare.tsx:221 📺 Viewer ready to receive stream from presenter
+WorkingScreenShare.tsx:198 ✅ Adding unique message: 1753680293057-system-kyt5khoe1
+WorkingScreenShare.tsx:198 ✅ Adding unique message: 1753680293057-system-kyt5khoe1
+socketManager.ts:48 👥 Singleton received participants update
+WorkingScreenShare.tsx:240 📞 Received WebRTC offer from: 8rAXnOH4PJsishFiAAAB
+WorkingScreenShare.tsx:1580 📞 Handling WebRTC offer from: 8rAXnOH4PJsishFiAAAB as presenter: false
+WorkingScreenShare.tsx:1581 📋 Offer details: Object
+WorkingScreenShare.tsx:1585 🆕 Creating new peer connection for: 8rAXnOH4PJsishFiAAAB
+WorkingScreenShare.tsx:1379 🔄 Creating connection for 8rAXnOH4PJsishFiAAAB, TURN-only: false
+WorkingScreenShare.tsx:1390 🔧 Using ICE configuration: Object
+WorkingScreenShare.tsx:1590 🔍 Current signaling state: stable
+WorkingScreenShare.tsx:1604 📥 Setting remote description (offer)
+WorkingScreenShare.tsx:250 🧊 Received ICE candidate from: 8rAXnOH4PJsishFiAAAB
+WorkingScreenShare.tsx:250 🧊 Received ICE candidate from: 8rAXnOH4PJsishFiAAAB
+WorkingScreenShare.tsx:250 🧊 Received ICE candidate from: 8rAXnOH4PJsishFiAAAB
+WorkingScreenShare.tsx:1506 🎥 Received audio track from 8rAXnOH4PJsishFiAAAB
+WorkingScreenShare.tsx:1510 📺 Processing remote stream from 8rAXnOH4PJsishFiAAAB
+WorkingScreenShare.tsx:1532 📡 Marking viewer as connected after receiving stream from 8rAXnOH4PJsishFiAAAB
+WorkingScreenShare.tsx:1506 🎥 Received video track from 8rAXnOH4PJsishFiAAAB
+WorkingScreenShare.tsx:1510 📺 Processing remote stream from 8rAXnOH4PJsishFiAAAB
+WorkingScreenShare.tsx:1532 📡 Marking viewer as connected after receiving stream from 8rAXnOH4PJsishFiAAAB
+WorkingScreenShare.tsx:1606 ✅ Remote description set successfully
+WorkingScreenShare.tsx:1608 📝 Creating answer...
+WorkingScreenShare.tsx:1610 ✅ Answer created
+WorkingScreenShare.tsx:339 🚀 Enhanced SDP for 1080p: Object
+WorkingScreenShare.tsx:1615 📥 Setting local description (enhanced answer)
+WorkingScreenShare.tsx:1617 ✅ Local description set successfully
+WorkingScreenShare.tsx:1619 📤 Sending answer to: 8rAXnOH4PJsishFiAAAB
+WorkingScreenShare.tsx:1626 ✅ WebRTC offer handling completed successfully
+WorkingScreenShare.tsx:1491 🧊 ICE gathering state for 8rAXnOH4PJsishFiAAAB: gathering
+WorkingScreenShare.tsx:1497 ❄️ ICE connection state for 8rAXnOH4PJsishFiAAAB: checking
+WorkingScreenShare.tsx:1478 🧊 Sending ICE candidate for 8rAXnOH4PJsishFiAAAB: host
+WorkingScreenShare.tsx:1405 🔗 DETAILED Connection state change for 8rAXnOH4PJsishFiAAAB: Object
+WorkingScreenShare.tsx:1470 🔄 Connection establishing for 8rAXnOH4PJsishFiAAAB
+WorkingScreenShare.tsx:1478 🧊 Sending ICE candidate for 8rAXnOH4PJsishFiAAAB: srflx
+WorkingScreenShare.tsx:1478 🧊 Sending ICE candidate for 8rAXnOH4PJsishFiAAAB: srflx
+socketManager.ts:48 👥 Singleton received participants update
+socketManager.ts:48 👥 Singleton received participants update
+WorkingScreenShare.tsx:1497 ❄️ ICE connection state for 8rAXnOH4PJsishFiAAAB: disconnected
+WorkingScreenShare.tsx:1405 🔗 DETAILED Connection state change for 8rAXnOH4PJsishFiAAAB: Object
+WorkingScreenShare.tsx:1419 ❌ Connection failed for 8rAXnOH4PJsishFiAAAB, attempting TURN-only retry
+WorkingScreenShare.tsx:1424 🔄 Initiating TURN-only retry for 8rAXnOH4PJsishFiAAAB (attempt 1)

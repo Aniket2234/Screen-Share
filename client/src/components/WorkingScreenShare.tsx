@@ -1396,18 +1396,17 @@ export default function WorkingScreenShare({ onBackToModeSelector }: WorkingScre
       const peerConnection = new RTCPeerConnection(config);
       peerConnectionsRef.current.set(peerId, peerConnection);
 
-      // Simplified connection state monitoring to prevent interference
+      // Enhanced connection state monitoring with stability improvements
       peerConnection.onconnectionstatechange = async () => {
         const state = peerConnection.connectionState;
         const iceState = peerConnection.iceConnectionState;
         const signalingState = peerConnection.signalingState;
         
-        console.log(`🔗 DETAILED Connection state change for ${peerId}:`, {
+        console.log(`🔗 Connection state change for ${peerId}:`, {
           connectionState: state,
           iceConnectionState: iceState,
           signalingState: signalingState,
-          timestamp: new Date().toISOString(),
-          transceiverCount: peerConnection.getTransceivers().length
+          timestamp: new Date().toISOString()
         });
         
         if (state === 'connected') {
@@ -1416,30 +1415,29 @@ export default function WorkingScreenShare({ onBackToModeSelector }: WorkingScre
           setConnectionRetries(0);
           
         } else if (state === 'failed') {
-          console.log(`❌ Connection failed for ${peerId}, attempting TURN-only retry`);
+          console.log(`❌ Connection failed for ${peerId}`);
           
           // Only retry if we haven't exhausted attempts and this isn't already a TURN-only connection
           if (!forceTurnOnly && connectionRetries < 1) {
             setConnectionRetries(prev => prev + 1);
-            console.log(`🔄 Initiating TURN-only retry for ${peerId} (attempt ${connectionRetries + 1})`);
+            console.log(`🔄 Attempting TURN-only retry for ${peerId} (attempt ${connectionRetries + 1})`);
             
-            // Clean up failed connection completely
-            peerConnection.close();
-            peerConnectionsRef.current.delete(peerId);
-            
-            // Wait longer before retry to ensure cleanup
+            // Clean up failed connection completely with async cleanup
             setTimeout(async () => {
-              if (currentStreamRef.current && isPresenting) {
-                console.log(`🔄 Creating TURN-only connection for ${peerId}`);
-                const retryPc = await createPeerConnection(peerId, true);
-                if (retryPc && currentStreamRef.current) {
-                  // Re-add tracks to new connection
-                  currentStreamRef.current.getTracks().forEach(track => {
-                    retryPc.addTrack(track, currentStreamRef.current!);
-                  });
-                  
-                  // Create new offer with TURN-only
-                  try {
+              try {
+                peerConnection.close();
+                peerConnectionsRef.current.delete(peerId);
+                
+                if (currentStreamRef.current && isPresenting) {
+                  console.log(`🔄 Creating TURN-only connection for ${peerId}`);
+                  const retryPc = await createPeerConnection(peerId, true);
+                  if (retryPc && currentStreamRef.current) {
+                    // Re-add tracks to new connection
+                    currentStreamRef.current.getTracks().forEach(track => {
+                      retryPc.addTrack(track, currentStreamRef.current!);
+                    });
+                    
+                    // Create new offer with TURN-only
                     const offer = await retryPc.createOffer();
                     const enhancedOffer = await enhanceSDPForMaxBandwidth(offer, quality);
                     await retryPc.setLocalDescription(new RTCSessionDescription(enhancedOffer));
@@ -1453,19 +1451,20 @@ export default function WorkingScreenShare({ onBackToModeSelector }: WorkingScre
                         forceTurnOnly: true
                       });
                     }
-                  } catch (error) {
-                    console.error(`❌ TURN-only retry failed for ${peerId}:`, error);
                   }
                 }
+              } catch (error) {
+                console.error(`❌ TURN-only retry failed for ${peerId}:`, error);
               }
-            }, 3000); // Longer delay for proper cleanup
+            }, 1000); // Reduced delay for faster recovery
           } else {
             console.log(`❌ Max retries reached for ${peerId} or already using TURN-only`);
             setConnectionStatus('offline');
           }
         } else if (state === 'disconnected') {
-          console.log(`🔌 Connection disconnected for ${peerId}, allowing natural recovery`);
-          setConnectionStatus('connecting');
+          // Allow natural WebRTC recovery - don't immediately treat as failure
+          console.log(`🔌 Connection temporarily disconnected for ${peerId}, allowing natural recovery`);
+          // Don't change connection status immediately - give WebRTC time to recover
         } else if (state === 'connecting') {
           console.log(`🔄 Connection establishing for ${peerId}`);
           setConnectionStatus('connecting');
@@ -1491,13 +1490,25 @@ export default function WorkingScreenShare({ onBackToModeSelector }: WorkingScre
         console.log(`🧊 ICE gathering state for ${peerId}:`, peerConnection.iceGatheringState);
       };
 
-      // ICE connection state monitoring
+      // ICE connection state monitoring with improved stability
       peerConnection.oniceconnectionstatechange = () => {
         const iceState = peerConnection.iceConnectionState;
         console.log(`❄️ ICE connection state for ${peerId}:`, iceState);
         
-        if (iceState === 'failed' && !forceTurnOnly) {
-          console.log(`❄️ ICE connection failed for ${peerId}, connection will auto-retry with TURN`);
+        if (iceState === 'connected') {
+          console.log(`✅ ICE connection established for ${peerId}`);
+          setConnectionStatus('connected');
+        } else if (iceState === 'disconnected') {
+          console.log(`🔌 ICE temporarily disconnected for ${peerId}, monitoring for recovery`);
+          // Set a timeout to allow natural recovery before marking as failed
+          setTimeout(() => {
+            if (peerConnection.iceConnectionState === 'disconnected') {
+              console.log(`⚠️ ICE still disconnected for ${peerId} after timeout`);
+              // Let the main connection state handler deal with this
+            }
+          }, 15000); // Extended timeout for natural recovery
+        } else if (iceState === 'failed' && !forceTurnOnly) {
+          console.log(`❄️ ICE connection failed for ${peerId}, connection handler will retry with TURN`);
         }
       };
 

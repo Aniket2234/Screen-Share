@@ -1,0 +1,113 @@
+chunk-RPCDYKBN.js?v=d77f2535:21551 Download the React DevTools for a better development experience: https://reactjs.org/link/react-devtools
+WorkingScreenShare.tsx:151 ✅ TURN servers configured and ready
+WorkingScreenShare.tsx:258 🔌 Cleaning up singleton socket handlers
+WorkingScreenShare.tsx:151 ✅ TURN servers configured and ready
+WorkingScreenShare.tsx:258 🔌 Cleaning up singleton socket handlers
+WorkingScreenShare.tsx:258 🔌 Cleaning up singleton socket handlers
+WorkingScreenShare.tsx:181 🔌 Connecting to room using singleton socket manager
+socketManager.ts:32 🔌 Creating new singleton Socket.io connection
+socketManager.ts:53 ✅ Singleton socket connected
+socketManager.ts:48 👥 Singleton received participants update
+socketManager.ts:43 📨 Singleton received message: 1753680060920-system-bxvam3bue
+WorkingScreenShare.tsx:191 📨 Received message via singleton: 1753680060920-system-bxvam3bue
+WorkingScreenShare.tsx:198 ✅ Adding unique message: 1753680060920-system-bxvam3bue
+WorkingScreenShare.tsx:198 ✅ Adding unique message: 1753680060920-system-bxvam3bue
+WorkingScreenShare.tsx:485 🎬 Starting screen share...
+WorkingScreenShare.tsx:523 🎯 Screen share constraints: {
+  "video": {
+    "frameRate": {
+      "ideal": 30,
+      "max": 30
+    },
+    "width": {
+      "ideal": 1920
+    },
+    "height": {
+      "ideal": 1080
+    }
+  },
+  "audio": {
+    "echoCancellation": false,
+    "noiseSuppression": false,
+    "autoGainControl": false,
+    "sampleRate": {
+      "ideal": 48000
+    },
+    "channelCount": {
+      "ideal": 2
+    }
+  }
+}
+WorkingScreenShare.tsx:755 ❌ Failed to start screen share: NotAllowedError: Permission denied
+startScreenShare @ WorkingScreenShare.tsx:755
+socketManager.ts:48 👥 Singleton received participants update
+socketManager.ts:43 📨 Singleton received message: 1753680287180-system-yv9tzbq1e
+WorkingScreenShare.tsx:191 📨 Received message via singleton: 1753680287180-system-yv9tzbq1e
+WorkingScreenShare.tsx:198 ✅ Adding unique message: 1753680287180-system-yv9tzbq1e
+WorkingScreenShare.tsx:198 ✅ Adding unique message: 1753680287180-system-yv9tzbq1e
+WorkingScreenShare.tsx:485 🎬 Starting screen share...
+WorkingScreenShare.tsx:523 🎯 Screen share constraints: {
+  "video": {
+    "frameRate": {
+      "ideal": 30,
+      "max": 30
+    },
+    "width": {
+      "ideal": 1920
+    },
+    "height": {
+      "ideal": 1080
+    }
+  },
+  "audio": {
+    "echoCancellation": false,
+    "noiseSuppression": false,
+    "autoGainControl": false,
+    "sampleRate": {
+      "ideal": 48000
+    },
+    "channelCount": {
+      "ideal": 2
+    }
+  }
+}
+WorkingScreenShare.tsx:529 ✅ Got screen share stream: Object
+WorkingScreenShare.tsx:550 ✅ Applied constraints to force exact settings
+WorkingScreenShare.tsx:554 🎯 Final stream settings: Object
+socketManager.ts:48 👥 Singleton received participants update
+socketManager.ts:48 👥 Singleton received participants update
+socketManager.ts:43 📨 Singleton received message: 1753680293057-system-kyt5khoe1
+WorkingScreenShare.tsx:191 📨 Received message via singleton: 1753680293057-system-kyt5khoe1
+WorkingScreenShare.tsx:198 ✅ Adding unique message: 1753680293057-system-kyt5khoe1
+WorkingScreenShare.tsx:198 ✅ Adding unique message: 1753680293057-system-kyt5khoe1
+socketManager.ts:48 👥 Singleton received participants update
+WorkingScreenShare.tsx:1763 🔌 Closing all peer connections
+WorkingScreenShare.tsx:1815 ✅ All peer connections closed and cleared
+WorkingScreenShare.tsx:625 🔗 Presenter creating connection to viewer: User 8s9i seju8AZELHihED4rAAAD 
+WorkingScreenShare.tsx:1379 🔄 Creating connection for seju8AZELHihED4rAAAD, TURN-only: false
+WorkingScreenShare.tsx:1390 🔧 Using ICE configuration: Object
+WorkingScreenShare.tsx:669 ➕ Adding track to peer connection: audio f0cd2d3c-336f-4e0e-b104-90df6b0c322c
+WorkingScreenShare.tsx:717 🔧 Configured audio transceiver for 1080p: Object
+WorkingScreenShare.tsx:669 ➕ Adding track to peer connection: video 7ed1ea2e-c323-475c-84dd-0976624adc6d
+WorkingScreenShare.tsx:717 🔧 Configured video transceiver for 1080p: Object
+WorkingScreenShare.tsx:339 🚀 Enhanced SDP for 1080p: Object
+WorkingScreenShare.tsx:732 📤 Sending optimized offer to viewer: seju8AZELHihED4rAAAD
+WorkingScreenShare.tsx:741 🚀 Connection initiated to User 8s9i, monitoring for natural establishment...
+WorkingScreenShare.tsx:1491 🧊 ICE gathering state for seju8AZELHihED4rAAAD: gathering
+WorkingScreenShare.tsx:1478 🧊 Sending ICE candidate for seju8AZELHihED4rAAAD: host
+WorkingScreenShare.tsx:1478 🧊 Sending ICE candidate for seju8AZELHihED4rAAAD: srflx
+WorkingScreenShare.tsx:1478 🧊 Sending ICE candidate for seju8AZELHihED4rAAAD: srflx
+socketManager.ts:48 👥 Singleton received participants update
+socketManager.ts:48 👥 Singleton received participants update
+WorkingScreenShare.tsx:245 📞 Received WebRTC answer from: seju8AZELHihED4rAAAD
+WorkingScreenShare.tsx:1674 📞 Setting remote answer from: seju8AZELHihED4rAAAD
+WorkingScreenShare.tsx:250 🧊 Received ICE candidate from: seju8AZELHihED4rAAAD
+WorkingScreenShare.tsx:250 🧊 Received ICE candidate from: seju8AZELHihED4rAAAD
+WorkingScreenShare.tsx:1497 ❄️ ICE connection state for seju8AZELHihED4rAAAD: checking
+WorkingScreenShare.tsx:653 🔗 Screen share connection state for User 8s9i: connecting
+WorkingScreenShare.tsx:250 🧊 Received ICE candidate from: seju8AZELHihED4rAAAD
+WorkingScreenShare.tsx:1497 ❄️ ICE connection state for seju8AZELHihED4rAAAD: connected
+WorkingScreenShare.tsx:1491 🧊 ICE gathering state for seju8AZELHihED4rAAAD: complete
+WorkingScreenShare.tsx:1485 ✅ ICE gathering complete for seju8AZELHihED4rAAAD
+WorkingScreenShare.tsx:1497 ❄️ ICE connection state for seju8AZELHihED4rAAAD: disconnected
+WorkingScreenShare.tsx:653 🔗 Screen share connection state for User 8s9i: disconnected
