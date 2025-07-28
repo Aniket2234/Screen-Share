@@ -1,0 +1,52 @@
+chunk-PJEEZAML.js?v=c04d9f90:21551 Download the React DevTools for a better development experience: https://reactjs.org/link/react-devtools
+WorkingScreenShare.tsx:92 👥 Presenter started: User e6mw ID: PRkxHEXyzDcyQecJAAAD
+WorkingScreenShare.tsx:95 📺 Viewer ready to receive stream from presenter
+WorkingScreenShare.tsx:110 📞 Received WebRTC offer from: PRkxHEXyzDcyQecJAAAD
+WorkingScreenShare.tsx:1008 📞 Handling WebRTC offer from: PRkxHEXyzDcyQecJAAAD as presenter: false
+WorkingScreenShare.tsx:120 🧊 Received ICE candidate from: PRkxHEXyzDcyQecJAAAD
+WorkingScreenShare.tsx:908 🎥 Received remote stream from: PRkxHEXyzDcyQecJAAAD
+WorkingScreenShare.tsx:914 🔍 Stream details: Object
+WorkingScreenShare.tsx:120 🧊 Received ICE candidate from: PRkxHEXyzDcyQecJAAAD
+WorkingScreenShare.tsx:1023 📤 Sending answer to: PRkxHEXyzDcyQecJAAAD
+WorkingScreenShare.tsx:120 🧊 Received ICE candidate from: PRkxHEXyzDcyQecJAAAD
+WorkingScreenShare.tsx:1072 🔧 Manual video fix triggered
+WorkingScreenShare.tsx:1073 Debug info: Object
+WorkingScreenShare.tsx:207 📺 Creating video element with stream: Object
+WorkingScreenShare.tsx:217 Video track 0: Object
+WorkingScreenShare.tsx:236 ⏳ Video waiting
+WorkingScreenShare.tsx:230 📹 Video loadstart
+WorkingScreenShare.tsx:246 ℹ️ Video autoplay blocked, will require user interaction: AbortError
+WorkingScreenShare.tsx:1139 ❌ Viewer remote video fix failed: AbortError: The play() request was interrupted because the media was removed from the document. https://goo.gl/LdLk22
+(anonymous) @ WorkingScreenShare.tsx:1139
+WorkingScreenShare.tsx:246 ℹ️ Video autoplay blocked, will require user interaction: AbortError
+WorkingScreenShare.tsx:231 📹 Video metadata loaded
+WorkingScreenShare.tsx:232 📹 Video can play
+WorkingScreenShare.tsx:100 👥 Presenter stopped
+WorkingScreenShare.tsx:92 👥 Presenter started: User e6mw ID: PRkxHEXyzDcyQecJAAAD
+WorkingScreenShare.tsx:95 📺 Viewer ready to receive stream from presenter
+WorkingScreenShare.tsx:110 📞 Received WebRTC offer from: PRkxHEXyzDcyQecJAAAD
+WorkingScreenShare.tsx:1008 📞 Handling WebRTC offer from: PRkxHEXyzDcyQecJAAAD as presenter: false
+WorkingScreenShare.tsx:120 🧊 Received ICE candidate from: PRkxHEXyzDcyQecJAAAD
+WorkingScreenShare.tsx:908 🎥 Received remote stream from: PRkxHEXyzDcyQecJAAAD
+WorkingScreenShare.tsx:914 🔍 Stream details: {streamId: '29e77b6e-33f3-4863-92c5-fb44525cfdf3', active: true, videoTracks: 1, audioTracks: 1, videoTrackEnabled: true, …}
+WorkingScreenShare.tsx:908 🎥 Received remote stream from: PRkxHEXyzDcyQecJAAAD
+WorkingScreenShare.tsx:914 🔍 Stream details: {streamId: '29e77b6e-33f3-4863-92c5-fb44525cfdf3', active: true, videoTracks: 1, audioTracks: 1, videoTrackEnabled: true, …}
+WorkingScreenShare.tsx:120 🧊 Received ICE candidate from: PRkxHEXyzDcyQecJAAAD
+WorkingScreenShare.tsx:1023 📤 Sending answer to: PRkxHEXyzDcyQecJAAAD
+WorkingScreenShare.tsx:120 🧊 Received ICE candidate from: PRkxHEXyzDcyQecJAAAD
+WorkingScreenShare.tsx:120 🧊 Received ICE candidate from: PRkxHEXyzDcyQecJAAAD
+WorkingScreenShare.tsx:120 🧊 Received ICE candidate from: PRkxHEXyzDcyQecJAAAD
+WorkingScreenShare.tsx:120 🧊 Received ICE candidate from: PRkxHEXyzDcyQecJAAAD
+WorkingScreenShare.tsx:1072 🔧 Manual video fix triggered
+WorkingScreenShare.tsx:1073 Debug info: {isPresenting: false, hasCurrentStream: false, remoteStreamsCount: 1, participants: Array(2)}
+WorkingScreenShare.tsx:207 📺 Creating video element with stream: {streamId: '29e77b6e-33f3-4863-92c5-fb44525cfdf3', active: true, tracks: 2, videoTracks: 1, audioTracks: 1}
+WorkingScreenShare.tsx:217 Video track 0: {id: '0999480b-fc89-4df5-9f1a-cbad33fb1aeb', kind: 'video', enabled: true, readyState: 'live', label: '0999480b-fc89-4df5-9f1a-cbad33fb1aeb'}
+WorkingScreenShare.tsx:236 ⏳ Video waiting
+WorkingScreenShare.tsx:230 📹 Video loadstart
+WorkingScreenShare.tsx:100 👥 Presenter stopped
+WorkingScreenShare.tsx:231 📹 Video metadata loaded
+WorkingScreenShare.tsx:232 📹 Video can play
+WorkingScreenShare.tsx:233 ✅ Video is playing
+WorkingScreenShare.tsx:242 ✅ Video playing immediately after creation
+WorkingScreenShare.tsx:1136 ✅ Viewer remote video fix successful
+WorkingScreenShare.tsx:242 ✅ Video playing immediately after creation

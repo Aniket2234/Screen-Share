@@ -1,0 +1,46 @@
+chunk-NUMECXU6.js?v=b3c88aea:21551 Download the React DevTools for a better development experience: https://reactjs.org/link/react-devtools
+@stream-io_video-react-sdk.js?v=b3c88aea:17155 [coordinator]: connection:WS failed with code: 43: AuthErrorTokenSignatureInvalid and reason: JWTAuth error: signature is not valid. Make sure the token is created using the secret for API key "e4kha8r2q3xp" Object
+logToConsole @ @stream-io_video-react-sdk.js?v=b3c88aea:17155
+@stream-io_video-react-sdk.js?v=b3c88aea:17155 [client]: Failed to connect a user (0) Error: {"code":43,"StatusCode":401,"message":"WS failed with code: 43: AuthErrorTokenSignatureInvalid and reason: JWTAuth error: signature is not valid. Make sure the token is created using the secret for API key \"e4kha8r2q3xp\"","isWSFailure":false}
+    at StableWSConnection.connect (@stream-io_video-react-sdk.js?v=b3c88aea:24529:17)
+    at async StreamClient.connect (@stream-io_video-react-sdk.js?v=b3c88aea:25153:14)
+logToConsole @ @stream-io_video-react-sdk.js?v=b3c88aea:17155
+@stream-io_video-react-sdk.js?v=b3c88aea:24529 Uncaught (in promise) Error: {"code":43,"StatusCode":401,"message":"WS failed with code: 43: AuthErrorTokenSignatureInvalid and reason: JWTAuth error: signature is not valid. Make sure the token is created using the secret for API key \"e4kha8r2q3xp\"","isWSFailure":false}
+    at StableWSConnection.connect (@stream-io_video-react-sdk.js?v=b3c88aea:24529:17)
+    at async StreamClient.connect (@stream-io_video-react-sdk.js?v=b3c88aea:25153:14)
+@stream-io_video-react-sdk.js?v=b3c88aea:17155 [coordinator]: connection:WS failed with code: 43: AuthErrorTokenSignatureInvalid and reason: JWTAuth error: signature is not valid. Make sure the token is created using the secret for API key "e4kha8r2q3xp" Object
+logToConsole @ @stream-io_video-react-sdk.js?v=b3c88aea:17155
+@stream-io_video-react-sdk.js?v=b3c88aea:17155 [client]: Failed to connect a user (1) Error: {"code":43,"StatusCode":401,"message":"WS failed with code: 43: AuthErrorTokenSignatureInvalid and reason: JWTAuth error: signature is not valid. Make sure the token is created using the secret for API key \"e4kha8r2q3xp\"","isWSFailure":false}
+    at StableWSConnection.connect (@stream-io_video-react-sdk.js?v=b3c88aea:24529:17)
+    at async StreamClient.connect (@stream-io_video-react-sdk.js?v=b3c88aea:25153:14)
+logToConsole @ @stream-io_video-react-sdk.js?v=b3c88aea:17155
+@stream-io_video-react-sdk.js?v=b3c88aea:24529 Uncaught (in promise) Error: {"code":43,"StatusCode":401,"message":"WS failed with code: 43: AuthErrorTokenSignatureInvalid and reason: JWTAuth error: signature is not valid. Make sure the token is created using the secret for API key \"e4kha8r2q3xp\"","isWSFailure":false}
+    at StableWSConnection.connect (@stream-io_video-react-sdk.js?v=b3c88aea:24529:17)
+    at async StreamClient.connect (@stream-io_video-react-sdk.js?v=b3c88aea:25153:14)
+@stream-io_video-react-sdk.js?v=b3c88aea:17155 [coordinator]: connection:WS failed with code: 43: AuthErrorTokenSignatureInvalid and reason: JWTAuth error: signature is not valid. Make sure the token is created using the secret for API key "e4kha8r2q3xp" Object
+logToConsole @ @stream-io_video-react-sdk.js?v=b3c88aea:17155
+@stream-io_video-react-sdk.js?v=b3c88aea:17155 [client]: Failed to connect a user (2) Error: {"code":43,"StatusCode":401,"message":"WS failed with code: 43: AuthErrorTokenSignatureInvalid and reason: JWTAuth error: signature is not valid. Make sure the token is created using the secret for API key \"e4kha8r2q3xp\"","isWSFailure":false}
+    at StableWSConnection.connect (@stream-io_video-react-sdk.js?v=b3c88aea:24529:17)
+    at async StreamClient.connect (@stream-io_video-react-sdk.js?v=b3c88aea:25153:14)
+logToConsole @ @stream-io_video-react-sdk.js?v=b3c88aea:17155
+19805426-6093-45f9-9….worf.replit.dev/:1 Uncaught (in promise) Error: {"code":43,"StatusCode":401,"message":"WS failed with code: 43: AuthErrorTokenSignatureInvalid and reason: JWTAuth error: signature is not valid. Make sure the token is created using the secret for API key \"e4kha8r2q3xp\"","isWSFailure":false}
+    at StableWSConnection.connect (@stream-io_video-react-sdk.js?v=b3c88aea:24529:17)
+    at async StreamClient.connect (@stream-io_video-react-sdk.js?v=b3c88aea:25153:14)
+Promise.then
+unwrapPromise @ @stream-io_video-react-sdk.js?v=b3c88aea:20002
+StreamClient.openConnection @ @stream-io_video-react-sdk.js?v=b3c88aea:24945
+StreamClient.connectUser @ @stream-io_video-react-sdk.js?v=b3c88aea:24918
+await in StreamClient.connectUser
+(anonymous) @ @stream-io_video-react-sdk.js?v=b3c88aea:25384
+@stream-io_video-react-sdk.js?v=b3c88aea:17155 [coordinator]: connection:WS failed with code: 43: AuthErrorTokenSignatureInvalid and reason: JWTAuth error: signature is not valid. Make sure the token is created using the secret for API key "e4kha8r2q3xp" {event: {…}}
+logToConsole @ @stream-io_video-react-sdk.js?v=b3c88aea:17155
+result @ @stream-io_video-react-sdk.js?v=b3c88aea:17172
+StableWSConnection._log @ @stream-io_video-react-sdk.js?v=b3c88aea:24291
+StableWSConnection._errorFromWSEvent @ @stream-io_video-react-sdk.js?v=b3c88aea:24452
+StableWSConnection.onmessage @ @stream-io_video-react-sdk.js?v=b3c88aea:24349
+@stream-io_video-react-sdk.js?v=b3c88aea:17155 [client]: Failed to connect a user (3) Error: {"code":43,"StatusCode":401,"message":"WS failed with code: 43: AuthErrorTokenSignatureInvalid and reason: JWTAuth error: signature is not valid. Make sure the token is created using the secret for API key \"e4kha8r2q3xp\"","isWSFailure":false}
+    at StableWSConnection.connect (@stream-io_video-react-sdk.js?v=b3c88aea:24529:17)
+    at async StreamClient.connect (@stream-io_video-react-sdk.js?v=b3c88aea:25153:14)
+logToConsole @ @stream-io_video-react-sdk.js?v=b3c88aea:17155
+result @ @stream-io_video-react-sdk.js?v=b3c88aea:17172
+(anonymous) @ @stream-io_video-react-sdk.js?v=b3c88aea:25386

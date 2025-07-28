@@ -1,0 +1,91 @@
+chunk-PJEEZAML.js?v=c04d9f90:21551 Download the React DevTools for a better development experience: https://reactjs.org/link/react-devtools
+WorkingScreenShare.tsx:178 🔍 Testing TURN server connectivity...
+WorkingScreenShare.tsx:178 🔍 Testing TURN server connectivity...
+WorkingScreenShare.tsx:211 🧊 ICE gathering state: gathering
+WorkingScreenShare.tsx:211 🧊 ICE gathering state: gathering
+WorkingScreenShare.tsx:190 🧊 Test ICE candidate: candidate:3995600056 1 udp 2113937151 ac8ba58d-42b9-4bfa-b1ec-9e2343371573.local 52515 typ host generation 0 ufrag O4RO network-cost 999
+WorkingScreenShare.tsx:190 🧊 Test ICE candidate: candidate:1452266416 1 udp 2113937151 ac8ba58d-42b9-4bfa-b1ec-9e2343371573.local 51976 typ host generation 0 ufrag aQPf network-cost 999
+WorkingScreenShare.tsx:190 🧊 Test ICE candidate: candidate:18040502 1 udp 1677729535 115.98.233.56 52515 typ srflx raddr 0.0.0.0 rport 0 generation 0 ufrag O4RO network-cost 999
+WorkingScreenShare.tsx:190 🧊 Test ICE candidate: candidate:3115618750 1 udp 1677729535 115.98.233.56 51976 typ srflx raddr 0.0.0.0 rport 0 generation 0 ufrag aQPf network-cost 999
+WorkingScreenShare.tsx:869 📹 Starting camera share...
+WorkingScreenShare.tsx:226 ⚠ Limited TURN server response - may have issues with restrictive networks
+WorkingScreenShare.tsx:226 ⚠ Limited TURN server response - may have issues with restrictive networks
+WorkingScreenShare.tsx:921 ✅ Got camera stream: Object
+WorkingScreenShare.tsx:971 🔗 Presenter creating camera connection to viewer: User qv71 wT7Pb7z19U5w-bBIAAAF
+WorkingScreenShare.tsx:997 ➕ Adding camera track to peer connection: video b1a6290e-bd7f-4392-9418-9b1a092ee4f3
+WorkingScreenShare.tsx:1005 📤 Sending camera offer to viewer: wT7Pb7z19U5w-bBIAAAF
+WorkingScreenShare.tsx:985 🧊 Sending camera share ICE candidate to User qv71: candidate:4275966948 1 udp 2122260224 192.168.1.25 60160 typ host generation 0 ufrag W8MY network-id 1 network-cost 10
+WorkingScreenShare.tsx:985 🧊 Sending camera share ICE candidate to User qv71: candidate:3190055245 1 udp 1686052607 115.98.233.56 59320 typ srflx raddr 192.168.1.25 rport 60160 generation 0 ufrag W8MY network-id 1 network-cost 10
+WorkingScreenShare.tsx:985 🧊 Sending camera share ICE candidate to User qv71: candidate:2148659580 1 tcp 1518280447 192.168.1.25 9 typ host tcptype active generation 0 ufrag W8MY network-id 1 network-cost 10
+WorkingScreenShare.tsx:296 📞 Received WebRTC answer from: wT7Pb7z19U5w-bBIAAAF
+WorkingScreenShare.tsx:1416 📞 Setting remote answer from: wT7Pb7z19U5w-bBIAAAF
+WorkingScreenShare.tsx:301 🧊 Received ICE candidate from: wT7Pb7z19U5w-bBIAAAF
+WorkingScreenShare.tsx:301 🧊 Received ICE candidate from: wT7Pb7z19U5w-bBIAAAF
+WorkingScreenShare.tsx:980 🔗 Camera share connection state for User qv71: connecting
+WorkingScreenShare.tsx:301 🧊 Received ICE candidate from: wT7Pb7z19U5w-bBIAAAF
+WorkingScreenShare.tsx:301 🧊 Received ICE candidate from: wT7Pb7z19U5w-bBIAAAF
+WorkingScreenShare.tsx:301 🧊 Received ICE candidate from: wT7Pb7z19U5w-bBIAAAF
+WorkingScreenShare.tsx:301 🧊 Received ICE candidate from: wT7Pb7z19U5w-bBIAAAF
+WorkingScreenShare.tsx:1446 🔧 Manual video fix triggered
+WorkingScreenShare.tsx:1447 Debug info: Object
+WorkingScreenShare.tsx:394 📺 Creating video element with stream: Object
+WorkingScreenShare.tsx:404 Video track 0: Object
+WorkingScreenShare.tsx:423 ⏳ Video waiting
+WorkingScreenShare.tsx:417 📹 Video loadstart
+WorkingScreenShare.tsx:418 📹 Video metadata loaded
+WorkingScreenShare.tsx:419 📹 Video can play
+WorkingScreenShare.tsx:420 ✅ Video is playing
+WorkingScreenShare.tsx:429 ✅ Video playing immediately after creation
+WorkingScreenShare.tsx:1474 ✅ Presenter video fix successful
+WorkingScreenShare.tsx:429 ✅ Video playing immediately after creation
+WorkingScreenShare.tsx:1033 🛑 Stopping camera share...
+WorkingScreenShare.tsx:447 🎬 Starting screen share...
+WorkingScreenShare.tsx:475 🎯 Screen share constraints: {
+  "video": {
+    "frameRate": {
+      "ideal": 30,
+      "max": 30
+    },
+    "width": {
+      "ideal": 1920
+    },
+    "height": {
+      "ideal": 1080
+    },
+    "cursor": "always",
+    "displaySurface": "monitor",
+    "logicalSurface": true
+  },
+  "audio": true
+}
+WorkingScreenShare.tsx:481 ✅ Got screen share stream: Object
+WorkingScreenShare.tsx:500 ✅ Applied constraints to force exact settings
+WorkingScreenShare.tsx:504 🎯 Final stream settings: Object
+WorkingScreenShare.tsx:561 🔗 Presenter creating connection to viewer: User qv71 wT7Pb7z19U5w-bBIAAAF
+WorkingScreenShare.tsx:587 ➕ Adding track to peer connection: video e8832487-2868-4a9d-8600-7740c22f4924
+WorkingScreenShare.tsx:595 📤 Sending offer to viewer: wT7Pb7z19U5w-bBIAAAF
+WorkingScreenShare.tsx:575 🧊 Sending screen share ICE candidate to User qv71: candidate:1798145073 1 udp 2122260224 192.168.1.25 63102 typ host generation 0 ufrag dhoU network-id 1 network-cost 10
+WorkingScreenShare.tsx:575 🧊 Sending screen share ICE candidate to User qv71: candidate:3295110415 1 udp 1686052607 115.98.233.56 63102 typ srflx raddr 192.168.1.25 rport 63102 generation 0 ufrag dhoU network-id 1 network-cost 10
+WorkingScreenShare.tsx:575 🧊 Sending screen share ICE candidate to User qv71: candidate:2508673189 1 tcp 1518280447 192.168.1.25 9 typ host tcptype active generation 0 ufrag dhoU network-id 1 network-cost 10
+WorkingScreenShare.tsx:296 📞 Received WebRTC answer from: wT7Pb7z19U5w-bBIAAAF
+WorkingScreenShare.tsx:1416 📞 Setting remote answer from: wT7Pb7z19U5w-bBIAAAF
+WorkingScreenShare.tsx:301 🧊 Received ICE candidate from: wT7Pb7z19U5w-bBIAAAF
+WorkingScreenShare.tsx:301 🧊 Received ICE candidate from: wT7Pb7z19U5w-bBIAAAF
+WorkingScreenShare.tsx:301 🧊 Received ICE candidate from: wT7Pb7z19U5w-bBIAAAF
+WorkingScreenShare.tsx:570 🔗 Screen share connection state for User qv71: connecting
+WorkingScreenShare.tsx:301 🧊 Received ICE candidate from: wT7Pb7z19U5w-bBIAAAF
+WorkingScreenShare.tsx:301 🧊 Received ICE candidate from: wT7Pb7z19U5w-bBIAAAF
+WorkingScreenShare.tsx:301 🧊 Received ICE candidate from: wT7Pb7z19U5w-bBIAAAF
+WorkingScreenShare.tsx:1446 🔧 Manual video fix triggered
+WorkingScreenShare.tsx:1447 Debug info: Object
+WorkingScreenShare.tsx:394 📺 Creating video element with stream: Object
+WorkingScreenShare.tsx:404 Video track 0: Object
+WorkingScreenShare.tsx:423 ⏳ Video waiting
+WorkingScreenShare.tsx:417 📹 Video loadstart
+WorkingScreenShare.tsx:418 📹 Video metadata loaded
+WorkingScreenShare.tsx:419 📹 Video can play
+WorkingScreenShare.tsx:420 ✅ Video is playing
+WorkingScreenShare.tsx:429 ✅ Video playing immediately after creation
+WorkingScreenShare.tsx:1474 ✅ Presenter video fix successful
+WorkingScreenShare.tsx:429 ✅ Video playing immediately after creation
+WorkingScreenShare.tsx:570 🔗 Screen share connection state for User qv71: failed

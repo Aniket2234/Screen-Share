@@ -1,0 +1,56 @@
+chunk-RPCDYKBN.js?v=3f9ce215:21551 Download the React DevTools for a better development experience: https://reactjs.org/link/react-devtools
+StreamScreenShareFixed.tsx:213 Joined Stream.io call successfully
+StreamScreenShareFixed.tsx:68 Uncaught ReferenceError: useCall is not defined
+    at StreamCallContent (StreamScreenShareFixed.tsx:68:16)
+    at renderWithHooks (chunk-RPCDYKBN.js?v=3f9ce215:11548:26)
+    at mountIndeterminateComponent (chunk-RPCDYKBN.js?v=3f9ce215:14926:21)
+    at beginWork (chunk-RPCDYKBN.js?v=3f9ce215:15914:22)
+    at HTMLUnknownElement.callCallback2 (chunk-RPCDYKBN.js?v=3f9ce215:3674:22)
+    at Object.invokeGuardedCallbackDev (chunk-RPCDYKBN.js?v=3f9ce215:3699:24)
+    at invokeGuardedCallback (chunk-RPCDYKBN.js?v=3f9ce215:3733:39)
+    at beginWork$1 (chunk-RPCDYKBN.js?v=3f9ce215:19765:15)
+    at performUnitOfWork (chunk-RPCDYKBN.js?v=3f9ce215:19198:20)
+    at workLoopSync (chunk-RPCDYKBN.js?v=3f9ce215:19137:13)
+StreamScreenShareFixed.tsx:68 Uncaught ReferenceError: useCall is not defined
+    at StreamCallContent (StreamScreenShareFixed.tsx:68:16)
+    at renderWithHooks (chunk-RPCDYKBN.js?v=3f9ce215:11548:26)
+    at mountIndeterminateComponent (chunk-RPCDYKBN.js?v=3f9ce215:14926:21)
+    at beginWork (chunk-RPCDYKBN.js?v=3f9ce215:15914:22)
+    at HTMLUnknownElement.callCallback2 (chunk-RPCDYKBN.js?v=3f9ce215:3674:22)
+    at Object.invokeGuardedCallbackDev (chunk-RPCDYKBN.js?v=3f9ce215:3699:24)
+    at invokeGuardedCallback (chunk-RPCDYKBN.js?v=3f9ce215:3733:39)
+    at beginWork$1 (chunk-RPCDYKBN.js?v=3f9ce215:19765:15)
+    at performUnitOfWork (chunk-RPCDYKBN.js?v=3f9ce215:19198:20)
+    at workLoopSync (chunk-RPCDYKBN.js?v=3f9ce215:19137:13)
+chunk-RPCDYKBN.js?v=3f9ce215:14032 The above error occurred in the <StreamCallContent> component:
+
+    at StreamCallContent (https://19805426-6093-45f9-9837-08fde2ba1227-00-17leo714c1v7y.worf.replit.dev/src/components/StreamScreenShareFixed.tsx:45:30)
+    at StreamCallProvider (https://19805426-6093-45f9-9837-08fde2ba1227-00-17leo714c1v7y.worf.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/@stream-io_video-react-sdk.js?v=3f9ce215:27738:11)
+    at StreamI18nProvider (https://19805426-6093-45f9-9837-08fde2ba1227-00-17leo714c1v7y.worf.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/@stream-io_video-react-sdk.js?v=3f9ce215:27783:29)
+    at StreamVideoProvider (https://19805426-6093-45f9-9837-08fde2ba1227-00-17leo714c1v7y.worf.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/@stream-io_video-react-sdk.js?v=3f9ce215:27805:30)
+    at StreamVideo
+    at div
+    at div
+    at div
+    at div
+    at StreamScreenShare (https://19805426-6093-45f9-9837-08fde2ba1227-00-17leo714c1v7y.worf.replit.dev/src/components/StreamScreenShareFixed.tsx:149:45)
+    at HybridScreenShare (https://19805426-6093-45f9-9837-08fde2ba1227-00-17leo714c1v7y.worf.replit.dev/src/components/HybridScreenShare.tsx:25:34)
+    at div
+    at ThemeProvider (https://19805426-6093-45f9-9837-08fde2ba1227-00-17leo714c1v7y.worf.replit.dev/src/contexts/ThemeContext.tsx:20:33)
+    at QueryClientProvider (https://19805426-6093-45f9-9837-08fde2ba1227-00-17leo714c1v7y.worf.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/@tanstack_react-query.js?v=3f9ce215:2805:3)
+    at App
+
+Consider adding an error boundary to your tree to customize error handling behavior.
+Visit https://reactjs.org/link/error-boundaries to learn more about error boundaries.
+logCapturedError @ chunk-RPCDYKBN.js?v=3f9ce215:14032
+chunk-RPCDYKBN.js?v=3f9ce215:19413 Uncaught ReferenceError: useCall is not defined
+    at StreamCallContent (StreamScreenShareFixed.tsx:68:16)
+    at renderWithHooks (chunk-RPCDYKBN.js?v=3f9ce215:11548:26)
+    at mountIndeterminateComponent (chunk-RPCDYKBN.js?v=3f9ce215:14926:21)
+    at beginWork (chunk-RPCDYKBN.js?v=3f9ce215:15914:22)
+    at beginWork$1 (chunk-RPCDYKBN.js?v=3f9ce215:19753:22)
+    at performUnitOfWork (chunk-RPCDYKBN.js?v=3f9ce215:19198:20)
+    at workLoopSync (chunk-RPCDYKBN.js?v=3f9ce215:19137:13)
+    at renderRootSync (chunk-RPCDYKBN.js?v=3f9ce215:19116:15)
+    at recoverFromConcurrentError (chunk-RPCDYKBN.js?v=3f9ce215:18736:28)
+    at performConcurrentWorkOnRoot (chunk-RPCDYKBN.js?v=3f9ce215:18684:30)

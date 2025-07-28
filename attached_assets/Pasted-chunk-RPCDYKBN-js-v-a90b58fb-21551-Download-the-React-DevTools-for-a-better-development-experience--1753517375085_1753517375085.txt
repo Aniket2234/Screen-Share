@@ -1,0 +1,67 @@
+chunk-RPCDYKBN.js?v=a90b58fb:21551 Download the React DevTools for a better development experience: https://reactjs.org/link/react-devtools
+WorkingScreenShare.tsx:189 ✅ TURN servers configured and ready
+WorkingScreenShare.tsx:189 ✅ TURN servers configured and ready
+WorkingScreenShare.tsx:565 🎬 Starting screen share...
+WorkingScreenShare.tsx:604 🎯 Screen share constraints: {
+  "video": {
+    "frameRate": {
+      "ideal": 30,
+      "max": 30
+    },
+    "width": {
+      "ideal": 1920
+    },
+    "height": {
+      "ideal": 1080
+    },
+    "cursor": "always",
+    "displaySurface": "monitor"
+  },
+  "audio": {
+    "echoCancellation": false,
+    "noiseSuppression": false,
+    "autoGainControl": false,
+    "sampleRate": {
+      "ideal": 48000
+    },
+    "channelCount": {
+      "ideal": 2
+    }
+  }
+}
+WorkingScreenShare.tsx:824 ❌ Failed to start screen share: NotAllowedError: Permission denied
+startScreenShare @ WorkingScreenShare.tsx:824
+WorkingScreenShare.tsx:245 👥 Presenter started: User t3gt ID: AOtP9TPP6BH5e5CMAAAD
+WorkingScreenShare.tsx:248 📺 Viewer ready to receive stream from presenter
+WorkingScreenShare.tsx:267 📞 Received WebRTC offer from: AOtP9TPP6BH5e5CMAAAD
+WorkingScreenShare.tsx:1566 📞 Handling WebRTC offer from: AOtP9TPP6BH5e5CMAAAD as presenter: false
+WorkingScreenShare.tsx:1567 📋 Offer details: Object
+WorkingScreenShare.tsx:1571 🆕 Creating new peer connection for: AOtP9TPP6BH5e5CMAAAD
+WorkingScreenShare.tsx:1441 🔄 Creating simplified connection for AOtP9TPP6BH5e5CMAAAD
+WorkingScreenShare.tsx:1576 🔍 Current signaling state: stable
+WorkingScreenShare.tsx:1588 📥 Setting remote description (offer)
+WorkingScreenShare.tsx:1492 🎥 Received audio track from AOtP9TPP6BH5e5CMAAAD
+WorkingScreenShare.tsx:1496 📺 Processing remote stream from AOtP9TPP6BH5e5CMAAAD
+WorkingScreenShare.tsx:1518 📡 Marking viewer as connected after receiving stream from AOtP9TPP6BH5e5CMAAAD
+WorkingScreenShare.tsx:1492 🎥 Received video track from AOtP9TPP6BH5e5CMAAAD
+WorkingScreenShare.tsx:1496 📺 Processing remote stream from AOtP9TPP6BH5e5CMAAAD
+WorkingScreenShare.tsx:1518 📡 Marking viewer as connected after receiving stream from AOtP9TPP6BH5e5CMAAAD
+WorkingScreenShare.tsx:1590 ✅ Remote description set successfully
+WorkingScreenShare.tsx:1592 📝 Creating answer...
+WorkingScreenShare.tsx:1597 ✅ Answer created
+WorkingScreenShare.tsx:354 🚀 Enhanced SDP for 1080p: Object
+WorkingScreenShare.tsx:1602 📥 Setting local description (answer)
+WorkingScreenShare.tsx:277 🧊 Received ICE candidate from: AOtP9TPP6BH5e5CMAAAD
+WorkingScreenShare.tsx:1604 ✅ Local description set successfully
+WorkingScreenShare.tsx:1606 📤 Sending answer to: AOtP9TPP6BH5e5CMAAAD
+WorkingScreenShare.tsx:1613 ✅ WebRTC offer handling completed successfully
+WorkingScreenShare.tsx:277 🧊 Received ICE candidate from: AOtP9TPP6BH5e5CMAAAD
+WorkingScreenShare.tsx:1481 🧊 Sending ICE candidate for AOtP9TPP6BH5e5CMAAAD
+WorkingScreenShare.tsx:1452 🔗 Connection state for AOtP9TPP6BH5e5CMAAAD: connecting
+WorkingScreenShare.tsx:1481 🧊 Sending ICE candidate for AOtP9TPP6BH5e5CMAAAD
+WorkingScreenShare.tsx:1452 🔗 Connection state for AOtP9TPP6BH5e5CMAAAD: failed
+WorkingScreenShare.tsx:1474 ❌ Connection failed for AOtP9TPP6BH5e5CMAAAD
+WorkingScreenShare.tsx:1452 🔗 Connection state for AOtP9TPP6BH5e5CMAAAD: connecting
+WorkingScreenShare.tsx:1452 🔗 Connection state for AOtP9TPP6BH5e5CMAAAD: failed
+WorkingScreenShare.tsx:1474 ❌ Connection failed for AOtP9TPP6BH5e5CMAAAD
+WorkingScreenShare.tsx:1452 🔗 Connection state for AOtP9TPP6BH5e5CMAAAD: connecting

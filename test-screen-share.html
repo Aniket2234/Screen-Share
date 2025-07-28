@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Screen Share Test</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        video {
+            width: 100%;
+            max-width: 600px;
+            height: auto;
+            border: 2px solid #333;
+            background: #000;
+        }
+        
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            margin: 10px;
+            cursor: pointer;
+        }
+        
+        #log {
+            margin-top: 20px;
+            padding: 10px;
+            background: #f0f0f0;
+            border-radius: 5px;
+            max-height: 200px;
+            overflow-y: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Screen Share Test</h1>
+    <button onclick="startScreenShare()">Start Screen Share</button>
+    <button onclick="stopScreenShare()">Stop Screen Share</button>
+    
+    <div>
+        <video id="localVideo" autoplay muted playsinline></video>
+    </div>
+    
+    <div id="log"></div>
+
+    <script>
+        let localStream = null;
+        const video = document.getElementById('localVideo');
+        const log = document.getElementById('log');
+        
+        function addLog(message) {
+            log.innerHTML += '<div>' + new Date().toLocaleTimeString() + ': ' + message + '</div>';
+            log.scrollTop = log.scrollHeight;
+            console.log(message);
+        }
+        
+        async function startScreenShare() {
+            try {
+                addLog('Requesting screen share...');
+                
+                const constraints = {
+                    video: {
+                        mediaSource: 'screen',
+                        frameRate: 30,
+                        width: { ideal: 1920 },
+                        height: { ideal: 1080 }
+                    },
+                    audio: false
+                };
+                
+                localStream = await navigator.mediaDevices.getDisplayMedia(constraints);
+                addLog('Screen share granted successfully');
+                
+                // Log stream details
+                addLog('Stream ID: ' + localStream.id);
+                addLog('Active: ' + localStream.active);
+                addLog('Tracks: ' + localStream.getTracks().length);
+                
+                localStream.getTracks().forEach((track, index) => {
+                    addLog(`Track ${index}: ${track.kind} - ${track.label} - ${track.readyState}`);
+                });
+                
+                // Set video source
+                video.srcObject = localStream;
+                addLog('Video srcObject set');
+                
+                // Add event listeners
+                video.addEventListener('loadedmetadata', () => {
+                    addLog('Video metadata loaded');
+                    addLog(`Video dimensions: ${video.videoWidth}x${video.videoHeight}`);
+                });
+                
+                video.addEventListener('play', () => {
+                    addLog('Video started playing');
+                });
+                
+                video.addEventListener('error', (e) => {
+                    addLog('Video error: ' + e.message);
+                });
+                
+                // Handle stream end
+                localStream.getVideoTracks()[0].addEventListener('ended', () => {
+                    addLog('Screen share ended');
+                    stopScreenShare();
+                });
+                
+            } catch (error) {
+                addLog('Error: ' + error.message);
+                console.error('Screen share error:', error);
+            }
+        }
+        
+        function stopScreenShare() {
+            if (localStream) {
+                localStream.getTracks().forEach(track => {
+                    track.stop();
+                    addLog('Stopped track: ' + track.kind);
+                });
+                localStream = null;
+                video.srcObject = null;
+                addLog('Screen share stopped');
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,124 @@
+chunk-RPCDYKBN.js?v=a90b58fb:21551 Download the React DevTools for a better development experience: https://reactjs.org/link/react-devtools
+WorkingScreenShare.tsx:151 ✅ TURN servers configured and ready
+WorkingScreenShare.tsx:258 🔌 Cleaning up singleton socket handlers
+WorkingScreenShare.tsx:151 ✅ TURN servers configured and ready
+WorkingScreenShare.tsx:258 🔌 Cleaning up singleton socket handlers
+WorkingScreenShare.tsx:258 🔌 Cleaning up singleton socket handlers
+WorkingScreenShare.tsx:181 🔌 Connecting to room using singleton socket manager
+socketManager.ts:32 🔌 Creating new singleton Socket.io connection
+socketManager.ts:53 ✅ Singleton socket connected
+socketManager.ts:48 👥 Singleton received participants update
+socketManager.ts:43 📨 Singleton received message: 1753623892804-system-jru89wtag
+WorkingScreenShare.tsx:191 📨 Received message via singleton: 1753623892804-system-jru89wtag
+WorkingScreenShare.tsx:198 ✅ Adding unique message: 1753623892804-system-jru89wtag
+WorkingScreenShare.tsx:198 ✅ Adding unique message: 1753623892804-system-jru89wtag
+socketManager.ts:48 👥 Singleton received participants update
+socketManager.ts:48 👥 Singleton received participants update
+socketManager.ts:43 📨 Singleton received message: 1753623898837-system-lr6ueko6j
+WorkingScreenShare.tsx:191 📨 Received message via singleton: 1753623898837-system-lr6ueko6j
+WorkingScreenShare.tsx:198 ✅ Adding unique message: 1753623898837-system-lr6ueko6j
+WorkingScreenShare.tsx:198 ✅ Adding unique message: 1753623898837-system-lr6ueko6j
+WorkingScreenShare.tsx:218 👥 Presenter started: User q2a1 ID: 7flyeSE-a7o5sLuMAAAB
+WorkingScreenShare.tsx:221 📺 Viewer ready to receive stream from presenter
+socketManager.ts:48 👥 Singleton received participants update
+WorkingScreenShare.tsx:240 📞 Received WebRTC offer from: 7flyeSE-a7o5sLuMAAAB
+WorkingScreenShare.tsx:1599 📞 Handling WebRTC offer from: 7flyeSE-a7o5sLuMAAAB as presenter: false
+WorkingScreenShare.tsx:1600 📋 Offer details: {type: 'offer', sdp: 'v=0\r\no=- 4796263241237321008 2 IN IP4 127.0.0.1\r\ns…fbc32d\r\nm=audio 9 UDP/TLS/RTP/SAVPF 111 63 9 0...'}
+WorkingScreenShare.tsx:1604 🆕 Creating new peer connection for: 7flyeSE-a7o5sLuMAAAB
+WorkingScreenShare.tsx:1379 🔄 Creating connection for 7flyeSE-a7o5sLuMAAAB, TURN-only: false
+WorkingScreenShare.tsx:1390 🔧 Using ICE configuration: {serverCount: 5, forceTurnOnly: false, transportPolicy: 'all'}
+WorkingScreenShare.tsx:1609 🔍 Current signaling state: stable
+WorkingScreenShare.tsx:1623 📥 Setting remote description (offer)
+WorkingScreenShare.tsx:250 🧊 Received ICE candidate from: 7flyeSE-a7o5sLuMAAAB
+WorkingScreenShare.tsx:250 🧊 Received ICE candidate from: 7flyeSE-a7o5sLuMAAAB
+WorkingScreenShare.tsx:250 🧊 Received ICE candidate from: 7flyeSE-a7o5sLuMAAAB
+WorkingScreenShare.tsx:1525 🎥 Received audio track from 7flyeSE-a7o5sLuMAAAB
+WorkingScreenShare.tsx:1529 📺 Processing remote stream from 7flyeSE-a7o5sLuMAAAB
+WorkingScreenShare.tsx:1551 📡 Marking viewer as connected after receiving stream from 7flyeSE-a7o5sLuMAAAB
+WorkingScreenShare.tsx:1525 🎥 Received video track from 7flyeSE-a7o5sLuMAAAB
+WorkingScreenShare.tsx:1529 📺 Processing remote stream from 7flyeSE-a7o5sLuMAAAB
+WorkingScreenShare.tsx:1551 📡 Marking viewer as connected after receiving stream from 7flyeSE-a7o5sLuMAAAB
+WorkingScreenShare.tsx:1625 ✅ Remote description set successfully
+WorkingScreenShare.tsx:1627 📝 Creating answer...
+WorkingScreenShare.tsx:1629 ✅ Answer created
+WorkingScreenShare.tsx:339 🚀 Enhanced SDP for 1080p: {videoBandwidth: '10000 kbps', audioBandwidth: '192 kbps', totalBandwidth: '10192 kbps'}
+WorkingScreenShare.tsx:1634 📥 Setting local description (answer)
+WorkingScreenShare.tsx:1636 ✅ Local description set successfully
+WorkingScreenShare.tsx:1638 📤 Sending answer to: 7flyeSE-a7o5sLuMAAAB
+WorkingScreenShare.tsx:1645 ✅ WebRTC offer handling completed successfully
+WorkingScreenShare.tsx:1510 🧊 ICE gathering state for 7flyeSE-a7o5sLuMAAAB: gathering
+WorkingScreenShare.tsx:1516 ❄️ ICE connection state for 7flyeSE-a7o5sLuMAAAB: checking
+WorkingScreenShare.tsx:1497 🧊 Sending ICE candidate for 7flyeSE-a7o5sLuMAAAB: host
+WorkingScreenShare.tsx:1402 🔗 Connection state for 7flyeSE-a7o5sLuMAAAB: connecting
+WorkingScreenShare.tsx:1516 ❄️ ICE connection state for 7flyeSE-a7o5sLuMAAAB: connected
+WorkingScreenShare.tsx:1510 🧊 ICE gathering state for 7flyeSE-a7o5sLuMAAAB: complete
+WorkingScreenShare.tsx:1504 ✅ ICE gathering complete for 7flyeSE-a7o5sLuMAAAB
+socketManager.ts:48 👥 Singleton received participants update
+socketManager.ts:48 👥 Singleton received participants update
+WorkingScreenShare.tsx:1402 🔗 Connection state for 7flyeSE-a7o5sLuMAAAB: connected
+WorkingScreenShare.tsx:1405 ✅ Connection established for 7flyeSE-a7o5sLuMAAAB
+WorkingScreenShare.tsx:1838 🔧 Manual video fix triggered
+WorkingScreenShare.tsx:1839 Debug info: {isPresenting: false, hasCurrentStream: false, remoteStreamsCount: 1, participants: Array(2)}
+WorkingScreenShare.tsx:432 📺 Creating video element with stream: {streamId: '1966831f-5cb7-4475-b085-c74824fbc32d', active: true, tracks: 2, videoTracks: 1, audioTracks: 1}
+WorkingScreenShare.tsx:442 Video track 0: {id: '0f9f54df-ddaa-45f8-9166-8d1217bcf7b3', kind: 'video', enabled: true, readyState: 'live', label: '0f9f54df-ddaa-45f8-9166-8d1217bcf7b3'}
+WorkingScreenShare.tsx:461 ⏳ Video waiting
+WorkingScreenShare.tsx:455 📹 Video loadstart
+WorkingScreenShare.tsx:456 📹 Video metadata loaded
+WorkingScreenShare.tsx:457 📹 Video can play
+WorkingScreenShare.tsx:458 ✅ Video is playing
+WorkingScreenShare.tsx:467 ✅ Video playing immediately after creation
+WorkingScreenShare.tsx:1905 ✅ Viewer remote video fix successful
+WorkingScreenShare.tsx:467 ✅ Video playing immediately after creation
+socketManager.ts:48 👥 Singleton received participants update
+socketManager.ts:43 📨 Singleton received message: 1753623907681-system-kmidg9tyo
+WorkingScreenShare.tsx:191 📨 Received message via singleton: 1753623907681-system-kmidg9tyo
+WorkingScreenShare.tsx:198 ✅ Adding unique message: 1753623907681-system-kmidg9tyo
+WorkingScreenShare.tsx:198 ✅ Adding unique message: 1753623907681-system-kmidg9tyo
+WorkingScreenShare.tsx:230 👥 Presenter stopped
+WorkingScreenShare.tsx:1775 🔌 Closing peer connection for 7flyeSE-a7o5sLuMAAAB, state: connected
+socketManager.ts:48 👥 Singleton received participants update
+socketManager.ts:48 👥 Singleton received participants update
+socketManager.ts:43 📨 Singleton received message: 1753623915082-system-btoni9opv
+WorkingScreenShare.tsx:191 📨 Received message via singleton: 1753623915082-system-btoni9opv
+WorkingScreenShare.tsx:218 👥 Presenter started: User q2a1 ID: 7flyeSE-a7o5sLuMAAAB
+WorkingScreenShare.tsx:221 📺 Viewer ready to receive stream from presenter
+WorkingScreenShare.tsx:198 ✅ Adding unique message: 1753623915082-system-btoni9opv
+WorkingScreenShare.tsx:198 ✅ Adding unique message: 1753623915082-system-btoni9opv
+socketManager.ts:48 👥 Singleton received participants update
+WorkingScreenShare.tsx:240 📞 Received WebRTC offer from: 7flyeSE-a7o5sLuMAAAB
+WorkingScreenShare.tsx:1599 📞 Handling WebRTC offer from: 7flyeSE-a7o5sLuMAAAB as presenter: false
+WorkingScreenShare.tsx:1600 📋 Offer details: {type: 'offer', sdp: 'v=0\r\no=- 576468396296580937 2 IN IP4 127.0.0.1\r\ns=…243a3\r\nm=audio 9 UDP/TLS/RTP/SAVPF 111 63 9 0 ...'}
+WorkingScreenShare.tsx:1604 🆕 Creating new peer connection for: 7flyeSE-a7o5sLuMAAAB
+WorkingScreenShare.tsx:1379 🔄 Creating connection for 7flyeSE-a7o5sLuMAAAB, TURN-only: false
+WorkingScreenShare.tsx:1390 🔧 Using ICE configuration: {serverCount: 5, forceTurnOnly: false, transportPolicy: 'all'}
+WorkingScreenShare.tsx:1609 🔍 Current signaling state: stable
+WorkingScreenShare.tsx:1623 📥 Setting remote description (offer)
+WorkingScreenShare.tsx:250 🧊 Received ICE candidate from: 7flyeSE-a7o5sLuMAAAB
+WorkingScreenShare.tsx:1525 🎥 Received audio track from 7flyeSE-a7o5sLuMAAAB
+WorkingScreenShare.tsx:1529 📺 Processing remote stream from 7flyeSE-a7o5sLuMAAAB
+WorkingScreenShare.tsx:1551 📡 Marking viewer as connected after receiving stream from 7flyeSE-a7o5sLuMAAAB
+WorkingScreenShare.tsx:1525 🎥 Received video track from 7flyeSE-a7o5sLuMAAAB
+WorkingScreenShare.tsx:1529 📺 Processing remote stream from 7flyeSE-a7o5sLuMAAAB
+WorkingScreenShare.tsx:1551 📡 Marking viewer as connected after receiving stream from 7flyeSE-a7o5sLuMAAAB
+WorkingScreenShare.tsx:1625 ✅ Remote description set successfully
+WorkingScreenShare.tsx:1627 📝 Creating answer...
+WorkingScreenShare.tsx:1629 ✅ Answer created
+WorkingScreenShare.tsx:339 🚀 Enhanced SDP for 1080p: {videoBandwidth: '10000 kbps', audioBandwidth: '192 kbps', totalBandwidth: '10192 kbps'}
+WorkingScreenShare.tsx:1634 📥 Setting local description (answer)
+WorkingScreenShare.tsx:1636 ✅ Local description set successfully
+WorkingScreenShare.tsx:1638 📤 Sending answer to: 7flyeSE-a7o5sLuMAAAB
+WorkingScreenShare.tsx:1645 ✅ WebRTC offer handling completed successfully
+WorkingScreenShare.tsx:1510 🧊 ICE gathering state for 7flyeSE-a7o5sLuMAAAB: gathering
+WorkingScreenShare.tsx:1497 🧊 Sending ICE candidate for 7flyeSE-a7o5sLuMAAAB: host
+WorkingScreenShare.tsx:250 🧊 Received ICE candidate from: 7flyeSE-a7o5sLuMAAAB
+WorkingScreenShare.tsx:250 🧊 Received ICE candidate from: 7flyeSE-a7o5sLuMAAAB
+WorkingScreenShare.tsx:1516 ❄️ ICE connection state for 7flyeSE-a7o5sLuMAAAB: checking
+WorkingScreenShare.tsx:1402 🔗 Connection state for 7flyeSE-a7o5sLuMAAAB: connecting
+WorkingScreenShare.tsx:1497 🧊 Sending ICE candidate for 7flyeSE-a7o5sLuMAAAB: srflx
+WorkingScreenShare.tsx:1497 🧊 Sending ICE candidate for 7flyeSE-a7o5sLuMAAAB: srflx
+socketManager.ts:48 👥 Singleton received participants update
+socketManager.ts:48 👥 Singleton received participants update
+WorkingScreenShare.tsx:1516 ❄️ ICE connection state for 7flyeSE-a7o5sLuMAAAB: disconnected
+WorkingScreenShare.tsx:1402 🔗 Connection state for 7flyeSE-a7o5sLuMAAAB: failed
+WorkingScreenShare.tsx:1433 ❌ Connection failed for 7flyeSE-a7o5sLuMAAAB, attempting TURN-only retry
+WorkingScreenShare.tsx:1438 🔄 Initiating TURN-only retry for 7flyeSE-a7o5sLuMAAAB (attempt 1)

@@ -1,0 +1,319 @@
+ Download the React DevTools for a better development experience: https://reactjs.org/link/react-devtools
+ ✅ TURN servers configured and ready
+ 🔌 Cleaning up singleton socket handlers
+ ✅ TURN servers configured and ready
+ 🔌 Cleaning up singleton socket handlers
+ 🔌 Cleaning up singleton socket handlers
+ 🔌 Connecting to room using singleton socket manager
+ 🔌 Creating new singleton Socket.io connection
+ ✅ Singleton socket connected
+ 👥 Singleton received participants update
+ 📨 Singleton received message: 1753623292373-system-rqtz4k2t8
+ 📨 Received message via singleton: 1753623292373-system-rqtz4k2t8
+ ✅ Adding unique message: 1753623292373-system-rqtz4k2t8
+ ✅ Adding unique message: 1753623292373-system-rqtz4k2t8
+ 👥 Singleton received participants update
+ 📨 Singleton received message: 1753623297555-system-rz320que8
+ 📨 Received message via singleton: 1753623297555-system-rz320que8
+ ✅ Adding unique message: 1753623297555-system-rz320que8
+ ✅ Adding unique message: 1753623297555-system-rz320que8
+ 🎬 Starting screen share...
+ 🎯 Screen share constraints: {
+  "video": {
+    "frameRate": {
+      "ideal": 30,
+      "max": 30
+    },
+    "width": {
+      "ideal": 1920
+    },
+    "height": {
+      "ideal": 1080
+    }
+  },
+  "audio": {
+    "echoCancellation": false,
+    "noiseSuppression": false,
+    "autoGainControl": false,
+    "sampleRate": {
+      "ideal": 48000
+    },
+    "channelCount": {
+      "ideal": 2
+    }
+  }
+}
+ ✅ Got screen share stream: Object
+ ✅ Applied constraints to force exact settings
+ 🎯 Final stream settings: Object
+ 👥 Singleton received participants update
+ 👥 Singleton received participants update
+ 📨 Singleton received message: 1753623302913-system-yb6wi3f84
+ 📨 Received message via singleton: 1753623302913-system-yb6wi3f84
+ ✅ Adding unique message: 1753623302913-system-yb6wi3f84
+ ✅ Adding unique message: 1753623302913-system-yb6wi3f84
+ 👥 Singleton received participants update
+ 🔌 Closing all peer connections
+ ✅ All peer connections closed and cleared
+ 🔗 Presenter creating connection to viewer: User 29xd WrmxGQmMeEa5C0hYAAAD 
+ 🔄 Creating connection for WrmxGQmMeEa5C0hYAAAD, TURN-only: false
+ 🔧 Using ICE configuration: Object
+ ➕ Adding track to peer connection: audio 29f4179d-9dad-42f9-9f10-6171d3c0178d
+ 📊 Started bandwidth monitoring for 1080p (target: 0.2 Mbps)
+ 🔧 Configured audio transceiver for 1080p: Object
+ ➕ Adding track to peer connection: video fbac98aa-34ef-44d6-b868-5f5d2609c033
+ 📊 Started bandwidth monitoring for 1080p (target: 10.0 Mbps)
+ 🔧 Configured video transceiver for 1080p: Object
+ 🚀 Enhanced SDP for 1080p: Object
+ 📤 Sending optimized offer to viewer: WrmxGQmMeEa5C0hYAAAD
+ 🧊 ICE gathering state for WrmxGQmMeEa5C0hYAAAD: gathering
+ 🧊 Sending ICE candidate for WrmxGQmMeEa5C0hYAAAD: host
+ 🧊 Sending ICE candidate for WrmxGQmMeEa5C0hYAAAD: srflx
+ 🧊 Sending ICE candidate for WrmxGQmMeEa5C0hYAAAD: srflx
+ ❄️ ICE connection state for WrmxGQmMeEa5C0hYAAAD: checking
+ 🔗 Screen share connection state for User 29xd: connecting
+ 👥 Singleton received participants update
+ 👥 Singleton received participants update
+ 📞 Received WebRTC answer from: WrmxGQmMeEa5C0hYAAAD
+ 📞 Setting remote answer from: WrmxGQmMeEa5C0hYAAAD
+ ❄️ ICE connection state for WrmxGQmMeEa5C0hYAAAD: connected
+ 🧊 Received ICE candidate from: WrmxGQmMeEa5C0hYAAAD
+ 🧊 ICE gathering state for WrmxGQmMeEa5C0hYAAAD: complete
+ ✅ ICE gathering complete for WrmxGQmMeEa5C0hYAAAD
+ 🔗 Screen share connection state for User 29xd: connected
+ ✅ Screen share connected successfully to User 29xd
+ 🔧 Manual video fix triggered
+ Debug info: Object
+ 📺 Creating video element with stream: Object
+ Video track 0: Object
+ ⏳ Video waiting
+ 📹 Video loadstart
+ 📹 Video metadata loaded
+ 📹 Video can play
+ ✅ Video is playing
+ ✅ Video playing immediately after creation
+ ✅ Presenter video fix successful
+ ✅ Video playing immediately after creation
+ 🛑 Stopping screen share...
+ 🔌 Closing all peer connections
+ 🔌 Closing connection to WrmxGQmMeEa5C0hYAAAD, state: connected
+ ✅ All peer connections closed and cleared
+ 👥 Singleton received participants update
+ 📨 Singleton received message: 1753623313545-system-eaxqczwzq
+ 📨 Received message via singleton: 1753623313545-system-eaxqczwzq
+ ✅ Adding unique message: 1753623313545-system-eaxqczwzq
+ ✅ Adding unique message: 1753623313545-system-eaxqczwzq
+ 🎬 Starting screen share...
+ 🎯 Screen share constraints: {
+  "video": {
+    "frameRate": {
+      "ideal": 30,
+      "max": 30
+    },
+    "width": {
+      "ideal": 1920
+    },
+    "height": {
+      "ideal": 1080
+    }
+  },
+  "audio": {
+    "echoCancellation": false,
+    "noiseSuppression": false,
+    "autoGainControl": false,
+    "sampleRate": {
+      "ideal": 48000
+    },
+    "channelCount": {
+      "ideal": 2
+    }
+  }
+}
+ ✅ Got screen share stream: Object
+ ✅ Applied constraints to force exact settings
+ 🎯 Final stream settings: Object
+ 👥 Singleton received participants update
+ 👥 Singleton received participants update
+ 📨 Singleton received message: 1753623348140-system-xjlw37tzf
+ 📨 Received message via singleton: 1753623348140-system-xjlw37tzf
+ ✅ Adding unique message: 1753623348140-system-xjlw37tzf
+ ✅ Adding unique message: 1753623348140-system-xjlw37tzf
+ 🔌 Closing all peer connections
+ ✅ All peer connections closed and cleared
+ 🔗 Presenter creating connection to viewer: User 29xd WrmxGQmMeEa5C0hYAAAD 
+ 🔄 Creating connection for WrmxGQmMeEa5C0hYAAAD, TURN-only: false
+ 🔧 Using ICE configuration: Object
+ ➕ Adding track to peer connection: audio 412867c9-0635-404d-9ba6-25bfab6edf71
+ 📊 Started bandwidth monitoring for 1080p (target: 0.2 Mbps)
+ 🔧 Configured audio transceiver for 1080p: Object
+ ➕ Adding track to peer connection: video a8181768-7acd-4b0a-9498-bbe29778a029
+ 📊 Started bandwidth monitoring for 1080p (target: 10.0 Mbps)
+ 🔧 Configured video transceiver for 1080p: Object
+ 🚀 Enhanced SDP for 1080p: Object
+ 📤 Sending optimized offer to viewer: WrmxGQmMeEa5C0hYAAAD
+ 🧊 Sending ICE candidate for WrmxGQmMeEa5C0hYAAAD: host
+ 🧊 ICE gathering state for WrmxGQmMeEa5C0hYAAAD: gathering
+ 👥 Singleton received participants update
+ 🧊 Sending ICE candidate for WrmxGQmMeEa5C0hYAAAD: srflx
+ 🧊 Sending ICE candidate for WrmxGQmMeEa5C0hYAAAD: srflx
+ 👥 Singleton received participants update
+ 👥 Singleton received participants update
+ ❄️ ICE connection state for WrmxGQmMeEa5C0hYAAAD: checking
+ 🔗 Screen share connection state for User 29xd: connecting
+ 📞 Received WebRTC answer from: WrmxGQmMeEa5C0hYAAAD
+ 📞 Setting remote answer from: WrmxGQmMeEa5C0hYAAAD
+ 🧊 Received ICE candidate from: WrmxGQmMeEa5C0hYAAAD
+ 🧊 Received ICE candidate from: WrmxGQmMeEa5C0hYAAAD
+ 🧊 Received ICE candidate from: WrmxGQmMeEa5C0hYAAAD
+ ❄️ ICE connection state for WrmxGQmMeEa5C0hYAAAD: connected
+ 🧊 ICE gathering state for WrmxGQmMeEa5C0hYAAAD: complete
+ ✅ ICE gathering complete for WrmxGQmMeEa5C0hYAAAD
+ 🔗 Screen share connection state for User 29xd: connected
+ ✅ Screen share connected successfully to User 29xd
+ 🔧 Manual video fix triggered
+ Debug info: Object
+ 📺 Creating video element with stream: Object
+ Video track 0: Object
+ ⏳ Video waiting
+ 📹 Video loadstart
+ 📹 Video metadata loaded
+ 📹 Video can play
+ ✅ Video is playing
+ ✅ Video playing immediately after creation
+ ✅ Presenter video fix successful
+ ✅ Video playing immediately after creation
+ 🛑 Stopping screen share...
+ 🔌 Closing all peer connections
+WorkingScreenShare.tsx:1847 🔌 Closing connection to WrmxGQmMeEa5C0hYAAAD, state: connected
+WorkingScreenShare.tsx:1895 ✅ All peer connections closed and cleared
+socketManager.ts:48 👥 Singleton received participants update
+socketManager.ts:43 📨 Singleton received message: 1753623374488-system-klhyou2k8
+WorkingScreenShare.tsx:191 📨 Received message via singleton: 1753623374488-system-klhyou2k8
+WorkingScreenShare.tsx:198 ✅ Adding unique message: 1753623374488-system-klhyou2k8
+WorkingScreenShare.tsx:198 ✅ Adding unique message: 1753623374488-system-klhyou2k8
+socketManager.ts:48 👥 Singleton received participants update
+socketManager.ts:48 👥 Singleton received participants update
+socketManager.ts:43 📨 Singleton received message: 1753623381423-system-j3gxovywp
+WorkingScreenShare.tsx:191 📨 Received message via singleton: 1753623381423-system-j3gxovywp
+WorkingScreenShare.tsx:218 👥 Presenter started: User 29xd ID: WrmxGQmMeEa5C0hYAAAD
+WorkingScreenShare.tsx:221 📺 Viewer ready to receive stream from presenter
+WorkingScreenShare.tsx:198 ✅ Adding unique message: 1753623381423-system-j3gxovywp
+WorkingScreenShare.tsx:198 ✅ Adding unique message: 1753623381423-system-j3gxovywp
+socketManager.ts:48 👥 Singleton received participants update
+WorkingScreenShare.tsx:240 📞 Received WebRTC offer from: WrmxGQmMeEa5C0hYAAAD
+WorkingScreenShare.tsx:1660 📞 Handling WebRTC offer from: WrmxGQmMeEa5C0hYAAAD as presenter: false
+WorkingScreenShare.tsx:1661 📋 Offer details: Object
+WorkingScreenShare.tsx:1665 🆕 Creating new peer connection for: WrmxGQmMeEa5C0hYAAAD
+WorkingScreenShare.tsx:1455 🔄 Creating connection for WrmxGQmMeEa5C0hYAAAD, TURN-only: false
+WorkingScreenShare.tsx:1466 🔧 Using ICE configuration: Object
+WorkingScreenShare.tsx:1670 🔍 Current signaling state: stable
+WorkingScreenShare.tsx:1684 📥 Setting remote description (offer)
+WorkingScreenShare.tsx:250 🧊 Received ICE candidate from: WrmxGQmMeEa5C0hYAAAD
+WorkingScreenShare.tsx:250 🧊 Received ICE candidate from: WrmxGQmMeEa5C0hYAAAD
+WorkingScreenShare.tsx:250 🧊 Received ICE candidate from: WrmxGQmMeEa5C0hYAAAD
+WorkingScreenShare.tsx:1586 🎥 Received audio track from WrmxGQmMeEa5C0hYAAAD
+WorkingScreenShare.tsx:1590 📺 Processing remote stream from WrmxGQmMeEa5C0hYAAAD
+WorkingScreenShare.tsx:1612 📡 Marking viewer as connected after receiving stream from WrmxGQmMeEa5C0hYAAAD
+WorkingScreenShare.tsx:1586 🎥 Received video track from WrmxGQmMeEa5C0hYAAAD
+WorkingScreenShare.tsx:1590 📺 Processing remote stream from WrmxGQmMeEa5C0hYAAAD
+WorkingScreenShare.tsx:1612 📡 Marking viewer as connected after receiving stream from WrmxGQmMeEa5C0hYAAAD
+WorkingScreenShare.tsx:1686 ✅ Remote description set successfully
+WorkingScreenShare.tsx:1688 📝 Creating answer...
+WorkingScreenShare.tsx:1690 ✅ Answer created
+WorkingScreenShare.tsx:339 🚀 Enhanced SDP for 1080p: Object
+WorkingScreenShare.tsx:1695 📥 Setting local description (answer)
+WorkingScreenShare.tsx:1697 ✅ Local description set successfully
+WorkingScreenShare.tsx:1699 📤 Sending answer to: WrmxGQmMeEa5C0hYAAAD
+WorkingScreenShare.tsx:1706 ✅ WebRTC offer handling completed successfully
+WorkingScreenShare.tsx:1571 🧊 ICE gathering state for WrmxGQmMeEa5C0hYAAAD: gathering
+WorkingScreenShare.tsx:1577 ❄️ ICE connection state for WrmxGQmMeEa5C0hYAAAD: checking
+WorkingScreenShare.tsx:1478 🔗 Connection state for WrmxGQmMeEa5C0hYAAAD: connecting
+WorkingScreenShare.tsx:1558 🧊 Sending ICE candidate for WrmxGQmMeEa5C0hYAAAD: host
+WorkingScreenShare.tsx:1558 🧊 Sending ICE candidate for WrmxGQmMeEa5C0hYAAAD: srflx
+WorkingScreenShare.tsx:1558 🧊 Sending ICE candidate for WrmxGQmMeEa5C0hYAAAD: srflx
+socketManager.ts:48 👥 Singleton received participants update
+socketManager.ts:48 👥 Singleton received participants update
+WorkingScreenShare.tsx:1577 ❄️ ICE connection state for WrmxGQmMeEa5C0hYAAAD: disconnected
+WorkingScreenShare.tsx:1478 🔗 Connection state for WrmxGQmMeEa5C0hYAAAD: failed
+WorkingScreenShare.tsx:1493 ❌ Connection failed for WrmxGQmMeEa5C0hYAAAD, attempting TURN-only retry
+WorkingScreenShare.tsx:1498 🔄 Initiating TURN-only retry for WrmxGQmMeEa5C0hYAAAD (attempt 1)
+socketManager.ts:48 👥 Singleton received participants update
+socketManager.ts:43 📨 Singleton received message: 1753623424278-system-qiufnn93m
+WorkingScreenShare.tsx:191 📨 Received message via singleton: 1753623424278-system-qiufnn93m
+WorkingScreenShare.tsx:198 ✅ Adding unique message: 1753623424278-system-qiufnn93m
+WorkingScreenShare.tsx:198 ✅ Adding unique message: 1753623424278-system-qiufnn93m
+WorkingScreenShare.tsx:230 👥 Presenter stopped
+WorkingScreenShare.tsx:547 🎬 Starting screen share...
+WorkingScreenShare.tsx:585 🎯 Screen share constraints: {
+  "video": {
+    "frameRate": {
+      "ideal": 30,
+      "max": 30
+    },
+    "width": {
+      "ideal": 1920
+    },
+    "height": {
+      "ideal": 1080
+    }
+  },
+  "audio": {
+    "echoCancellation": false,
+    "noiseSuppression": false,
+    "autoGainControl": false,
+    "sampleRate": {
+      "ideal": 48000
+    },
+    "channelCount": {
+      "ideal": 2
+    }
+  }
+}
+WorkingScreenShare.tsx:591 ✅ Got screen share stream: Object
+WorkingScreenShare.tsx:612 ✅ Applied constraints to force exact settings
+WorkingScreenShare.tsx:616 🎯 Final stream settings: Object
+socketManager.ts:48 👥 Singleton received participants update
+socketManager.ts:48 👥 Singleton received participants update
+socketManager.ts:43 📨 Singleton received message: 1753623428414-system-akbh0de9f
+WorkingScreenShare.tsx:191 📨 Received message via singleton: 1753623428414-system-akbh0de9f
+WorkingScreenShare.tsx:198 ✅ Adding unique message: 1753623428414-system-akbh0de9f
+WorkingScreenShare.tsx:198 ✅ Adding unique message: 1753623428414-system-akbh0de9f
+WorkingScreenShare.tsx:1843 🔌 Closing all peer connections
+WorkingScreenShare.tsx:1895 ✅ All peer connections closed and cleared
+socketManager.ts:48 👥 Singleton received participants update
+WorkingScreenShare.tsx:687 🔗 Presenter creating connection to viewer: User 29xd WrmxGQmMeEa5C0hYAAAD 
+WorkingScreenShare.tsx:1455 🔄 Creating connection for WrmxGQmMeEa5C0hYAAAD, TURN-only: false
+WorkingScreenShare.tsx:1466 🔧 Using ICE configuration: Object
+WorkingScreenShare.tsx:731 ➕ Adding track to peer connection: audio cbf3067c-fddc-4e97-8d5f-94c3a012520c
+WorkingScreenShare.tsx:430 📊 Started bandwidth monitoring for 1080p (target: 0.2 Mbps)
+WorkingScreenShare.tsx:775 🔧 Configured audio transceiver for 1080p: Object
+WorkingScreenShare.tsx:731 ➕ Adding track to peer connection: video 3493bedf-5a1c-4a27-afd9-611db4119371
+WorkingScreenShare.tsx:430 📊 Started bandwidth monitoring for 1080p (target: 10.0 Mbps)
+WorkingScreenShare.tsx:775 🔧 Configured video transceiver for 1080p: Object
+WorkingScreenShare.tsx:339 🚀 Enhanced SDP for 1080p: Object
+WorkingScreenShare.tsx:790 📤 Sending optimized offer to viewer: WrmxGQmMeEa5C0hYAAAD
+WorkingScreenShare.tsx:1571 🧊 ICE gathering state for WrmxGQmMeEa5C0hYAAAD: gathering
+WorkingScreenShare.tsx:1558 🧊 Sending ICE candidate for WrmxGQmMeEa5C0hYAAAD: host
+WorkingScreenShare.tsx:1558 🧊 Sending ICE candidate for WrmxGQmMeEa5C0hYAAAD: srflx
+WorkingScreenShare.tsx:1558 🧊 Sending ICE candidate for WrmxGQmMeEa5C0hYAAAD: srflx
+socketManager.ts:48 👥 Singleton received participants update
+socketManager.ts:48 👥 Singleton received participants update
+WorkingScreenShare.tsx:245 📞 Received WebRTC answer from: WrmxGQmMeEa5C0hYAAAD
+WorkingScreenShare.tsx:1754 📞 Setting remote answer from: WrmxGQmMeEa5C0hYAAAD
+WorkingScreenShare.tsx:250 🧊 Received ICE candidate from: WrmxGQmMeEa5C0hYAAAD
+WorkingScreenShare.tsx:250 🧊 Received ICE candidate from: WrmxGQmMeEa5C0hYAAAD
+WorkingScreenShare.tsx:1577 ❄️ ICE connection state for WrmxGQmMeEa5C0hYAAAD: checking
+WorkingScreenShare.tsx:715 🔗 Screen share connection state for User 29xd: connecting
+WorkingScreenShare.tsx:1577 ❄️ ICE connection state for WrmxGQmMeEa5C0hYAAAD: connected
+WorkingScreenShare.tsx:1571 🧊 ICE gathering state for WrmxGQmMeEa5C0hYAAAD: complete
+WorkingScreenShare.tsx:1565 ✅ ICE gathering complete for WrmxGQmMeEa5C0hYAAAD
+WorkingScreenShare.tsx:250 🧊 Received ICE candidate from: WrmxGQmMeEa5C0hYAAAD
+WorkingScreenShare.tsx:1359 🛑 Stopping screen share...
+WorkingScreenShare.tsx:1843 🔌 Closing all peer connections
+WorkingScreenShare.tsx:1847 🔌 Closing connection to WrmxGQmMeEa5C0hYAAAD, state: connecting
+WorkingScreenShare.tsx:1895 ✅ All peer connections closed and cleared
+socketManager.ts:48 👥 Singleton received participants update
+socketManager.ts:43 📨 Singleton received message: 1753623447558-system-k12cp3996
+WorkingScreenShare.tsx:191 📨 Received message via singleton: 1753623447558-system-k12cp3996
+WorkingScreenShare.tsx:198 ✅ Adding unique message: 1753623447558-system-k12cp3996
+WorkingScreenShare.tsx:198 ✅ Adding unique message: 1753623447558-system-k12cp3996

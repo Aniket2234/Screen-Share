@@ -1,0 +1,16 @@
+chunk-NUMECXU6.js?v=b3c88aea:21551 Download the React DevTools for a better development experience: https://reactjs.org/link/react-devtools
+StreamScreenShare.tsx:157 Joined Stream.io call successfully
+video.stream-io-api.com/video/call/default/1/start_recording?user_id=8ed3dd09-fcb6-4a89-991d-fef22e423298&connection_id=68728f64-0a09-3699-0200-000000642213&api_key=e4kha8r2q3xp:1  Failed to load resource: the server responded with a status of 400 ()
+@stream-io_video-react-sdk.js?v=b3c88aea:17155 [coordinator]: client:post - Error - url: /call/default/1/start_recording Object
+logToConsole @ @stream-io_video-react-sdk.js?v=b3c88aea:17155
+@stream-io_video-react-sdk.js?v=b3c88aea:28165 Failed start recording ErrorFromResponse: Stream error code 4: StartRecording failed with error: "call is already being recorded"
+    at StreamClient.errorFromResponse (https://19805426-6093-45f9-9837-08fde2ba1227-00-17leo714c1v7y.worf.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/@stream-io_video-react-sdk.js?v=b3c88aea:25117:14)
+    at StreamClient.handleResponse (https://19805426-6093-45f9-9837-08fde2ba1227-00-17leo714c1v7y.worf.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/@stream-io_video-react-sdk.js?v=b3c88aea:25128:20)
+    at StreamClient.doAxiosRequest (https://19805426-6093-45f9-9837-08fde2ba1227-00-17leo714c1v7y.worf.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/@stream-io_video-react-sdk.js?v=b3c88aea:25089:23)
+    at async https://19805426-6093-45f9-9837-08fde2ba1227-00-17leo714c1v7y.worf.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/@stream-io_video-react-sdk.js?v=b3c88aea:28162:9
+(anonymous) @ @stream-io_video-react-sdk.js?v=b3c88aea:28165
+@stream-io_video-react-sdk.js?v=b3c88aea:25117 Uncaught (in promise) ErrorFromResponse: Stream error code 4: StartRecording failed with error: "call is already being recorded"
+    at StreamClient.errorFromResponse (https://19805426-6093-45f9-9837-08fde2ba1227-00-17leo714c1v7y.worf.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/@stream-io_video-react-sdk.js?v=b3c88aea:25117:14)
+    at StreamClient.handleResponse (https://19805426-6093-45f9-9837-08fde2ba1227-00-17leo714c1v7y.worf.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/@stream-io_video-react-sdk.js?v=b3c88aea:25128:20)
+    at StreamClient.doAxiosRequest (https://19805426-6093-45f9-9837-08fde2ba1227-00-17leo714c1v7y.worf.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/@stream-io_video-react-sdk.js?v=b3c88aea:25089:23)
+    at async https://19805426-6093-45f9-9837-08fde2ba1227-00-17leo714c1v7y.worf.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/@stream-io_video-react-sdk.js?v=b3c88aea:28162:9

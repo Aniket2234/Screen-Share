@@ -1,0 +1,48 @@
+WorkingScreenShare.tsx:227 🎬 Starting screen share...
+WorkingScreenShare.tsx:255 🎯 Screen share constraints: {
+  "video": {
+    "frameRate": {
+      "ideal": 30,
+      "max": 30,
+      "min": 30
+    },
+    "width": {
+      "ideal": 1920
+    },
+    "height": {
+      "ideal": 1080
+    },
+    "cursor": "always",
+    "displaySurface": "monitor",
+    "logicalSurface": true
+  },
+  "audio": true
+}
+WorkingScreenShare.tsx:356 ❌ Failed to start screen share: TypeError: Failed to execute 'getDisplayMedia' on 'MediaDevices': min constraints are not supported
+    at startScreenShare (WorkingScreenShare.tsx:256:51)
+    at HTMLUnknownElement.callCallback2 (chunk-PJEEZAML.js?v=c04d9f90:3674:22)
+    at Object.invokeGuardedCallbackDev (chunk-PJEEZAML.js?v=c04d9f90:3699:24)
+    at invokeGuardedCallback (chunk-PJEEZAML.js?v=c04d9f90:3733:39)
+    at invokeGuardedCallbackAndCatchFirstError (chunk-PJEEZAML.js?v=c04d9f90:3736:33)
+    at executeDispatch (chunk-PJEEZAML.js?v=c04d9f90:7014:11)
+    at processDispatchQueueItemsInOrder (chunk-PJEEZAML.js?v=c04d9f90:7034:15)
+    at processDispatchQueue (chunk-PJEEZAML.js?v=c04d9f90:7043:13)
+    at dispatchEventsForPlugins (chunk-PJEEZAML.js?v=c04d9f90:7051:11)
+    at chunk-PJEEZAML.js?v=c04d9f90:7174:20
+startScreenShare @ WorkingScreenShare.tsx:356
+await in startScreenShare
+callCallback2 @ chunk-PJEEZAML.js?v=c04d9f90:3674
+invokeGuardedCallbackDev @ chunk-PJEEZAML.js?v=c04d9f90:3699
+invokeGuardedCallback @ chunk-PJEEZAML.js?v=c04d9f90:3733
+invokeGuardedCallbackAndCatchFirstError @ chunk-PJEEZAML.js?v=c04d9f90:3736
+executeDispatch @ chunk-PJEEZAML.js?v=c04d9f90:7014
+processDispatchQueueItemsInOrder @ chunk-PJEEZAML.js?v=c04d9f90:7034
+processDispatchQueue @ chunk-PJEEZAML.js?v=c04d9f90:7043
+dispatchEventsForPlugins @ chunk-PJEEZAML.js?v=c04d9f90:7051
+(anonymous) @ chunk-PJEEZAML.js?v=c04d9f90:7174
+batchedUpdates$1 @ chunk-PJEEZAML.js?v=c04d9f90:18913
+batchedUpdates @ chunk-PJEEZAML.js?v=c04d9f90:3579
+dispatchEventForPluginEventSystem @ chunk-PJEEZAML.js?v=c04d9f90:7173
+dispatchEventWithEnableCapturePhaseSelectiveHydrationWithoutDiscreteEventReplay @ chunk-PJEEZAML.js?v=c04d9f90:5478
+dispatchEvent @ chunk-PJEEZAML.js?v=c04d9f90:5472
+dispatchDiscreteEvent @ chunk-PJEEZAML.js?v=c04d9f90:5449

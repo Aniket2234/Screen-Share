@@ -1,0 +1,76 @@
+chunk-PJEEZAML.js?v=c04d9f90:21551 Download the React DevTools for a better development experience: https://reactjs.org/link/react-devtools
+WorkingScreenShare.tsx:178 🔍 Testing TURN server connectivity...
+WorkingScreenShare.tsx:178 🔍 Testing TURN server connectivity...
+WorkingScreenShare.tsx:211 🧊 ICE gathering state: gathering
+WorkingScreenShare.tsx:211 🧊 ICE gathering state: gathering
+WorkingScreenShare.tsx:190 🧊 Test ICE candidate: candidate:4256673292 1 udp 2122260223 192.168.1.25 62841 typ host generation 0 ufrag JQOY network-id 1 network-cost 10
+WorkingScreenShare.tsx:190 🧊 Test ICE candidate: candidate:1318468527 1 udp 2122260223 192.168.1.25 58826 typ host generation 0 ufrag wcOL network-id 1 network-cost 10
+WorkingScreenShare.tsx:190 🧊 Test ICE candidate: candidate:52263576 1 tcp 1518280447 192.168.1.25 9 typ host tcptype active generation 0 ufrag JQOY network-id 1 network-cost 10
+WorkingScreenShare.tsx:190 🧊 Test ICE candidate: candidate:2956783419 1 tcp 1518280447 192.168.1.25 9 typ host tcptype active generation 0 ufrag wcOL network-id 1 network-cost 10
+WorkingScreenShare.tsx:190 🧊 Test ICE candidate: candidate:1392332594 1 udp 1686052607 115.98.233.56 62841 typ srflx raddr 192.168.1.25 rport 62841 generation 0 ufrag JQOY network-id 1 network-cost 10
+WorkingScreenShare.tsx:190 🧊 Test ICE candidate: candidate:3789347473 1 udp 1686052607 115.98.233.56 58826 typ srflx raddr 192.168.1.25 rport 58826 generation 0 ufrag wcOL network-id 1 network-cost 10
+WorkingScreenShare.tsx:273 👥 Presenter started: User ocnc ID: rI7uzXbNKf-nMumTAAAD
+WorkingScreenShare.tsx:276 📺 Viewer ready to receive stream from presenter
+WorkingScreenShare.tsx:226 ⚠ Limited TURN server response - may have issues with restrictive networks
+WorkingScreenShare.tsx:226 ⚠ Limited TURN server response - may have issues with restrictive networks
+WorkingScreenShare.tsx:291 📞 Received WebRTC offer from: rI7uzXbNKf-nMumTAAAD
+WorkingScreenShare.tsx:1507 📞 Handling WebRTC offer from: rI7uzXbNKf-nMumTAAAD as presenter: false
+WorkingScreenShare.tsx:1508 📋 Offer details: Object
+WorkingScreenShare.tsx:1512 🆕 Creating new peer connection for: rI7uzXbNKf-nMumTAAAD
+WorkingScreenShare.tsx:1517 🔍 Current signaling state: stable
+WorkingScreenShare.tsx:1529 📥 Setting remote description (offer)
+WorkingScreenShare.tsx:1271 🎥 Received remote stream from: rI7uzXbNKf-nMumTAAAD
+WorkingScreenShare.tsx:1272 🔍 Event details: Object
+WorkingScreenShare.tsx:1289 🔍 Stream details: Object
+WorkingScreenShare.tsx:1302 🎵 Track 0: Object
+WorkingScreenShare.tsx:1302 🎵 Track 1: Object
+WorkingScreenShare.tsx:1271 🎥 Received remote stream from: rI7uzXbNKf-nMumTAAAD
+WorkingScreenShare.tsx:1272 🔍 Event details: Object
+WorkingScreenShare.tsx:1289 🔍 Stream details: Object
+WorkingScreenShare.tsx:1302 🎵 Track 0: Object
+WorkingScreenShare.tsx:1302 🎵 Track 1: Object
+WorkingScreenShare.tsx:1531 ✅ Remote description set successfully
+WorkingScreenShare.tsx:1533 📝 Creating answer...
+WorkingScreenShare.tsx:1538 ✅ Answer created
+WorkingScreenShare.tsx:1540 📥 Setting local description (answer)
+WorkingScreenShare.tsx:301 🧊 Received ICE candidate from: rI7uzXbNKf-nMumTAAAD
+WorkingScreenShare.tsx:1542 ✅ Local description set successfully
+WorkingScreenShare.tsx:1544 📤 Sending answer to: rI7uzXbNKf-nMumTAAAD
+WorkingScreenShare.tsx:1551 ✅ WebRTC offer handling completed successfully
+WorkingScreenShare.tsx:1251 📡 ICE gathering state for rI7uzXbNKf-nMumTAAAD: gathering
+WorkingScreenShare.tsx:1236 🧊 ICE connection state for rI7uzXbNKf-nMumTAAAD: checking
+WorkingScreenShare.tsx:1259 🧊 Sending ICE candidate for rI7uzXbNKf-nMumTAAAD: candidate:2060014968 1 udp 2122260223 192.168.1.25 53873 typ host generation 0 ufrag D4jg network-id 1 network-cost 10
+WorkingScreenShare.tsx:1126 🔗 Connection state changed for rI7uzXbNKf-nMumTAAAD: connecting
+WorkingScreenShare.tsx:1259 🧊 Sending ICE candidate for rI7uzXbNKf-nMumTAAAD: candidate:3582178374 1 udp 1686052607 115.98.233.56 53873 typ srflx raddr 192.168.1.25 rport 53873 generation 0 ufrag D4jg network-id 1 network-cost 10
+WorkingScreenShare.tsx:301 🧊 Received ICE candidate from: rI7uzXbNKf-nMumTAAAD
+WorkingScreenShare.tsx:301 🧊 Received ICE candidate from: rI7uzXbNKf-nMumTAAAD
+WorkingScreenShare.tsx:301 🧊 Received ICE candidate from: rI7uzXbNKf-nMumTAAAD
+WorkingScreenShare.tsx:1259 🧊 Sending ICE candidate for rI7uzXbNKf-nMumTAAAD: candidate:2221113836 1 tcp 1518280447 192.168.1.25 9 typ host tcptype active generation 0 ufrag D4jg network-id 1 network-cost 10
+WorkingScreenShare.tsx:301 🧊 Received ICE candidate from: rI7uzXbNKf-nMumTAAAD
+WorkingScreenShare.tsx:301 🧊 Received ICE candidate from: rI7uzXbNKf-nMumTAAAD
+WorkingScreenShare.tsx:301 🧊 Received ICE candidate from: rI7uzXbNKf-nMumTAAAD
+WorkingScreenShare.tsx:1629 🔧 Manual video fix triggered
+WorkingScreenShare.tsx:1630 Debug info: Object
+WorkingScreenShare.tsx:394 📺 Creating video element with stream: Object
+WorkingScreenShare.tsx:404 Video track 0: Object
+WorkingScreenShare.tsx:423 ⏳ Video waiting
+WorkingScreenShare.tsx:417 📹 Video loadstart
+WorkingScreenShare.tsx:1629 🔧 Manual video fix triggered
+WorkingScreenShare.tsx:1630 Debug info: Object
+WorkingScreenShare.tsx:433 ℹ Video autoplay blocked, will require user interaction: AbortError
+WorkingScreenShare.tsx:1699 ❌ Viewer remote video fix failed: AbortError: The play() request was interrupted by a new load request. https://goo.gl/LdLk22
+(anonymous) @ WorkingScreenShare.tsx:1699
+WorkingScreenShare.tsx:433 ℹ Video autoplay blocked, will require user interaction: AbortError
+WorkingScreenShare.tsx:423 ⏳ Video waiting
+WorkingScreenShare.tsx:417 📹 Video loadstart
+WorkingScreenShare.tsx:1629 🔧 Manual video fix triggered
+WorkingScreenShare.tsx:1630 Debug info: Object
+WorkingScreenShare.tsx:1699 ❌ Viewer remote video fix failed: AbortError: The play() request was interrupted by a new load request. https://goo.gl/LdLk22
+(anonymous) @ WorkingScreenShare.tsx:1699
+WorkingScreenShare.tsx:423 ⏳ Video waiting
+WorkingScreenShare.tsx:417 📹 Video loadstart
+WorkingScreenShare.tsx:281 👥 Presenter stopped
+WorkingScreenShare.tsx:1699 ❌ Viewer remote video fix failed: AbortError: The play() request was interrupted because the media was removed from the document. https://goo.gl/LdLk22
+(anonymous) @ WorkingScreenShare.tsx:1699
+WorkingScreenShare.tsx:418 📹 Video metadata loaded
+WorkingScreenShare.tsx:419 📹 Video can play

@@ -1,0 +1,100 @@
+chunk-PJEEZAML.js?v=c04d9f90:21551 Download the React DevTools for a better development experience: https://reactjs.org/link/react-devtools
+WorkingScreenShare.tsx:204 🔍 Testing TURN server connectivity...
+WorkingScreenShare.tsx:204 🔍 Testing TURN server connectivity...
+WorkingScreenShare.tsx:237 🧊 ICE gathering state: gathering
+WorkingScreenShare.tsx:237 🧊 ICE gathering state: gathering
+WorkingScreenShare.tsx:216 🧊 Test ICE candidate: candidate:586525622 1 udp 2122260223 192.168.1.25 64253 typ host generation 0 ufrag asZO network-id 1 network-cost 10
+WorkingScreenShare.tsx:216 🧊 Test ICE candidate: candidate:2682681004 1 udp 2122260223 192.168.1.25 58609 typ host generation 0 ufrag QfMw network-id 1 network-cost 10
+WorkingScreenShare.tsx:216 🧊 Test ICE candidate: candidate:2378123912 1 udp 1686052607 115.98.233.56 64253 typ srflx raddr 192.168.1.25 rport 64253 generation 0 ufrag asZO network-id 1 network-cost 10
+WorkingScreenShare.tsx:216 🧊 Test ICE candidate: candidate:3697245986 1 tcp 1518280447 192.168.1.25 9 typ host tcptype active generation 0 ufrag asZO network-id 1 network-cost 10
+WorkingScreenShare.tsx:216 🧊 Test ICE candidate: candidate:3777598516 1 tcp 1518280447 192.168.1.25 9 typ host tcptype active generation 0 ufrag QfMw network-id 1 network-cost 10
+WorkingScreenShare.tsx:216 🧊 Test ICE candidate: candidate:3743155205 1 udp 1686052607 115.98.233.56 58609 typ srflx raddr 192.168.1.25 rport 58609 generation 0 ufrag QfMw network-id 1 network-cost 10
+WorkingScreenShare.tsx:478 🎬 Starting screen share...
+WorkingScreenShare.tsx:506 🎯 Screen share constraints: {
+  "video": {
+    "frameRate": {
+      "ideal": 30,
+      "max": 30
+    },
+    "width": {
+      "ideal": 1920
+    },
+    "height": {
+      "ideal": 1080
+    },
+    "cursor": "always",
+    "displaySurface": "monitor",
+    "logicalSurface": true
+  },
+  "audio": true
+}
+WorkingScreenShare.tsx:512 ✅ Got screen share stream: Object
+WorkingScreenShare.tsx:531 ✅ Applied constraints to force exact settings
+WorkingScreenShare.tsx:535 🎯 Final stream settings: Object
+WorkingScreenShare.tsx:592 🔗 Presenter creating connection to viewer: User z50t HOy43KGQ7i2JdYhsAAAF 
+WorkingScreenShare.tsx:627 ➕ Adding track to peer connection: video 31dbb434-80cd-412a-a1a8-63d50fa6ce4d
+WorkingScreenShare.tsx:640 📤 Sending optimized offer to viewer: HOy43KGQ7i2JdYhsAAAF
+WorkingScreenShare.tsx:1365 🧊 Sending ICE candidate for HOy43KGQ7i2JdYhsAAAF: candidate:3777290754 1 udp 2122260224 192.168.1.25 59862 typ host generation 0 ufrag ZYiw network-id 1 network-cost 10
+WorkingScreenShare.tsx:1357 📡 ICE gathering state for HOy43KGQ7i2JdYhsAAAF: gathering
+WorkingScreenShare.tsx:1365 🧊 Sending ICE candidate for HOy43KGQ7i2JdYhsAAAF: candidate:529413782 1 tcp 1518280447 192.168.1.25 9 typ host tcptype active generation 0 ufrag ZYiw network-id 1 network-cost 10
+WorkingScreenShare.tsx:1365 🧊 Sending ICE candidate for HOy43KGQ7i2JdYhsAAAF: candidate:1315832636 1 udp 1686052607 115.98.233.56 59862 typ srflx raddr 192.168.1.25 rport 59862 generation 0 ufrag ZYiw network-id 1 network-cost 10
+WorkingScreenShare.tsx:327 📞 Received WebRTC answer from: HOy43KGQ7i2JdYhsAAAF
+WorkingScreenShare.tsx:1705 📞 Setting remote answer from: HOy43KGQ7i2JdYhsAAAF
+WorkingScreenShare.tsx:253 ⚠ Limited TURN server response - cross-network connectivity will likely fail
+WorkingScreenShare.tsx:253 ⚠ Limited TURN server response - cross-network connectivity will likely fail
+WorkingScreenShare.tsx:1793 🔧 Manual video fix triggered
+WorkingScreenShare.tsx:1794 Debug info: Object
+WorkingScreenShare.tsx:425 📺 Creating video element with stream: Object
+WorkingScreenShare.tsx:435 Video track 0: Object
+WorkingScreenShare.tsx:454 ⏳ Video waiting
+WorkingScreenShare.tsx:448 📹 Video loadstart
+WorkingScreenShare.tsx:449 📹 Video metadata loaded
+WorkingScreenShare.tsx:450 📹 Video can play
+WorkingScreenShare.tsx:451 ✅ Video is playing
+WorkingScreenShare.tsx:460 ✅ Video playing immediately after creation
+WorkingScreenShare.tsx:1821 ✅ Presenter video fix successful
+WorkingScreenShare.tsx:460 ✅ Video playing immediately after creation
+WorkingScreenShare.tsx:651 ⚠ Offer to User z50t may have failed, will retry automatically
+WorkingScreenShare.tsx:1120 🛑 Stopping screen share...
+WorkingScreenShare.tsx:478 🎬 Starting screen share...
+WorkingScreenShare.tsx:506 🎯 Screen share constraints: {
+  "video": {
+    "frameRate": {
+      "ideal": 30,
+      "max": 30
+    },
+    "width": {
+      "ideal": 1920
+    },
+    "height": {
+      "ideal": 1080
+    },
+    "cursor": "always",
+    "displaySurface": "monitor",
+    "logicalSurface": true
+  },
+  "audio": true
+}
+WorkingScreenShare.tsx:512 ✅ Got screen share stream: Object
+WorkingScreenShare.tsx:531 ✅ Applied constraints to force exact settings
+WorkingScreenShare.tsx:535 🎯 Final stream settings: Object
+WorkingScreenShare.tsx:592 🔗 Presenter creating connection to viewer: User z50t HOy43KGQ7i2JdYhsAAAF (cross-network mode)
+WorkingScreenShare.tsx:1211 🌐 Using TURN-only configuration for cross-network connectivity
+WorkingScreenShare.tsx:627 ➕ Adding track to peer connection: video d4e0d655-68df-4420-b7cc-0ada87fce394
+WorkingScreenShare.tsx:640 📤 Sending optimized offer to viewer: HOy43KGQ7i2JdYhsAAAF
+WorkingScreenShare.tsx:1357 📡 ICE gathering state for HOy43KGQ7i2JdYhsAAAF: gathering
+WorkingScreenShare.tsx:327 📞 Received WebRTC answer from: HOy43KGQ7i2JdYhsAAAF
+WorkingScreenShare.tsx:1705 📞 Setting remote answer from: HOy43KGQ7i2JdYhsAAAF
+WorkingScreenShare.tsx:1793 🔧 Manual video fix triggered
+WorkingScreenShare.tsx:1794 Debug info: Object
+WorkingScreenShare.tsx:425 📺 Creating video element with stream: Object
+WorkingScreenShare.tsx:435 Video track 0: Object
+WorkingScreenShare.tsx:454 ⏳ Video waiting
+WorkingScreenShare.tsx:448 📹 Video loadstart
+WorkingScreenShare.tsx:449 📹 Video metadata loaded
+WorkingScreenShare.tsx:450 📹 Video can play
+WorkingScreenShare.tsx:451 ✅ Video is playing
+WorkingScreenShare.tsx:460 ✅ Video playing immediately after creation
+WorkingScreenShare.tsx:1821 ✅ Presenter video fix successful
+WorkingScreenShare.tsx:460 ✅ Video playing immediately after creation
+WorkingScreenShare.tsx:651 ⚠ Offer to User z50t may have failed, will retry automatically

@@ -1,0 +1,965 @@
+        // Log each track for detailed debugging
+        remoteStream.getTracks().forEach((track, index) => {
+          console.log(`🎵 Track ${index}:`, {
+            kind: track.kind,
+            enabled: track.enabled,
+            readyState: track.readyState,
+            muted: track.muted,
+            id: track.id,
+            label: track.label
+          });
+          
+          // Monitor track events AND PREVENT ISSUES (only if not already added)
+          if (!track._eventListenersAdded) {
+            track.addEventListener('ended', () => {
+              console.log(`🔚 Track ${index} ended: ${track.kind} - PREVENTING TRACK END`);
+              // Try to re-enable the track
+              track.enabled = true;
+            });
+            
+            track.addEventListener('mute', () => {
+              console.log(`🔇 Track ${index} muted: ${track.kind} - PREVENTING TRACK MUTE`);
+              // Force track to be enabled
+              track.enabled = true;
+            });
+            
+            track.addEventListener('unmute', () => {
+              console.log(`🔊 Track ${index} unmuted: ${track.kind}`);
+              // Ensure track stays enabled
+              track.enabled = true;
+            });
+            
+            track._eventListenersAdded = true;
+          }
+        });
+        
+        setRemoteStreams(prev => new Map(prev.set(peerId, remoteStream)));
+        
+        // CRITICAL FIX: Prevent track muting and ending
+        remoteStream.getTracks().forEach(track => {
+          console.log(`🔒 Preventing track ${track.kind} from being muted/ended`);
+          
+          // Only redefine if not already redefined
+          if (!track._protectionApplied) {
+            try {
+              // Override track muting
+              Object.defineProperty(track, 'muted', {
+                get: () => false,
+                set: () => {},
+                configurable: false
+              });
+              
+              // Prevent track ending
+              const originalStop = track.stop;
+              track.stop = () => {
+                console.log(`🛑 Preventing track ${track.kind} from stopping`);
+                // Don't actually stop
+              };
+              
+              // Mark as protected
+              track._protectionApplied = true;
+            } catch (error) {
+              console.log(`⚠️ Track ${track.kind} already protected or can't be protected:`, error.message);
+            }
+          }
+          
+          // Keep track enabled
+          track.enabled = true;
+        });
+        
+        // CRITICAL FIX: Simple, reliable video display for viewers
+        if (!isPresenting && videoContainerRef.current) {
+          console.log('🎯 VIEWER: Creating bulletproof video display for remote stream');
+          
+          // Clear container first
+          videoContainerRef.current.innerHTML = '';
+          
+          // Create the simplest possible video element
+          const videoEl = document.createElement('video');
+          videoEl.id = `viewer-${peerId}`;
+          videoEl.srcObject = remoteStream;
+          videoEl.autoplay = true;
+          videoEl.playsInline = true;
+          videoEl.muted = false;
+          videoEl.controls = false;
+          
+          // Simple, effective styling
+          videoEl.style.width = '100%';
+          videoEl.style.height = '100%';
+          videoEl.style.objectFit = 'contain';
+          videoEl.style.backgroundColor = '#000';
+          
+          // Monitor stream status and fix issues
+          const monitorStream = () => {
+            const videoTrack = remoteStream.getVideoTracks()[0];
+            const isVideoIssue = !videoTrack || videoTrack.muted || videoTrack.readyState === 'ended';
+            
+            console.log('📊 Stream status:', {
+              streamActive: remoteStream.active,
+              streamId: remoteStream.id,
+              videoTracks: remoteStream.getVideoTracks().length,
+              audioTracks: remoteStream.getAudioTracks().length,
+              videoEnabled: videoTrack?.enabled,
+              videoMuted: videoTrack?.muted,
+              videoReadyState: videoTrack?.readyState,
+              hasVideoIssue: isVideoIssue
+            });
+            
+            // Auto-fix video issues
+            if (isVideoIssue && videoTrack) {
+              console.log('🔧 Auto-fixing video track issues');
+              videoTrack.enabled = true;
+              
+              // Recreate video element if needed
+              if (videoEl.videoWidth === 0 || videoEl.videoHeight === 0) {
+                console.log('🔄 Recreating video element due to zero dimensions');
+                videoEl.srcObject = null;
+                videoEl.srcObject = remoteStream;
+                videoEl.play().catch(e => console.log('Auto-play failed:', e));
+              }
+            }
+          };
+          
+          // Monitor every 2 seconds
+          const streamMonitor = setInterval(monitorStream, 2000);
+          
+          // Add comprehensive logging
+          videoEl.addEventListener('loadedmetadata', () => {
+            console.log('📊 Video metadata loaded:', {
+              videoWidth: videoEl.videoWidth,
+              videoHeight: videoEl.videoHeight,
+              duration: videoEl.duration
+            });
+          });
+          
+          videoEl.addEventListener('canplay', () => {
+            console.log('✅ Video can play');
+          });
+          
+          videoEl.addEventListener('playing', () => {
+            console.log('🎬 Video started playing');
+            clearInterval(streamMonitor);
+          });
+          
+          videoEl.addEventListener('error', (e) => {
+            console.error('❌ Video error:', e);
+          });
+          
+          // Add to container and force play
+          videoContainerRef.current.appendChild(videoEl);
+          console.log('📺 Video element added to container');
+          
+          // Simple play attempt
+          videoEl.play()
+            .then(() => {
+              console.log('✅ VIEWER: Video playing successfully');
+              setStreamError(null);
+            })
+            .catch((error) => {
+              console.error('❌ VIEWER: Video play failed:', error);
+              setStreamError('Click to start video playback');
+            });
+        }
+        
+        console.log('🎥 ========== ONTRACK EVENT END ==========');
+      };
+
+      // Don't create offers here - let the presenter initiate connections
+
+      return peerConnection;
+    } catch (error) {
+      console.error('❌ Error creating peer connection:', error);
+    }
+  };
+
+  const handleWebRTCOffer = async (offer: RTCSessionDescriptionInit, senderId: string) => {
+    try {
+      console.log('📞 Handling WebRTC offer from:', senderId, 'as presenter:', isPresenting);
+      console.log('📋 Offer details:', { type: offer.type, sdp: offer.sdp?.substring(0, 200) + '...' });
+      
+      let peerConnection = peerConnectionsRef.current.get(senderId);
+      if (!peerConnection) {
+        console.log('🆕 Creating new peer connection for:', senderId);
+        peerConnection = await createPeerConnection(senderId);
+      }
+
+      if (peerConnection && socketRef.current) {
+        console.log('🔍 Current signaling state:', peerConnection.signalingState);
+        
+        // Simple, robust offer handling
+        if (peerConnection.signalingState === 'stable') {
+          console.log('📥 Setting remote description (offer)');
+          await peerConnection.setRemoteDescription(offer);
+          console.log('✅ Remote description set successfully');
+          
+          console.log('📝 Creating answer...');
+          const answer = await peerConnection.createAnswer({
+            offerToReceiveAudio: true,
+            offerToReceiveVideo: true
+          });
+          console.log('✅ Answer created');
+          
+          console.log('📥 Setting local description (answer)');
+          await peerConnection.setLocalDescription(answer);
+          console.log('✅ Local description set successfully');
+
+          console.log('📤 Sending answer to:', senderId);
+          socketRef.current.emit('webrtc-answer', {
+            roomId,
+            answer,
+            targetId: senderId
+          });
+          
+          console.log('✅ WebRTC offer handling completed successfully');
+        } else {
+          console.warn('⚠️ Invalid signaling state for offer:', peerConnection.signalingState);
+          // Clean restart for any non-stable state
+          console.log('🔄 Restarting connection due to invalid state');
+          peerConnection.close();
+          peerConnectionsRef.current.delete(senderId);
+          
+          // Create fresh connection and retry
+          setTimeout(async () => {
+            const newPc = await createPeerConnection(senderId);
+            if (newPc) {
+              await handleWebRTCOffer(offer, senderId);
+            }
+          }, 500);
+        }
+      } else {
+        console.error('❌ Missing peer connection or socket for offer handling');
+      }
+    } catch (error) {
+      console.error('❌ Error handling WebRTC offer:', error);
+      console.error('🔍 Error details:', {
+        name: error.name,
+        message: error.message,
+        stack: error.stack?.substring(0, 500)
+      });
+      
+      // Attempt recovery
+      try {
+        console.log('🔧 Attempting recovery from offer handling error');
+        const peerConnection = peerConnectionsRef.current.get(senderId);
+        if (peerConnection) {
+          peerConnection.close();
+          peerConnectionsRef.current.delete(senderId);
+        }
+        
+        // Create fresh connection and retry
+        setTimeout(async () => {
+          console.log('🔄 Retrying offer handling after error recovery');
+          await handleWebRTCOffer(offer, senderId);
+        }, 1000);
+      } catch (recoveryError) {
+        console.error('❌ Recovery failed:', recoveryError);
+      }
+    }
+  };
+
+  const handleWebRTCAnswer = async (answer: RTCSessionDescriptionInit, senderId: string) => {
+    try {
+      const peerConnection = peerConnectionsRef.current.get(senderId);
+      if (peerConnection && peerConnection.signalingState === 'have-local-offer') {
+        console.log('📞 Setting remote answer from:', senderId);
+        await peerConnection.setRemoteDescription(answer);
+      } else {
+        console.warn('⚠️ Ignoring answer due to wrong signaling state:', peerConnection?.signalingState);
+      }
+    } catch (error) {
+      console.error('❌ Error handling WebRTC answer:', error);
+    }
+  };
+
+  const handleICECandidate = async (candidate: RTCIceCandidateInit, senderId: string) => {
+    try {
+      const peerConnection = peerConnectionsRef.current.get(senderId);
+      if (peerConnection && peerConnection.remoteDescription) {
+        console.log(`🧊 Adding ICE candidate from ${senderId}:`, candidate.candidate);
+        await peerConnection.addIceCandidate(candidate);
+      } else {
+        console.log(`⚠️ Queuing ICE candidate from ${senderId} - no remote description yet`);
+        // Queue the candidate for later if no remote description
+        setTimeout(() => handleICECandidate(candidate, senderId), 1000);
+      }
+    } catch (error) {
+      console.error('❌ Error handling ICE candidate:', error);
+      // Don't fail the entire connection for ICE candidate errors
+      console.log('ℹ️ ICE candidate error is non-fatal, continuing...');
+    }
+  };
+
+  // Create presenter offer with TURN-only for cross-network retry
+  const createPresenterOfferWithTurnOnly = async (participant: any) => {
+    try {
+      console.log('🌐 Creating TURN-only offer for cross-network to:', participant.name);
+      
+      if (!currentStreamRef.current || !socketRef.current) {
+        console.log('❌ No stream or socket available for TURN-only retry');
+        return;
+      }
+      
+      // Force TURN-only configuration
+      const pc = await createPeerConnection(participant.id, true);
+      if (!pc) return;
+      
+      // Add enhanced connection monitoring for TURN-only
+      pc.onconnectionstatechange = () => {
+        const state = pc.connectionState;
+        console.log(`🌐 TURN-only connection state for ${participant.name}:`, state);
+        
+        if (state === 'connected') {
+          setConnectionStatus('connected');
+          console.log(`✅ TURN-only connection successful to ${participant.name}`);
+        } else if (state === 'failed') {
+          console.log(`❌ TURN-only connection also failed to ${participant.name}`);
+          setConnectionStatus('failed');
+        }
+      };
+      
+      // Add stream tracks
+      currentStreamRef.current.getTracks().forEach(track => {
+        console.log('➕ Adding track to TURN-only connection:', track.kind);
+        pc.addTrack(track, currentStreamRef.current!);
+      });
+      
+      // Create TURN-only optimized offer
+      const offer = await pc.createOffer({
+        offerToReceiveAudio: true,
+        offerToReceiveVideo: true,
+        iceRestart: true,
+        voiceActivityDetection: false
+      });
+      
+      await pc.setLocalDescription(offer);
+      
+      console.log('📤 Sending TURN-only offer to:', participant.id);
+      socketRef.current.emit('webrtc-offer', {
+        roomId,
+        offer,
+        targetId: participant.id,
+        crossNetworkMode: true,
+        turnOnly: true
+      });
+      
+    } catch (error) {
+      console.error('❌ Error creating TURN-only offer:', error);
+    }
+  };
+
+  const closePeerConnection = (peerId: string) => {
+    const peerConnection = peerConnectionsRef.current.get(peerId);
+    if (peerConnection) {
+      peerConnection.close();
+      peerConnectionsRef.current.delete(peerId);
+    }
+  };
+
+
+
+  const debugStream = () => {
+    console.log('🔧 Manual video fix triggered');
+    console.log('Debug info:', { 
+      isPresenting, 
+      hasCurrentStream: !!currentStreamRef.current,
+      remoteStreamsCount: remoteStreams.size,
+      participants: participants.map(p => ({ name: p.name, isPresenting: p.isPresenting }))
+    });
+    
+    if (isPresenting && currentStreamRef.current && videoContainerRef.current) {
+      // Fix presenter's own video - never clear remote videos
+      const videoElement = createVideoElement(currentStreamRef.current);
+      videoElement.id = 'presenter-video';
+      videoElement.style.position = 'absolute';
+      videoElement.style.top = '0';
+      videoElement.style.left = '0';
+      videoElement.style.width = '100%';
+      videoElement.style.height = '100%';
+      videoElement.style.zIndex = '1';
+      
+      // Remove existing presenter video if any
+      const existingPresenterVideo = videoContainerRef.current.querySelector('#presenter-video');
+      if (existingPresenterVideo) {
+        existingPresenterVideo.remove();
+      }
+      
+      videoContainerRef.current.appendChild(videoElement);
+      
+      videoElement.play().then(() => {
+        console.log('✅ Presenter video fix successful');
+        setStreamError(null);
+      }).catch((error) => {
+        console.error('❌ Presenter video fix failed:', error);
+        setStreamError('Video playback issue - try refreshing the page');
+      });
+    } else if (!isPresenting && remoteStreams.size > 0 && videoContainerRef.current) {
+      // Fix viewer's remote video - ensure it stays in DOM
+      const firstRemoteStream = Array.from(remoteStreams.values())[0];
+      const firstRemotePeerId = Array.from(remoteStreams.keys())[0];
+      
+      // Check if remote video already exists
+      let existingRemoteVideo = videoContainerRef.current.querySelector(`#remote-video-${firstRemotePeerId}`) as HTMLVideoElement;
+      
+      if (!existingRemoteVideo) {
+        // Only clear if no remote videos exist
+        const hasRemoteVideos = videoContainerRef.current.querySelector('[id^="remote-video-"]');
+        if (!hasRemoteVideos) {
+          videoContainerRef.current.innerHTML = '';
+        }
+        
+        // Create new remote video element without clearing existing ones (unmuted for audio)
+        const videoElement = createVideoElement(firstRemoteStream, true);
+        videoElement.id = `remote-video-${firstRemotePeerId}`;
+        videoElement.style.position = 'absolute';
+        videoElement.style.top = '0';
+        videoElement.style.left = '0';
+        videoElement.style.width = '100%';
+        videoElement.style.height = '100%';
+        videoElement.style.zIndex = '1';
+        
+        videoContainerRef.current.appendChild(videoElement);
+        existingRemoteVideo = videoElement;
+      } else {
+        // Update existing video with fresh stream
+        existingRemoteVideo.srcObject = firstRemoteStream;
+      }
+      
+      existingRemoteVideo.play().then(() => {
+        console.log('✅ Viewer remote video fix successful');
+        setStreamError(null);
+      }).catch((error) => {
+        console.error('❌ Viewer remote video fix failed:', error);
+        setStreamError('Click the video area to enable playback');
+      });
+    } else {
+      console.log('ℹ️ No video to fix');
+    }
+  };
+
+  // Join Modal
+  if (showJoinModal) {
+    return (
+      <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
+        <div className="bg-white rounded-lg shadow-2xl p-8 w-full max-w-md mx-4 border border-gray-200">
+          <div className="text-center mb-6">
+            <div className="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-4">
+              <Monitor className="w-8 h-8 text-white" />
+            </div>
+            <h1 className="text-2xl font-bold text-gray-900 mb-2">Airavata Technologies</h1>
+            <h2 className="text-lg font-semibold text-gray-700">Screen Share Pro</h2>
+            <p className="text-sm text-gray-500 mt-2">Professional screen sharing solution</p>
+          </div>
+          
+          <div className="space-y-4">
+            <div>
+              <label className="block text-sm font-medium text-gray-700 mb-1">
+                Your Name
+              </label>
+              <input
+                type="text"
+                value={userName}
+                onChange={(e) => setUserName(e.target.value)}
+                className="w-full px-3 py-2 border border-gray-300 rounded-md bg-white text-gray-900 focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                placeholder="Enter your name"
+              />
+            </div>
+            
+            <div>
+              <label className="block text-sm font-medium text-gray-700 mb-1">
+                Room ID
+              </label>
+              <div className="flex gap-2">
+                <input
+                  type="text"
+                  value={roomId}
+                  onChange={(e) => setRoomId(e.target.value.toUpperCase())}
+                  className="flex-1 px-3 py-2 border border-gray-300 rounded-md bg-white text-gray-900 focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                  placeholder="Enter room ID"
+                />
+                <button
+                  onClick={generateRoomId}
+                  className="px-4 py-2 bg-gray-500 hover:bg-gray-600 text-white rounded-md transition-colors"
+                >
+                  Generate
+                </button>
+              </div>
+            </div>
+            
+            <div className="flex gap-2">
+              <button
+                onClick={joinRoom}
+                disabled={!roomId.trim() || !userName.trim()}
+                className="flex-1 px-4 py-3 bg-blue-600 hover:bg-blue-700 disabled:bg-gray-400 text-white rounded-md transition-colors font-medium"
+              >
+                Join Room
+              </button>
+            </div>
+            
+            <div className="mt-6 pt-4 border-t border-gray-200 text-center">
+              <p className="text-xs text-gray-500">
+                © 2025 Airavata Technologies. All rights reserved.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    );
+  }
+
+  return (
+    <div className="min-h-screen bg-gray-100 dark:bg-gray-900">
+      {/* Header */}
+      <header className="bg-white dark:bg-gray-800 shadow-sm border-b border-gray-200 dark:border-gray-700">
+        <div className="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
+          <div className="flex items-center gap-4">
+            <Monitor className="w-8 h-8 text-blue-600" />
+            <h1 className="text-2xl font-bold text-gray-900 dark:text-white">Screen Share Pro</h1>
+            <div className="flex items-center gap-4">
+              <div className="flex items-center gap-2 px-3 py-1 bg-green-100 dark:bg-green-900 rounded-full">
+                <div className="w-2 h-2 bg-green-500 rounded-full"></div>
+                <span className="text-sm text-green-700 dark:text-green-300">Room: {roomId}</span>
+              </div>
+              <div className="flex items-center gap-2 px-3 py-1 bg-blue-100 dark:bg-blue-900 rounded-full">
+                <span className="text-sm text-blue-700 dark:text-blue-300">Free & Unlimited</span>
+              </div>
+              {crossNetworkMode && (
+                <div className="flex items-center gap-2 px-3 py-1 bg-purple-100 dark:bg-purple-900 rounded-full">
+                  <div className="w-2 h-2 bg-purple-500 rounded-full"></div>
+                  <span className="text-sm text-purple-700 dark:text-purple-300">Cross-Network Mode</span>
+                </div>
+              )}
+              {turnServerStatus === 'available' && (
+                <div className="flex items-center gap-2 px-3 py-1 bg-green-100 dark:bg-green-900 rounded-full">
+                  <div className="w-2 h-2 bg-green-500 rounded-full"></div>
+                  <span className="text-sm text-green-700 dark:text-green-300">TURN Ready</span>
+                </div>
+              )}
+            </div>
+          </div>
+          
+          <div className="flex items-center gap-2">
+            <button
+              onClick={copyRoomId}
+              className="flex items-center gap-2 px-3 py-2 text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-md transition-colors"
+            >
+              {copied ? <Check className="w-4 h-4" /> : <Copy className="w-4 h-4" />}
+              {copied ? 'Copied!' : 'Copy Room ID'}
+            </button>
+            <button
+              onClick={leaveRoom}
+              className="px-4 py-2 bg-red-600 hover:bg-red-700 text-white rounded-md transition-colors"
+            >
+              Leave Room
+            </button>
+          </div>
+        </div>
+      </header>
+
+      <div className="max-w-7xl mx-auto p-4 grid grid-cols-1 lg:grid-cols-4 gap-6">
+        {/* Main Screen Share Area */}
+        <div className="lg:col-span-3">
+          <div className="bg-white dark:bg-gray-800 rounded-lg shadow-sm border border-gray-200 dark:border-gray-700 p-6">
+            <div className="flex items-center justify-between mb-4">
+              <h2 className="text-xl font-semibold text-gray-900 dark:text-white">Screen Share</h2>
+              
+              <div className="flex items-center gap-2">
+                <button
+                  onClick={() => setShowSettings(!showSettings)}
+                  className="p-2 rounded-md transition-colors bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-400 hover:bg-gray-200 dark:hover:bg-gray-600"
+                >
+                  <Settings className="w-4 h-4" />
+                </button>
+                <button
+                  onClick={() => {
+                    setAudioEnabled(!audioEnabled);
+                    // If currently sharing, restart with new audio setting
+                    if (isPresenting && currentStreamRef.current) {
+                      const tracks = currentStreamRef.current.getAudioTracks();
+                      tracks.forEach(track => track.enabled = !audioEnabled);
+                    }
+                  }}
+                  className={`p-2 rounded-md transition-colors ${
+                    audioEnabled 
+                      ? 'bg-green-100 dark:bg-green-900 text-green-600 dark:text-green-400'
+                      : 'bg-red-100 dark:bg-red-900 text-red-600 dark:text-red-400'
+                  }`}
+                  title={audioEnabled ? 'Mute microphone' : 'Unmute microphone'}
+                >
+                  {audioEnabled ? <Mic className="w-4 h-4" /> : <MicOff className="w-4 h-4" />}
+                </button>
+
+                
+                {/* Recording Controls */}
+                {isPresenting && (
+                  <>
+                    {!isRecording ? (
+                      <button
+                        onClick={startRecording}
+                        className="flex items-center gap-2 px-3 py-2 bg-red-600 hover:bg-red-700 text-white rounded-md transition-colors text-sm"
+                      >
+                        <Play className="w-4 h-4" />
+                        Record
+                      </button>
+                    ) : (
+                      <button
+                        onClick={stopRecording}
+                        className="flex items-center gap-2 px-3 py-2 bg-gray-600 hover:bg-gray-700 text-white rounded-md transition-colors text-sm"
+                      >
+                        <Pause className="w-4 h-4" />
+                        Stop Rec
+                      </button>
+                    )}
+                    {recordedChunks.length > 0 && (
+                      <button
+                        onClick={downloadRecording}
+                        className="flex items-center gap-2 px-3 py-2 bg-green-600 hover:bg-green-700 text-white rounded-md transition-colors text-sm"
+                      >
+                        <Download className="w-4 h-4" />
+                        Download
+                      </button>
+                    )}
+                  </>
+                )}
+                
+                {!isPresenting ? (
+                  <div className="flex items-center gap-2">
+                    <button
+                      onClick={startScreenShare}
+                      className="flex items-center gap-2 px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-md transition-colors"
+                    >
+                      <Monitor className="w-4 h-4" />
+                      Share Screen
+                    </button>
+                    <button
+                      onClick={startCameraShare}
+                      className="flex items-center gap-2 px-4 py-2 bg-green-600 hover:bg-green-700 text-white rounded-md transition-colors"
+                    >
+                      <Video className="w-4 h-4" />
+                      Share Camera
+                    </button>
+                  </div>
+                ) : (
+                  <div className="flex items-center gap-2">
+                    <button
+                      onClick={sharingCamera ? stopCameraShare : stopScreenShare}
+                      className="flex items-center gap-2 px-4 py-2 bg-red-600 hover:bg-red-700 text-white rounded-md transition-colors"
+                    >
+                      <Square className="w-4 h-4" />
+                      {sharingCamera ? 'Stop Camera' : 'Stop Screen'}
+                    </button>
+                  </div>
+                )}
+                {(isPresenting || remoteStreams.size > 0) && (
+                  <>
+                    <button
+                      onClick={toggleFullScreen}
+                      className="flex items-center gap-2 px-3 py-2 bg-purple-600 hover:bg-purple-700 text-white rounded-md transition-colors text-sm"
+                    >
+                      {isFullScreen ? <Minimize className="w-4 h-4" /> : <Maximize className="w-4 h-4" />}
+                      {isFullScreen ? 'Exit Full' : 'Full Screen'}
+                    </button>
+                    <button
+                      onClick={debugStream}
+                      className="px-3 py-2 bg-yellow-600 hover:bg-yellow-700 text-white rounded-md transition-colors text-sm"
+                    >
+                      Fix Video
+                    </button>
+                  </>
+                )}
+              </div>
+            </div>
+            
+            {/* Settings Panel */}
+            {showSettings && (
+              <div className="mb-4 p-4 bg-gray-50 dark:bg-gray-700 rounded-lg border border-gray-200 dark:border-gray-600">
+                <h3 className="text-lg font-medium text-gray-900 dark:text-white mb-3">Settings</h3>
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+                  <div>
+                    <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+                      Frame Rate (FPS)
+                    </label>
+                    <select
+                      value={fps}
+                      onChange={(e) => setFps(Number(e.target.value))}
+                      disabled={isPresenting}
+                      className="w-full px-3 py-2 text-sm border border-gray-300 dark:border-gray-600 rounded-md bg-white dark:bg-gray-800 text-gray-900 dark:text-white disabled:bg-gray-100 dark:disabled:bg-gray-600"
+                    >
+                      <option value={15}>15 FPS (Low)</option>
+                      <option value={24}>24 FPS (Cinematic)</option>
+                      <option value={30}>30 FPS (Standard)</option>
+                      <option value={45}>45 FPS (High)</option>
+                      <option value={60}>60 FPS (Ultra)</option>
+                    </select>
+                  </div>
+                  <div>
+                    <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+                      Quality
+                    </label>
+                    <select
+                      value={quality}
+                      onChange={(e) => setQuality(e.target.value)}
+                      disabled={isPresenting}
+                      className="w-full px-3 py-2 text-sm border border-gray-300 dark:border-gray-600 rounded-md bg-white dark:bg-gray-800 text-gray-900 dark:text-white disabled:bg-gray-100 dark:disabled:bg-gray-600"
+                    >
+                      <option value="1080p">1080p HD</option>
+                      <option value="720p">720p</option>
+                      <option value="480p">480p</option>
+                    </select>
+                  </div>
+                  <div>
+                    <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+                      Usage
+                    </label>
+                    <div className="px-3 py-2 text-sm bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200 rounded-md border border-green-200 dark:border-green-700">
+                      ✅ Unlimited & Free
+                    </div>
+                  </div>
+                </div>
+                
+                <div className="mt-4 grid grid-cols-1 md:grid-cols-3 gap-4">
+                  <div className="flex items-center justify-between p-3 bg-white dark:bg-gray-800 rounded-md border border-gray-200 dark:border-gray-600">
+                    <span className="text-sm font-medium text-gray-700 dark:text-gray-300">Screen Audio</span>
+                    <button
+                      onClick={() => setAudioEnabled(!audioEnabled)}
+                      disabled={isPresenting}
+                      className={`w-12 h-6 rounded-full transition-colors ${
+                        audioEnabled ? 'bg-blue-600' : 'bg-gray-300 dark:bg-gray-600'
+                      } disabled:opacity-50`}
+                    >
+                      <div className={`w-5 h-5 bg-white rounded-full shadow-md transform transition-transform ${
+                        audioEnabled ? 'translate-x-6' : 'translate-x-0'
+                      }`} />
+                    </button>
+                  </div>
+                  <div className="flex items-center justify-between p-3 bg-white dark:bg-gray-800 rounded-md border border-gray-200 dark:border-gray-600">
+                    <span className="text-sm font-medium text-gray-700 dark:text-gray-300">Microphone</span>
+                    <button
+                      onClick={() => setMicrophoneEnabled(!microphoneEnabled)}
+                      disabled={isPresenting}
+                      className={`w-12 h-6 rounded-full transition-colors ${
+                        microphoneEnabled ? 'bg-green-600' : 'bg-gray-300 dark:bg-gray-600'
+                      } disabled:opacity-50`}
+                    >
+                      <div className={`w-5 h-5 bg-white rounded-full shadow-md transform transition-transform ${
+                        microphoneEnabled ? 'translate-x-6' : 'translate-x-0'
+                      }`} />
+                    </button>
+                  </div>
+                  <div className="flex items-center justify-between p-3 bg-white dark:bg-gray-800 rounded-md border border-gray-200 dark:border-gray-600">
+                    <span className="text-sm font-medium text-gray-700 dark:text-gray-300">Show Cursor</span>
+                    <button
+                      onClick={() => setShowCursor(!showCursor)}
+                      disabled={isPresenting}
+                      className={`w-12 h-6 rounded-full transition-colors ${
+                        showCursor ? 'bg-blue-600' : 'bg-gray-300 dark:bg-gray-600'
+                      } disabled:opacity-50`}
+                    >
+                      <div className={`w-5 h-5 bg-white rounded-full shadow-md transform transition-transform ${
+                        showCursor ? 'translate-x-6' : 'translate-x-0'
+                      }`} />
+                    </button>
+                  </div>
+                </div>
+                
+                {isPresenting && (
+                  <div className="mt-4 p-3 bg-blue-50 dark:bg-blue-900 rounded-md border border-blue-200 dark:border-blue-700">
+                    <p className="text-sm text-blue-800 dark:text-blue-200">
+                      <strong>Note:</strong> Settings can only be changed when not sharing. Stop sharing to modify settings.
+                    </p>
+                  </div>
+                )}
+              </div>
+            )}
+            
+            {/* Video Container */}
+            <div 
+              className={`relative bg-gray-900 rounded-lg overflow-hidden min-h-[400px] flex items-center justify-center cursor-pointer ${
+                isFullScreen ? 'fixed inset-0 z-50 rounded-none min-h-screen' : ''
+              }`}
+              onClick={() => {
+                // Enable video playback on container click
+                const video = videoContainerRef.current?.querySelector('video');
+                if (video && video.paused) {
+                  video.play().then(() => {
+                    console.log('✅ Video enabled by user click');
+                    setStreamError(null);
+                  }).catch(console.error);
+                }
+              }}
+            >
+              {isPresenting ? (
+                <div className={`relative w-full h-full ${isFullScreen ? 'min-h-screen' : ''}`}>
+                  <div
+                    ref={videoContainerRef}
+                    className={`w-full h-full ${isFullScreen ? 'min-h-screen' : 'min-h-[400px]'} flex items-center justify-center`}
+                  />
+                  <div className="absolute top-2 left-2 flex gap-2">
+                    <div className="bg-red-500 text-white px-2 py-1 rounded text-xs">
+                      🔴 {sharingCamera ? 'CAMERA' : 'SCREEN'} ({fps} FPS) - {userName}
+                    </div>
+                    {microphoneEnabled && (
+                      <div className="bg-green-500 text-white px-2 py-1 rounded text-xs">
+                        🎤 MIC ON
+                      </div>
+                    )}
+                    <div className={`text-white px-2 py-1 rounded text-xs ${
+                      connectionStatus === 'connected' ? 'bg-green-500' : 
+                      connectionStatus === 'connecting' ? 'bg-yellow-500' : 
+                      connectionStatus === 'failed' ? 'bg-red-500' : 'bg-blue-500'
+                    }`}>
+                      {connectionStatus === 'connected' ? '🌐 CONNECTED' : 
+                       connectionStatus === 'connecting' ? '🔄 CONNECTING' : 
+                       connectionStatus === 'failed' ? '❌ FAILED' : '🌐 UNIVERSAL'}
+                    </div>
+                    {turnServerStatus === 'available' && (
+                      <div className="bg-purple-500 text-white px-2 py-1 rounded text-xs">
+                        🔄 TURN
+                      </div>
+                    )}
+                    {isRecording && (
+                      <div className="bg-red-600 text-white px-2 py-1 rounded text-xs animate-pulse">
+                        ⏺ REC
+                      </div>
+                    )}
+                  </div>
+                  {isFullScreen && (
+                    <div className="absolute top-2 right-2 flex gap-2">
+                      <button
+                        onClick={toggleFullScreen}
+                        className="bg-black bg-opacity-50 text-white px-3 py-2 rounded-md hover:bg-opacity-70 transition-colors flex items-center gap-1"
+                      >
+                        <Minimize className="w-4 h-4" />
+                        Exit Full Screen
+                      </button>
+                    </div>
+                  )}
+                  {streamError && (
+                    <div className="absolute bottom-2 left-2 right-2 bg-red-600 text-white px-3 py-2 rounded text-sm">
+                      {streamError}
+                    </div>
+                  )}
+                </div>
+              ) : remoteStreams.size > 0 ? (
+                <div className={`relative w-full h-full ${isFullScreen ? 'min-h-screen' : ''}`}>
+                  <div
+                    ref={videoContainerRef}
+                    className={`w-full h-full ${isFullScreen ? 'min-h-screen' : 'min-h-[400px]'} flex items-center justify-center`}
+                  />
+                  <div className="absolute top-2 left-2 flex gap-2">
+                    <div className="bg-green-500 text-white px-2 py-1 rounded text-xs">
+                      👁 VIEWING SHARED SCREEN
+                    </div>
+                  </div>
+                  {isFullScreen && (
+                    <div className="absolute top-2 right-2 flex gap-2">
+                      <button
+                        onClick={toggleFullScreen}
+                        className="bg-black bg-opacity-50 text-white px-3 py-2 rounded-md hover:bg-opacity-70 transition-colors flex items-center gap-1"
+                      >
+                        <Minimize className="w-4 h-4" />
+                        Exit Full Screen
+                      </button>
+                    </div>
+                  )}
+                </div>
+              ) : (
+                <div className="text-center text-gray-400">
+                  <Monitor className="w-16 h-16 mx-auto mb-4 opacity-50" />
+                  <p className="text-lg">No screen share active</p>
+                  <p className="text-sm opacity-75">
+                    {participants.some(p => p.isPresenting) 
+                      ? "Connecting to presenter..." 
+                      : "Click 'Start Sharing' to begin"
+                    }
+                  </p>
+                </div>
+              )}
+            </div>
+          </div>
+        </div>
+
+        {/* Sidebar */}
+        <div className="space-y-6">
+          {/* Participants */}
+          <div className="bg-white dark:bg-gray-800 rounded-lg shadow-sm border border-gray-200 dark:border-gray-700 p-4">
+            <div className="flex items-center gap-2 mb-4">
+              <Users className="w-5 h-5 text-gray-600 dark:text-gray-400" />
+              <h3 className="font-semibold text-gray-900 dark:text-white">
+                Participants ({participants.length})
+              </h3>
+            </div>
+            <div className="space-y-2">
+              {participants.map((participant) => (
+                <div
+                  key={participant.id}
+                  className="flex items-center gap-3 p-2 rounded-md bg-gray-50 dark:bg-gray-700"
+                >
+                  <div className="w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center text-white text-sm font-medium">
+                    {participant.name.charAt(0).toUpperCase()}
+                  </div>
+                  <div className="flex-1">
+                    <p className="text-sm font-medium text-gray-900 dark:text-white">
+                      {participant.name}
+                      {participant.id === userId && ' (You)'}
+                    </p>
+                    {participant.isPresenting && (
+                      <p className="text-xs text-green-600 dark:text-green-400">Presenting</p>
+                    )}
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Chat */}
+          <div className="bg-white dark:bg-gray-800 rounded-lg shadow-sm border border-gray-200 dark:border-gray-700 p-4">
+            <div className="flex items-center gap-2 mb-4">
+              <MessageCircle className="w-5 h-5 text-gray-600 dark:text-gray-400" />
+              <h3 className="font-semibold text-gray-900 dark:text-white">Chat</h3>
+            </div>
+            
+            <div
+              ref={chatMessagesRef}
+              className="h-64 overflow-y-auto border rounded-md p-3 mb-3 bg-gray-50 dark:bg-gray-700"
+            >
+              {messages.map((message) => (
+                <div key={message.id} className="mb-2">
+                  <div className="flex items-start gap-2">
+                    <span className={`text-xs font-medium ${
+                      message.userId === 'system' 
+                        ? 'text-blue-600 dark:text-blue-400'
+                        : message.userId === userId
+                        ? 'text-green-600 dark:text-green-400'
+                        : 'text-gray-600 dark:text-gray-400'
+                    }`}>
+                      {message.userName}:
+                    </span>
+                  </div>
+                  <p className="text-sm text-gray-900 dark:text-white ml-2">{message.text}</p>
+                </div>
+              ))}
+            </div>
+            
+            <div className="flex gap-2">
+              <input
+                type="text"
+                value={messageInput}
+                onChange={(e) => setMessageInput(e.target.value)}
+                onKeyPress={handleKeyPress}
+                placeholder="Type a message..."
+                className="flex-1 px-3 py-2 text-sm border border-gray-300 dark:border-gray-600 rounded-md bg-white dark:bg-gray-700 text-gray-900 dark:text-white"
+              />
+              <button
+                onClick={sendMessage}
+                disabled={!messageInput.trim()}
+                className="px-3 py-2 bg-blue-600 hover:bg-blue-700 disabled:bg-gray-400 text-white rounded-md transition-colors"
+              >
+                <Send className="w-4 h-4" />
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}

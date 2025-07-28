@@ -1,0 +1,97 @@
+chunk-RPCDYKBN.js?v=a90b58fb:21551 Download the React DevTools for a better development experience: https://reactjs.org/link/react-devtools
+WorkingScreenShare.tsx:173 ✅ TURN servers configured and ready
+WorkingScreenShare.tsx:173 ✅ TURN servers configured and ready
+WorkingScreenShare.tsx:392 🎬 Starting screen share...
+WorkingScreenShare.tsx:462 🎯 Screen share constraints: {
+  "video": {
+    "frameRate": {
+      "ideal": 30,
+      "max": 30,
+      "min": 15
+    },
+    "width": {
+      "ideal": 1920,
+      "min": 1280
+    },
+    "height": {
+      "ideal": 1080,
+      "min": 720
+    },
+    "cursor": "always",
+    "displaySurface": "monitor",
+    "logicalSurface": true,
+    "advanced": [
+      {
+        "bitrate": 10000000
+      }
+    ]
+  },
+  "audio": {
+    "echoCancellation": false,
+    "noiseSuppression": false,
+    "autoGainControl": false,
+    "sampleRate": 48000,
+    "channelCount": 2,
+    "suppressLocalAudioPlayback": false
+  }
+}
+WorkingScreenShare.tsx:625 ❌ Failed to start screen share: TypeError: Failed to execute 'getDisplayMedia' on 'MediaDevices': Advanced constraints are not supported
+    at startScreenShare (WorkingScreenShare.tsx:463:51)
+    at HTMLUnknownElement.callCallback2 (chunk-RPCDYKBN.js?v=a90b58fb:3674:22)
+    at Object.invokeGuardedCallbackDev (chunk-RPCDYKBN.js?v=a90b58fb:3699:24)
+    at invokeGuardedCallback (chunk-RPCDYKBN.js?v=a90b58fb:3733:39)
+    at invokeGuardedCallbackAndCatchFirstError (chunk-RPCDYKBN.js?v=a90b58fb:3736:33)
+    at executeDispatch (chunk-RPCDYKBN.js?v=a90b58fb:7014:11)
+    at processDispatchQueueItemsInOrder (chunk-RPCDYKBN.js?v=a90b58fb:7034:15)
+    at processDispatchQueue (chunk-RPCDYKBN.js?v=a90b58fb:7043:13)
+    at dispatchEventsForPlugins (chunk-RPCDYKBN.js?v=a90b58fb:7051:11)
+    at chunk-RPCDYKBN.js?v=a90b58fb:7174:20
+startScreenShare @ WorkingScreenShare.tsx:625
+StreamScreenShare.tsx:395 Microphone disabled on join
+StreamScreenShare.tsx:404 Joined Stream.io call successfully
+StreamScreenShare.tsx:485 Participant joined: Object
+StreamScreenShare.tsx:496 Adding new participant: Object
+StreamScreenShare.tsx:422 📊 Participants updated from server: Array(2)
+StreamScreenShare.tsx:422 📊 Participants updated from server: Array(1)
+StreamScreenShare.tsx:485 Participant joined: Object
+StreamScreenShare.tsx:496 Adding new participant: Object
+StreamScreenShare.tsx:422 📊 Participants updated from server: Array(2)
+StreamScreenShare.tsx:115 Starting custom recording...
+StreamScreenShare.tsx:238 Failed to start custom recording: TypeError: Failed to execute 'getDisplayMedia' on 'MediaDevices': min constraints are not supported
+    at startCustomRecording (StreamScreenShare.tsx:130:51)
+    at HTMLUnknownElement.callCallback2 (chunk-RPCDYKBN.js?v=a90b58fb:3674:22)
+    at Object.invokeGuardedCallbackDev (chunk-RPCDYKBN.js?v=a90b58fb:3699:24)
+    at invokeGuardedCallback (chunk-RPCDYKBN.js?v=a90b58fb:3733:39)
+    at invokeGuardedCallbackAndCatchFirstError (chunk-RPCDYKBN.js?v=a90b58fb:3736:33)
+    at executeDispatch (chunk-RPCDYKBN.js?v=a90b58fb:7014:11)
+    at processDispatchQueueItemsInOrder (chunk-RPCDYKBN.js?v=a90b58fb:7034:15)
+    at processDispatchQueue (chunk-RPCDYKBN.js?v=a90b58fb:7043:13)
+    at dispatchEventsForPlugins (chunk-RPCDYKBN.js?v=a90b58fb:7051:11)
+    at chunk-RPCDYKBN.js?v=a90b58fb:7174:20
+startCustomRecording @ StreamScreenShare.tsx:238
+StreamScreenShare.tsx:115 Starting custom recording...
+StreamScreenShare.tsx:238 Failed to start custom recording: TypeError: Failed to execute 'getDisplayMedia' on 'MediaDevices': min constraints are not supported
+    at startCustomRecording (StreamScreenShare.tsx:130:51)
+    at HTMLUnknownElement.callCallback2 (chunk-RPCDYKBN.js?v=a90b58fb:3674:22)
+    at Object.invokeGuardedCallbackDev (chunk-RPCDYKBN.js?v=a90b58fb:3699:24)
+    at invokeGuardedCallback (chunk-RPCDYKBN.js?v=a90b58fb:3733:39)
+    at invokeGuardedCallbackAndCatchFirstError (chunk-RPCDYKBN.js?v=a90b58fb:3736:33)
+    at executeDispatch (chunk-RPCDYKBN.js?v=a90b58fb:7014:11)
+    at processDispatchQueueItemsInOrder (chunk-RPCDYKBN.js?v=a90b58fb:7034:15)
+    at processDispatchQueue (chunk-RPCDYKBN.js?v=a90b58fb:7043:13)
+    at dispatchEventsForPlugins (chunk-RPCDYKBN.js?v=a90b58fb:7051:11)
+    at chunk-RPCDYKBN.js?v=a90b58fb:7174:20
+startCustomRecording @ StreamScreenShare.tsx:238
+StreamScreenShare.tsx:115 Starting custom recording...
+StreamScreenShare.tsx:238 Failed to start custom recording: TypeError: Failed to execute 'getDisplayMedia' on 'MediaDevices': min constraints are not supported
+    at startCustomRecording (StreamScreenShare.tsx:130:51)
+    at HTMLUnknownElement.callCallback2 (chunk-RPCDYKBN.js?v=a90b58fb:3674:22)
+    at Object.invokeGuardedCallbackDev (chunk-RPCDYKBN.js?v=a90b58fb:3699:24)
+    at invokeGuardedCallback (chunk-RPCDYKBN.js?v=a90b58fb:3733:39)
+    at invokeGuardedCallbackAndCatchFirstError (chunk-RPCDYKBN.js?v=a90b58fb:3736:33)
+    at executeDispatch (chunk-RPCDYKBN.js?v=a90b58fb:7014:11)
+    at processDispatchQueueItemsInOrder (chunk-RPCDYKBN.js?v=a90b58fb:7034:15)
+    at processDispatchQueue (chunk-RPCDYKBN.js?v=a90b58fb:7043:13)
+    at dispatchEventsForPlugins (chunk-RPCDYKBN.js?v=a90b58fb:7051:11)
+    at chunk-RPCDYKBN.js?v=a90b58fb:7174:20
+startCustomRecording @ StreamScreenShare.tsx:238

@@ -1,0 +1,47 @@
+WorkingScreenShare.tsx:478 🎬 Starting screen share...
+WorkingScreenShare.tsx:506 🎯 Screen share constraints: {
+  "video": {
+    "frameRate": {
+      "ideal": 30,
+      "max": 30
+    },
+    "width": {
+      "ideal": 1920
+    },
+    "height": {
+      "ideal": 1080
+    },
+    "cursor": "always",
+    "displaySurface": "monitor",
+    "logicalSurface": true
+  },
+  "audio": true
+}
+WorkingScreenShare.tsx:512 ✅ Got screen share stream: Object
+WorkingScreenShare.tsx:531 ✅ Applied constraints to force exact settings
+WorkingScreenShare.tsx:535 🎯 Final stream settings: Object
+WorkingScreenShare.tsx:592 🔗 Presenter creating connection to viewer: pratik g5WF5azt-wHK1QN1AAAD (cross-network mode)
+WorkingScreenShare.tsx:1231 🌐 Using TURN-only configuration for cross-network connectivity
+WorkingScreenShare.tsx:647 ➕ Adding track to peer connection: audio 150cc96b-e2fe-4971-89ef-87c72679b876
+WorkingScreenShare.tsx:647 ➕ Adding track to peer connection: video 962ac184-b12b-4bfd-ae72-693345675c58
+WorkingScreenShare.tsx:660 📤 Sending optimized offer to viewer: g5WF5azt-wHK1QN1AAAD
+WorkingScreenShare.tsx:1377 📡 ICE gathering state for g5WF5azt-wHK1QN1AAAD: gathering
+WorkingScreenShare.tsx:327 📞 Received WebRTC answer from: g5WF5azt-wHK1QN1AAAD
+WorkingScreenShare.tsx:1725 📞 Setting remote answer from: g5WF5azt-wHK1QN1AAAD
+WorkingScreenShare.tsx:1815 🔧 Manual video fix triggered
+WorkingScreenShare.tsx:1816 Debug info: Object
+WorkingScreenShare.tsx:425 📺 Creating video element with stream: Object
+WorkingScreenShare.tsx:435 Video track 0: Object
+WorkingScreenShare.tsx:454 ⏳ Video waiting
+WorkingScreenShare.tsx:448 📹 Video loadstart
+WorkingScreenShare.tsx:449 📹 Video metadata loaded
+WorkingScreenShare.tsx:450 📹 Video can play
+WorkingScreenShare.tsx:451 ✅ Video is playing
+WorkingScreenShare.tsx:460 ✅ Video playing immediately after creation
+WorkingScreenShare.tsx:1843 ✅ Presenter video fix successful
+WorkingScreenShare.tsx:460 ✅ Video playing immediately after creation
+WorkingScreenShare.tsx:671 ⚠️ Offer to pratik may have failed, will retry automatically
+WorkingScreenShare.tsx:1377 📡 ICE gathering state for g5WF5azt-wHK1QN1AAAD: complete
+WorkingScreenShare.tsx:1379 ✅ ICE gathering completed for g5WF5azt-wHK1QN1AAAD
+WorkingScreenShare.tsx:1392 🧊 ICE gathering complete for g5WF5azt-wHK1QN1AAAD
+WorkingScreenShare.tsx:1140 🛑 Stopping screen share...

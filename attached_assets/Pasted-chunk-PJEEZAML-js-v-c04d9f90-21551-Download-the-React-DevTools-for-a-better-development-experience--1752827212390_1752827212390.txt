@@ -1,0 +1,83 @@
+chunk-PJEEZAML.js?v=c04d9f90:21551 Download the React DevTools for a better development experience: https://reactjs.org/link/react-devtools
+WorkingScreenShare.tsx:227 🎬 Starting screen share...
+WorkingScreenShare.tsx:255 🎯 Screen share constraints: {
+  "video": {
+    "frameRate": {
+      "ideal": 30,
+      "max": 30
+    },
+    "width": {
+      "ideal": 1920
+    },
+    "height": {
+      "ideal": 1080
+    },
+    "cursor": "always",
+    "displaySurface": "monitor",
+    "logicalSurface": true
+  },
+  "audio": true
+}
+WorkingScreenShare.tsx:261 ✅ Got screen share stream: Object
+WorkingScreenShare.tsx:280 ✅ Applied constraints to force exact settings
+WorkingScreenShare.tsx:284 🎯 Final stream settings: Object
+WorkingScreenShare.tsx:291 ⚠ Resolution mismatch: requested 1920x1080, got 1844x1080
+startScreenShare @ WorkingScreenShare.tsx:291
+WorkingScreenShare.tsx:944 🔧 Manual video fix triggered
+WorkingScreenShare.tsx:945 Debug info: Object
+WorkingScreenShare.tsx:203 📺 Creating video element with stream
+WorkingScreenShare.tsx:210 ✅ Video playing immediately
+WorkingScreenShare.tsx:959 ✅ Presenter video fix successful
+WorkingScreenShare.tsx:944 🔧 Manual video fix triggered
+WorkingScreenShare.tsx:945 Debug info: Object
+WorkingScreenShare.tsx:203 📺 Creating video element with stream
+WorkingScreenShare.tsx:210 ✅ Video playing immediately
+WorkingScreenShare.tsx:959 ✅ Presenter video fix successful
+WorkingScreenShare.tsx:944 🔧 Manual video fix triggered
+WorkingScreenShare.tsx:945 Debug info: Object
+WorkingScreenShare.tsx:203 📺 Creating video element with stream
+WorkingScreenShare.tsx:210 ✅ Video playing immediately
+WorkingScreenShare.tsx:959 ✅ Presenter video fix successful
+WorkingScreenShare.tsx:944 🔧 Manual video fix triggered
+WorkingScreenShare.tsx:945 Debug info: Object
+WorkingScreenShare.tsx:203 📺 Creating video element with stream
+WorkingScreenShare.tsx:210 ✅ Video playing immediately
+WorkingScreenShare.tsx:959 ✅ Presenter video fix successful
+WorkingScreenShare.tsx:92 👥 Presenter started: User eydj ID: wE8SnEtkpGwciGsuAAAn
+WorkingScreenShare.tsx:95 📺 Viewer preparing to receive stream from presenter
+WorkingScreenShare.tsx:759 🛑 Stopping screen share...
+WorkingScreenShare.tsx:111 📞 Received WebRTC offer from: wE8SnEtkpGwciGsuAAAn
+WorkingScreenShare.tsx:878 📞 Handling WebRTC offer from: wE8SnEtkpGwciGsuAAAn as presenter: false
+WorkingScreenShare.tsx:121 🧊 Received ICE candidate from: wE8SnEtkpGwciGsuAAAn
+WorkingScreenShare.tsx:121 🧊 Received ICE candidate from: wE8SnEtkpGwciGsuAAAn
+WorkingScreenShare.tsx:832 🎥 Received remote stream from: wE8SnEtkpGwciGsuAAAn
+WorkingScreenShare.tsx:832 🎥 Received remote stream from: wE8SnEtkpGwciGsuAAAn
+WorkingScreenShare.tsx:121 🧊 Received ICE candidate from: wE8SnEtkpGwciGsuAAAn
+WorkingScreenShare.tsx:121 🧊 Received ICE candidate from: wE8SnEtkpGwciGsuAAAn
+WorkingScreenShare.tsx:895 📤 Sending answer to: wE8SnEtkpGwciGsuAAAn
+WorkingScreenShare.tsx:944 🔧 Manual video fix triggered
+WorkingScreenShare.tsx:945 Debug info: Object
+WorkingScreenShare.tsx:203 📺 Creating video element with stream
+WorkingScreenShare.tsx:101 👥 Presenter stopped
+WorkingScreenShare.tsx:210 ✅ Video playing immediately
+WorkingScreenShare.tsx:973 ✅ Viewer remote video fix successful
+WorkingScreenShare.tsx:92 👥 Presenter started: User eydj ID: wE8SnEtkpGwciGsuAAAn
+WorkingScreenShare.tsx:95 📺 Viewer preparing to receive stream from presenter
+WorkingScreenShare.tsx:111 📞 Received WebRTC offer from: wE8SnEtkpGwciGsuAAAn
+WorkingScreenShare.tsx:878 📞 Handling WebRTC offer from: wE8SnEtkpGwciGsuAAAn as presenter: false
+WorkingScreenShare.tsx:121 🧊 Received ICE candidate from: wE8SnEtkpGwciGsuAAAn
+WorkingScreenShare.tsx:121 🧊 Received ICE candidate from: wE8SnEtkpGwciGsuAAAn
+WorkingScreenShare.tsx:121 🧊 Received ICE candidate from: wE8SnEtkpGwciGsuAAAn
+WorkingScreenShare.tsx:121 🧊 Received ICE candidate from: wE8SnEtkpGwciGsuAAAn
+WorkingScreenShare.tsx:832 🎥 Received remote stream from: wE8SnEtkpGwciGsuAAAn
+WorkingScreenShare.tsx:832 🎥 Received remote stream from: wE8SnEtkpGwciGsuAAAn
+WorkingScreenShare.tsx:895 📤 Sending answer to: wE8SnEtkpGwciGsuAAAn
+WorkingScreenShare.tsx:944 🔧 Manual video fix triggered
+WorkingScreenShare.tsx:945 Debug info: Object
+WorkingScreenShare.tsx:203 📺 Creating video element with stream
+WorkingScreenShare.tsx:944 🔧 Manual video fix triggered
+WorkingScreenShare.tsx:945 Debug info: Object
+WorkingScreenShare.tsx:203 📺 Creating video element with stream
+WorkingScreenShare.tsx:213 ℹ Video autoplay blocked: The play() request was interrupted because the media was removed from the document. https://goo.gl/LdLk22
+WorkingScreenShare.tsx:976 ❌ Viewer remote video fix failed: AbortError: The play() request was interrupted because the media was removed from the document. https://goo.gl/LdLk22
+(anonymous) @ WorkingScreenShare.tsx:976

@@ -1,0 +1,42 @@
+chunk-RPCDYKBN.js?v=a90b58fb:21551 Download the React DevTools for a better development experience: https://reactjs.org/link/react-devtools
+WorkingScreenShare.tsx:177 ✅ TURN servers configured and ready
+WorkingScreenShare.tsx:177 ✅ TURN servers configured and ready
+StreamScreenShare.tsx:395 Microphone disabled on join
+@stream-io_video-react-sdk.js?v=a90b58fb:17155 [coordinator]: connection:WS failed with code: 2: AccessKeyError and reason:  Object
+logToConsole @ @stream-io_video-react-sdk.js?v=a90b58fb:17155
+@stream-io_video-react-sdk.js?v=a90b58fb:17155 [coordinator]: connection:WS failed with code: 2: AccessKeyError and reason:  {event: CloseEvent}
+logToConsole @ @stream-io_video-react-sdk.js?v=a90b58fb:17155
+result @ @stream-io_video-react-sdk.js?v=a90b58fb:17172
+StableWSConnection._log @ @stream-io_video-react-sdk.js?v=a90b58fb:24291
+StableWSConnection._errorFromWSEvent @ @stream-io_video-react-sdk.js?v=a90b58fb:24452
+StableWSConnection.onclose @ @stream-io_video-react-sdk.js?v=a90b58fb:24398
+@stream-io_video-react-sdk.js?v=a90b58fb:17155 [coordinator]: connection:WS failed with code: 2: AccessKeyError and reason:  {event: CloseEvent}
+logToConsole @ @stream-io_video-react-sdk.js?v=a90b58fb:17155
+result @ @stream-io_video-react-sdk.js?v=a90b58fb:17172
+StableWSConnection._log @ @stream-io_video-react-sdk.js?v=a90b58fb:24291
+StableWSConnection._errorFromWSEvent @ @stream-io_video-react-sdk.js?v=a90b58fb:24452
+StableWSConnection.onclose @ @stream-io_video-react-sdk.js?v=a90b58fb:24398
+@stream-io_video-react-sdk.js?v=a90b58fb:17155 [coordinator]: connection:WS failed with code: 2: AccessKeyError and reason:  {event: CloseEvent}
+logToConsole @ @stream-io_video-react-sdk.js?v=a90b58fb:17155
+result @ @stream-io_video-react-sdk.js?v=a90b58fb:17172
+StableWSConnection._log @ @stream-io_video-react-sdk.js?v=a90b58fb:24291
+StableWSConnection._errorFromWSEvent @ @stream-io_video-react-sdk.js?v=a90b58fb:24452
+StableWSConnection.onclose @ @stream-io_video-react-sdk.js?v=a90b58fb:24398
+@stream-io_video-react-sdk.js?v=a90b58fb:17155 [client]: Failed to connect a user (0) Error: {"code":"","StatusCode":"","message":"initial WS connection could not be established","isWSFailure":true}
+    at @stream-io_video-react-sdk.js?v=a90b58fb:24572:15
+    at async StableWSConnection.connect (@stream-io_video-react-sdk.js?v=a90b58fb:24542:12)
+    at async StreamClient.connect (@stream-io_video-react-sdk.js?v=a90b58fb:25153:14)
+logToConsole @ @stream-io_video-react-sdk.js?v=a90b58fb:17155
+result @ @stream-io_video-react-sdk.js?v=a90b58fb:17172
+(anonymous) @ @stream-io_video-react-sdk.js?v=a90b58fb:25386
+@stream-io_video-react-sdk.js?v=a90b58fb:24572 Uncaught (in promise) Error: {"code":"","StatusCode":"","message":"initial WS connection could not be established","isWSFailure":true}
+    at @stream-io_video-react-sdk.js?v=a90b58fb:24572:15
+    at async StableWSConnection.connect (@stream-io_video-react-sdk.js?v=a90b58fb:24542:12)
+    at async StreamClient.connect (@stream-io_video-react-sdk.js?v=a90b58fb:25153:14)
+(anonymous) @ @stream-io_video-react-sdk.js?v=a90b58fb:24572
+@stream-io_video-react-sdk.js?v=a90b58fb:17155 [coordinator]: connection:WS failed with code: 2: AccessKeyError and reason:  {event: CloseEvent}
+logToConsole @ @stream-io_video-react-sdk.js?v=a90b58fb:17155
+result @ @stream-io_video-react-sdk.js?v=a90b58fb:17172
+StableWSConnection._log @ @stream-io_video-react-sdk.js?v=a90b58fb:24291
+StableWSConnection._errorFromWSEvent @ @stream-io_video-react-sdk.js?v=a90b58fb:24452
+StableWSConnection.onclose @ @stream-io_video-react-sdk.js?v=a90b58fb:24398

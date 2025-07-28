@@ -1,0 +1,86 @@
+chunk-RPCDYKBN.js?v=a90b58fb:21551 Download the React DevTools for a better development experience: https://reactjs.org/link/react-devtools
+WorkingScreenShare.tsx:151 ✅ TURN servers configured and ready
+WorkingScreenShare.tsx:258 🔌 Cleaning up singleton socket handlers
+WorkingScreenShare.tsx:151 ✅ TURN servers configured and ready
+WorkingScreenShare.tsx:258 🔌 Cleaning up singleton socket handlers
+WorkingScreenShare.tsx:258 🔌 Cleaning up singleton socket handlers
+WorkingScreenShare.tsx:181 🔌 Connecting to room using singleton socket manager
+socketManager.ts:32 🔌 Creating new singleton Socket.io connection
+socketManager.ts:53 ✅ Singleton socket connected
+socketManager.ts:48 👥 Singleton received participants update
+socketManager.ts:43 📨 Singleton received message: 1753622897239-system-9ifg9hb2k
+WorkingScreenShare.tsx:191 📨 Received message via singleton: 1753622897239-system-9ifg9hb2k
+WorkingScreenShare.tsx:198 ✅ Adding unique message: 1753622897239-system-9ifg9hb2k
+WorkingScreenShare.tsx:198 ✅ Adding unique message: 1753622897239-system-9ifg9hb2k
+socketManager.ts:48 👥 Singleton received participants update
+socketManager.ts:43 📨 Singleton received message: 1753622901061-system-oqfwky8vd
+WorkingScreenShare.tsx:191 📨 Received message via singleton: 1753622901061-system-oqfwky8vd
+WorkingScreenShare.tsx:198 ✅ Adding unique message: 1753622901061-system-oqfwky8vd
+WorkingScreenShare.tsx:198 ✅ Adding unique message: 1753622901061-system-oqfwky8vd
+WorkingScreenShare.tsx:546 🎬 Starting screen share...
+WorkingScreenShare.tsx:584 🎯 Screen share constraints: {
+  "video": {
+    "frameRate": {
+      "ideal": 30,
+      "max": 30
+    },
+    "width": {
+      "ideal": 1920
+    },
+    "height": {
+      "ideal": 1080
+    }
+  },
+  "audio": {
+    "echoCancellation": false,
+    "noiseSuppression": false,
+    "autoGainControl": false,
+    "sampleRate": {
+      "ideal": 48000
+    },
+    "channelCount": {
+      "ideal": 2
+    }
+  }
+}
+WorkingScreenShare.tsx:590 ✅ Got screen share stream: Object
+WorkingScreenShare.tsx:611 ✅ Applied constraints to force exact settings
+WorkingScreenShare.tsx:615 🎯 Final stream settings: Object
+socketManager.ts:48 👥 Singleton received participants update
+socketManager.ts:48 👥 Singleton received participants update
+socketManager.ts:43 📨 Singleton received message: 1753622907443-system-rxllci3el
+WorkingScreenShare.tsx:191 📨 Received message via singleton: 1753622907443-system-rxllci3el
+WorkingScreenShare.tsx:198 ✅ Adding unique message: 1753622907443-system-rxllci3el
+WorkingScreenShare.tsx:198 ✅ Adding unique message: 1753622907443-system-rxllci3el
+socketManager.ts:48 👥 Singleton received participants update
+WorkingScreenShare.tsx:1833 🔌 Closing all peer connections
+WorkingScreenShare.tsx:1885 ✅ All peer connections closed and cleared
+WorkingScreenShare.tsx:686 🔗 Presenter creating connection to viewer: User x17o Rb5k2FslqrXHp_lrAAAH 
+WorkingScreenShare.tsx:1454 🔄 Creating connection for Rb5k2FslqrXHp_lrAAAH, TURN-only: false
+WorkingScreenShare.tsx:1465 🔧 Using ICE configuration: Object
+WorkingScreenShare.tsx:730 ➕ Adding track to peer connection: audio 5e9904dd-0590-4f05-b2c4-7a806069a78e
+WorkingScreenShare.tsx:429 📊 Started bandwidth monitoring for 1080p (target: 0.2 Mbps)
+WorkingScreenShare.tsx:774 🔧 Configured audio transceiver for 1080p: Object
+WorkingScreenShare.tsx:730 ➕ Adding track to peer connection: video bfbe285a-d6c8-420e-b7d8-f60c0fe12321
+WorkingScreenShare.tsx:429 📊 Started bandwidth monitoring for 1080p (target: 10.0 Mbps)
+WorkingScreenShare.tsx:774 🔧 Configured video transceiver for 1080p: Object
+WorkingScreenShare.tsx:339 🚀 Enhanced SDP for 1080p: Object
+WorkingScreenShare.tsx:789 📤 Sending optimized offer to viewer: Rb5k2FslqrXHp_lrAAAH
+WorkingScreenShare.tsx:1561 🧊 ICE gathering state for Rb5k2FslqrXHp_lrAAAH: gathering
+WorkingScreenShare.tsx:1548 🧊 Sending ICE candidate for Rb5k2FslqrXHp_lrAAAH: host
+WorkingScreenShare.tsx:1548 🧊 Sending ICE candidate for Rb5k2FslqrXHp_lrAAAH: srflx
+WorkingScreenShare.tsx:1548 🧊 Sending ICE candidate for Rb5k2FslqrXHp_lrAAAH: srflx
+socketManager.ts:48 👥 Singleton received participants update
+socketManager.ts:48 👥 Singleton received participants update
+WorkingScreenShare.tsx:245 📞 Received WebRTC answer from: Rb5k2FslqrXHp_lrAAAH
+WorkingScreenShare.tsx:1744 📞 Setting remote answer from: Rb5k2FslqrXHp_lrAAAH
+WorkingScreenShare.tsx:250 🧊 Received ICE candidate from: Rb5k2FslqrXHp_lrAAAH
+WorkingScreenShare.tsx:250 🧊 Received ICE candidate from: Rb5k2FslqrXHp_lrAAAH
+WorkingScreenShare.tsx:250 🧊 Received ICE candidate from: Rb5k2FslqrXHp_lrAAAH
+WorkingScreenShare.tsx:1567 ❄️ ICE connection state for Rb5k2FslqrXHp_lrAAAH: checking
+WorkingScreenShare.tsx:714 🔗 Screen share connection state for User x17o: connecting
+WorkingScreenShare.tsx:1567 ❄️ ICE connection state for Rb5k2FslqrXHp_lrAAAH: connected
+WorkingScreenShare.tsx:1561 🧊 ICE gathering state for Rb5k2FslqrXHp_lrAAAH: complete
+WorkingScreenShare.tsx:1555 ✅ ICE gathering complete for Rb5k2FslqrXHp_lrAAAH
+WorkingScreenShare.tsx:398 📊 FPS instability detected (0.0%), demanding more bandwidth
+WorkingScreenShare.tsx:409 🚀 Increased bandwidth demand: Object

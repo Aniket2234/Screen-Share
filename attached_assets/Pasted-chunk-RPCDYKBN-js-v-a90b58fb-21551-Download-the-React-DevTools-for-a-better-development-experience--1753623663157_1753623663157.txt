@@ -1,0 +1,127 @@
+chunk-RPCDYKBN.js?v=a90b58fb:21551 Download the React DevTools for a better development experience: https://reactjs.org/link/react-devtools
+WorkingScreenShare.tsx:151 ✅ TURN servers configured and ready
+WorkingScreenShare.tsx:258 🔌 Cleaning up singleton socket handlers
+WorkingScreenShare.tsx:151 ✅ TURN servers configured and ready
+WorkingScreenShare.tsx:258 🔌 Cleaning up singleton socket handlers
+WorkingScreenShare.tsx:258 🔌 Cleaning up singleton socket handlers
+WorkingScreenShare.tsx:181 🔌 Connecting to room using singleton socket manager
+socketManager.ts:32 🔌 Creating new singleton Socket.io connection
+socketManager.ts:53 ✅ Singleton socket connected
+socketManager.ts:48 👥 Singleton received participants update
+socketManager.ts:43 📨 Singleton received message: 1753623614562-system-sbh1nqtaw
+WorkingScreenShare.tsx:191 📨 Received message via singleton: 1753623614562-system-sbh1nqtaw
+WorkingScreenShare.tsx:198 ✅ Adding unique message: 1753623614562-system-sbh1nqtaw
+WorkingScreenShare.tsx:198 ✅ Adding unique message: 1753623614562-system-sbh1nqtaw
+socketManager.ts:48 👥 Singleton received participants update
+socketManager.ts:48 👥 Singleton received participants update
+socketManager.ts:43 📨 Singleton received message: 1753623623339-system-tqlwv75u7
+WorkingScreenShare.tsx:191 📨 Received message via singleton: 1753623623339-system-tqlwv75u7
+WorkingScreenShare.tsx:218 👥 Presenter started: User sptw ID: atC30MGBdRyjvfQGAAAB
+WorkingScreenShare.tsx:221 📺 Viewer ready to receive stream from presenter
+WorkingScreenShare.tsx:198 ✅ Adding unique message: 1753623623339-system-tqlwv75u7
+WorkingScreenShare.tsx:198 ✅ Adding unique message: 1753623623339-system-tqlwv75u7
+socketManager.ts:48 👥 Singleton received participants update
+WorkingScreenShare.tsx:240 📞 Received WebRTC offer from: atC30MGBdRyjvfQGAAAB
+WorkingScreenShare.tsx:1661 📞 Handling WebRTC offer from: atC30MGBdRyjvfQGAAAB as presenter: false
+WorkingScreenShare.tsx:1662 📋 Offer details: {type: 'offer', sdp: 'v=0\r\no=- 5503138212732342803 2 IN IP4 127.0.0.1\r\ns…3a45b8\r\nm=audio 9 UDP/TLS/RTP/SAVPF 111 63 9 0...'}
+WorkingScreenShare.tsx:1666 🆕 Creating new peer connection for: atC30MGBdRyjvfQGAAAB
+WorkingScreenShare.tsx:1441 🔄 Creating connection for atC30MGBdRyjvfQGAAAB, TURN-only: false
+WorkingScreenShare.tsx:1452 🔧 Using ICE configuration: {serverCount: 5, forceTurnOnly: false, transportPolicy: 'all'}
+WorkingScreenShare.tsx:1671 🔍 Current signaling state: stable
+WorkingScreenShare.tsx:1685 📥 Setting remote description (offer)
+WorkingScreenShare.tsx:250 🧊 Received ICE candidate from: atC30MGBdRyjvfQGAAAB
+WorkingScreenShare.tsx:1587 🎥 Received audio track from atC30MGBdRyjvfQGAAAB
+WorkingScreenShare.tsx:1591 📺 Processing remote stream from atC30MGBdRyjvfQGAAAB
+WorkingScreenShare.tsx:1613 📡 Marking viewer as connected after receiving stream from atC30MGBdRyjvfQGAAAB
+WorkingScreenShare.tsx:1587 🎥 Received video track from atC30MGBdRyjvfQGAAAB
+WorkingScreenShare.tsx:1591 📺 Processing remote stream from atC30MGBdRyjvfQGAAAB
+WorkingScreenShare.tsx:1613 📡 Marking viewer as connected after receiving stream from atC30MGBdRyjvfQGAAAB
+WorkingScreenShare.tsx:1687 ✅ Remote description set successfully
+WorkingScreenShare.tsx:1689 📝 Creating answer...
+WorkingScreenShare.tsx:250 🧊 Received ICE candidate from: atC30MGBdRyjvfQGAAAB
+WorkingScreenShare.tsx:250 🧊 Received ICE candidate from: atC30MGBdRyjvfQGAAAB
+WorkingScreenShare.tsx:1691 ✅ Answer created
+WorkingScreenShare.tsx:339 🚀 Enhanced SDP for 1080p: {videoBandwidth: '10000 kbps', audioBandwidth: '192 kbps', totalBandwidth: '10192 kbps'}
+WorkingScreenShare.tsx:1696 📥 Setting local description (answer)
+WorkingScreenShare.tsx:1698 ✅ Local description set successfully
+WorkingScreenShare.tsx:1700 📤 Sending answer to: atC30MGBdRyjvfQGAAAB
+WorkingScreenShare.tsx:1707 ✅ WebRTC offer handling completed successfully
+WorkingScreenShare.tsx:1572 🧊 ICE gathering state for atC30MGBdRyjvfQGAAAB: gathering
+WorkingScreenShare.tsx:1578 ❄️ ICE connection state for atC30MGBdRyjvfQGAAAB: checking
+WorkingScreenShare.tsx:1559 🧊 Sending ICE candidate for atC30MGBdRyjvfQGAAAB: host
+WorkingScreenShare.tsx:1464 🔗 Connection state for atC30MGBdRyjvfQGAAAB: connecting
+WorkingScreenShare.tsx:1578 ❄️ ICE connection state for atC30MGBdRyjvfQGAAAB: connected
+WorkingScreenShare.tsx:1572 🧊 ICE gathering state for atC30MGBdRyjvfQGAAAB: complete
+WorkingScreenShare.tsx:1566 ✅ ICE gathering complete for atC30MGBdRyjvfQGAAAB
+socketManager.ts:48 👥 Singleton received participants update
+socketManager.ts:48 👥 Singleton received participants update
+WorkingScreenShare.tsx:1464 🔗 Connection state for atC30MGBdRyjvfQGAAAB: connected
+WorkingScreenShare.tsx:1467 ✅ Connection established for atC30MGBdRyjvfQGAAAB
+WorkingScreenShare.tsx:1900 🔧 Manual video fix triggered
+WorkingScreenShare.tsx:1901 Debug info: {isPresenting: false, hasCurrentStream: false, remoteStreamsCount: 1, participants: Array(2)}
+WorkingScreenShare.tsx:494 📺 Creating video element with stream: {streamId: '7e2db827-00c1-46f8-90f2-1adf2c3a45b8', active: true, tracks: 2, videoTracks: 1, audioTracks: 1}
+WorkingScreenShare.tsx:504 Video track 0: {id: '66d8c1d5-830a-4eec-a43f-9575d5559a1d', kind: 'video', enabled: true, readyState: 'live', label: '66d8c1d5-830a-4eec-a43f-9575d5559a1d'}
+WorkingScreenShare.tsx:523 ⏳ Video waiting
+WorkingScreenShare.tsx:517 📹 Video loadstart
+WorkingScreenShare.tsx:518 📹 Video metadata loaded
+WorkingScreenShare.tsx:519 📹 Video can play
+WorkingScreenShare.tsx:520 ✅ Video is playing
+WorkingScreenShare.tsx:529 ✅ Video playing immediately after creation
+WorkingScreenShare.tsx:1967 ✅ Viewer remote video fix successful
+WorkingScreenShare.tsx:529 ✅ Video playing immediately after creation
+socketManager.ts:48 👥 Singleton received participants update
+socketManager.ts:43 📨 Singleton received message: 1753623633624-system-mqwg5oxaz
+WorkingScreenShare.tsx:191 📨 Received message via singleton: 1753623633624-system-mqwg5oxaz
+WorkingScreenShare.tsx:230 👥 Presenter stopped
+WorkingScreenShare.tsx:1837 🔌 Closing peer connection for atC30MGBdRyjvfQGAAAB, state: connected
+WorkingScreenShare.tsx:198 ✅ Adding unique message: 1753623633624-system-mqwg5oxaz
+WorkingScreenShare.tsx:198 ✅ Adding unique message: 1753623633624-system-mqwg5oxaz
+socketManager.ts:48 👥 Singleton received participants update
+socketManager.ts:48 👥 Singleton received participants update
+socketManager.ts:43 📨 Singleton received message: 1753623639206-system-ykh0dx1sq
+WorkingScreenShare.tsx:191 📨 Received message via singleton: 1753623639206-system-ykh0dx1sq
+WorkingScreenShare.tsx:218 👥 Presenter started: User sptw ID: atC30MGBdRyjvfQGAAAB
+WorkingScreenShare.tsx:221 📺 Viewer ready to receive stream from presenter
+WorkingScreenShare.tsx:198 ✅ Adding unique message: 1753623639206-system-ykh0dx1sq
+WorkingScreenShare.tsx:198 ✅ Adding unique message: 1753623639206-system-ykh0dx1sq
+socketManager.ts:48 👥 Singleton received participants update
+WorkingScreenShare.tsx:240 📞 Received WebRTC offer from: atC30MGBdRyjvfQGAAAB
+WorkingScreenShare.tsx:1661 📞 Handling WebRTC offer from: atC30MGBdRyjvfQGAAAB as presenter: false
+WorkingScreenShare.tsx:1662 📋 Offer details: {type: 'offer', sdp: 'v=0\r\no=- 6306386923522915768 2 IN IP4 127.0.0.1\r\ns…0e935c\r\nm=audio 9 UDP/TLS/RTP/SAVPF 111 63 9 0...'}
+WorkingScreenShare.tsx:1666 🆕 Creating new peer connection for: atC30MGBdRyjvfQGAAAB
+WorkingScreenShare.tsx:1441 🔄 Creating connection for atC30MGBdRyjvfQGAAAB, TURN-only: false
+WorkingScreenShare.tsx:1452 🔧 Using ICE configuration: {serverCount: 5, forceTurnOnly: false, transportPolicy: 'all'}
+WorkingScreenShare.tsx:1671 🔍 Current signaling state: stable
+WorkingScreenShare.tsx:1685 📥 Setting remote description (offer)
+WorkingScreenShare.tsx:250 🧊 Received ICE candidate from: atC30MGBdRyjvfQGAAAB
+WorkingScreenShare.tsx:1587 🎥 Received audio track from atC30MGBdRyjvfQGAAAB
+WorkingScreenShare.tsx:1591 📺 Processing remote stream from atC30MGBdRyjvfQGAAAB
+WorkingScreenShare.tsx:1613 📡 Marking viewer as connected after receiving stream from atC30MGBdRyjvfQGAAAB
+WorkingScreenShare.tsx:1587 🎥 Received video track from atC30MGBdRyjvfQGAAAB
+WorkingScreenShare.tsx:1591 📺 Processing remote stream from atC30MGBdRyjvfQGAAAB
+WorkingScreenShare.tsx:1613 📡 Marking viewer as connected after receiving stream from atC30MGBdRyjvfQGAAAB
+WorkingScreenShare.tsx:1687 ✅ Remote description set successfully
+WorkingScreenShare.tsx:1689 📝 Creating answer...
+WorkingScreenShare.tsx:250 🧊 Received ICE candidate from: atC30MGBdRyjvfQGAAAB
+WorkingScreenShare.tsx:1691 ✅ Answer created
+WorkingScreenShare.tsx:339 🚀 Enhanced SDP for 1080p: {videoBandwidth: '10000 kbps', audioBandwidth: '192 kbps', totalBandwidth: '10192 kbps'}
+WorkingScreenShare.tsx:1696 📥 Setting local description (answer)
+WorkingScreenShare.tsx:250 🧊 Received ICE candidate from: atC30MGBdRyjvfQGAAAB
+WorkingScreenShare.tsx:1698 ✅ Local description set successfully
+WorkingScreenShare.tsx:1700 📤 Sending answer to: atC30MGBdRyjvfQGAAAB
+WorkingScreenShare.tsx:1707 ✅ WebRTC offer handling completed successfully
+WorkingScreenShare.tsx:1572 🧊 ICE gathering state for atC30MGBdRyjvfQGAAAB: gathering
+WorkingScreenShare.tsx:1578 ❄️ ICE connection state for atC30MGBdRyjvfQGAAAB: checking
+WorkingScreenShare.tsx:1559 🧊 Sending ICE candidate for atC30MGBdRyjvfQGAAAB: host
+WorkingScreenShare.tsx:1464 🔗 Connection state for atC30MGBdRyjvfQGAAAB: connecting
+WorkingScreenShare.tsx:1559 🧊 Sending ICE candidate for atC30MGBdRyjvfQGAAAB: srflx
+WorkingScreenShare.tsx:1559 🧊 Sending ICE candidate for atC30MGBdRyjvfQGAAAB: srflx
+socketManager.ts:48 👥 Singleton received participants update
+socketManager.ts:48 👥 Singleton received participants update
+socketManager.ts:48 👥 Singleton received participants update
+socketManager.ts:43 📨 Singleton received message: 1753623654320-system-tol5hne9y
+WorkingScreenShare.tsx:191 📨 Received message via singleton: 1753623654320-system-tol5hne9y
+WorkingScreenShare.tsx:230 👥 Presenter stopped
+WorkingScreenShare.tsx:1837 🔌 Closing peer connection for atC30MGBdRyjvfQGAAAB, state: connecting
+WorkingScreenShare.tsx:198 ✅ Adding unique message: 1753623654320-system-tol5hne9y
+WorkingScreenShare.tsx:198 ✅ Adding unique message: 1753623654320-system-tol5hne9y

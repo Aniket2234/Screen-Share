@@ -1,0 +1,72 @@
+chunk-RPCDYKBN.js?v=a90b58fb:21551 Download the React DevTools for a better development experience: https://reactjs.org/link/react-devtools
+WorkingScreenShare.tsx:151 ✅ TURN servers configured and ready
+WorkingScreenShare.tsx:258 🔌 Cleaning up singleton socket handlers
+WorkingScreenShare.tsx:151 ✅ TURN servers configured and ready
+WorkingScreenShare.tsx:258 🔌 Cleaning up singleton socket handlers
+WorkingScreenShare.tsx:258 🔌 Cleaning up singleton socket handlers
+WorkingScreenShare.tsx:181 🔌 Connecting to room using singleton socket manager
+socketManager.ts:32 🔌 Creating new singleton Socket.io connection
+socketManager.ts:53 ✅ Singleton socket connected
+socketManager.ts:48 👥 Singleton received participants update
+socketManager.ts:43 📨 Singleton received message: 1753624554698-system-07gr524r4
+WorkingScreenShare.tsx:191 📨 Received message via singleton: 1753624554698-system-07gr524r4
+WorkingScreenShare.tsx:198 ✅ Adding unique message: 1753624554698-system-07gr524r4
+WorkingScreenShare.tsx:198 ✅ Adding unique message: 1753624554698-system-07gr524r4
+socketManager.ts:48 👥 Singleton received participants update
+socketManager.ts:43 📨 Singleton received message: 1753624559386-system-vlfki9fet
+WorkingScreenShare.tsx:191 📨 Received message via singleton: 1753624559386-system-vlfki9fet
+WorkingScreenShare.tsx:198 ✅ Adding unique message: 1753624559386-system-vlfki9fet
+WorkingScreenShare.tsx:198 ✅ Adding unique message: 1753624559386-system-vlfki9fet
+socketManager.ts:48 👥 Singleton received participants update
+socketManager.ts:48 👥 Singleton received participants update
+socketManager.ts:43 📨 Singleton received message: 1753624565284-system-x7sxr1lz3
+WorkingScreenShare.tsx:191 📨 Received message via singleton: 1753624565284-system-x7sxr1lz3
+WorkingScreenShare.tsx:218 👥 Presenter started: User i511 ID: B5gwusDSA5jlQoDmAAAD
+WorkingScreenShare.tsx:221 📺 Viewer ready to receive stream from presenter
+WorkingScreenShare.tsx:198 ✅ Adding unique message: 1753624565284-system-x7sxr1lz3
+WorkingScreenShare.tsx:198 ✅ Adding unique message: 1753624565284-system-x7sxr1lz3
+socketManager.ts:48 👥 Singleton received participants update
+WorkingScreenShare.tsx:240 📞 Received WebRTC offer from: B5gwusDSA5jlQoDmAAAD
+WorkingScreenShare.tsx:1656 📞 Handling WebRTC offer from: B5gwusDSA5jlQoDmAAAD as presenter: false
+WorkingScreenShare.tsx:1657 📋 Offer details: Object
+WorkingScreenShare.tsx:1661 🆕 Creating new peer connection for: B5gwusDSA5jlQoDmAAAD
+WorkingScreenShare.tsx:1379 🔄 Creating connection for B5gwusDSA5jlQoDmAAAD, TURN-only: false
+WorkingScreenShare.tsx:1390 🔧 Using ICE configuration: Object
+WorkingScreenShare.tsx:1666 🔍 Current signaling state: stable
+WorkingScreenShare.tsx:1680 📥 Setting remote description (offer)
+WorkingScreenShare.tsx:250 🧊 Received ICE candidate from: B5gwusDSA5jlQoDmAAAD
+WorkingScreenShare.tsx:250 🧊 Received ICE candidate from: B5gwusDSA5jlQoDmAAAD
+WorkingScreenShare.tsx:250 🧊 Received ICE candidate from: B5gwusDSA5jlQoDmAAAD
+WorkingScreenShare.tsx:1582 🎥 Received audio track from B5gwusDSA5jlQoDmAAAD
+WorkingScreenShare.tsx:1586 📺 Processing remote stream from B5gwusDSA5jlQoDmAAAD
+WorkingScreenShare.tsx:1608 📡 Marking viewer as connected after receiving stream from B5gwusDSA5jlQoDmAAAD
+WorkingScreenShare.tsx:1582 🎥 Received video track from B5gwusDSA5jlQoDmAAAD
+WorkingScreenShare.tsx:1586 📺 Processing remote stream from B5gwusDSA5jlQoDmAAAD
+WorkingScreenShare.tsx:1608 📡 Marking viewer as connected after receiving stream from B5gwusDSA5jlQoDmAAAD
+WorkingScreenShare.tsx:1682 ✅ Remote description set successfully
+WorkingScreenShare.tsx:1684 📝 Creating answer...
+WorkingScreenShare.tsx:1686 ✅ Answer created
+WorkingScreenShare.tsx:339 🚀 Enhanced SDP for 1080p: Object
+WorkingScreenShare.tsx:1691 📥 Setting local description (enhanced answer)
+WorkingScreenShare.tsx:1693 ✅ Local description set successfully
+WorkingScreenShare.tsx:1695 📤 Sending answer to: B5gwusDSA5jlQoDmAAAD
+WorkingScreenShare.tsx:1702 ✅ WebRTC offer handling completed successfully
+WorkingScreenShare.tsx:1567 🧊 ICE gathering state for B5gwusDSA5jlQoDmAAAD: gathering
+WorkingScreenShare.tsx:1573 ❄️ ICE connection state for B5gwusDSA5jlQoDmAAAD: checking
+WorkingScreenShare.tsx:1554 🧊 Sending ICE candidate for B5gwusDSA5jlQoDmAAAD: host
+WorkingScreenShare.tsx:1405 🔗 DETAILED Connection state change for B5gwusDSA5jlQoDmAAAD: Object
+WorkingScreenShare.tsx:1546 🔄 Connection establishing for B5gwusDSA5jlQoDmAAAD
+WorkingScreenShare.tsx:1554 🧊 Sending ICE candidate for B5gwusDSA5jlQoDmAAAD: srflx
+WorkingScreenShare.tsx:1554 🧊 Sending ICE candidate for B5gwusDSA5jlQoDmAAAD: srflx
+socketManager.ts:48 👥 Singleton received participants update
+socketManager.ts:48 👥 Singleton received participants update
+WorkingScreenShare.tsx:1573 ❄️ ICE connection state for B5gwusDSA5jlQoDmAAAD: disconnected
+WorkingScreenShare.tsx:1405 🔗 DETAILED Connection state change for B5gwusDSA5jlQoDmAAAD: {connectionState: 'failed', iceConnectionState: 'disconnected', signalingState: 'stable', timestamp: '2025-07-27T13:56:20.505Z', transceiverCount: 2}
+WorkingScreenShare.tsx:1455 ❌ Connection failed for B5gwusDSA5jlQoDmAAAD, attempting TURN-only retry
+WorkingScreenShare.tsx:1460 🔄 Initiating TURN-only retry for B5gwusDSA5jlQoDmAAAD (attempt 1)
+socketManager.ts:48 👥 Singleton received participants update
+socketManager.ts:43 📨 Singleton received message: 1753624602722-system-adec9eg5h
+WorkingScreenShare.tsx:191 📨 Received message via singleton: 1753624602722-system-adec9eg5h
+WorkingScreenShare.tsx:198 ✅ Adding unique message: 1753624602722-system-adec9eg5h
+WorkingScreenShare.tsx:198 ✅ Adding unique message: 1753624602722-system-adec9eg5h
+WorkingScreenShare.tsx:230 👥 Presenter stopped

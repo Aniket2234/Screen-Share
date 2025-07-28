@@ -1,0 +1,91 @@
+chunk-RPCDYKBN.js?v=a90b58fb:21551 Download the React DevTools for a better development experience: https://reactjs.org/link/react-devtools
+WorkingScreenShare.tsx:151 ✅ TURN servers configured and ready
+WorkingScreenShare.tsx:258 🔌 Cleaning up singleton socket handlers
+WorkingScreenShare.tsx:151 ✅ TURN servers configured and ready
+WorkingScreenShare.tsx:258 🔌 Cleaning up singleton socket handlers
+WorkingScreenShare.tsx:258 🔌 Cleaning up singleton socket handlers
+WorkingScreenShare.tsx:181 🔌 Connecting to room using singleton socket manager
+socketManager.ts:32 🔌 Creating new singleton Socket.io connection
+socketManager.ts:53 ✅ Singleton socket connected
+socketManager.ts:48 👥 Singleton received participants update
+socketManager.ts:43 📨 Singleton received message: 1753624559386-system-vlfki9fet
+WorkingScreenShare.tsx:191 📨 Received message via singleton: 1753624559386-system-vlfki9fet
+WorkingScreenShare.tsx:198 ✅ Adding unique message: 1753624559386-system-vlfki9fet
+WorkingScreenShare.tsx:198 ✅ Adding unique message: 1753624559386-system-vlfki9fet
+WorkingScreenShare.tsx:485 🎬 Starting screen share...
+WorkingScreenShare.tsx:523 🎯 Screen share constraints: {
+  "video": {
+    "frameRate": {
+      "ideal": 30,
+      "max": 30
+    },
+    "width": {
+      "ideal": 1920
+    },
+    "height": {
+      "ideal": 1080
+    }
+  },
+  "audio": {
+    "echoCancellation": false,
+    "noiseSuppression": false,
+    "autoGainControl": false,
+    "sampleRate": {
+      "ideal": 48000
+    },
+    "channelCount": {
+      "ideal": 2
+    }
+  }
+}
+WorkingScreenShare.tsx:529 ✅ Got screen share stream: Object
+WorkingScreenShare.tsx:550 ✅ Applied constraints to force exact settings
+WorkingScreenShare.tsx:554 🎯 Final stream settings: Object
+socketManager.ts:48 👥 Singleton received participants update
+socketManager.ts:48 👥 Singleton received participants update
+socketManager.ts:43 📨 Singleton received message: 1753624565284-system-x7sxr1lz3
+WorkingScreenShare.tsx:191 📨 Received message via singleton: 1753624565284-system-x7sxr1lz3
+WorkingScreenShare.tsx:198 ✅ Adding unique message: 1753624565284-system-x7sxr1lz3
+WorkingScreenShare.tsx:198 ✅ Adding unique message: 1753624565284-system-x7sxr1lz3
+socketManager.ts:48 👥 Singleton received participants update
+WorkingScreenShare.tsx:1839 🔌 Closing all peer connections
+WorkingScreenShare.tsx:1891 ✅ All peer connections closed and cleared
+WorkingScreenShare.tsx:625 🔗 Presenter creating connection to viewer: User u1u0 U_UDhn1iYh3T-M3TAAAB 
+WorkingScreenShare.tsx:1379 🔄 Creating connection for U_UDhn1iYh3T-M3TAAAB, TURN-only: false
+WorkingScreenShare.tsx:1390 🔧 Using ICE configuration: Object
+WorkingScreenShare.tsx:669 ➕ Adding track to peer connection: audio 0530e7a5-863e-4507-b930-d7162610aec8
+WorkingScreenShare.tsx:717 🔧 Configured audio transceiver for 1080p: Object
+WorkingScreenShare.tsx:669 ➕ Adding track to peer connection: video 59fdfcb6-39c1-46af-9840-24a3a3feeeae
+WorkingScreenShare.tsx:717 🔧 Configured video transceiver for 1080p: Object
+WorkingScreenShare.tsx:339 🚀 Enhanced SDP for 1080p: Object
+WorkingScreenShare.tsx:732 📤 Sending optimized offer to viewer: U_UDhn1iYh3T-M3TAAAB
+WorkingScreenShare.tsx:741 🚀 Connection initiated to User u1u0, monitoring for natural establishment...
+WorkingScreenShare.tsx:1567 🧊 ICE gathering state for U_UDhn1iYh3T-M3TAAAB: gathering
+WorkingScreenShare.tsx:1554 🧊 Sending ICE candidate for U_UDhn1iYh3T-M3TAAAB: host
+WorkingScreenShare.tsx:1554 🧊 Sending ICE candidate for U_UDhn1iYh3T-M3TAAAB: srflx
+WorkingScreenShare.tsx:1554 🧊 Sending ICE candidate for U_UDhn1iYh3T-M3TAAAB: srflx
+socketManager.ts:48 👥 Singleton received participants update
+socketManager.ts:48 👥 Singleton received participants update
+WorkingScreenShare.tsx:245 📞 Received WebRTC answer from: U_UDhn1iYh3T-M3TAAAB
+WorkingScreenShare.tsx:1750 📞 Setting remote answer from: U_UDhn1iYh3T-M3TAAAB
+WorkingScreenShare.tsx:250 🧊 Received ICE candidate from: U_UDhn1iYh3T-M3TAAAB
+WorkingScreenShare.tsx:250 🧊 Received ICE candidate from: U_UDhn1iYh3T-M3TAAAB
+WorkingScreenShare.tsx:250 🧊 Received ICE candidate from: U_UDhn1iYh3T-M3TAAAB
+WorkingScreenShare.tsx:1573 ❄️ ICE connection state for U_UDhn1iYh3T-M3TAAAB: checking
+WorkingScreenShare.tsx:653 🔗 Screen share connection state for User u1u0: connecting
+WorkingScreenShare.tsx:1573 ❄️ ICE connection state for U_UDhn1iYh3T-M3TAAAB: connected
+WorkingScreenShare.tsx:1567 🧊 ICE gathering state for U_UDhn1iYh3T-M3TAAAB: complete
+WorkingScreenShare.tsx:1561 ✅ ICE gathering complete for U_UDhn1iYh3T-M3TAAAB
+WorkingScreenShare.tsx:1573 ❄️ ICE connection state for U_UDhn1iYh3T-M3TAAAB: disconnected
+WorkingScreenShare.tsx:653 🔗 Screen share connection state for User u1u0: disconnected
+WorkingScreenShare.tsx:653 🔗 Screen share connection state for User u1u0: failed
+WorkingScreenShare.tsx:662 ❌ Screen share connection failed to User u1u0
+WorkingScreenShare.tsx:1283 🛑 Stopping screen share...
+WorkingScreenShare.tsx:1839 🔌 Closing all peer connections
+WorkingScreenShare.tsx:1843 🔌 Closing connection to U_UDhn1iYh3T-M3TAAAB, state: failed
+WorkingScreenShare.tsx:1891 ✅ All peer connections closed and cleared
+socketManager.ts:48 👥 Singleton received participants update
+socketManager.ts:43 📨 Singleton received message: 1753624602722-system-adec9eg5h
+WorkingScreenShare.tsx:191 📨 Received message via singleton: 1753624602722-system-adec9eg5h
+WorkingScreenShare.tsx:198 ✅ Adding unique message: 1753624602722-system-adec9eg5h
+WorkingScreenShare.tsx:198 ✅ Adding unique message: 1753624602722-system-adec9eg5h

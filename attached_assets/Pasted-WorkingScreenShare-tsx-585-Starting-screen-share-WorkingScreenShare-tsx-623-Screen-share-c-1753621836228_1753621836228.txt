@@ -1,0 +1,74 @@
+WorkingScreenShare.tsx:585 🎬 Starting screen share...
+WorkingScreenShare.tsx:623 🎯 Screen share constraints: {
+  "video": {
+    "frameRate": {
+      "ideal": 30,
+      "max": 30
+    },
+    "width": {
+      "ideal": 1920
+    },
+    "height": {
+      "ideal": 1080
+    }
+  },
+  "audio": {
+    "echoCancellation": false,
+    "noiseSuppression": false,
+    "autoGainControl": false,
+    "sampleRate": {
+      "ideal": 48000
+    },
+    "channelCount": {
+      "ideal": 2
+    }
+  }
+}
+WorkingScreenShare.tsx:629 ✅ Got screen share stream: Object
+WorkingScreenShare.tsx:650 ✅ Applied constraints to force exact settings
+WorkingScreenShare.tsx:654 🎯 Final stream settings: Object
+socketManager.ts:48 👥 Singleton received participants update
+socketManager.ts:48 👥 Singleton received participants update
+socketManager.ts:43 📨 Singleton received message: 1753621795110-system-go34nxwi0
+WorkingScreenShare.tsx:230 📨 Received message via singleton: 1753621795110-system-go34nxwi0
+WorkingScreenShare.tsx:237 ✅ Adding unique message: 1753621795110-system-go34nxwi0
+WorkingScreenShare.tsx:237 ✅ Adding unique message: 1753621795110-system-go34nxwi0
+socketManager.ts:48 👥 Singleton received participants update
+WorkingScreenShare.tsx:1818 🔌 Closing all peer connections
+WorkingScreenShare.tsx:725 🔗 Presenter creating connection to viewer: User 7441 wjN-EFCsFE6ooxwQAAAJ 
+WorkingScreenShare.tsx:1512 🔄 Creating simplified connection for wjN-EFCsFE6ooxwQAAAJ
+WorkingScreenShare.tsx:769 ➕ Adding track to peer connection: audio a96a6b45-78ad-4246-bc7e-5fd03c7f7bec
+WorkingScreenShare.tsx:468 📊 Started bandwidth monitoring for 1080p (target: 0.2 Mbps)
+WorkingScreenShare.tsx:813 🔧 Configured audio transceiver for 1080p: Object
+WorkingScreenShare.tsx:769 ➕ Adding track to peer connection: video 519a3953-9e77-4796-86ad-f6b0ad3e6a9e
+WorkingScreenShare.tsx:468 📊 Started bandwidth monitoring for 1080p (target: 10.0 Mbps)
+WorkingScreenShare.tsx:813 🔧 Configured video transceiver for 1080p: Object
+WorkingScreenShare.tsx:378 🚀 Enhanced SDP for 1080p: Object
+WorkingScreenShare.tsx:828 📤 Sending optimized offer to viewer: wjN-EFCsFE6ooxwQAAAJ
+WorkingScreenShare.tsx:1552 🧊 Sending ICE candidate for wjN-EFCsFE6ooxwQAAAJ
+WorkingScreenShare.tsx:1552 🧊 Sending ICE candidate for wjN-EFCsFE6ooxwQAAAJ
+socketManager.ts:48 👥 Singleton received participants update
+socketManager.ts:48 👥 Singleton received participants update
+WorkingScreenShare.tsx:284 📞 Received WebRTC answer from: wjN-EFCsFE6ooxwQAAAJ
+WorkingScreenShare.tsx:1729 📞 Setting remote answer from: wjN-EFCsFE6ooxwQAAAJ
+socketManager.ts:48 👥 Singleton received participants update
+WorkingScreenShare.tsx:289 🧊 Received ICE candidate from: wjN-EFCsFE6ooxwQAAAJ
+WorkingScreenShare.tsx:289 🧊 Received ICE candidate from: wjN-EFCsFE6ooxwQAAAJ
+WorkingScreenShare.tsx:753 🔗 Screen share connection state for User 7441: connecting
+WorkingScreenShare.tsx:437 📊 FPS instability detected (0.0%), demanding more bandwidth
+WorkingScreenShare.tsx:448 🚀 Increased bandwidth demand: Object
+WorkingScreenShare.tsx:437 📊 FPS instability detected (0.0%), demanding more bandwidth
+WorkingScreenShare.tsx:448 🚀 Increased bandwidth demand: Object
+WorkingScreenShare.tsx:872 🔄 Connection still in progress to User 7441 - state: connecting
+socketManager.ts:48 👥 Singleton received participants update
+socketManager.ts:48 👥 Singleton received participants update
+WorkingScreenShare.tsx:437 📊 FPS instability detected (0.0%), demanding more bandwidth
+WorkingScreenShare.tsx:448 🚀 Increased bandwidth demand: Object
+WorkingScreenShare.tsx:437 📊 FPS instability detected (0.0%), demanding more bandwidth
+WorkingScreenShare.tsx:448 🚀 Increased bandwidth demand: Object
+WorkingScreenShare.tsx:437 📊 FPS instability detected (0.0%), demanding more bandwidth
+WorkingScreenShare.tsx:448 🚀 Increased bandwidth demand: Object
+socketManager.ts:48 👥 Singleton received participants update
+socketManager.ts:48 👥 Singleton received participants update
+WorkingScreenShare.tsx:437 📊 FPS instability detected (0.0%), demanding more bandwidth
+WorkingScreenShare.tsx:448 🚀 Increased bandwidth demand: {newMaxBitrate: '20.0 Mbps', reason: 'FPS stability below 80%'}

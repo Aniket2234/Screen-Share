@@ -1,0 +1,325 @@
+ Download the React DevTools for a better development experience: https://reactjs.org/link/react-devtools
+ 🔍 Testing TURN server connectivity...
+ 🔍 Testing TURN server connectivity...
+ 🧊 Test ICE candidate: candidate:1549070642 1 udp 2113937151 4555b60c-c7b5-467e-9e05-8342366f51f8.local 59889 typ host generation 0 ufrag FoLt network-cost 999
+ 🧊 Test ICE candidate: candidate:1615452880 1 udp 2113937151 4555b60c-c7b5-467e-9e05-8342366f51f8.local 59919 typ host generation 0 ufrag Sw8r network-cost 999
+ 🧊 Test ICE candidate: candidate:1012925710 1 udp 1677729535 103.121.75.70 6682 typ srflx raddr 0.0.0.0 rport 0 generation 0 ufrag FoLt network-cost 999
+ 🧊 Test ICE candidate: candidate:1012925710 1 udp 1677729535 103.121.75.70 6687 typ srflx raddr 0.0.0.0 rport 0 generation 0 ufrag FoLt network-cost 999
+ 🧊 Test ICE candidate: candidate:8204012 1 udp 1677729535 103.121.75.70 8615 typ srflx raddr 0.0.0.0 rport 0 generation 0 ufrag Sw8r network-cost 999
+ 🧊 Test ICE candidate: candidate:8204012 1 udp 1677729535 103.121.75.70 8609 typ srflx raddr 0.0.0.0 rport 0 generation 0 ufrag Sw8r network-cost 999
+ 🧊 Test ICE candidate: candidate:1012925710 1 udp 1677729535 103.121.75.70 6685 typ srflx raddr 0.0.0.0 rport 0 generation 0 ufrag FoLt network-cost 999
+ 🧊 Test ICE candidate: candidate:1012925710 1 udp 1677729535 103.121.75.70 6689 typ srflx raddr 0.0.0.0 rport 0 generation 0 ufrag FoLt network-cost 999
+ 🧊 Test ICE candidate: candidate:8204012 1 udp 1677729535 103.121.75.70 8613 typ srflx raddr 0.0.0.0 rport 0 generation 0 ufrag Sw8r network-cost 999
+ 🧊 Test ICE candidate: candidate:8204012 1 udp 1677729535 103.121.75.70 8616 typ srflx raddr 0.0.0.0 rport 0 generation 0 ufrag Sw8r network-cost 999
+ 🧊 Test ICE candidate: candidate:1012925710 1 udp 1677729535 103.121.75.70 6680 typ srflx raddr 0.0.0.0 rport 0 generation 0 ufrag FoLt network-cost 999
+ 🧊 Test ICE candidate: candidate:8204012 1 udp 1677729535 103.121.75.70 8614 typ srflx raddr 0.0.0.0 rport 0 generation 0 ufrag Sw8r network-cost 999
+ ⚠️ TURN servers may not be available - using STUN only
+ ⚠️ TURN servers may not be available - using STUN only
+ 👥 Presenter started: User bs4h ID: jdjI-96Rq6vycIUDAAAD
+ 📺 Viewer ready to receive stream from presenter
+ 📞 Received WebRTC offer from: jdjI-96Rq6vycIUDAAAD
+ 📞 Handling WebRTC offer from: jdjI-96Rq6vycIUDAAAD as presenter: false
+ 🧊 Received ICE candidate from: jdjI-96Rq6vycIUDAAAD
+ 🧊 Received ICE candidate from: jdjI-96Rq6vycIUDAAAD
+ 🎥 Received remote stream from: jdjI-96Rq6vycIUDAAAD
+ 🔍 Stream details: Object
+ 📤 Sending answer to: jdjI-96Rq6vycIUDAAAD
+ 📡 ICE gathering state for jdjI-96Rq6vycIUDAAAD: gathering
+ 🧊 ICE connection state for jdjI-96Rq6vycIUDAAAD: checking
+ 🧊 Sending ICE candidate for jdjI-96Rq6vycIUDAAAD: candidate:3252202427 1 udp 2113937151 4555b60c-c7b5-467e-9e05-8342366f51f8.local 53679 typ host generation 0 ufrag 19pA network-cost 999
+ 🔗 Connection state changed for jdjI-96Rq6vycIUDAAAD: connecting
+ 🧊 Sending ICE candidate for jdjI-96Rq6vycIUDAAAD: candidate:4007125960 1 udp 1677729535 103.121.75.70 34578 typ srflx raddr 0.0.0.0 rport 0 generation 0 ufrag 19pA network-cost 999
+ 🧊 Sending ICE candidate for jdjI-96Rq6vycIUDAAAD: candidate:4007125960 1 udp 1677729535 103.121.75.70 34584 typ srflx raddr 0.0.0.0 rport 0 generation 0 ufrag 19pA network-cost 999
+ 🧊 Received ICE candidate from: jdjI-96Rq6vycIUDAAAD
+ 🧊 Sending ICE candidate for jdjI-96Rq6vycIUDAAAD: candidate:4007125960 1 udp 1677729535 103.121.75.70 34582 typ srflx raddr 0.0.0.0 rport 0 generation 0 ufrag 19pA network-cost 999
+ 🧊 Sending ICE candidate for jdjI-96Rq6vycIUDAAAD: candidate:4007125960 1 udp 1677729535 103.121.75.70 34585 typ srflx raddr 0.0.0.0 rport 0 generation 0 ufrag 19pA network-cost 999
+ 🧊 Sending ICE candidate for jdjI-96Rq6vycIUDAAAD: candidate:4007125960 1 udp 1677729535 103.121.75.70 34583 typ srflx raddr 0.0.0.0 rport 0 generation 0 ufrag 19pA network-cost 999
+ 🔧 Manual video fix triggered
+ Debug info: Object
+ 📺 Creating video element with stream: Object
+ Video track 0: Object
+ ⏳ Video waiting
+ 📹 Video loadstart
+ 🧊 ICE connection state for jdjI-96Rq6vycIUDAAAD: disconnected
+ 🔗 Connection state changed for jdjI-96Rq6vycIUDAAAD: failed
+ ❌ Connection failed for jdjI-96Rq6vycIUDAAAD, attempting comprehensive restart...
+ 🔄 Strategy 1: ICE restart for jdjI-96Rq6vycIUDAAAD
+ 👥 Presenter stopped
+ 📹 Video metadata loaded
+ 📹 Video can play
+ ✅ Video is playing
+ ✅ Video playing immediately after creation
+ ✅ Viewer remote video fix successful
+ ✅ Video playing immediately after creation
+ 🔄 Strategy 2: Creating fresh connection for jdjI-96Rq6vycIUDAAAD
+ 👥 Presenter started: User bs4h ID: jdjI-96Rq6vycIUDAAAD
+ 📺 Viewer ready to receive stream from presenter
+ 📞 Received WebRTC offer from: jdjI-96Rq6vycIUDAAAD
+ 📞 Handling WebRTC offer from: jdjI-96Rq6vycIUDAAAD as presenter: false
+ 🧊 Received ICE candidate from: jdjI-96Rq6vycIUDAAAD
+ 🧊 Received ICE candidate from: jdjI-96Rq6vycIUDAAAD
+ 🎥 Received remote stream from: jdjI-96Rq6vycIUDAAAD
+ 🔍 Stream details: Object
+ 📤 Sending answer to: jdjI-96Rq6vycIUDAAAD
+ 📡 ICE gathering state for jdjI-96Rq6vycIUDAAAD: gathering
+ 🧊 ICE connection state for jdjI-96Rq6vycIUDAAAD: checking
+ 🧊 Sending ICE candidate for jdjI-96Rq6vycIUDAAAD: candidate:1171209432 1 udp 2113937151 4555b60c-c7b5-467e-9e05-8342366f51f8.local 53367 typ host generation 0 ufrag wDN9 network-cost 999
+ 🔗 Connection state changed for jdjI-96Rq6vycIUDAAAD: connecting
+ 🧊 Sending ICE candidate for jdjI-96Rq6vycIUDAAAD: candidate:1790997675 1 udp 1677729535 103.121.75.70 63538 typ srflx raddr 0.0.0.0 rport 0 generation 0 ufrag wDN9 network-cost 999
+ 🧊 Sending ICE candidate for jdjI-96Rq6vycIUDAAAD: candidate:1790997675 1 udp 1677729535 103.121.75.70 63544 typ srflx raddr 0.0.0.0 rport 0 generation 0 ufrag wDN9 network-cost 999
+ 🧊 Received ICE candidate from: jdjI-96Rq6vycIUDAAAD
+ 🧊 Sending ICE candidate for jdjI-96Rq6vycIUDAAAD: candidate:1790997675 1 udp 1677729535 103.121.75.70 63542 typ srflx raddr 0.0.0.0 rport 0 generation 0 ufrag wDN9 network-cost 999
+ 🧊 Sending ICE candidate for jdjI-96Rq6vycIUDAAAD: candidate:1790997675 1 udp 1677729535 103.121.75.70 63545 typ srflx raddr 0.0.0.0 rport 0 generation 0 ufrag wDN9 network-cost 999
+ 🧊 Sending ICE candidate for jdjI-96Rq6vycIUDAAAD: candidate:1790997675 1 udp 1677729535 103.121.75.70 63543 typ srflx raddr 0.0.0.0 rport 0 generation 0 ufrag wDN9 network-cost 999
+ 🔄 Strategy 3: TURN-only fallback for jdjI-96Rq6vycIUDAAAD
+ 🔄 TURN-only connection created for jdjI-96Rq6vycIUDAAAD
+ 🔧 Manual video fix triggered
+ Debug info: Object
+ 📺 Creating video element with stream: Object
+ Video track 0: Object
+ ⏳ Video waiting
+ 📹 Video loadstart
+ 📹 Video metadata loaded
+ 📹 Video can play
+ ✅ Video is playing
+ ✅ Video playing immediately after creation
+ ✅ Viewer remote video fix successful
+ ✅ Video playing immediately after creation
+ 👥 Presenter stopped
+ 👥 Presenter started: User bs4h ID: jdjI-96Rq6vycIUDAAAD
+ 📺 Viewer ready to receive stream from presenter
+ 📞 Received WebRTC offer from: jdjI-96Rq6vycIUDAAAD
+ 📞 Handling WebRTC offer from: jdjI-96Rq6vycIUDAAAD as presenter: false
+ 🧊 Received ICE candidate from: jdjI-96Rq6vycIUDAAAD
+ 🎥 Received remote stream from: jdjI-96Rq6vycIUDAAAD
+ 🔍 Stream details: Object
+ 🧊 Received ICE candidate from: jdjI-96Rq6vycIUDAAAD
+ 📤 Sending answer to: jdjI-96Rq6vycIUDAAAD
+ 📡 ICE gathering state for jdjI-96Rq6vycIUDAAAD: gathering
+ 🧊 ICE connection state for jdjI-96Rq6vycIUDAAAD: checking
+ 🧊 Sending ICE candidate for jdjI-96Rq6vycIUDAAAD: candidate:3175835455 1 udp 2113937151 4555b60c-c7b5-467e-9e05-8342366f51f8.local 51122 typ host generation 0 ufrag uat2 network-cost 999
+ 🔗 Connection state changed for jdjI-96Rq6vycIUDAAAD: connecting
+ 🧊 Sending ICE candidate for jdjI-96Rq6vycIUDAAAD: candidate:2453942092 1 udp 1677729535 103.121.75.70 63577 typ srflx raddr 0.0.0.0 rport 0 generation 0 ufrag uat2 network-cost 999
+ 🧊 Sending ICE candidate for jdjI-96Rq6vycIUDAAAD: candidate:2453942092 1 udp 1677729535 103.121.75.70 63586 typ srflx raddr 0.0.0.0 rport 0 generation 0 ufrag uat2 network-cost 999
+ 🧊 Received ICE candidate from: jdjI-96Rq6vycIUDAAAD
+ 🧊 Sending ICE candidate for jdjI-96Rq6vycIUDAAAD: candidate:2453942092 1 udp 1677729535 103.121.75.70 63579 typ srflx raddr 0.0.0.0 rport 0 generation 0 ufrag uat2 network-cost 999
+ 🧊 Sending ICE candidate for jdjI-96Rq6vycIUDAAAD: candidate:2453942092 1 udp 1677729535 103.121.75.70 63578 typ srflx raddr 0.0.0.0 rport 0 generation 0 ufrag uat2 network-cost 999
+ 🧊 Sending ICE candidate for jdjI-96Rq6vycIUDAAAD: candidate:2453942092 1 udp 1677729535 103.121.75.70 63576 typ srflx raddr 0.0.0.0 rport 0 generation 0 ufrag uat2 network-cost 999
+ 🔧 Manual video fix triggered
+ Debug info: Object
+ 📺 Creating video element with stream: Object
+ Video track 0: Object
+ ⏳ Video waiting
+ 📹 Video loadstart
+ 🔧 Manual video fix triggered
+ Debug info: Object
+ ℹ️ Video autoplay blocked, will require user interaction: AbortError
+ ❌ Viewer remote video fix failed: 
+(anonymous) @ WorkingScreenShare.tsx:1098
+ ℹ️ Video autoplay blocked, will require user interaction: AbortError
+ ⏳ Video waiting
+ 📹 Video loadstart
+ 🧊 ICE connection state for jdjI-96Rq6vycIUDAAAD: disconnected
+ 🔗 Connection state changed for jdjI-96Rq6vycIUDAAAD: failed
+ ❌ Connection failed for jdjI-96Rq6vycIUDAAAD, attempting comprehensive restart...
+ 🔄 Strategy 1: ICE restart for jdjI-96Rq6vycIUDAAAD
+ 🎬 Starting screen share...
+ 🎯 Screen share constraints: {
+  "video": {
+    "frameRate": {
+      "ideal": 30,
+      "max": 30
+    },
+    "width": {
+      "ideal": 1920
+    },
+    "height": {
+      "ideal": 1080
+    },
+    "cursor": "always",
+    "displaySurface": "monitor",
+    "logicalSurface": true
+  },
+  "audio": true
+}
+ 👥 Presenter stopped
+ 🔄 Strategy 2: Creating fresh connection for jdjI-96Rq6vycIUDAAAD
+ 📹 Video metadata loaded
+ 📹 Video can play
+ ✅ Video is playing
+ ✅ Viewer remote video fix successful
+ ✅ Got screen share stream: Object
+ ✅ Applied constraints to force exact settings
+ 🎯 Final stream settings: Object
+ 🔗 Presenter creating connection to viewer: User bs4h jdjI-96Rq6vycIUDAAAD
+ ➕ Adding track to peer connection: audio 47d3bed2-b59c-4dd6-ae86-67dadb9d0c7e
+ ➕ Adding track to peer connection: video 1aac3e75-2cbc-4b8a-83bb-a3732dad8264
+ 📤 Sending offer to viewer: jdjI-96Rq6vycIUDAAAD
+ 🧊 Sending screen share ICE candidate to User bs4h: candidate:244951821 0 udp 2113937152 4555b60c-c7b5-467e-9e05-8342366f51f8.local 59651 typ host generation 0 ufrag zgRs network-cost 999
+ 🧊 Sending screen share ICE candidate to User bs4h: candidate:563536766 1 udp 1677729535 103.121.75.70 36470 typ srflx raddr 0.0.0.0 rport 0 generation 0 ufrag weiR network-cost 999
+ 🧊 Sending screen share ICE candidate to User bs4h: candidate:563536766 1 udp 1677729535 103.121.75.70 36476 typ srflx raddr 0.0.0.0 rport 0 generation 0 ufrag weiR network-cost 999
+ 🧊 Sending screen share ICE candidate to User bs4h: candidate:563536766 1 udp 1677729535 103.121.75.70 36474 typ srflx raddr 0.0.0.0 rport 0 generation 0 ufrag weiR network-cost 999
+ 🧊 Sending screen share ICE candidate to User bs4h: candidate:563536766 1 udp 1677729535 103.121.75.70 36477 typ srflx raddr 0.0.0.0 rport 0 generation 0 ufrag weiR network-cost 999
+ 🧊 Sending screen share ICE candidate to User bs4h: candidate:563536766 1 udp 1677729535 103.121.75.70 36475 typ srflx raddr 0.0.0.0 rport 0 generation 0 ufrag weiR network-cost 999
+ 📞 Received WebRTC answer from: jdjI-96Rq6vycIUDAAAD
+ 📞 Setting remote answer from: jdjI-96Rq6vycIUDAAAD
+ 🧊 Received ICE candidate from: jdjI-96Rq6vycIUDAAAD
+ 🔗 Screen share connection state for User bs4h: connecting
+ 🧊 Received ICE candidate from: jdjI-96Rq6vycIUDAAAD
+ 🧊 Received ICE candidate from: jdjI-96Rq6vycIUDAAAD
+ 🔄 Strategy 3: TURN-only fallback for jdjI-96Rq6vycIUDAAAD
+ 🔄 TURN-only connection created for jdjI-96Rq6vycIUDAAAD
+ 🔧 Manual video fix triggered
+ Debug info: Object
+ 📺 Creating video element with stream: Object
+ Video track 0: Object
+ ⏳ Video waiting
+ 📹 Video loadstart
+ 📹 Video metadata loaded
+ 📹 Video can play
+ ✅ Video is playing
+ ✅ Video playing immediately after creation
+ ✅ Presenter video fix successful
+ ✅ Video playing immediately after creation
+ 🛑 Stopping screen share...
+ 🎬 Starting screen share...
+ 🎯 Screen share constraints: {
+  "video": {
+    "frameRate": {
+      "ideal": 30,
+      "max": 30
+    },
+    "width": {
+      "ideal": 1920
+    },
+    "height": {
+      "ideal": 1080
+    },
+    "cursor": "always",
+    "displaySurface": "monitor",
+    "logicalSurface": true
+  },
+  "audio": true
+}
+ ✅ Got screen share stream: Object
+ ✅ Applied constraints to force exact settings
+ 🎯 Final stream settings: Object
+ 🔗 Presenter creating connection to viewer: User bs4h jdjI-96Rq6vycIUDAAAD
+ ➕ Adding track to peer connection: audio d34e6157-17fd-44a8-8c18-dbe84ffd2cfc
+ ➕ Adding track to peer connection: video e7cdd8de-fee2-4903-8ee7-d2a46a1501be
+ 📤 Sending offer to viewer: jdjI-96Rq6vycIUDAAAD
+ 🔗 Presenter creating connection to viewer: User bqra Yl6tvflLmN2sroHPAAAF
+ ➕ Adding track to peer connection: audio d34e6157-17fd-44a8-8c18-dbe84ffd2cfc
+ ➕ Adding track to peer connection: video e7cdd8de-fee2-4903-8ee7-d2a46a1501be
+ 🧊 Sending screen share ICE candidate to User bs4h: candidate:1045059505 0 udp 2113937152 4555b60c-c7b5-467e-9e05-8342366f51f8.local 51517 typ host generation 0 ufrag pVRF network-cost 999
+ 📤 Sending offer to viewer: Yl6tvflLmN2sroHPAAAF
+ 🧊 Sending screen share ICE candidate to User bs4h: candidate:3123756590 1 udp 1677729535 103.121.75.70 38374 typ srflx raddr 0.0.0.0 rport 0 generation 0 ufrag cpOd network-cost 999
+ 🧊 Sending screen share ICE candidate to User bs4h: candidate:3123756590 1 udp 1677729535 103.121.75.70 38382 typ srflx raddr 0.0.0.0 rport 0 generation 0 ufrag cpOd network-cost 999
+ 🧊 Sending screen share ICE candidate to User bqra: candidate:3456414445 1 udp 2113937151 4555b60c-c7b5-467e-9e05-8342366f51f8.local 65131 typ host generation 0 ufrag HD1A network-cost 999
+ 🧊 Sending screen share ICE candidate to User bqra: candidate:3775658654 1 udp 1677729535 103.121.75.70 38291 typ srflx raddr 0.0.0.0 rport 0 generation 0 ufrag HD1A network-cost 999
+ 🧊 Sending screen share ICE candidate to User bqra: candidate:3775658654 1 udp 1677729535 103.121.75.70 38304 typ srflx raddr 0.0.0.0 rport 0 generation 0 ufrag HD1A network-cost 999
+ 🧊 Sending screen share ICE candidate to User bs4h: candidate:3123756590 1 udp 1677729535 103.121.75.70 38380 typ srflx raddr 0.0.0.0 rport 0 generation 0 ufrag cpOd network-cost 999
+ 🧊 Sending screen share ICE candidate to User bs4h: candidate:3123756590 1 udp 1677729535 103.121.75.70 38383 typ srflx raddr 0.0.0.0 rport 0 generation 0 ufrag cpOd network-cost 999
+ 🧊 Sending screen share ICE candidate to User bqra: candidate:3775658654 1 udp 1677729535 103.121.75.70 38294 typ srflx raddr 0.0.0.0 rport 0 generation 0 ufrag HD1A network-cost 999
+ 🧊 Sending screen share ICE candidate to User bqra: candidate:3775658654 1 udp 1677729535 103.121.75.70 38301 typ srflx raddr 0.0.0.0 rport 0 generation 0 ufrag HD1A network-cost 999
+ 🧊 Sending screen share ICE candidate to User bs4h: candidate:3123756590 1 udp 1677729535 103.121.75.70 38381 typ srflx raddr 0.0.0.0 rport 0 generation 0 ufrag cpOd network-cost 999
+ 🧊 Sending screen share ICE candidate to User bqra: candidate:3775658654 1 udp 1677729535 103.121.75.70 38298 typ srflx raddr 0.0.0.0 rport 0 generation 0 ufrag HD1A network-cost 999
+ 📞 Received WebRTC answer from: jdjI-96Rq6vycIUDAAAD
+WorkingScreenShare.tsx:1283 📞 Setting remote answer from: jdjI-96Rq6vycIUDAAAD
+WorkingScreenShare.tsx:223 🧊 Received ICE candidate from: jdjI-96Rq6vycIUDAAAD
+WorkingScreenShare.tsx:492 🔗 Screen share connection state for User bs4h: connecting
+WorkingScreenShare.tsx:223 🧊 Received ICE candidate from: jdjI-96Rq6vycIUDAAAD
+WorkingScreenShare.tsx:223 🧊 Received ICE candidate from: jdjI-96Rq6vycIUDAAAD
+WorkingScreenShare.tsx:218 📞 Received WebRTC answer from: Yl6tvflLmN2sroHPAAAF
+WorkingScreenShare.tsx:1283 📞 Setting remote answer from: Yl6tvflLmN2sroHPAAAF
+WorkingScreenShare.tsx:223 🧊 Received ICE candidate from: Yl6tvflLmN2sroHPAAAF
+WorkingScreenShare.tsx:223 🧊 Received ICE candidate from: Yl6tvflLmN2sroHPAAAF
+WorkingScreenShare.tsx:223 🧊 Received ICE candidate from: Yl6tvflLmN2sroHPAAAF
+WorkingScreenShare.tsx:492 🔗 Screen share connection state for User bqra: connecting
+WorkingScreenShare.tsx:223 🧊 Received ICE candidate from: Yl6tvflLmN2sroHPAAAF
+WorkingScreenShare.tsx:492 🔗 Screen share connection state for User bqra: connected
+WorkingScreenShare.tsx:223 🧊 Received ICE candidate from: Yl6tvflLmN2sroHPAAAF
+WorkingScreenShare.tsx:223 🧊 Received ICE candidate from: Yl6tvflLmN2sroHPAAAF
+WorkingScreenShare.tsx:223 🧊 Received ICE candidate from: Yl6tvflLmN2sroHPAAAF
+WorkingScreenShare.tsx:1313 🔧 Manual video fix triggered
+WorkingScreenShare.tsx:1314 Debug info: Object
+WorkingScreenShare.tsx:316 📺 Creating video element with stream: Object
+WorkingScreenShare.tsx:326 Video track 0: Object
+WorkingScreenShare.tsx:345 ⏳ Video waiting
+WorkingScreenShare.tsx:339 📹 Video loadstart
+WorkingScreenShare.tsx:340 📹 Video metadata loaded
+WorkingScreenShare.tsx:341 📹 Video can play
+WorkingScreenShare.tsx:342 ✅ Video is playing
+WorkingScreenShare.tsx:351 ✅ Video playing immediately after creation
+WorkingScreenShare.tsx:1341 ✅ Presenter video fix successful
+WorkingScreenShare.tsx:351 ✅ Video playing immediately after creation
+WorkingScreenShare.tsx:492 🔗 Screen share connection state for User bs4h: failed
+WorkingScreenShare.tsx:195 👥 Presenter started: User bqra ID: Yl6tvflLmN2sroHPAAAF
+WorkingScreenShare.tsx:198 📺 Viewer ready to receive stream from presenter
+WorkingScreenShare.tsx:213 📞 Received WebRTC offer from: Yl6tvflLmN2sroHPAAAF
+WorkingScreenShare.tsx:1249 📞 Handling WebRTC offer from: Yl6tvflLmN2sroHPAAAF as presenter: false
+WorkingScreenShare.tsx:1275 ❌ Error handling WebRTC offer: InvalidAccessError: Failed to execute 'setRemoteDescription' on 'RTCPeerConnection': Failed to set remote offer sdp: The order of m-lines in subsequent offer doesn't match order from previous offer/answer.
+handleWebRTCOffer @ WorkingScreenShare.tsx:1275
+WorkingScreenShare.tsx:223 🧊 Received ICE candidate from: Yl6tvflLmN2sroHPAAAF
+WorkingScreenShare.tsx:223 🧊 Received ICE candidate from: Yl6tvflLmN2sroHPAAAF
+WorkingScreenShare.tsx:223 🧊 Received ICE candidate from: Yl6tvflLmN2sroHPAAAF
+WorkingScreenShare.tsx:223 🧊 Received ICE candidate from: Yl6tvflLmN2sroHPAAAF
+WorkingScreenShare.tsx:223 🧊 Received ICE candidate from: Yl6tvflLmN2sroHPAAAF
+WorkingScreenShare.tsx:223 🧊 Received ICE candidate from: Yl6tvflLmN2sroHPAAAF
+WorkingScreenShare.tsx:223 🧊 Received ICE candidate from: Yl6tvflLmN2sroHPAAAF
+WorkingScreenShare.tsx:1313 🔧 Manual video fix triggered
+WorkingScreenShare.tsx:1314 Debug info: Object
+WorkingScreenShare.tsx:316 📺 Creating video element with stream: Object
+WorkingScreenShare.tsx:326 Video track 0: Object
+WorkingScreenShare.tsx:345 ⏳ Video waiting
+WorkingScreenShare.tsx:339 📹 Video loadstart
+WorkingScreenShare.tsx:340 📹 Video metadata loaded
+WorkingScreenShare.tsx:341 📹 Video can play
+WorkingScreenShare.tsx:342 ✅ Video is playing
+WorkingScreenShare.tsx:351 ✅ Video playing immediately after creation
+WorkingScreenShare.tsx:1341 ✅ Presenter video fix successful
+WorkingScreenShare.tsx:351 ✅ Video playing immediately after creation
+WorkingScreenShare.tsx:989 🛑 Stopping screen share...
+WorkingScreenShare.tsx:203 👥 Presenter stopped
+WorkingScreenShare.tsx:195 👥 Presenter started: User bqra ID: Yl6tvflLmN2sroHPAAAF
+WorkingScreenShare.tsx:198 📺 Viewer ready to receive stream from presenter
+WorkingScreenShare.tsx:213 📞 Received WebRTC offer from: Yl6tvflLmN2sroHPAAAF
+WorkingScreenShare.tsx:1249 📞 Handling WebRTC offer from: Yl6tvflLmN2sroHPAAAF as presenter: false
+WorkingScreenShare.tsx:1138 🎥 Received remote stream from: Yl6tvflLmN2sroHPAAAF
+WorkingScreenShare.tsx:1144 🔍 Stream details: Object
+WorkingScreenShare.tsx:223 🧊 Received ICE candidate from: Yl6tvflLmN2sroHPAAAF
+WorkingScreenShare.tsx:1264 📤 Sending answer to: Yl6tvflLmN2sroHPAAAF
+WorkingScreenShare.tsx:1118 📡 ICE gathering state for Yl6tvflLmN2sroHPAAAF: gathering
+WorkingScreenShare.tsx:1103 🧊 ICE connection state for Yl6tvflLmN2sroHPAAAF: checking
+WorkingScreenShare.tsx:1126 🧊 Sending ICE candidate for Yl6tvflLmN2sroHPAAAF: candidate:1712992089 1 udp 2113937151 4555b60c-c7b5-467e-9e05-8342366f51f8.local 51249 typ host generation 0 ufrag S9Xz network-cost 999
+WorkingScreenShare.tsx:1048 🔗 Connection state changed for Yl6tvflLmN2sroHPAAAF: connecting
+WorkingScreenShare.tsx:1126 🧊 Sending ICE candidate for Yl6tvflLmN2sroHPAAAF: candidate:103734117 1 udp 1677729535 103.121.75.70 8488 typ srflx raddr 0.0.0.0 rport 0 generation 0 ufrag S9Xz network-cost 999
+WorkingScreenShare.tsx:1126 🧊 Sending ICE candidate for Yl6tvflLmN2sroHPAAAF: candidate:103734117 1 udp 1677729535 103.121.75.70 8493 typ srflx raddr 0.0.0.0 rport 0 generation 0 ufrag S9Xz network-cost 999
+WorkingScreenShare.tsx:223 🧊 Received ICE candidate from: Yl6tvflLmN2sroHPAAAF
+WorkingScreenShare.tsx:223 🧊 Received ICE candidate from: Yl6tvflLmN2sroHPAAAF
+WorkingScreenShare.tsx:223 🧊 Received ICE candidate from: Yl6tvflLmN2sroHPAAAF
+WorkingScreenShare.tsx:223 🧊 Received ICE candidate from: Yl6tvflLmN2sroHPAAAF
+WorkingScreenShare.tsx:1126 🧊 Sending ICE candidate for Yl6tvflLmN2sroHPAAAF: candidate:103734117 1 udp 1677729535 103.121.75.70 8492 typ srflx raddr 0.0.0.0 rport 0 generation 0 ufrag S9Xz network-cost 999
+WorkingScreenShare.tsx:223 🧊 Received ICE candidate from: Yl6tvflLmN2sroHPAAAF
+WorkingScreenShare.tsx:1126 🧊 Sending ICE candidate for Yl6tvflLmN2sroHPAAAF: candidate:103734117 1 udp 1677729535 103.121.75.70 8495 typ srflx raddr 0.0.0.0 rport 0 generation 0 ufrag S9Xz network-cost 999
+WorkingScreenShare.tsx:223 🧊 Received ICE candidate from: Yl6tvflLmN2sroHPAAAF
+WorkingScreenShare.tsx:1126 🧊 Sending ICE candidate for Yl6tvflLmN2sroHPAAAF: candidate:103734117 1 udp 1677729535 103.121.75.70 8494 typ srflx raddr 0.0.0.0 rport 0 generation 0 ufrag S9Xz network-cost 999
+WorkingScreenShare.tsx:1118 📡 ICE gathering state for Yl6tvflLmN2sroHPAAAF: complete
+WorkingScreenShare.tsx:1120 ✅ ICE gathering completed for Yl6tvflLmN2sroHPAAAF
+WorkingScreenShare.tsx:1133 🧊 ICE gathering complete for Yl6tvflLmN2sroHPAAAF
+WorkingScreenShare.tsx:1103 🧊 ICE connection state for Yl6tvflLmN2sroHPAAAF: connected
+WorkingScreenShare.tsx:1107 ✅ ICE connection established for Yl6tvflLmN2sroHPAAAF
+WorkingScreenShare.tsx:1048 🔗 Connection state changed for Yl6tvflLmN2sroHPAAAF: connected
+WorkingScreenShare.tsx:1313 🔧 Manual video fix triggered
+WorkingScreenShare.tsx:1314 Debug info: Object
+WorkingScreenShare.tsx:316 📺 Creating video element with stream: Object
+WorkingScreenShare.tsx:326 Video track 0: Object
+WorkingScreenShare.tsx:345 ⏳ Video waiting
+WorkingScreenShare.tsx:339 📹 Video loadstart
+WorkingScreenShare.tsx:340 📹 Video metadata loaded
+WorkingScreenShare.tsx:341 📹 Video can play
+WorkingScreenShare.tsx:342 ✅ Video is playing
+WorkingScreenShare.tsx:351 ✅ Video playing immediately after creation
+WorkingScreenShare.tsx:1380 ✅ Viewer remote video fix successful
+WorkingScreenShare.tsx:351 ✅ Video playing immediately after creation
+WorkingScreenShare.tsx:203 👥 Presenter stopped

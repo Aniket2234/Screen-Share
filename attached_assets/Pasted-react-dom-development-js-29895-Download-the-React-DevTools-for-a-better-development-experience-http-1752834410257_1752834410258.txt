@@ -1,0 +1,98 @@
+react-dom.development.js:29895 Download the React DevTools for a better development experience: https://reactjs.org/link/react-devtools
+WorkingScreenShare.tsx:204 🔍 Testing TURN server connectivity...
+WorkingScreenShare.tsx:204 🔍 Testing TURN server connectivity...
+WorkingScreenShare.tsx:237 🧊 ICE gathering state: gathering
+WorkingScreenShare.tsx:237 🧊 ICE gathering state: gathering
+WorkingScreenShare.tsx:216 🧊 Test ICE candidate: candidate:3774819810 1 udp 2122260223 192.168.1.104 49214 typ host generation 0 ufrag 8Tkq network-id 1 network-cost 10
+WorkingScreenShare.tsx:216 🧊 Test ICE candidate: candidate:3699599705 1 udp 2122260223 192.168.1.104 49264 typ host generation 0 ufrag uXZG network-id 1 network-cost 10
+WorkingScreenShare.tsx:216 🧊 Test ICE candidate: candidate:508950902 1 tcp 1518280447 192.168.1.104 9 typ host tcptype active generation 0 ufrag 8Tkq network-id 1 network-cost 10
+WorkingScreenShare.tsx:216 🧊 Test ICE candidate: candidate:573160909 1 tcp 1518280447 192.168.1.104 9 typ host tcptype active generation 0 ufrag uXZG network-id 1 network-cost 10
+WorkingScreenShare.tsx:216 🧊 Test ICE candidate: candidate:556890792 1 udp 1686052607 103.121.75.70 8590 typ srflx raddr 192.168.1.104 rport 49214 generation 0 ufrag 8Tkq network-id 1 network-cost 10
+WorkingScreenShare.tsx:216 🧊 Test ICE candidate: candidate:556890792 1 udp 1686052607 103.121.75.70 8616 typ srflx raddr 192.168.1.104 rport 49214 generation 0 ufrag 8Tkq network-id 1 network-cost 10
+WorkingScreenShare.tsx:249 🌐 TURN servers responsive - enabling cross-network compatibility mode
+WorkingScreenShare.tsx:261 🔄 TURN servers responding - proceeding with cross-network optimization
+WorkingScreenShare.tsx:253 🏠 Using standard mode - will escalate to cross-network if needed
+WorkingScreenShare.tsx:263 ⚠ Limited server response - using fallback TURN configuration
+WorkingScreenShare.tsx:309 👥 Presenter started: User ude5 ID: HuhJS3OxdeQgqAonAAAB
+WorkingScreenShare.tsx:312 📺 Viewer ready to receive stream from presenter
+WorkingScreenShare.tsx:327 📞 Received WebRTC offer from: HuhJS3OxdeQgqAonAAAB
+WorkingScreenShare.tsx:1680 📞 Handling WebRTC offer from: HuhJS3OxdeQgqAonAAAB as presenter: false
+WorkingScreenShare.tsx:1681 📋 Offer details: Object
+WorkingScreenShare.tsx:1685 🆕 Creating new peer connection for: HuhJS3OxdeQgqAonAAAB
+WorkingScreenShare.tsx:1238 🏠 Using hybrid STUN/TURN configuration for optimal same-network performance
+WorkingScreenShare.tsx:1690 🔍 Current signaling state: stable
+WorkingScreenShare.tsx:1702 📥 Setting remote description (offer)
+WorkingScreenShare.tsx:1404 🎥 Received remote stream from: HuhJS3OxdeQgqAonAAAB
+WorkingScreenShare.tsx:1405 🔍 Event details: Object
+WorkingScreenShare.tsx:1422 🔍 Stream details: Object
+WorkingScreenShare.tsx:1435 🎵 Track 0: Object
+WorkingScreenShare.tsx:1435 🎵 Track 1: Object
+WorkingScreenShare.tsx:1449 📺 VIEWER MODE: Creating immediate video display for remote stream
+WorkingScreenShare.tsx:1404 🎥 Received remote stream from: HuhJS3OxdeQgqAonAAAB
+WorkingScreenShare.tsx:1405 🔍 Event details: Object
+WorkingScreenShare.tsx:1422 🔍 Stream details: Object
+WorkingScreenShare.tsx:1435 🎵 Track 0: Object
+WorkingScreenShare.tsx:1435 🎵 Track 1: Object
+WorkingScreenShare.tsx:1449 📺 VIEWER MODE: Creating immediate video display for remote stream
+WorkingScreenShare.tsx:1704 ✅ Remote description set successfully
+WorkingScreenShare.tsx:1706 📝 Creating answer...
+WorkingScreenShare.tsx:337 🧊 Received ICE candidate from: HuhJS3OxdeQgqAonAAAB
+WorkingScreenShare.tsx:1711 ✅ Answer created
+WorkingScreenShare.tsx:1713 📥 Setting local description (answer)
+WorkingScreenShare.tsx:1715 ✅ Local description set successfully
+WorkingScreenShare.tsx:1717 📤 Sending answer to: HuhJS3OxdeQgqAonAAAB
+WorkingScreenShare.tsx:1724 ✅ WebRTC offer handling completed successfully
+WorkingScreenShare.tsx:1384 📡 ICE gathering state for HuhJS3OxdeQgqAonAAAB: gathering
+WorkingScreenShare.tsx:337 🧊 Received ICE candidate from: HuhJS3OxdeQgqAonAAAB
+WorkingScreenShare.tsx:337 🧊 Received ICE candidate from: HuhJS3OxdeQgqAonAAAB
+WorkingScreenShare.tsx:1369 🧊 ICE connection state for HuhJS3OxdeQgqAonAAAB: checking
+WorkingScreenShare.tsx:1392 🧊 Sending ICE candidate for HuhJS3OxdeQgqAonAAAB: candidate:3766510882 1 udp 2122260223 192.168.1.104 57863 typ host generation 0 ufrag nuDn network-id 1 network-cost 10
+WorkingScreenShare.tsx:1245 🔗 Connection state changed for HuhJS3OxdeQgqAonAAAB: connecting
+WorkingScreenShare.tsx:337 🧊 Received ICE candidate from: HuhJS3OxdeQgqAonAAAB
+WorkingScreenShare.tsx:337 🧊 Received ICE candidate from: HuhJS3OxdeQgqAonAAAB
+WorkingScreenShare.tsx:1392 🧊 Sending ICE candidate for HuhJS3OxdeQgqAonAAAB: candidate:2656012218 1 tcp 1518280447 192.168.1.104 9 typ host tcptype active generation 0 ufrag nuDn network-id 1 network-cost 10
+WorkingScreenShare.tsx:337 🧊 Received ICE candidate from: HuhJS3OxdeQgqAonAAAB
+WorkingScreenShare.tsx:1862 🔧 Manual video fix triggered
+WorkingScreenShare.tsx:1863 Debug info: Object
+WorkingScreenShare.tsx:430 📺 Creating video element with stream: Object
+WorkingScreenShare.tsx:440 Video track 0: Object
+WorkingScreenShare.tsx:459 ⏳ Video waiting
+WorkingScreenShare.tsx:453 📹 Video loadstart
+WorkingScreenShare.tsx:1392 🧊 Sending ICE candidate for HuhJS3OxdeQgqAonAAAB: candidate:1338672156 1 udp 1686052607 103.121.75.70 63683 typ srflx raddr 192.168.1.104 rport 57863 generation 0 ufrag nuDn network-id 1 network-cost 10
+WorkingScreenShare.tsx:1392 🧊 Sending ICE candidate for HuhJS3OxdeQgqAonAAAB: candidate:1338672156 1 udp 1686052607 103.121.75.70 63740 typ srflx raddr 192.168.1.104 rport 57863 generation 0 ufrag nuDn network-id 1 network-cost 10
+WorkingScreenShare.tsx:1392 🧊 Sending ICE candidate for HuhJS3OxdeQgqAonAAAB: candidate:1338672156 1 udp 1686052607 103.121.75.70 63731 typ srflx raddr 192.168.1.104 rport 57863 generation 0 ufrag nuDn network-id 1 network-cost 10
+WorkingScreenShare.tsx:1392 🧊 Sending ICE candidate for HuhJS3OxdeQgqAonAAAB: candidate:1338672156 1 udp 1686052607 103.121.75.70 63729 typ srflx raddr 192.168.1.104 rport 57863 generation 0 ufrag nuDn network-id 1 network-cost 10
+WorkingScreenShare.tsx:1392 🧊 Sending ICE candidate for HuhJS3OxdeQgqAonAAAB: candidate:1338672156 1 udp 1686052607 103.121.75.70 63730 typ srflx raddr 192.168.1.104 rport 57863 generation 0 ufrag nuDn network-id 1 network-cost 10
+WorkingScreenShare.tsx:1369 🧊 ICE connection state for HuhJS3OxdeQgqAonAAAB: disconnected
+WorkingScreenShare.tsx:1245 🔗 Connection state changed for HuhJS3OxdeQgqAonAAAB: failed
+WorkingScreenShare.tsx:1254 ❌ Connection failed for HuhJS3OxdeQgqAonAAAB, attempting comprehensive restart...
+WorkingScreenShare.tsx:1260 🔄 Connection attempt 1 for HuhJS3OxdeQgqAonAAAB
+WorkingScreenShare.tsx:1271 🔄 Strategy 1: ICE restart for HuhJS3OxdeQgqAonAAAB
+WorkingScreenShare.tsx:1283 🔄 Strategy 2: Creating fresh connection for HuhJS3OxdeQgqAonAAAB (retry 1)
+WorkingScreenShare.tsx:1238 🏠 Using hybrid STUN/TURN configuration for optimal same-network performance
+WorkingScreenShare.tsx:454 📹 Video metadata loaded
+WorkingScreenShare.tsx:455 📹 Video can play
+WorkingScreenShare.tsx:456 ✅ Video is playing
+WorkingScreenShare.tsx:465 ✅ Video playing immediately after creation
+WorkingScreenShare.tsx:1929 ✅ Viewer remote video fix successful
+WorkingScreenShare.tsx:465 ✅ Video playing immediately after creation
+WorkingScreenShare.tsx:1294 🔄 Strategy 3: Advanced TURN-only fallback for HuhJS3OxdeQgqAonAAAB
+WorkingScreenShare.tsx:1363 🔄 TURN-only connection created for HuhJS3OxdeQgqAonAAAB
+WorkingScreenShare.tsx:327 📞 Received WebRTC offer from: HuhJS3OxdeQgqAonAAAB
+WorkingScreenShare.tsx:1680 📞 Handling WebRTC offer from: HuhJS3OxdeQgqAonAAAB as presenter: false
+WorkingScreenShare.tsx:1681 📋 Offer details: {type: 'offer', sdp: 'v=0\r\no=- 2998435165097891111 2 IN IP4 127.0.0.1\r\ns…a870ae\r\nm=audio 9 UDP/TLS/RTP/SAVPF 111 63 9 0...'}
+WorkingScreenShare.tsx:1690 🔍 Current signaling state: stable
+WorkingScreenShare.tsx:1702 📥 Setting remote description (offer)
+WorkingScreenShare.tsx:1326 🎥 TURN-only received remote stream from: HuhJS3OxdeQgqAonAAAB
+WorkingScreenShare.tsx:1326 🎥 TURN-only received remote stream from: HuhJS3OxdeQgqAonAAAB
+WorkingScreenShare.tsx:1704 ✅ Remote description set successfully
+WorkingScreenShare.tsx:1706 📝 Creating answer...
+WorkingScreenShare.tsx:1711 ✅ Answer created
+WorkingScreenShare.tsx:1713 📥 Setting local description (answer)
+WorkingScreenShare.tsx:453 📹 Video loadstart
+WorkingScreenShare.tsx:1715 ✅ Local description set successfully
+WorkingScreenShare.tsx:1717 📤 Sending answer to: HuhJS3OxdeQgqAonAAAB
+WorkingScreenShare.tsx:1724 ✅ WebRTC offer handling completed successfully
+WorkingScreenShare.tsx:317 👥 Presenter stopped
+WorkingScreenShare.tsx:454 📹 Video metadata loaded
+WorkingScreenShare.tsx:455 📹 Video can play
