@@ -1,0 +1,51 @@
+socketManager.ts:48 👥 Singleton received participants update
+socketManager.ts:48 👥 Singleton received participants update
+socketManager.ts:43 📨 Singleton received message: 1753680869407-system-5tejrfrvz
+WorkingScreenShare.tsx:191 📨 Received message via singleton: 1753680869407-system-5tejrfrvz
+WorkingScreenShare.tsx:218 👥 Presenter started: User c1lz ID: ZSBknnDanas8NNGQAAAF
+WorkingScreenShare.tsx:221 📺 Viewer ready to receive stream from presenter
+WorkingScreenShare.tsx:198 ✅ Adding unique message: 1753680869407-system-5tejrfrvz
+WorkingScreenShare.tsx:198 ✅ Adding unique message: 1753680869407-system-5tejrfrvz
+socketManager.ts:48 👥 Singleton received participants update
+WorkingScreenShare.tsx:240 📞 Received WebRTC offer from: ZSBknnDanas8NNGQAAAF
+WorkingScreenShare.tsx:1591 📞 Handling WebRTC offer from: ZSBknnDanas8NNGQAAAF as presenter: false
+WorkingScreenShare.tsx:1592 📋 Offer details: {type: 'offer', sdp: 'v=0\r\no=- 5123285268618255960 2 IN IP4 127.0.0.1\r\ns…73b430\r\nm=audio 9 UDP/TLS/RTP/SAVPF 111 63 9 0...'}
+WorkingScreenShare.tsx:1596 🆕 Creating new peer connection for: ZSBknnDanas8NNGQAAAF
+WorkingScreenShare.tsx:1379 🔄 Creating connection for ZSBknnDanas8NNGQAAAF, TURN-only: false
+WorkingScreenShare.tsx:1390 🔧 Using ICE configuration: {serverCount: 5, forceTurnOnly: false, transportPolicy: 'all'}
+WorkingScreenShare.tsx:1601 🔍 Current signaling state: stable
+WorkingScreenShare.tsx:1615 📥 Setting remote description (offer)
+WorkingScreenShare.tsx:250 🧊 Received ICE candidate from: ZSBknnDanas8NNGQAAAF
+WorkingScreenShare.tsx:1517 🎥 Received audio track from ZSBknnDanas8NNGQAAAF
+WorkingScreenShare.tsx:1521 📺 Processing remote stream from ZSBknnDanas8NNGQAAAF
+WorkingScreenShare.tsx:1543 📡 Marking viewer as connected after receiving stream from ZSBknnDanas8NNGQAAAF
+WorkingScreenShare.tsx:1517 🎥 Received video track from ZSBknnDanas8NNGQAAAF
+WorkingScreenShare.tsx:1521 📺 Processing remote stream from ZSBknnDanas8NNGQAAAF
+WorkingScreenShare.tsx:1543 📡 Marking viewer as connected after receiving stream from ZSBknnDanas8NNGQAAAF
+WorkingScreenShare.tsx:1617 ✅ Remote description set successfully
+WorkingScreenShare.tsx:1619 📝 Creating answer...
+WorkingScreenShare.tsx:250 🧊 Received ICE candidate from: ZSBknnDanas8NNGQAAAF
+WorkingScreenShare.tsx:250 🧊 Received ICE candidate from: ZSBknnDanas8NNGQAAAF
+WorkingScreenShare.tsx:1621 ✅ Answer created
+WorkingScreenShare.tsx:339 🚀 Enhanced SDP for 1080p: {videoBandwidth: '10000 kbps', audioBandwidth: '192 kbps', totalBandwidth: '10192 kbps'}
+WorkingScreenShare.tsx:1626 📥 Setting local description (enhanced answer)
+WorkingScreenShare.tsx:1628 ✅ Local description set successfully
+WorkingScreenShare.tsx:1630 📤 Sending answer to: ZSBknnDanas8NNGQAAAF
+WorkingScreenShare.tsx:1637 ✅ WebRTC offer handling completed successfully
+WorkingScreenShare.tsx:1490 🧊 ICE gathering state for ZSBknnDanas8NNGQAAAF: gathering
+WorkingScreenShare.tsx:1496 ❄️ ICE connection state for ZSBknnDanas8NNGQAAAF: checking
+WorkingScreenShare.tsx:1477 🧊 Sending ICE candidate for ZSBknnDanas8NNGQAAAF: host
+WorkingScreenShare.tsx:1405 🔗 Connection state change for ZSBknnDanas8NNGQAAAF: {connectionState: 'connecting', iceConnectionState: 'checking', signalingState: 'stable', timestamp: '2025-07-28T05:34:28.543Z'}
+WorkingScreenShare.tsx:1469 🔄 Connection establishing for ZSBknnDanas8NNGQAAAF
+WorkingScreenShare.tsx:1477 🧊 Sending ICE candidate for ZSBknnDanas8NNGQAAAF: srflx
+WorkingScreenShare.tsx:1477 🧊 Sending ICE candidate for ZSBknnDanas8NNGQAAAF: srflx
+socketManager.ts:48 👥 Singleton received participants update
+socketManager.ts:48 👥 Singleton received participants update
+WorkingScreenShare.tsx:1496 ❄️ ICE connection state for ZSBknnDanas8NNGQAAAF: disconnected
+WorkingScreenShare.tsx:1502 🔌 ICE temporarily disconnected for ZSBknnDanas8NNGQAAAF, monitoring for recovery
+WorkingScreenShare.tsx:1405 🔗 Connection state change for ZSBknnDanas8NNGQAAAF: {connectionState: 'failed', iceConnectionState: 'disconnected', signalingState: 'stable', timestamp: '2025-07-28T05:34:43.913Z'}
+WorkingScreenShare.tsx:1418 ❌ Connection failed for ZSBknnDanas8NNGQAAAF
+WorkingScreenShare.tsx:1423 🔄 Attempting TURN-only retry for ZSBknnDanas8NNGQAAAF (attempt 1)
+WorkingScreenShare.tsx:1496 ❄️ ICE connection state for ZSBknnDanas8NNGQAAAF: checking
+WorkingScreenShare.tsx:1405 🔗 Connection state change for ZSBknnDanas8NNGQAAAF: {connectionState: 'connecting', iceConnectionState: 'checking', signalingState: 'stable', timestamp: '2025-07-28T05:34:44.444Z'}
+WorkingScreenShare.tsx:1469 🔄 Connection establishing for ZSBknnDanas8NNGQAAAF

@@ -1,0 +1,65 @@
+WorkingScreenShare.tsx:485 🎬 Starting screen share...
+WorkingScreenShare.tsx:523 🎯 Screen share constraints: {
+  "video": {
+    "frameRate": {
+      "ideal": 30,
+      "max": 30
+    },
+    "width": {
+      "ideal": 1920
+    },
+    "height": {
+      "ideal": 1080
+    }
+  },
+  "audio": {
+    "echoCancellation": false,
+    "noiseSuppression": false,
+    "autoGainControl": false,
+    "sampleRate": {
+      "ideal": 48000
+    },
+    "channelCount": {
+      "ideal": 2
+    }
+  }
+}
+WorkingScreenShare.tsx:529 ✅ Got screen share stream: {id: 'c6bd4862-43eb-4219-a591-ac19f573b430', active: true, videoTracks: 1, audioTracks: 1, actualSettings: {…}, …}
+WorkingScreenShare.tsx:550 ✅ Applied constraints to force exact settings
+WorkingScreenShare.tsx:554 🎯 Final stream settings: {aspectRatio: 1.7777777777777777, cursor: 'always', deviceId: 'screen:0:0', displaySurface: 'monitor', frameRate: 30, …}
+socketManager.ts:48 👥 Singleton received participants update
+socketManager.ts:48 👥 Singleton received participants update
+socketManager.ts:43 📨 Singleton received message: 1753680869407-system-5tejrfrvz
+WorkingScreenShare.tsx:191 📨 Received message via singleton: 1753680869407-system-5tejrfrvz
+WorkingScreenShare.tsx:198 ✅ Adding unique message: 1753680869407-system-5tejrfrvz
+WorkingScreenShare.tsx:198 ✅ Adding unique message: 1753680869407-system-5tejrfrvz
+socketManager.ts:48 👥 Singleton received participants update
+WorkingScreenShare.tsx:1774 🔌 Closing all peer connections
+WorkingScreenShare.tsx:1826 ✅ All peer connections closed and cleared
+WorkingScreenShare.tsx:625 🔗 Presenter creating connection to viewer: User rr3l tL-gRT0HkrUyzOsbAAAH 
+WorkingScreenShare.tsx:1379 🔄 Creating connection for tL-gRT0HkrUyzOsbAAAH, TURN-only: false
+WorkingScreenShare.tsx:1390 🔧 Using ICE configuration: {serverCount: 5, forceTurnOnly: false, transportPolicy: 'all'}
+WorkingScreenShare.tsx:669 ➕ Adding track to peer connection: audio 3fca0ff7-6b42-40fb-9339-448dcd26dec8
+WorkingScreenShare.tsx:717 🔧 Configured audio transceiver for 1080p: {maxBitrate: '0.2 Mbps', maxFramerate: 'N/A', priority: 'high'}
+WorkingScreenShare.tsx:669 ➕ Adding track to peer connection: video 59d68f40-8530-4d3f-b638-5d809f8777ff
+WorkingScreenShare.tsx:717 🔧 Configured video transceiver for 1080p: {maxBitrate: '10.0 Mbps', maxFramerate: 30, priority: 'high'}
+WorkingScreenShare.tsx:339 🚀 Enhanced SDP for 1080p: {videoBandwidth: '10000 kbps', audioBandwidth: '192 kbps', totalBandwidth: '10192 kbps'}
+WorkingScreenShare.tsx:732 📤 Sending optimized offer to viewer: tL-gRT0HkrUyzOsbAAAH
+WorkingScreenShare.tsx:741 🚀 Connection initiated to User rr3l, monitoring for natural establishment...
+WorkingScreenShare.tsx:1490 🧊 ICE gathering state for tL-gRT0HkrUyzOsbAAAH: gathering
+WorkingScreenShare.tsx:1477 🧊 Sending ICE candidate for tL-gRT0HkrUyzOsbAAAH: host
+WorkingScreenShare.tsx:1477 🧊 Sending ICE candidate for tL-gRT0HkrUyzOsbAAAH: srflx
+WorkingScreenShare.tsx:1477 🧊 Sending ICE candidate for tL-gRT0HkrUyzOsbAAAH: srflx
+socketManager.ts:48 👥 Singleton received participants update
+socketManager.ts:48 👥 Singleton received participants update
+WorkingScreenShare.tsx:245 📞 Received WebRTC answer from: tL-gRT0HkrUyzOsbAAAH
+WorkingScreenShare.tsx:1685 📞 Setting remote answer from: tL-gRT0HkrUyzOsbAAAH
+WorkingScreenShare.tsx:250 🧊 Received ICE candidate from: tL-gRT0HkrUyzOsbAAAH
+WorkingScreenShare.tsx:250 🧊 Received ICE candidate from: tL-gRT0HkrUyzOsbAAAH
+WorkingScreenShare.tsx:1496 ❄️ ICE connection state for tL-gRT0HkrUyzOsbAAAH: checking
+WorkingScreenShare.tsx:250 🧊 Received ICE candidate from: tL-gRT0HkrUyzOsbAAAH
+WorkingScreenShare.tsx:653 🔗 Screen share connection state for User rr3l: connecting
+WorkingScreenShare.tsx:1496 ❄️ ICE connection state for tL-gRT0HkrUyzOsbAAAH: connected
+WorkingScreenShare.tsx:1499 ✅ ICE connection established for tL-gRT0HkrUyzOsbAAAH
+WorkingScreenShare.tsx:1490 🧊 ICE gathering state for tL-gRT0HkrUyzOsbAAAH: complete
+WorkingScreenShare.tsx:1484 ✅ ICE gathering complete for tL-gRT0HkrUyzOsbAAAH
